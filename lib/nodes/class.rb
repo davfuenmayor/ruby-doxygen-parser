@@ -1,6 +1,4 @@
 class DoxyClass < DoxyNode
-  include DoxyParser
-  
   def get_classes filter
     
   end

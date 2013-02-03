@@ -1,0 +1,807 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOgre_1_1AnimableValue" kind="class" prot="public">
+    <compoundname>Ogre::AnimableValue</compoundname>
+    <basecompoundref refid="classOgre_1_1AllocatedObject" prot="public" virt="non-virtual">Ogre::AllocatedObject&lt; AnimationAllocPolicy &gt;</basecompoundref>
+    <includes refid="OgreAnimable_8h" local="no">OgreAnimable.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69" prot="public" static="no">
+        <name>ValueType</name>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69af2f0a37077706342371d65539e56b295" prot="public">
+          <name>INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a3062c18887fcc426f17c19d786edeaef" prot="public">
+          <name>REAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a31cb7b9505f0707baee335b0b200a135" prot="public">
+          <name>VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a4f77f4de37ff20785d425d00dde7864a" prot="public">
+          <name>VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a8c429058bd40804133f32ee95337f05b" prot="public">
+          <name>VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69ac56bb2149a2092c3a3d834c6def9571a" prot="public">
+          <name>QUATERNION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a019d638a0420937709b0ca4ded01a57e" prot="public">
+          <name>COLOUR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a6821a401bbbad6d7649104b0978c4216" prot="public">
+          <name>RADIAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a67875f169fb2deebc7c3590efbe621f1" prot="public">
+          <name>DEGREE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of the value being animated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="76" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="75" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOgre_1_1AnimableValue_1aa3a3dfd661bd4fe6c7a64d12a1f99e25" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69" kindref="member">ValueType</ref></type>
+        <definition>ValueType Ogre::AnimableValue::mType</definition>
+        <argsstring></argsstring>
+        <name>mType</name>
+        <briefdescription>
+<para>Value type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="89" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimableValue_1a9a28f64b2bcd08a8c89e83da7458f550" prot="protected" static="no" mutable="no">
+        <type>union Ogre::AnimableValue::@0</type>
+        <definition>union Ogre::AnimableValue::@0 Ogre::AnimableValue::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+<para>Base value data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOgre_1_1AnimableValue_1ad8012b223d250f482cd3200ed450a36a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ogre::AnimableValue::mBaseValueInt</definition>
+        <argsstring></argsstring>
+        <name>mBaseValueInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="94" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimableValue_1a4e26a76b98c42eda570e551322aff11d" prot="public" static="no" mutable="no">
+        <type>Real</type>
+        <definition>Real Ogre::AnimableValue::mBaseValueReal[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>mBaseValueReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="95" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1aacef098935627873fd41f7b3bd37d3cf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="99" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a591cf1fe6aea2bb616b2fb33aa9d89eb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(Real val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>Real</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="101" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a4d7deaff8c80d30847824641a1379795" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Vector2 &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="104" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="103" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a79e47a48705265f9d68da37c135d8e07" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Vector3 &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="107" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="106" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ad8b0a714cd9e968c50aba63e073a178e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Vector4 &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="110" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="109" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1adb6ffb64834d5c87d4f700cd49d8187c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Quaternion &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="113" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="112" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a7e9f1daae0fe81ef3bc537673dedcdbb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Any &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a27a8718feccb76cfe4d541a336bfb6a8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const ColourValue &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1ColourValue" kindref="compound">ColourValue</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="118" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1aedb01dc3c980da9d66060621bad6789a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Radian &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Radian" kindref="compound">Radian</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="126" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a3331382a6e5baf2fdd863b92a27eeb3f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setAsBaseValue</definition>
+        <argsstring>(const Degree &amp;val)</argsstring>
+        <name>setAsBaseValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Degree" kindref="compound">Degree</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Internal method to set a value as base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="131" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a280f34861f78ae0f9560ce6d49bd2346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ogre::AnimableValue::AnimableValue</definition>
+        <argsstring>(ValueType t)</argsstring>
+        <name>AnimableValue</name>
+        <param>
+          <type><ref refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69" kindref="member">ValueType</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="137" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a89c0b065a5d1a3398e2663713bdf5007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Ogre::AnimableValue::~AnimableValue</definition>
+        <argsstring>()</argsstring>
+        <name>~AnimableValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="138" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a801dea01990f3cb16def8185159a9e55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69" kindref="member">ValueType</ref></type>
+        <definition>ValueType Ogre::AnimableValue::getType</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getType</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the value type of this animable value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="141" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ab3198ebe772d4ffeac4f5656420b3a3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setCurrentStateAsBaseValue</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>setCurrentStateAsBaseValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sets the current state as the &apos;base&apos; value; used for delta animation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a7bf19d59335bc397010e009eaf593288" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(int)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="147" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a950b8bf6bd5090aa8717215dcba68877" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(Real)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>Real</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="151" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a4b0159d919981f3e5f6c69461bda725f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Vector2 &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="155" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a8beaf446718c7169fd6e8580b5a0fa4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Vector3 &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="159" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a8d6e93903faee8c7a0e557e4852111f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Vector4 &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="163" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a61de4fd8eca078570639cb200178a40d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Quaternion &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="167" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a39c32d892f553e9aa1f45091edabeb74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const ColourValue &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1ColourValue" kindref="compound">ColourValue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="171" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a1eb74e53e38812bc97931068a4a538db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Radian &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Radian" kindref="compound">Radian</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="175" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ae0bac21aa939447bb48efa668a7b9da4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Degree &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Degree" kindref="compound">Degree</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="179" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ac9f25ae01ac3b9cec80df9e7e930bac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::setValue</definition>
+        <argsstring>(const Any &amp;val)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ae544d029ad24ed12090d5ecbb2202ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::resetToBaseValue</definition>
+        <argsstring>(void)</argsstring>
+        <name>resetToBaseValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a0077811577a67da9e17fe0582eddf9d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(int)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="189" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a87058d1fc51ccbdeeb7d265d3bc6118a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(Real)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>Real</type>
+        </param>
+        <briefdescription>
+<para>Set value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="193" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a59283e8287fd1e9dc82c02f843809407" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Vector2 &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="197" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1abb5b33797a6afb9fedbbc12a83c2201e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Vector3 &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="201" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a4fe4b177fb24522f3e1325a6e8daab62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Vector4 &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="205" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a7db4121de1ba46cbf27fb9d8a0365cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Quaternion &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="209" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1ad131854d6fc1551de763ea93634d618c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const ColourValue &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1ColourValue" kindref="compound">ColourValue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="213" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a8a546dead00468e8de1a93a853c5bb59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Degree &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Degree" kindref="compound">Degree</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="217" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a83b671f2ba59e036b6256ad64cca2ffe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Radian &amp;)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Radian" kindref="compound">Radian</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="221" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimableValue_1a662bf10183dd75b2786eb4343c63db8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimableValue::applyDeltaValue</definition>
+        <argsstring>(const Any &amp;val)</argsstring>
+        <name>applyDeltaValue</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Apply delta value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines an object property which is animable, i.e. may be keyframed. <simplesect kind="remark"><para>Animable properties are those which can be altered over time by a predefined keyframe sequence. They may be set directly, or they may be modified from their existing state (common if multiple animations are expected to apply at once). Implementors of this interface are expected to override the &apos;setValue&apos;, &apos;setCurrentStateAsBaseValue&apos; and &apos;applyDeltaValue&apos; methods appropriate to the type in question, and to initialise the type. </para></simplesect>
+<simplesect kind="par"><title></title><para><ref refid="classOgre_1_1AnimableValue" kindref="compound">AnimableValue</ref> instances are accessible through any class which extends <ref refid="classOgre_1_1AnimableObject" kindref="compound">AnimableObject</ref> in order to expose it&apos;s animable properties. </para></simplesect>
+<simplesect kind="note"><para>This class is an instance of the Adapter pattern, since it generalises access to a particular property. Whilst it could have been templated such that the type which was being referenced was compiled in, this would make it more difficult to aggregated generically, and since animations are often comprised of multiple properties it helps to be able to deal with all values through a single class. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="388">
+        <label>Ogre::AnimableValue</label>
+        <link refid="classOgre_1_1AnimableValue"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>AnimableAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="390">
+        <label>Ogre::AnimableValue</label>
+        <link refid="classOgre_1_1AnimableValue"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>AnimableAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="72" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="71" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classOgre_1_1AllocatedObject_1a366445eb206e55a2199267b8b9089ebb" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>AllocatedObject</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a280f34861f78ae0f9560ce6d49bd2346" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>AnimableValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a0077811577a67da9e17fe0582eddf9d0" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a87058d1fc51ccbdeeb7d265d3bc6118a" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a59283e8287fd1e9dc82c02f843809407" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1abb5b33797a6afb9fedbbc12a83c2201e" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a4fe4b177fb24522f3e1325a6e8daab62" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a7db4121de1ba46cbf27fb9d8a0365cf2" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ad131854d6fc1551de763ea93634d618c" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a8a546dead00468e8de1a93a853c5bb59" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a83b671f2ba59e036b6256ad64cca2ffe" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a662bf10183dd75b2786eb4343c63db8c" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>applyDeltaValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a019d638a0420937709b0ca4ded01a57e" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>COLOUR</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a67875f169fb2deebc7c3590efbe621f1" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>DEGREE</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a801dea01990f3cb16def8185159a9e55" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>getType</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69af2f0a37077706342371d65539e56b295" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>INT</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ad8012b223d250f482cd3200ed450a36a" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>mBaseValueInt</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a4e26a76b98c42eda570e551322aff11d" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>mBaseValueReal</name></member>
+      <member refid="classOgre_1_1AnimableValue_1aa3a3dfd661bd4fe6c7a64d12a1f99e25" prot="protected" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>mType</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a8357fe4fb4849772b94baa4bf47c7ded" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a1c727e879a260c37b00ce5505fe8e144" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1acb46d4b0a597156d9ba5abc39d127792" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a93e6a86dde5483c053ca0f2a85bbfd6c" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a595ea4c05da8aa987d3800e65d23355d" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a421b197ca3a38da17e2eb1531a645fa2" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ac4bdf968b7b9af8a5239a27da73d5711" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ab78a921e54419be677839cdf15d1f0b8" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a4be37baef81876985aa1071ad5acc6dd" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1afa2943846ba6a2b5824a12857139cf5e" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69ac56bb2149a2092c3a3d834c6def9571a" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>QUATERNION</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a6821a401bbbad6d7649104b0978c4216" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>RADIAN</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a3062c18887fcc426f17c19d786edeaef" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>REAL</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ae544d029ad24ed12090d5ecbb2202ce8" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>resetToBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1aacef098935627873fd41f7b3bd37d3cf" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a591cf1fe6aea2bb616b2fb33aa9d89eb" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a4d7deaff8c80d30847824641a1379795" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a79e47a48705265f9d68da37c135d8e07" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ad8b0a714cd9e968c50aba63e073a178e" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adb6ffb64834d5c87d4f700cd49d8187c" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a7e9f1daae0fe81ef3bc537673dedcdbb" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a27a8718feccb76cfe4d541a336bfb6a8" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1aedb01dc3c980da9d66060621bad6789a" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a3331382a6e5baf2fdd863b92a27eeb3f" prot="protected" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ab3198ebe772d4ffeac4f5656420b3a3f" prot="public" virt="pure-virtual"><scope>Ogre::AnimableValue</scope><name>setCurrentStateAsBaseValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a7bf19d59335bc397010e009eaf593288" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a950b8bf6bd5090aa8717215dcba68877" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a4b0159d919981f3e5f6c69461bda725f" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a8beaf446718c7169fd6e8580b5a0fa4e" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a8d6e93903faee8c7a0e557e4852111f9" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a61de4fd8eca078570639cb200178a40d" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a39c32d892f553e9aa1f45091edabeb74" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a1eb74e53e38812bc97931068a4a538db" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ae0bac21aa939447bb48efa668a7b9da4" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1ac9f25ae01ac3b9cec80df9e7e930bac9" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>setValue</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>ValueType</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a31cb7b9505f0707baee335b0b200a135" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>VECTOR2</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a4f77f4de37ff20785d425d00dde7864a" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>VECTOR3</name></member>
+      <member refid="classOgre_1_1AnimableValue_1adccd62bb2b72c602b9c59ca651256d69a8c429058bd40804133f32ee95337f05b" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>VECTOR4</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a499773d35ca98b2df7c2699fc8c1bea2" prot="public" virt="non-virtual"><scope>Ogre::AnimableValue</scope><name>~AllocatedObject</name></member>
+      <member refid="classOgre_1_1AnimableValue_1a89c0b065a5d1a3398e2663713bdf5007" prot="public" virt="virtual"><scope>Ogre::AnimableValue</scope><name>~AnimableValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

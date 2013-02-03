@@ -1,15 +1,12 @@
-#!/usr/bin ruby
-require 'rubygems'
-require 'nokogiri'
-require 'fileutils'
-
 module DoxyParser  
-  class << self
+    def escape_class_name classname 
+      classname.gsub(/.*::/i,"").gsub(/\s*/i,"")
+    end
     
     def parse_namespace path
       raise "There is no XML File associated to this namespace" unless File.exists? path
       doc=nil
-      File.open(nsxml){ |namespace|         
+      File.open(path){ |namespace|         
         doc=Nokogiri::XML(namespace)        
       }
       doc 
@@ -39,6 +36,5 @@ module DoxyParser
       count = file.write(data)
       file.close  
       return count
-    end
-  end  
+    end 
 end

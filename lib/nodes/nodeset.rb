@@ -1,5 +1,5 @@
 class DoxyNodeSet
-  #include DoxyParser 
+  include DoxyParser 
  
   def method_missing sym, *args
     if @nodeSet.respond_to? sym

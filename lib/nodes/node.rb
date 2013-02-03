@@ -1,5 +1,5 @@
 class DoxyNode
-  #include DoxyParser
+  include DoxyParser
   
   attr_accessor :dir
   attr_accessor :name
@@ -9,11 +9,11 @@ class DoxyNode
   attr_accessor :path
  
   def method_missing sym, *args
-    raise "This object has not yet been associated to an xml file using parse() method" unless @doc  
-    if @doc.respond_to? sym
-       @doc.send(sym,*args)
+    raise "This object has not yet been associated to an xml node" unless @node      
+    if @node.respond_to? sym
+       @node.send(sym,*args)
     else
-      @doc[sym.to_s] || super  
+      @node[sym.to_s] || super  
     end     
   end
   
@@ -38,8 +38,9 @@ class DoxyNode
         raise "Node was defined but no parent was found"
       end
       # Default name if a node is given
-      @name ||= hash[:node].first_element_child.child
-      @path = %Q{#{@dir}/#{hash[:node].refid}.xml}
+      @node= hash[:node]
+      @name ||= self.first_element_child.child
+      @path = %Q{#{@dir}/#{self.refid}.xml}
     else      
       @path = %Q{#{@dir}/namespace#{@name}.xml}    
     end  

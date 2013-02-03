@@ -1,0 +1,2051 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOgre_1_1Animation" kind="class" prot="public">
+    <compoundname>Ogre::Animation</compoundname>
+    <basecompoundref refid="classOgre_1_1AllocatedObject" prot="public" virt="non-virtual">Ogre::AllocatedObject&lt; AnimationAllocPolicy &gt;</basecompoundref>
+    <includes refid="OgreAnimation_8h" local="no">OgreAnimation.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" prot="public" static="no">
+        <name>InterpolationMode</name>
+        <enumvalue id="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcda262ee3e33fe08932773f377f2595b142" prot="public">
+          <name>IM_LINEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Values are interpolated along straight lines. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcdaed6662637d5b6a2f79cdf5b60318fc9a" prot="public">
+          <name>IM_SPLINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Values are interpolated along a spline, resulting in smoother changes in direction. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The types of animation interpolation available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="94" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="93" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" prot="public" static="no">
+        <name>RotationInterpolationMode</name>
+        <enumvalue id="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32a9b235462ed2b49ff928bfc037775e18f" prot="public">
+          <name>RIM_LINEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Values are interpolated linearly. This is faster but does not necessarily give a completely accurate result. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32ae2332380356ba1b4aa4b30eef722ce40" prot="public">
+          <name>RIM_SPHERICAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Values are interpolated spherically. This is more accurate but has a higher cost. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The types of rotational interpolation available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="103" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="102" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1a687b42ea31dcb2a63430655544b1cd92" prot="public" static="no">
+        <type><ref refid="structOgre_1_1map" kindref="compound">map</ref>&lt; unsigned short, <ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> * &gt;::type</type>
+        <definition>typedef map&lt;unsigned short, NodeAnimationTrack*&gt;::type Ogre::Animation::NodeTrackList</definition>
+        <argsstring></argsstring>
+        <name>NodeTrackList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="369" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1a102623aa082648ea3fe2023ab30609b3" prot="public" static="no">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">ConstMapIterator</ref>&lt; NodeTrackList &gt;</type>
+        <definition>typedef ConstMapIterator&lt;NodeTrackList&gt; Ogre::Animation::NodeTrackIterator</definition>
+        <argsstring></argsstring>
+        <name>NodeTrackIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="370" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1a5bb1d35a490357a87992a603c5fce642" prot="public" static="no">
+        <type><ref refid="structOgre_1_1map" kindref="compound">map</ref>&lt; unsigned short, <ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> * &gt;::type</type>
+        <definition>typedef map&lt;unsigned short, NumericAnimationTrack*&gt;::type Ogre::Animation::NumericTrackList</definition>
+        <argsstring></argsstring>
+        <name>NumericTrackList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="372" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1adc1167a609195ef97a04e3c6ea1dbe4f" prot="public" static="no">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">ConstMapIterator</ref>&lt; NumericTrackList &gt;</type>
+        <definition>typedef ConstMapIterator&lt;NumericTrackList&gt; Ogre::Animation::NumericTrackIterator</definition>
+        <argsstring></argsstring>
+        <name>NumericTrackIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="373" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1abd58b24a526b3a8d9a380817da873de4" prot="public" static="no">
+        <type><ref refid="structOgre_1_1map" kindref="compound">map</ref>&lt; unsigned short, <ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> * &gt;::type</type>
+        <definition>typedef map&lt;unsigned short, VertexAnimationTrack*&gt;::type Ogre::Animation::VertexTrackList</definition>
+        <argsstring></argsstring>
+        <name>VertexTrackList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="375" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1a6cf2cea821bb2bc222097322810a8795" prot="public" static="no">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">ConstMapIterator</ref>&lt; VertexTrackList &gt;</type>
+        <definition>typedef ConstMapIterator&lt;VertexTrackList&gt; Ogre::Animation::VertexTrackIterator</definition>
+        <argsstring></argsstring>
+        <name>VertexTrackIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="376" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1aa1e0832cbc4b53d5b66db62bae3b72e4" prot="public" static="no">
+        <type><ref refid="structOgre_1_1set" kindref="compound">set</ref>&lt; ushort &gt;::type</type>
+        <definition>typedef set&lt;ushort&gt;::type Ogre::Animation::TrackHandleList</definition>
+        <argsstring></argsstring>
+        <name>TrackHandleList</name>
+        <briefdescription>
+<para>A list of track handles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="421" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classOgre_1_1Animation_1a6edac07b941e6e5143f8698512c54f85" prot="protected" static="no">
+        <type><ref refid="structOgre_1_1vector" kindref="compound">vector</ref>&lt; Real &gt;::type</type>
+        <definition>typedef vector&lt;Real&gt;::type Ogre::Animation::KeyFrameTimeList</definition>
+        <argsstring></argsstring>
+        <name>KeyFrameTimeList</name>
+        <briefdescription>
+<para>Global keyframe time list used to search global keyframe index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="520" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOgre_1_1Animation_1ad6feb2e94e741b520b4b495de3370d0a" prot="protected" static="no" mutable="no">
+        <type>NodeTrackList</type>
+        <definition>NodeTrackList Ogre::Animation::mNodeTrackList</definition>
+        <argsstring></argsstring>
+        <name>mNodeTrackList</name>
+        <briefdescription>
+<para><ref refid="classOgre_1_1Node" kindref="compound">Node</ref> tracks, indexed by handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="504" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a7827f78d56ad9617d492ca9db44b0dda" prot="protected" static="no" mutable="no">
+        <type>NumericTrackList</type>
+        <definition>NumericTrackList Ogre::Animation::mNumericTrackList</definition>
+        <argsstring></argsstring>
+        <name>mNumericTrackList</name>
+        <briefdescription>
+<para>Numeric tracks, indexed by handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="506" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a459b6ab4402064f29513d85f11019a8e" prot="protected" static="no" mutable="no">
+        <type>VertexTrackList</type>
+        <definition>VertexTrackList Ogre::Animation::mVertexTrackList</definition>
+        <argsstring></argsstring>
+        <name>mVertexTrackList</name>
+        <briefdescription>
+<para>Vertex tracks, indexed by handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="508" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1ad9b0db95c087917ae1f1b39c8bd78033" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Ogre::Animation::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="509" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1ad276a5a08f9722e7ec3db6010ed46c5d" prot="protected" static="no" mutable="no">
+        <type>Real</type>
+        <definition>Real Ogre::Animation::mLength</definition>
+        <argsstring></argsstring>
+        <name>mLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="511" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1af12b2e7210e20a1f4753d624997b584e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+        <definition>InterpolationMode Ogre::Animation::mInterpolationMode</definition>
+        <argsstring></argsstring>
+        <name>mInterpolationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="513" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a73cbf633be9d7d066c8592eb7f7201cf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+        <definition>RotationInterpolationMode Ogre::Animation::mRotationInterpolationMode</definition>
+        <argsstring></argsstring>
+        <name>mRotationInterpolationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="514" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a413a1b1f2a76187c55e117439713ad45" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classOgre_1_1Animation_1a6edac07b941e6e5143f8698512c54f85" kindref="member">KeyFrameTimeList</ref></type>
+        <definition>KeyFrameTimeList Ogre::Animation::mKeyFrameTimes</definition>
+        <argsstring></argsstring>
+        <name>mKeyFrameTimes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="521" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1aebb49da3e990b742b399f9504434af3d" prot="protected" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::mKeyFrameTimesDirty</definition>
+        <argsstring></argsstring>
+        <name>mKeyFrameTimesDirty</name>
+        <briefdescription>
+<para>Dirty flag indicate that keyframe time list need to rebuild. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="523" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a7d787f8568a6ce362cb4216389823c91" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::mUseBaseKeyFrame</definition>
+        <argsstring></argsstring>
+        <name>mUseBaseKeyFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="525" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a2eef637eb31967fccfd0117f1b4249ca" prot="protected" static="no" mutable="no">
+        <type>Real</type>
+        <definition>Real Ogre::Animation::mBaseKeyFrameTime</definition>
+        <argsstring></argsstring>
+        <name>mBaseKeyFrameTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="526" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1adf7afa50d30afd8672d2f126acd8f66a" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Ogre::Animation::mBaseKeyFrameAnimationName</definition>
+        <argsstring></argsstring>
+        <name>mBaseKeyFrameAnimationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="527" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1a98114678abd7fcc0170b221586334d9e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1AnimationContainer" kindref="compound">AnimationContainer</ref> *</type>
+        <definition>AnimationContainer* Ogre::Animation::mContainer</definition>
+        <argsstring></argsstring>
+        <name>mContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="528" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classOgre_1_1Animation_1af7548c23de2f7a7247a32b6b51c10d4d" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+        <definition>InterpolationMode Ogre::Animation::msDefaultInterpolationMode</definition>
+        <argsstring></argsstring>
+        <name>msDefaultInterpolationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="516" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1Animation_1ac86f4ccd6587f674204158c527ae4610" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+        <definition>RotationInterpolationMode Ogre::Animation::msDefaultRotationInterpolationMode</definition>
+        <argsstring></argsstring>
+        <name>msDefaultRotationInterpolationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="517" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOgre_1_1Animation_1aeece2a3468761504266fc13b1d45b9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogre::Animation::Animation</definition>
+        <argsstring>(const String &amp;name, Real length)</argsstring>
+        <name>Animation</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>You should not use this constructor directly, use the parent object such as <ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref> instead. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the animation, should be unique within it&apos;s parent (e.g. <ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the animation in seconds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aaffbd7f99b0d72bb55c2ac42ad671acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Ogre::Animation::~Animation</definition>
+        <argsstring>()</argsstring>
+        <name>~Animation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1acea315bd83f7f56e3a19103d7d33eb14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const String &amp;</type>
+        <definition>const String&amp; Ogre::Animation::getName</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getName</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the name of this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a75d97b070ea8e77e3ecb227882ffd962" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Real</type>
+        <definition>Real Ogre::Animation::getLength</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getLength</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the total length of the animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ad40a8420fdccba38d8e8d3d7f270c804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::setLength</definition>
+        <argsstring>(Real len)</argsstring>
+        <name>setLength</name>
+        <param>
+          <type>Real</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the length of the animation. <simplesect kind="note"><para>Changing the length of an animation may invalidate existing <ref refid="classOgre_1_1AnimationState" kindref="compound">AnimationState</ref> instances which will need to be recreated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a30787705fcfd9116eb228e6d6c55aa1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> *</type>
+        <definition>NodeAnimationTrack* Ogre::Animation::createNodeTrack</definition>
+        <argsstring>(unsigned short handle)</argsstring>
+        <name>createNodeTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> for animating a <ref refid="classOgre_1_1Node" kindref="compound">Node</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to give the track, used for accessing the track later. Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a2a7c93bf69ae8c39cd5008a4ea0914bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> *</type>
+        <definition>NumericAnimationTrack* Ogre::Animation::createNumericTrack</definition>
+        <argsstring>(unsigned short handle)</argsstring>
+        <name>createNumericTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> for animating any numeric value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to give the track, used for accessing the track later. Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aa57ef3d4c1957a1514baaaeb05a7a07c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> *</type>
+        <definition>VertexAnimationTrack* Ogre::Animation::createVertexTrack</definition>
+        <argsstring>(unsigned short handle, VertexAnimationType animType)</argsstring>
+        <name>createVertexTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group__Animation_1ga9046e6e0d12c46c57a9056987e9d158e" kindref="member">VertexAnimationType</ref></type>
+          <declname>animType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> for animating vertex position data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to give the track, used for accessing the track later. Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>, and is used to identify the target. For example when applied to a <ref refid="classOgre_1_1Mesh" kindref="compound">Mesh</ref>, the handle must reference the index of the geometry being modified; 0 for the shared geometry, and 1+ for <ref refid="classOgre_1_1SubMesh" kindref="compound">SubMesh</ref> geometry with the same index-1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either morph or pose animation, </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aca1a073f6b8cd7acfd9fae1c70efcc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> *</type>
+        <definition>NodeAnimationTrack* Ogre::Animation::createNodeTrack</definition>
+        <argsstring>(unsigned short handle, Node *node)</argsstring>
+        <name>createNodeTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="classOgre_1_1AnimationTrack" kindref="compound">AnimationTrack</ref> automatically associated with a <ref refid="classOgre_1_1Node" kindref="compound">Node</ref>. <simplesect kind="remark"><para>This method creates a standard <ref refid="classOgre_1_1AnimationTrack" kindref="compound">AnimationTrack</ref>, but also associates it with a target <ref refid="classOgre_1_1Node" kindref="compound">Node</ref> which will receive all keyframe effects. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numeric handle to give the track, used for accessing the track later. Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classOgre_1_1Node" kindref="compound">Node</ref> object which will be affected by this track </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a617ebd1829597aab16a1487bb5e7db47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> *</type>
+        <definition>NumericAnimationTrack* Ogre::Animation::createNumericTrack</definition>
+        <argsstring>(unsigned short handle, const AnimableValuePtr &amp;anim)</argsstring>
+        <name>createNumericTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOgre_1_1SharedPtr" kindref="compound">AnimableValuePtr</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> and associates it with an animable. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to give the track, used for accessing the track later. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animable object link Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a2e0d15b479986999a34c85c11368b7d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> *</type>
+        <definition>VertexAnimationTrack* Ogre::Animation::createVertexTrack</definition>
+        <argsstring>(unsigned short handle, VertexData *data, VertexAnimationType animType)</argsstring>
+        <name>createVertexTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1VertexData" kindref="compound">VertexData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__Animation_1ga9046e6e0d12c46c57a9056987e9d158e" kindref="member">VertexAnimationType</ref></type>
+          <declname>animType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> and associates it with <ref refid="classOgre_1_1VertexData" kindref="compound">VertexData</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to give the track, used for accessing the track later. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classOgre_1_1VertexData" kindref="compound">VertexData</ref> object link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation type Must be unique within this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a751504518dcf3e40e4b69b5e43db4057" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Ogre::Animation::getNumNodeTracks</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumNodeTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of <ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> objects contained in this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a1ba11007332b6be538d8847805d1fa1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NodeAnimationTrack" kindref="compound">NodeAnimationTrack</ref> *</type>
+        <definition>NodeAnimationTrack* Ogre::Animation::getNodeTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>getNodeTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a node track by it&apos;s handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a19764ce1b571ed46e3aa3430a6150396" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::hasNodeTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>hasNodeTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does a track exist with the given handle? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a4e13d281d94ef9f232405e89f2c462c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Ogre::Animation::getNumNumericTracks</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumNumericTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of <ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> objects contained in this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a35f96927370947eacaf6dea035db8356" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1NumericAnimationTrack" kindref="compound">NumericAnimationTrack</ref> *</type>
+        <definition>NumericAnimationTrack* Ogre::Animation::getNumericTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>getNumericTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a numeric track by it&apos;s handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a1f706ab036182bb0c4f3750434d738ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::hasNumericTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>hasNumericTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does a track exist with the given handle? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a79eace2e0e28a36cc3e50b9b6c668aa2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Ogre::Animation::getNumVertexTracks</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumVertexTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of <ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> objects contained in this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ac5ebb60cc52ca46c25521e33b4f3ad9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1VertexAnimationTrack" kindref="compound">VertexAnimationTrack</ref> *</type>
+        <definition>VertexAnimationTrack* Ogre::Animation::getVertexTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>getVertexTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a Vertex track by it&apos;s handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a1f09188e8d68327bdc122ae15ce4f3bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::hasVertexTrack</definition>
+        <argsstring>(unsigned short handle) const </argsstring>
+        <name>hasVertexTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does a track exist with the given handle? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a8af56d49ff39965b5544f4714f60921e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyNodeTrack</definition>
+        <argsstring>(unsigned short handle)</argsstring>
+        <name>destroyNodeTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the node track with the given handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aeacd8ac98ee8a82f4ee02a42ad5a20c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyNumericTrack</definition>
+        <argsstring>(unsigned short handle)</argsstring>
+        <name>destroyNumericTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the numeric track with the given handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a9b73daea219e50025394ec4939f612cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyVertexTrack</definition>
+        <argsstring>(unsigned short handle)</argsstring>
+        <name>destroyVertexTrack</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the Vertex track with the given handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a38a092ec9280c0651b9af9c5a0f91d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyAllTracks</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroyAllTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes and destroys all tracks making up this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a571b7ec6d6894ee7352f991d4675fcec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyAllNodeTracks</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroyAllNodeTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes and destroys all tracks making up this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ad02ddb9aa24b16831d546d35ade27514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyAllNumericTracks</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroyAllNumericTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes and destroys all tracks making up this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a9514493756471b0ab5d8cc473e291141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::destroyAllVertexTracks</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroyAllVertexTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes and destroys all tracks making up this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aa79ff8a4ddeb63225e6d68f6a16e9a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::apply</definition>
+        <argsstring>(Real timePos, Real weight=1.0, Real scale=1.0f)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies an animation given a specific time point and weight. <simplesect kind="remark"><para>Where you have associated animation tracks with objects, you can easily apply an animation to those objects by calling this method. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a18392d47fb421eb3131e2c6bc79e4fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::applyToNode</definition>
+        <argsstring>(Node *node, Real timePos, Real weight=1.0, Real scale=1.0f)</argsstring>
+        <name>applyToNode</name>
+        <param>
+          <type><ref refid="classOgre_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all node tracks given a specific time point and weight to the specified node. <simplesect kind="remark"><para>It does not consider the actual node tracks are attached to. As such, it resembles the apply method for a given skeleton (see below). </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a5f874e1f76e045184f04f44ce1c94927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::apply</definition>
+        <argsstring>(Skeleton *skeleton, Real timePos, Real weight=1.0, Real scale=1.0f)</argsstring>
+        <name>apply</name>
+        <param>
+          <type><ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref> *</type>
+          <declname>skeleton</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all node tracks given a specific time point and weight to a given skeleton. <simplesect kind="remark"><para>Where you have associated animation tracks with <ref refid="classOgre_1_1Node" kindref="compound">Node</ref> objects, you can easily apply an animation to those nodes by calling this method. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1af200502c3f6eeaa8f1a8da39e8ada5d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::apply</definition>
+        <argsstring>(Skeleton *skeleton, Real timePos, float weight, const AnimationState::BoneBlendMask *blendMask, Real scale)</argsstring>
+        <name>apply</name>
+        <param>
+          <type><ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref> *</type>
+          <declname>skeleton</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOgre_1_1AnimationState_1a9eb388325ffd3d479e311a05f519445b" kindref="member">AnimationState::BoneBlendMask</ref> *</type>
+          <declname>blendMask</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all node tracks given a specific time point and weight to a given skeleton. <simplesect kind="remark"><para>Where you have associated animation tracks with <ref refid="classOgre_1_1Node" kindref="compound">Node</ref> objects, you can easily apply an animation to those nodes by calling this method. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blendMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence array defining additional per bone weights. These will be modulated with the weight factor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a452a33575f1b10818dc99f260fb799a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::apply</definition>
+        <argsstring>(Entity *entity, Real timePos, Real weight, bool software, bool hardware)</argsstring>
+        <name>apply</name>
+        <param>
+          <type><ref refid="classOgre_1_1Entity" kindref="compound">Entity</ref> *</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>software</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hardware</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all vertex tracks given a specific time point and weight to a given entity. <simplesect kind="remark"><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classOgre_1_1Entity" kindref="compound">Entity</ref> to which this animation should be applied </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight at which the animation should be applied (only affects pose animation) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>software</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to populate the software morph vertex data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hardware</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to populate the hardware morph vertex data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aba50b3776ef9ff01f182acfaf9e1cf02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::applyToAnimable</definition>
+        <argsstring>(const AnimableValuePtr &amp;anim, Real timePos, Real weight=1.0, Real scale=1.0f)</argsstring>
+        <name>applyToAnimable</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1SharedPtr" kindref="compound">AnimableValuePtr</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all numeric tracks given a specific time point and weight to the specified animable value. <simplesect kind="remark"><para>It does not applies to actual attached animable values but rather uses all tracks for a single animable value. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a4221e6f98120b985e97ab59f62241bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::applyToVertexData</definition>
+        <argsstring>(VertexData *data, Real timePos, Real weight=1.0)</argsstring>
+        <name>applyToVertexData</name>
+        <param>
+          <type><ref refid="classOgre_1_1VertexData" kindref="compound">VertexData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies all vertex tracks given a specific time point and weight to the specified vertex data. <simplesect kind="remark"><para>It does not apply to the actual attached vertex data but rather uses all tracks for a given vertex data. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aac31e00a651ad27d019284f761309aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::setInterpolationMode</definition>
+        <argsstring>(InterpolationMode im)</argsstring>
+        <name>setInterpolationMode</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the animation how to interpolate between keyframes. <simplesect kind="remark"><para>By default, animations normally interpolate linearly between keyframes. This is fast, but when animations include quick changes in direction it can look a little unnatural because directions change instantly at keyframes. An alternative is to tell the animation to interpolate along a spline, which is more expensive in terms of calculation time, but looks smoother because major changes in direction are distributed around the keyframes rather than just at the keyframe. </para></simplesect>
+<simplesect kind="par"><title></title><para>You can also change the default animation behaviour by calling <ref refid="classOgre_1_1Animation_1a578b8c96c94980f27a73315cc24ddba7" kindref="member">Animation::setDefaultInterpolationMode</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a01c7c6f1014e7d7716823a9c8e65deff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+        <definition>InterpolationMode Ogre::Animation::getInterpolationMode</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getInterpolationMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current interpolation mode of this animation. <simplesect kind="remark"><para>See setInterpolationMode for more info. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1afabcd2de47086fa2ee7a9b1425d2dfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::setRotationInterpolationMode</definition>
+        <argsstring>(RotationInterpolationMode im)</argsstring>
+        <name>setRotationInterpolationMode</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the animation how to interpolate rotations. <simplesect kind="remark"><para>By default, animations interpolate linearly between rotations. This is fast but not necessarily completely accurate. If you want more accurate interpolation, use spherical interpolation, but be aware that it will incur a higher cost. </para></simplesect>
+<simplesect kind="par"><title></title><para>You can also change the default rotation behaviour by calling <ref refid="classOgre_1_1Animation_1aa619948ea4bd84a5041e2f70036f6f98" kindref="member">Animation::setDefaultRotationInterpolationMode</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1afe9aca83863872446c2e166086fc0f0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+        <definition>RotationInterpolationMode Ogre::Animation::getRotationInterpolationMode</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getRotationInterpolationMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current rotation interpolation mode of this animation. <simplesect kind="remark"><para>See setRotationInterpolationMode for more info. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a98586536e06a55b21fd5407942608b41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const NodeTrackList &amp;</type>
+        <definition>const NodeTrackList&amp; Ogre::Animation::_getNodeTrackList</definition>
+        <argsstring>(void) const </argsstring>
+        <name>_getNodeTrackList</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Fast access to NON-UPDATEABLE node track list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ac8e44704bf96b608f1fa7aa0c0b88edf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">NodeTrackIterator</ref></type>
+        <definition>NodeTrackIterator Ogre::Animation::getNodeTrackIterator</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNodeTrackIterator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get non-updateable iterator over node tracks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="383" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="382" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aaeb8ab3866b26412fa3ba1f907d45ea5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const NumericTrackList &amp;</type>
+        <definition>const NumericTrackList&amp; Ogre::Animation::_getNumericTrackList</definition>
+        <argsstring>(void) const </argsstring>
+        <name>_getNumericTrackList</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Fast access to NON-UPDATEABLE numeric track list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a3baa25475b685e73bc95f07f8abd686e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">NumericTrackIterator</ref></type>
+        <definition>NumericTrackIterator Ogre::Animation::getNumericTrackIterator</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumericTrackIterator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get non-updateable iterator over node tracks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="390" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="389" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aef2ea8fe2f8f1b25a6e0088b69c1eb5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const VertexTrackList &amp;</type>
+        <definition>const VertexTrackList&amp; Ogre::Animation::_getVertexTrackList</definition>
+        <argsstring>(void) const </argsstring>
+        <name>_getVertexTrackList</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Fast access to NON-UPDATEABLE Vertex track list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aa862d7cc6c0764a479962ad562373218" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOgre_1_1ConstMapIterator" kindref="compound">VertexTrackIterator</ref></type>
+        <definition>VertexTrackIterator Ogre::Animation::getVertexTrackIterator</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getVertexTrackIterator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get non-updateable iterator over node tracks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="397" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="396" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a6c74bfa5a7755f2cc6fa5635f50afef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::optimise</definition>
+        <argsstring>(bool discardIdentityNodeTracks=true)</argsstring>
+        <name>optimise</name>
+        <param>
+          <type>bool</type>
+          <declname>discardIdentityNodeTracks</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optimise an animation by removing unnecessary tracks and keyframes. <simplesect kind="remark"><para>When you export an animation, it is possible that certain tracks have been keyframed but actually don&apos;t include anything useful - the keyframes include no transformation. These tracks can be completely eliminated from the animation and thus speed up the animation. In addition, if several keyframes in a row have the same value, then they are just adding overhead and can be removed. </para></simplesect>
+<simplesect kind="note"><para>Since track-less and identity track has difference behavior for accumulate animation blending if corresponding track presenting at other animation that is non-identity, and in normally this method didn&apos;t known about the situation of other animation, it can&apos;t deciding whether or not discards identity tracks. So there have a parameter allow you choose what you want, in case you aren&apos;t sure how to do that, you should use <ref refid="classOgre_1_1Skeleton_1a542c24dc374d0ff8ba4ecdda99b5da06" kindref="member">Skeleton::optimiseAllAnimations</ref> instead. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>discardIdentityNodeTracks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, discard identity node tracks. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a4deb5ee68ca3b3b064ec818d256ba57e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::_collectIdentityNodeTracks</definition>
+        <argsstring>(TrackHandleList &amp;tracks) const </argsstring>
+        <name>_collectIdentityNodeTracks</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation_1aa1e0832cbc4b53d5b66db62bae3b72e4" kindref="member">TrackHandleList</ref> &amp;</type>
+          <declname>tracks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method for collecting identity node tracks. <simplesect kind="remark"><para>This method remove non-identity node tracks form the track handle list. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tracks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of track handle of non-identity node tracks, where this method will remove non-identity node track handles. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a0efa76d209b69cbf6edb22565efbf710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::_destroyNodeTracks</definition>
+        <argsstring>(const TrackHandleList &amp;tracks)</argsstring>
+        <name>_destroyNodeTracks</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Animation_1aa1e0832cbc4b53d5b66db62bae3b72e4" kindref="member">TrackHandleList</ref> &amp;</type>
+          <declname>tracks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method for destroy given node tracks. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a34143940cdafe87ecb11dd9d5a22b1f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> *</type>
+        <definition>Animation* Ogre::Animation::clone</definition>
+        <argsstring>(const String &amp;newName) const </argsstring>
+        <name>clone</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clone this animation. <simplesect kind="note"><para>The pointer returned from this method is the only one recorded, thus it is up to the caller to arrange for the deletion of this object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ad8bcd32239c62f94ac26f07b30de6db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::_keyFrameListChanged</definition>
+        <argsstring>(void)</argsstring>
+        <name>_keyFrameListChanged</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method used to tell the animation that keyframe list has been changed, which may cause it to rebuild some internal data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="446" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="446" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1acd9d856cef81a16612c588792fd2b843" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1TimeIndex" kindref="compound">TimeIndex</ref></type>
+        <definition>TimeIndex Ogre::Animation::_getTimeIndex</definition>
+        <argsstring>(Real timePos) const </argsstring>
+        <name>_getTimeIndex</name>
+        <param>
+          <type>Real</type>
+          <declname>timePos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method used to convert time position to time index object. <simplesect kind="note"><para>The time index returns by this function are associated with state of the animation object, if the animation object altered (e.g. create/remove keyframe or track), all related time index will invalidated. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The time index object which contains wrapped time position (in relation to the whole animation sequence) and lower bound index of global keyframe time list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ad2e66ba420139faf24d857a5725d314d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::setUseBaseKeyFrame</definition>
+        <argsstring>(bool useBaseKeyFrame, Real keyframeTime=0.0f, const String &amp;baseAnimName=StringUtil::BLANK)</argsstring>
+        <name>setUseBaseKeyFrame</name>
+        <param>
+          <type>bool</type>
+          <declname>useBaseKeyFrame</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>keyframeTime</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>baseAnimName</declname>
+          <defval><ref refid="classOgre_1_1StringUtil_1ad2ead745c8c6f4f7056270e22f29e4da" kindref="member">StringUtil::BLANK</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a base keyframe which for the skeletal / pose keyframes in this animation. <simplesect kind="remark"><para>Skeletal and pose animation keyframes are expressed as deltas from a given base state. By default, that is the binding setup of the skeleton, or the object space mesh positions for pose animation. However, sometimes it is useful for animators to create animations with a different starting pose, because that&apos;s more convenient, and the animation is designed to simply be added to the existing animation state and not globally averaged with other animations (this is always the case with pose animations, but is activated for skeletal animations via ANIMBLEND_CUMULATIVE). </para></simplesect>
+<simplesect kind="par"><title></title><para>In order for this to work, the keyframes need to be &apos;re-based&apos; against this new starting state, for example by treating the first keyframe as the reference point (and therefore representing no change). This can be achieved by applying the inverse of this reference keyframe against all other keyframes. Since this fundamentally changes the animation, this method just marks the animation as requiring this rebase, which is performed at the next <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> &apos;apply&apos; call. This is to allow the <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> to be re-saved with this flag set, but without having altered the keyframes yet, so no data is lost unintentionally. If you wish to save the animation after the adjustment has taken place, you can (</para></simplesect>
+<simplesect kind="see"><para><ref refid="classOgre_1_1Animation_1a0594747e21adfeb55c8b9fdff6b53487" kindref="member">_applyBaseKeyFrame</ref>) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>useBaseKeyFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether a base keyframe should be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keyframeTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time corresponding to the base keyframe, if any </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseAnimName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optionally a different base animation (must contain the same tracks) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a836b83729af14cd13e375a00e6d22082" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ogre::Animation::getUseBaseKeyFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>getUseBaseKeyFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether a base keyframe is being used for this <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a23c44992080df8b029fcb12a9a3e5f5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Real</type>
+        <definition>Real Ogre::Animation::getBaseKeyFrameTime</definition>
+        <argsstring>() const </argsstring>
+        <name>getBaseKeyFrameTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If a base keyframe is being used, the time of that keyframe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a07f70403be35a81bc58c285bb02f2625" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const String &amp;</type>
+        <definition>const String&amp; Ogre::Animation::getBaseKeyFrameAnimationName</definition>
+        <argsstring>() const </argsstring>
+        <name>getBaseKeyFrameAnimationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If a base keyframe is being used, the <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> that provides that keyframe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a0594747e21adfeb55c8b9fdff6b53487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::_applyBaseKeyFrame</definition>
+        <argsstring>()</argsstring>
+        <name>_applyBaseKeyFrame</name>
+        <briefdescription>
+<para>Internal method to adjust keyframes relative to a base keyframe (. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOgre_1_1Animation_1ad2e66ba420139faf24d857a5725d314d" kindref="member">setUseBaseKeyFrame</ref>) */ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a7deef4dd997370e01c59edc4f5d44500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::_notifyContainer</definition>
+        <argsstring>(AnimationContainer *c)</argsstring>
+        <name>_notifyContainer</name>
+        <param>
+          <type><ref refid="classOgre_1_1AnimationContainer" kindref="compound">AnimationContainer</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1ae5edd991dc35ae17e1a2abbe85608154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1AnimationContainer" kindref="compound">AnimationContainer</ref> *</type>
+        <definition>AnimationContainer* Ogre::Animation::getContainer</definition>
+        <argsstring>()</argsstring>
+        <name>getContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the container of this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="500"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOgre_1_1Animation_1a578b8c96c94980f27a73315cc24ddba7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ogre::Animation::setDefaultInterpolationMode</definition>
+        <argsstring>(InterpolationMode im)</argsstring>
+        <name>setDefaultInterpolationMode</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the default animation interpolation mode. <simplesect kind="remark"><para>Every animation created after this option is set will have the new interpolation mode specified. You can also change the mode per animation by calling the setInterpolationMode method on the instance in question. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a1bd3c85600ecce978cc15ab36ddf9a43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" kindref="member">InterpolationMode</ref></type>
+        <definition>static InterpolationMode Ogre::Animation::getDefaultInterpolationMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDefaultInterpolationMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the default interpolation mode for all animations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aa619948ea4bd84a5041e2f70036f6f98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ogre::Animation::setDefaultRotationInterpolationMode</definition>
+        <argsstring>(RotationInterpolationMode im)</argsstring>
+        <name>setDefaultRotationInterpolationMode</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the default rotation interpolation mode. <simplesect kind="remark"><para>Every animation created after this option is set will have the new interpolation mode specified. You can also change the mode per animation by calling the setInterpolationMode method on the instance in question. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a67546bf051fd0135c79842d56682ec4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" kindref="member">RotationInterpolationMode</ref></type>
+        <definition>static RotationInterpolationMode Ogre::Animation::getDefaultRotationInterpolationMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDefaultRotationInterpolationMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the default rotation interpolation mode for all animations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="367"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOgre_1_1Animation_1a8f0caeee9db7f221427d9c4c741f1ce6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::optimiseNodeTracks</definition>
+        <argsstring>(bool discardIdentityTracks)</argsstring>
+        <name>optimiseNodeTracks</name>
+        <param>
+          <type>bool</type>
+          <declname>discardIdentityTracks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1a76c998bd82d0a638248af8256d67d95f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::optimiseVertexTracks</definition>
+        <argsstring>(void)</argsstring>
+        <name>optimiseVertexTracks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1Animation_1aa9bd188b881327f3f4610ac9c3065293" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::Animation::buildKeyFrameTimeList</definition>
+        <argsstring>(void) const </argsstring>
+        <name>buildKeyFrameTimeList</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Internal method to build global keyframe time list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="534"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An animation sequence. <simplesect kind="remark"><para>This class defines the interface for a sequence of animation, whether that be animation of a mesh, a path along a spline, or possibly more than one type of animation in one. An animation is made up of many &apos;tracks&apos;, which are the more specific types of animation. </para></simplesect>
+<simplesect kind="par"><title></title><para>You should not create these animations directly. They will be created via a parent object which owns the animation, e.g. <ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="392">
+        <label>Ogre::Animation</label>
+        <link refid="classOgre_1_1Animation"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>AnimationAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="400">
+        <label>Ogre::AnimationContainer</label>
+        <link refid="classOgre_1_1AnimationContainer"/>
+      </node>
+      <node id="394">
+        <label>Ogre::Animation</label>
+        <link refid="classOgre_1_1Animation"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+        <childnode refid="396" relation="usage">
+          <edgelabel>mNodeTrackList</edgelabel>
+        </childnode>
+        <childnode refid="397" relation="usage">
+          <edgelabel>mKeyFrameTimes</edgelabel>
+        </childnode>
+        <childnode refid="398" relation="usage">
+          <edgelabel>mVertexTrackList</edgelabel>
+        </childnode>
+        <childnode refid="399" relation="usage">
+          <edgelabel>mNumericTrackList</edgelabel>
+        </childnode>
+        <childnode refid="400" relation="usage">
+          <edgelabel>mContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="399">
+        <label>Ogre::map&lt; unsigned short, NumericAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="397">
+        <label>Ogre::vector&lt; Real &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="396">
+        <label>Ogre::map&lt; unsigned short, NodeAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="398">
+        <label>Ogre::map&lt; unsigned short, VertexAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="395">
+        <label>AnimationAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" line="89" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimation.h" bodystart="89" bodyend="535"/>
+    <listofallmembers>
+      <member refid="classOgre_1_1Animation_1a0594747e21adfeb55c8b9fdff6b53487" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_applyBaseKeyFrame</name></member>
+      <member refid="classOgre_1_1Animation_1a4deb5ee68ca3b3b064ec818d256ba57e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_collectIdentityNodeTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a0efa76d209b69cbf6edb22565efbf710" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_destroyNodeTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a98586536e06a55b21fd5407942608b41" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_getNodeTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1aaeb8ab3866b26412fa3ba1f907d45ea5" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_getNumericTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1acd9d856cef81a16612c588792fd2b843" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_getTimeIndex</name></member>
+      <member refid="classOgre_1_1Animation_1aef2ea8fe2f8f1b25a6e0088b69c1eb5e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_getVertexTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1ad8bcd32239c62f94ac26f07b30de6db0" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_keyFrameListChanged</name></member>
+      <member refid="classOgre_1_1Animation_1a7deef4dd997370e01c59edc4f5d44500" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>_notifyContainer</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a366445eb206e55a2199267b8b9089ebb" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>AllocatedObject</name></member>
+      <member refid="classOgre_1_1Animation_1aeece2a3468761504266fc13b1d45b9e8" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>Animation</name></member>
+      <member refid="classOgre_1_1Animation_1aa79ff8a4ddeb63225e6d68f6a16e9a24" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>apply</name></member>
+      <member refid="classOgre_1_1Animation_1a5f874e1f76e045184f04f44ce1c94927" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>apply</name></member>
+      <member refid="classOgre_1_1Animation_1af200502c3f6eeaa8f1a8da39e8ada5d9" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>apply</name></member>
+      <member refid="classOgre_1_1Animation_1a452a33575f1b10818dc99f260fb799a8" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>apply</name></member>
+      <member refid="classOgre_1_1Animation_1aba50b3776ef9ff01f182acfaf9e1cf02" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>applyToAnimable</name></member>
+      <member refid="classOgre_1_1Animation_1a18392d47fb421eb3131e2c6bc79e4fe1" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>applyToNode</name></member>
+      <member refid="classOgre_1_1Animation_1a4221e6f98120b985e97ab59f62241bfc" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>applyToVertexData</name></member>
+      <member refid="classOgre_1_1Animation_1aa9bd188b881327f3f4610ac9c3065293" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>buildKeyFrameTimeList</name></member>
+      <member refid="classOgre_1_1Animation_1a34143940cdafe87ecb11dd9d5a22b1f1" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>clone</name></member>
+      <member refid="classOgre_1_1Animation_1a30787705fcfd9116eb228e6d6c55aa1c" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createNodeTrack</name></member>
+      <member refid="classOgre_1_1Animation_1aca1a073f6b8cd7acfd9fae1c70efcc67" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createNodeTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a2a7c93bf69ae8c39cd5008a4ea0914bb" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createNumericTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a617ebd1829597aab16a1487bb5e7db47" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createNumericTrack</name></member>
+      <member refid="classOgre_1_1Animation_1aa57ef3d4c1957a1514baaaeb05a7a07c" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createVertexTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a2e0d15b479986999a34c85c11368b7d1" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>createVertexTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a571b7ec6d6894ee7352f991d4675fcec" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyAllNodeTracks</name></member>
+      <member refid="classOgre_1_1Animation_1ad02ddb9aa24b16831d546d35ade27514" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyAllNumericTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a38a092ec9280c0651b9af9c5a0f91d82" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyAllTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a9514493756471b0ab5d8cc473e291141" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyAllVertexTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a8af56d49ff39965b5544f4714f60921e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyNodeTrack</name></member>
+      <member refid="classOgre_1_1Animation_1aeacd8ac98ee8a82f4ee02a42ad5a20c1" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyNumericTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a9b73daea219e50025394ec4939f612cd" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>destroyVertexTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a07f70403be35a81bc58c285bb02f2625" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getBaseKeyFrameAnimationName</name></member>
+      <member refid="classOgre_1_1Animation_1a23c44992080df8b029fcb12a9a3e5f5b" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getBaseKeyFrameTime</name></member>
+      <member refid="classOgre_1_1Animation_1ae5edd991dc35ae17e1a2abbe85608154" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getContainer</name></member>
+      <member refid="classOgre_1_1Animation_1a1bd3c85600ecce978cc15ab36ddf9a43" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getDefaultInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a67546bf051fd0135c79842d56682ec4a" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getDefaultRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a01c7c6f1014e7d7716823a9c8e65deff" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a75d97b070ea8e77e3ecb227882ffd962" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getLength</name></member>
+      <member refid="classOgre_1_1Animation_1acea315bd83f7f56e3a19103d7d33eb14" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getName</name></member>
+      <member refid="classOgre_1_1Animation_1a1ba11007332b6be538d8847805d1fa1c" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNodeTrack</name></member>
+      <member refid="classOgre_1_1Animation_1ac8e44704bf96b608f1fa7aa0c0b88edf" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNodeTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1a35f96927370947eacaf6dea035db8356" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNumericTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a3baa25475b685e73bc95f07f8abd686e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNumericTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1a751504518dcf3e40e4b69b5e43db4057" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNumNodeTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a4e13d281d94ef9f232405e89f2c462c4" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNumNumericTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a79eace2e0e28a36cc3e50b9b6c668aa2" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getNumVertexTracks</name></member>
+      <member refid="classOgre_1_1Animation_1afe9aca83863872446c2e166086fc0f0d" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a836b83729af14cd13e375a00e6d22082" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getUseBaseKeyFrame</name></member>
+      <member refid="classOgre_1_1Animation_1ac5ebb60cc52ca46c25521e33b4f3ad9e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getVertexTrack</name></member>
+      <member refid="classOgre_1_1Animation_1aa862d7cc6c0764a479962ad562373218" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>getVertexTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1a19764ce1b571ed46e3aa3430a6150396" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>hasNodeTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a1f706ab036182bb0c4f3750434d738ef" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>hasNumericTrack</name></member>
+      <member refid="classOgre_1_1Animation_1a1f09188e8d68327bdc122ae15ce4f3bd" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>hasVertexTrack</name></member>
+      <member refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcda262ee3e33fe08932773f377f2595b142" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>IM_LINEAR</name></member>
+      <member refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcdaed6662637d5b6a2f79cdf5b60318fc9a" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>IM_SPLINE</name></member>
+      <member refid="classOgre_1_1Animation_1accd627249080f5a09332f55bed1d2dcd" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>InterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a6edac07b941e6e5143f8698512c54f85" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>KeyFrameTimeList</name></member>
+      <member refid="classOgre_1_1Animation_1adf7afa50d30afd8672d2f126acd8f66a" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mBaseKeyFrameAnimationName</name></member>
+      <member refid="classOgre_1_1Animation_1a2eef637eb31967fccfd0117f1b4249ca" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mBaseKeyFrameTime</name></member>
+      <member refid="classOgre_1_1Animation_1a98114678abd7fcc0170b221586334d9e" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mContainer</name></member>
+      <member refid="classOgre_1_1Animation_1af12b2e7210e20a1f4753d624997b584e" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a413a1b1f2a76187c55e117439713ad45" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mKeyFrameTimes</name></member>
+      <member refid="classOgre_1_1Animation_1aebb49da3e990b742b399f9504434af3d" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mKeyFrameTimesDirty</name></member>
+      <member refid="classOgre_1_1Animation_1ad276a5a08f9722e7ec3db6010ed46c5d" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mLength</name></member>
+      <member refid="classOgre_1_1Animation_1ad9b0db95c087917ae1f1b39c8bd78033" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mName</name></member>
+      <member refid="classOgre_1_1Animation_1ad6feb2e94e741b520b4b495de3370d0a" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mNodeTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1a7827f78d56ad9617d492ca9db44b0dda" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mNumericTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1a73cbf633be9d7d066c8592eb7f7201cf" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1af7548c23de2f7a7247a32b6b51c10d4d" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>msDefaultInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1ac86f4ccd6587f674204158c527ae4610" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>msDefaultRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a7d787f8568a6ce362cb4216389823c91" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mUseBaseKeyFrame</name></member>
+      <member refid="classOgre_1_1Animation_1a459b6ab4402064f29513d85f11019a8e" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>mVertexTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1a102623aa082648ea3fe2023ab30609b3" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>NodeTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1a687b42ea31dcb2a63430655544b1cd92" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>NodeTrackList</name></member>
+      <member refid="classOgre_1_1Animation_1adc1167a609195ef97a04e3c6ea1dbe4f" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>NumericTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1a5bb1d35a490357a87992a603c5fce642" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>NumericTrackList</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a8357fe4fb4849772b94baa4bf47c7ded" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a1c727e879a260c37b00ce5505fe8e144" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1acb46d4b0a597156d9ba5abc39d127792" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a93e6a86dde5483c053ca0f2a85bbfd6c" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a595ea4c05da8aa987d3800e65d23355d" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a421b197ca3a38da17e2eb1531a645fa2" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ac4bdf968b7b9af8a5239a27da73d5711" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ab78a921e54419be677839cdf15d1f0b8" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a4be37baef81876985aa1071ad5acc6dd" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1afa2943846ba6a2b5824a12857139cf5e" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1Animation_1a6c74bfa5a7755f2cc6fa5635f50afef6" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>optimise</name></member>
+      <member refid="classOgre_1_1Animation_1a8f0caeee9db7f221427d9c4c741f1ce6" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>optimiseNodeTracks</name></member>
+      <member refid="classOgre_1_1Animation_1a76c998bd82d0a638248af8256d67d95f" prot="protected" virt="non-virtual"><scope>Ogre::Animation</scope><name>optimiseVertexTracks</name></member>
+      <member refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32a9b235462ed2b49ff928bfc037775e18f" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>RIM_LINEAR</name></member>
+      <member refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32ae2332380356ba1b4aa4b30eef722ce40" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>RIM_SPHERICAL</name></member>
+      <member refid="classOgre_1_1Animation_1afbc674fea08fd85e8ad73a10dc852c32" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>RotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1a578b8c96c94980f27a73315cc24ddba7" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setDefaultInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1aa619948ea4bd84a5041e2f70036f6f98" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setDefaultRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1aac31e00a651ad27d019284f761309aaa" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1ad40a8420fdccba38d8e8d3d7f270c804" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setLength</name></member>
+      <member refid="classOgre_1_1Animation_1afabcd2de47086fa2ee7a9b1425d2dfe2" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setRotationInterpolationMode</name></member>
+      <member refid="classOgre_1_1Animation_1ad2e66ba420139faf24d857a5725d314d" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>setUseBaseKeyFrame</name></member>
+      <member refid="classOgre_1_1Animation_1aa1e0832cbc4b53d5b66db62bae3b72e4" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>TrackHandleList</name></member>
+      <member refid="classOgre_1_1Animation_1a6cf2cea821bb2bc222097322810a8795" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>VertexTrackIterator</name></member>
+      <member refid="classOgre_1_1Animation_1abd58b24a526b3a8d9a380817da873de4" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>VertexTrackList</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a499773d35ca98b2df7c2699fc8c1bea2" prot="public" virt="non-virtual"><scope>Ogre::Animation</scope><name>~AllocatedObject</name></member>
+      <member refid="classOgre_1_1Animation_1aaffbd7f99b0d72bb55c2ac42ad671acf" prot="public" virt="virtual"><scope>Ogre::Animation</scope><name>~Animation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
