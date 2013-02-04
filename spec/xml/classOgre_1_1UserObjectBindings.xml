@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOgre_1_1UserObjectBindings" kind="class" prot="public">
+    <compoundname>Ogre::UserObjectBindings</compoundname>
+    <basecompoundref refid="classOgre_1_1AllocatedObject" prot="public" virt="non-virtual">Ogre::AllocatedObject&lt; GeneralAllocPolicy &gt;</basecompoundref>
+    <includes refid="OgreUserObjectBindings_8h" local="no">OgreUserObjectBindings.h</includes>
+    <innerclass refid="classOgre_1_1UserObjectBindings_1_1Attributes" prot="protected">Ogre::UserObjectBindings::Attributes</innerclass>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classOgre_1_1UserObjectBindings_1a890438a17fbc73cb770c1d6ac9bcf028" prot="protected" static="no">
+        <type><ref refid="structOgre_1_1map" kindref="compound">map</ref>&lt; String, <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &gt;::type</type>
+        <definition>typedef map&lt;String, Any&gt;::type Ogre::UserObjectBindings::UserObjectsMap</definition>
+        <argsstring></argsstring>
+        <name>UserObjectsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="103" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1UserObjectBindings_1aa097c83d883a487db6969601fddc8707" prot="protected" static="no">
+        <type>UserObjectsMap::iterator</type>
+        <definition>typedef UserObjectsMap::iterator Ogre::UserObjectBindings::UserObjectsMapIterator</definition>
+        <argsstring></argsstring>
+        <name>UserObjectsMapIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="104" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1UserObjectBindings_1ae7ce38b3d3cd1b4ffef57bf64c0f4dfa" prot="protected" static="no">
+        <type>UserObjectsMap::const_iterator</type>
+        <definition>typedef UserObjectsMap::const_iterator Ogre::UserObjectBindings::UserObjectsMapConstIterator</definition>
+        <argsstring></argsstring>
+        <name>UserObjectsMapConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="105" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classOgre_1_1UserObjectBindings_1a840b2d0cfb800a8d3c0b1adb408fbd6b" prot="private" static="yes" mutable="no">
+        <type><ref refid="classOgre_1_1Any" kindref="compound">Any</ref></type>
+        <definition>Any Ogre::UserObjectBindings::msEmptyAny</definition>
+        <argsstring></argsstring>
+        <name>msEmptyAny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="131" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOgre_1_1UserObjectBindings_1ad9b2a03db686c03b9f8b9253a88166c7" prot="private" static="no" mutable="yes">
+        <type><ref refid="classOgre_1_1UserObjectBindings_1_1Attributes" kindref="compound">Attributes</ref> *</type>
+        <definition>Attributes* Ogre::UserObjectBindings::mAttributes</definition>
+        <argsstring></argsstring>
+        <name>mAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="132" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a295f525083392808e8d1d3fa914bd12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogre::UserObjectBindings::UserObjectBindings</definition>
+        <argsstring>()</argsstring>
+        <name>UserObjectBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a0c457a6127a7db1e332655858a530f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Ogre::UserObjectBindings::~UserObjectBindings</definition>
+        <argsstring>()</argsstring>
+        <name>~UserObjectBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1ac6d05bbca44c5c3b44860c36205f9a68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::UserObjectBindings::setUserAny</definition>
+        <argsstring>(const Any &amp;anything)</argsstring>
+        <name>setUserAny</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+          <declname>anything</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets any kind of user object on this class instance. <simplesect kind="remark"><para>This method allows you to associate any user object you like with this class. This can be a pointer back to one of your own classes for instance. </para></simplesect>
+<simplesect kind="note"><para>This method is key less meaning that each call for it will override previous object that were set. If you need to associate multiple objects with this class use the extended version that takes key. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a9c4b12b7ceeddd3a6f28dae1ac8d09a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+        <definition>const Any&amp; Ogre::UserObjectBindings::getUserAny</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getUserAny</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the custom key less user object associated with this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a3c01d7c2b562b39487fff224e89bf4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::UserObjectBindings::setUserAny</definition>
+        <argsstring>(const String &amp;key, const Any &amp;anything)</argsstring>
+        <name>setUserAny</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+          <declname>anything</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets any kind of user object on this class instance. <simplesect kind="remark"><para>This method allows you to associate multiple object with this class. This can be a pointer back to one of your own classes for instance. Use a unique key to distinguish between each of these objects. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that this data is associate with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anything</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to associate with the given key. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a17c376f30c577de16e6c87e29b5eca94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+        <definition>const Any&amp; Ogre::UserObjectBindings::getUserAny</definition>
+        <argsstring>(const String &amp;key) const </argsstring>
+        <name>getUserAny</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the custom user object associated with this class and key. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that the requested user object is associated with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>In case no object associated with this key the returned <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> object will be empty. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a9617cc379147ea7e5e316c1caf44f05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::UserObjectBindings::eraseUserAny</definition>
+        <argsstring>(const String &amp;key)</argsstring>
+        <name>eraseUserAny</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase the custom user object associated with this class and key from this binding. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that the requested user object is associated with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1ab1d2038baf066264938e421eef4727a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogre::UserObjectBindings::clear</definition>
+        <argsstring>() const </argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear all user objects from this binding. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOgre_1_1UserObjectBindings_1a6c22cddb800bc865eeb7faba941be2aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> &amp;</type>
+        <definition>static const Any&amp; Ogre::UserObjectBindings::getEmptyUserAny</definition>
+        <argsstring>()</argsstring>
+        <name>getEmptyUserAny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns empty user any object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="99" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class that provide convenient interface to establish a linkage between custom user application objects and Ogre core classes. <ref refid="classOgre_1_1Any" kindref="compound">Any</ref> instance of Ogre class that will derive from this class could be associated with custom application object using this class interface. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="29853">
+        <label>Ogre::UserObjectBindings</label>
+        <link refid="classOgre_1_1UserObjectBindings"/>
+        <childnode refid="29854" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29854">
+        <label>GeneralAllocatedObject</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29855">
+        <label>Ogre::UserObjectBindings</label>
+        <link refid="classOgre_1_1UserObjectBindings"/>
+        <childnode refid="29856" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29856">
+        <label>GeneralAllocatedObject</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" line="49" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreUserObjectBindings.h" bodystart="48" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classOgre_1_1AllocatedObject_1a366445eb206e55a2199267b8b9089ebb" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>AllocatedObject</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1ab1d2038baf066264938e421eef4727a6" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>clear</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a9617cc379147ea7e5e316c1caf44f05f" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>eraseUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a6c22cddb800bc865eeb7faba941be2aa" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>getEmptyUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a9c4b12b7ceeddd3a6f28dae1ac8d09a2" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>getUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a17c376f30c577de16e6c87e29b5eca94" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>getUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1ad9b2a03db686c03b9f8b9253a88166c7" prot="private" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>mAttributes</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a840b2d0cfb800a8d3c0b1adb408fbd6b" prot="private" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>msEmptyAny</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a8357fe4fb4849772b94baa4bf47c7ded" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a1c727e879a260c37b00ce5505fe8e144" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1acb46d4b0a597156d9ba5abc39d127792" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a93e6a86dde5483c053ca0f2a85bbfd6c" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a595ea4c05da8aa987d3800e65d23355d" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a421b197ca3a38da17e2eb1531a645fa2" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ac4bdf968b7b9af8a5239a27da73d5711" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ab78a921e54419be677839cdf15d1f0b8" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a4be37baef81876985aa1071ad5acc6dd" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1afa2943846ba6a2b5824a12857139cf5e" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1ac6d05bbca44c5c3b44860c36205f9a68" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>setUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a3c01d7c2b562b39487fff224e89bf4b6" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>setUserAny</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a295f525083392808e8d1d3fa914bd12f" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>UserObjectBindings</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a890438a17fbc73cb770c1d6ac9bcf028" prot="protected" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>UserObjectsMap</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1ae7ce38b3d3cd1b4ffef57bf64c0f4dfa" prot="protected" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>UserObjectsMapConstIterator</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1aa097c83d883a487db6969601fddc8707" prot="protected" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>UserObjectsMapIterator</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a499773d35ca98b2df7c2699fc8c1bea2" prot="public" virt="non-virtual"><scope>Ogre::UserObjectBindings</scope><name>~AllocatedObject</name></member>
+      <member refid="classOgre_1_1UserObjectBindings_1a0c457a6127a7db1e332655858a530f91" prot="public" virt="virtual"><scope>Ogre::UserObjectBindings</scope><name>~UserObjectBindings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

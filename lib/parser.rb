@@ -1,6 +1,11 @@
 module DoxyParser  
     def escape_class_name classname 
-      classname.gsub(/.*::/i,"").gsub(/\s*/i,"")
+      #classname.gsub(/.*::/i,"").gsub(/\s*/i,"")
+      classname.gsub(/\s*/i,"")
+    end
+    
+    def escape_file_name filename 
+      filename.gsub("_8",".")
     end
     
     def parse_namespace path
@@ -12,7 +17,7 @@ module DoxyParser
       doc 
     end
     
-    def parse_class cls, dir
+    def parse_class path
       dir = File.expand_path(dir)
       raise "Given directory does not exist" unless Dir.exists? dir
       nsxml = %Q{#{dir}/namespace#{ns}.xml} 

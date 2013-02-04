@@ -39,10 +39,26 @@ class DoxyNode
       end
       # Default name if a node is given
       @node= hash[:node]
-      @name ||= self.first_element_child.child
-      @path = %Q{#{@dir}/#{self.refid}.xml}
-    else      
-      @path = %Q{#{@dir}/namespace#{@name}.xml}    
-    end  
-  end  
+      @name ||= self.xpath("name").child.content                  
+    end 
+    compute_attr  
+  end
+  
+  def parse    
+    raise "There is no file associated to this node" unless File.exists? @path
+    if File.extname(@path)==".xml"
+      File.open(path){ |namespace|         
+         @doc=Nokogiri::XML(namespace)        
+      }  
+    else
+      @doc = @node
+    end
+    self   
+  end
+  
+  def compute_attr
+    if @node 
+       @path = %Q{#{@dir}/#{self.id}.xml}
+    end
+  end
 end
