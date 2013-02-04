@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__Animation" kind="group">
+    <compoundname>Animation</compoundname>
+    <title>Animation</title>
+    <innerclass refid="classOgre_1_1AnimableValue" prot="public">Ogre::AnimableValue</innerclass>
+    <innerclass refid="classOgre_1_1AnimableObject" prot="public">Ogre::AnimableObject</innerclass>
+    <innerclass refid="classOgre_1_1AnimationContainer" prot="public">Ogre::AnimationContainer</innerclass>
+    <innerclass refid="classOgre_1_1Animation" prot="public">Ogre::Animation</innerclass>
+    <innerclass refid="classOgre_1_1AnimationState" prot="public">Ogre::AnimationState</innerclass>
+    <innerclass refid="classOgre_1_1AnimationStateSet" prot="public">Ogre::AnimationStateSet</innerclass>
+    <innerclass refid="classOgre_1_1AnimationStateControllerValue" prot="public">Ogre::AnimationStateControllerValue</innerclass>
+    <innerclass refid="classOgre_1_1TimeIndex" prot="public">Ogre::TimeIndex</innerclass>
+    <innerclass refid="classOgre_1_1AnimationTrack" prot="public">Ogre::AnimationTrack</innerclass>
+    <innerclass refid="classOgre_1_1NumericAnimationTrack" prot="public">Ogre::NumericAnimationTrack</innerclass>
+    <innerclass refid="classOgre_1_1NodeAnimationTrack" prot="public">Ogre::NodeAnimationTrack</innerclass>
+    <innerclass refid="classOgre_1_1VertexAnimationTrack" prot="public">Ogre::VertexAnimationTrack</innerclass>
+    <innerclass refid="classOgre_1_1Bone" prot="public">Ogre::Bone</innerclass>
+    <innerclass refid="classOgre_1_1KeyFrame" prot="public">Ogre::KeyFrame</innerclass>
+    <innerclass refid="classOgre_1_1NumericKeyFrame" prot="public">Ogre::NumericKeyFrame</innerclass>
+    <innerclass refid="classOgre_1_1TransformKeyFrame" prot="public">Ogre::TransformKeyFrame</innerclass>
+    <innerclass refid="classOgre_1_1VertexMorphKeyFrame" prot="public">Ogre::VertexMorphKeyFrame</innerclass>
+    <innerclass refid="classOgre_1_1VertexPoseKeyFrame" prot="public">Ogre::VertexPoseKeyFrame</innerclass>
+    <innerclass refid="classOgre_1_1Pose" prot="public">Ogre::Pose</innerclass>
+    <innerclass refid="classOgre_1_1Skeleton" prot="public">Ogre::Skeleton</innerclass>
+    <innerclass refid="classOgre_1_1SkeletonPtr" prot="public">Ogre::SkeletonPtr</innerclass>
+    <innerclass refid="structOgre_1_1LinkedSkeletonAnimationSource" prot="public">Ogre::LinkedSkeletonAnimationSource</innerclass>
+    <innerclass refid="classOgre_1_1SkeletonManager" prot="public">Ogre::SkeletonManager</innerclass>
+    <innerclass refid="classOgre_1_1SkeletonSerializer" prot="public">Ogre::SkeletonSerializer</innerclass>
+    <innerclass refid="classOgre_1_1TagPoint" prot="public">Ogre::TagPoint</innerclass>
+    <innerclass refid="structOgre_1_1VertexBoneAssignment__s" prot="public">Ogre::VertexBoneAssignment_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__Animation_1ga9046e6e0d12c46c57a9056987e9d158e" prot="public" static="no">
+        <name>VertexAnimationType</name>
+        <enumvalue id="group__Animation_1gga9046e6e0d12c46c57a9056987e9d158eab1a15dd49cf588c9b4d29e96511dc91a" prot="public">
+          <name>VAT_NONE</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>No animation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga9046e6e0d12c46c57a9056987e9d158ea16f039e4ae5cfb19ecd7cd41be4f93cd" prot="public">
+          <name>VAT_MORPH</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Morph animation is made up of many interpolated snapshot keyframes. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga9046e6e0d12c46c57a9056987e9d158ea66715a5b810eee81efa1d964700b3d30" prot="public">
+          <name>VAT_POSE</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para><ref refid="classOgre_1_1Pose" kindref="compound">Pose</ref> animation is made up of a single delta pose keyframe. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of vertex animation. Vertex animation comes in 2 types, morph and pose. The reason for the 2 types is that we have 2 different potential goals - to encapsulate a complete, flowing morph animation with multiple keyframes (a typical animation, but implemented by having snapshots of the vertex data at each keyframe), or to represent a single pose change, for example a facial expression. Whilst both could in fact be implemented using the same system, we choose to separate them since the requirements and limitations of each are quite different. <simplesect kind="par"><title></title><para>Morph animation is a simple approach where we have a whole series of snapshots of vertex data which must be interpolated, e.g. a running animation implemented as morph targets. Because this is based on simple snapshots, it&apos;s quite fast to use when animating an entire mesh because it&apos;s a simple linear change between keyframes. However, this simplistic approach does not support blending between multiple morph animations. If you need animation blending, you are advised to use skeletal animation for full-mesh animation, and pose animation for animation of subsets of meshes or where skeletal animation doesn&apos;t fit - for example facial animation. For animating in a vertex shader, morph animation is quite simple and just requires the 2 vertex buffers (one the original position buffer) of absolute position data, and an interpolation factor. Each track in a morph animation references a unique set of vertex data. </para></simplesect>
+<simplesect kind="par"><title></title><para><ref refid="classOgre_1_1Pose" kindref="compound">Pose</ref> animation is more complex. Like morph animation each track references a single unique set of vertex data, but unlike morph animation, each keyframe references 1 or more &apos;poses&apos;, each with an influence level. A pose is a series of offsets to the base vertex data, and may be sparse - ie it may not reference every vertex. Because they&apos;re offsets, they can be blended - both within a track and between animations. This set of features is very well suited to facial animation. </para></simplesect>
+<simplesect kind="par"><title></title><para>For example, let&apos;s say you modelled a face (one set of vertex data), and defined a set of poses which represented the various phonetic positions of the face. You could then define an animation called &apos;SayHello&apos;, containing a single track which referenced the face vertex data, and which included a series of keyframes, each of which referenced one or more of the facial positions at different influence levels - the combination of which over time made the face form the shapes required to say the word &apos;hello&apos;. Since the poses are only stored once, but can be referenced may times in many animations, this is a very powerful way to build up a speech system. </para></simplesect>
+<simplesect kind="par"><title></title><para>The downside of pose animation is that it can be more difficult to set up. Also, since it uses more buffers (one for the base data, and one for each active pose), if you&apos;re animating in hardware using vertex shaders you need to keep an eye on how many poses you&apos;re blending at once. You define a maximum supported number in your vertex program definition, see the includes_pose_animation material script entry. </para></simplesect>
+<simplesect kind="par"><title></title><para>So, by partitioning the vertex animation approaches into 2, we keep the simple morph technique easy to use, whilst still allowing all the powerful techniques to be used. Note that morph animation cannot be blended with other types of vertex animation (pose animation or other morph animation); pose animation can be blended with other pose animation though, and both types can be combined with skeletal animation. Also note that all morph animation can be expressed as pose animation, but not vice versa. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationTrack.h" line="467" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationTrack.h" bodystart="466" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__Animation_1ga230b218164ffe5e6ee8970bef57e6abd" prot="public" static="no">
+        <name>SkeletonAnimationBlendMode</name>
+        <enumvalue id="group__Animation_1gga230b218164ffe5e6ee8970bef57e6abda4d13dab20a3642f5fc20cf2bec22c2c3" prot="public">
+          <name>ANIMBLEND_AVERAGE</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Animations are applied by calculating a weighted average of all animations. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga230b218164ffe5e6ee8970bef57e6abda5628f84206e4555c948422d2e62b7793" prot="public">
+          <name>ANIMBLEND_CUMULATIVE</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Animations are applied by calculating a weighted cumulative total. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreSkeleton.h" line="49" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreSkeleton.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__Animation_1ga5b37bdf2f67384dbd81643164545f7bd" prot="public" static="no">
+        <name>SkeletonChunkID</name>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bda7ed2511945645204fe9f7423e32aea49" prot="public">
+          <name>SKELETON_HEADER</name>
+          <initializer> 0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bdad777591f3958da3716318eb820bbcab8" prot="public">
+          <name>SKELETON_BLENDMODE</name>
+          <initializer> 0x1010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bdaacf798731cab07af608a45eb331faa01" prot="public">
+          <name>SKELETON_BONE</name>
+          <initializer> 0x2000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bda60d951d9cd1e76668758a78eaa75e3af" prot="public">
+          <name>SKELETON_BONE_PARENT</name>
+          <initializer> 0x3000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bdaa559ee7367718e8c9ffdfd1af83c9ca8" prot="public">
+          <name>SKELETON_ANIMATION</name>
+          <initializer> 0x4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bdaedacebfaa34fe1ed9b95efb6210e13e1" prot="public">
+          <name>SKELETON_ANIMATION_BASEINFO</name>
+          <initializer> 0x4010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bda691013153a33fde3a543deed39382c20" prot="public">
+          <name>SKELETON_ANIMATION_TRACK</name>
+          <initializer> 0x4100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bdaebf5354fd4093986740b6f7a0b9c998e" prot="public">
+          <name>SKELETON_ANIMATION_TRACK_KEYFRAME</name>
+          <initializer> 0x4110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Animation_1gga5b37bdf2f67384dbd81643164545f7bda869ed880064984ab52e95a922efec6cd" prot="public">
+          <name>SKELETON_ANIMATION_LINK</name>
+          <initializer> 0x5000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of the OGRE .skeleton file format</para><para>.skeleton files are binary files (for read efficiency at runtime) and are arranged into chunks of data, very like 3D Studio&apos;s format. A chunk always consists of: unsigned short CHUNK_ID : one of the following chunk ids identifying the chunk unsigned long LENGTH : length of the chunk in bytes, including this header void* DATA : the data, which may contain other sub-chunks (various data types)</para><para>A .skeleton file contains both the definition of the <ref refid="classOgre_1_1Skeleton" kindref="compound">Skeleton</ref> object and the animations it contains. It contains only a single skeleton but can contain multiple animations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreSkeletonFileFormat.h" line="55" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreSkeletonFileFormat.h" bodystart="55" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__Animation_1ga5e0882c3b9f7ca32a795f98cf034e428" prot="public" static="no">
+        <type>SharedPtr&lt; AnimableValue &gt;</type>
+        <definition>typedef SharedPtr&lt;AnimableValue&gt; Ogre::AnimableValuePtr</definition>
+        <argsstring></argsstring>
+        <name>AnimableValuePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" line="230" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimable.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1ga2fd1388ea690fecefc6bfe496d13e19f" prot="public" static="no">
+        <type>map&lt; String, AnimationState * &gt;::type</type>
+        <definition>typedef map&lt;String, AnimationState*&gt;::type Ogre::AnimationStateMap</definition>
+        <argsstring></argsstring>
+        <name>AnimationStateMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" line="185" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1gac427736c80940f4469fe0f4ac1694f67" prot="public" static="no">
+        <type>MapIterator&lt; AnimationStateMap &gt;</type>
+        <definition>typedef MapIterator&lt;AnimationStateMap&gt; Ogre::AnimationStateIterator</definition>
+        <argsstring></argsstring>
+        <name>AnimationStateIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" line="186" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1gaad9cc8241f80d9d8fb4f112409de792f" prot="public" static="no">
+        <type>ConstMapIterator&lt; AnimationStateMap &gt;</type>
+        <definition>typedef ConstMapIterator&lt;AnimationStateMap&gt; Ogre::ConstAnimationStateIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstAnimationStateIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" line="187" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1ga7f7651abe4d9e073cfdbcafd79da3511" prot="public" static="no">
+        <type>list&lt; AnimationState * &gt;::type</type>
+        <definition>typedef list&lt;AnimationState*&gt;::type Ogre::EnabledAnimationStateList</definition>
+        <argsstring></argsstring>
+        <name>EnabledAnimationStateList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" line="189" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1ga7bc761681d8c97c449763d8b77dcedf8" prot="public" static="no">
+        <type>ConstVectorIterator&lt; EnabledAnimationStateList &gt;</type>
+        <definition>typedef ConstVectorIterator&lt;EnabledAnimationStateList&gt; Ogre::ConstEnabledAnimationStateIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstEnabledAnimationStateIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" line="190" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreAnimationState.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1ga2320179c7d0107995d8a737c86a40333" prot="public" static="no">
+        <type>vector&lt; Pose * &gt;::type</type>
+        <definition>typedef vector&lt;Pose*&gt;::type Ogre::PoseList</definition>
+        <argsstring></argsstring>
+        <name>PoseList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgrePose.h" line="134" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgrePose.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Animation_1gaf7318ddaeea193a759de6349554ec3a4" prot="public" static="no">
+        <type>struct <ref refid="structOgre_1_1VertexBoneAssignment__s" kindref="compound">Ogre::VertexBoneAssignment_s</ref></type>
+        <definition>typedef struct Ogre::VertexBoneAssignment_s  Ogre::VertexBoneAssignment</definition>
+        <argsstring></argsstring>
+        <name>VertexBoneAssignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Records the assignment of a single vertex to a single bone with the corresponding weight. <simplesect kind="remark"><para>This simple struct simply holds a vertex index, bone index and weight representing the assignment of a vertex to a bone for skeletal animation. There may be many of these per vertex if blended vertex assignments are allowed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreVertexBoneAssignment.h" line="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__Animation_1ga4393e2afffe021cb323b896779de3d17" prot="public" static="no">
+        <name>OGRE_MAX_NUM_BONES</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/Ufanudroid/doxygenOgre/OgreSkeleton.h" line="56" bodyfile="/home/david/Ufanudroid/doxygenOgre/OgreSkeleton.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
