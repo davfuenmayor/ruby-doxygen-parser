@@ -49,7 +49,25 @@ class DoxyClass < DoxyNode
     end
     filtered_lst.map{|c| DoxyEnum.new(:parent => self, :node => c, :name => c.xpath("name")[0].child.content)} 
   end
-    
+  
+  def get_variables filter=nil, access="public", static=nil
+    if static==nil
+      static="-"
+    else
+      static="-static-"
+    end
+    sectiondef=%Q{#{access}#{static}attrib}
+    lst=@doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="variable"][@prot="#{access}"]})
+    filtered_lst=lst
+    if filter
+      filtered_lst=lst.select{ |n| 
+        node_text=n.xpath("name")[0].child.content 
+        filter.include? node_text
+      }
+    end
+    filtered_lst.map{|c| DoxyVariable.new(:parent => self, :node => c, :name => c.xpath("name")[0].child.content)} 
+  end
+      
   def compute_attr
     if @node 
        @path = %Q{#{@dir}/#{self.refid}.xml}
