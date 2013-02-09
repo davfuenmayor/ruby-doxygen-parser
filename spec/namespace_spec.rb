@@ -15,7 +15,7 @@ describe "DoxyNamespace" do
   end
   
   it "should parse flawlessly the corresponding XML file" do    
-    doc=@namespace.parse.doc
+    doc=@namespace.doc
     doc.class.should == Nokogiri::XML::Document    
   end
   

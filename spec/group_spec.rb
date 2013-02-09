@@ -13,13 +13,9 @@ describe "DoxyGroup" do
   it "should be created consistently from name and directory" do      
       @group.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/group__Animation.xml}    
   end
-  
-  it "should have a null XML reference" do      
-      @group.doc.should ==nil
-  end
-  
+   
   it "should parse flawlessly the corresponding XML file" do    
-    doc=@group.parse.doc
+    doc=@group.doc
     doc.class.should == Nokogiri::XML::Document
   end
   

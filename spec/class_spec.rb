@@ -20,13 +20,9 @@ describe "DoxyClass" do
   it "should be created consistently from name and directory" do      
       @class.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/classOgre_1_1UserObjectBindings.xml}    
   end
-  
-  it "should have a null XML reference" do      
-      @class.doc.should ==nil
-  end
-  
+    
   it "should parse flawlessly the corresponding XML file" do    
-    doc=@class.parse.doc
+    doc=@class.doc
     doc.class.should == Nokogiri::XML::Document
   end
   
@@ -48,11 +44,8 @@ describe "DoxyClass" do
   it "should create correctly the inner classes" do    
     @innerclasses.each{|c|
         # Class class must be correct
-        c.class.should == DoxyClass
-        
-        # Class should have a null XML reference
-        c.doc.should ==nil
-        
+        c.class.should == DoxyClass        
+             
         # Class should have a correct parent
         c.parent.should == @class
                   

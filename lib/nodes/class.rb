@@ -1,5 +1,8 @@
 class DoxyClass < DoxyCompound
     
+  def basename
+    name.gsub(/.*::/i,"").gsub(/\s*/i,"")
+  end
   
   def methods filter=nil, access="public", static=nil
     if static==nil

@@ -2,9 +2,9 @@ module DoxyParser
   
   private
   
-  def escape_class_name classname 
-    #classname.gsub(/.*::/i,"").gsub(/\s*/i,"")
-    classname.gsub(/\s*/i,"")
+  def escape_class_name nm 
+    #nm.gsub(/.*::/i,"").gsub(/\s*/i,"")
+    nm.gsub(/\s*/i,"")
   end
   
   def escape_file_name filename 
@@ -39,21 +39,21 @@ module DoxyParser
   protected
    
   def get_enums filter=nil, access="public"
-      lst=@doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"][@prot="#{access}"]})
+      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"][@prot="#{access}"]})
       do_filter(filter, lst, DoxyEnum) { |node|
         node.xpath("name")[0].child.content 
       }    
     end
     
   def get_classes filter=nil, access="public"
-    lst=@doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
+    lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
     do_filter(filter, lst, DoxyClass) { |node|
       escape_class_name(node.child.content)
     }      
   end    
   
   def get_functions filter, sectiondef, access
-    lst=@doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="function"][@prot="#{access}"]})
+    lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="function"][@prot="#{access}"]})
     do_filter(filter, lst, DoxyFunction) { |node|
       node.xpath("name")[0].child.content 
     }
@@ -66,14 +66,14 @@ module DoxyParser
       static="-static-"
     end
     sectiondef=%Q{#{access}#{static}attrib}
-    lst=@doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="variable"][@prot="#{access}"]})
+    lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="variable"][@prot="#{access}"]})
     do_filter(filter, lst, DoxyVariable) { |node|
       node.xpath("name")[0].child.content 
     }
   end
   
   def get_file
-    n=@doc.xpath("/doxygen/compounddef/includes")[0]
+    n=doc.xpath("/doxygen/compounddef/includes")[0]
     DoxyFile.new(:dir => @dir, :name => escape_file_name(n.child.content))
   end
   

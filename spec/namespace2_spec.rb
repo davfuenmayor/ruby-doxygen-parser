@@ -6,7 +6,7 @@ describe "DoxyNamespace" do
 
   before(:all) do
     @namespace=DoxyNamespace.new(:name=> "Ogre",:dir=>File.expand_path("./xml"))
-    doc=@namespace.parse.doc
+    doc=@namespace.doc
     @func_filter=["FastHash", "findCommandLineOpts", "rawOffsetPointer"]
     @enum_filter=["VertexAnimationType", "FogMode", "ManualCullingMode"]
     @functions=[]

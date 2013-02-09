@@ -1,12 +1,19 @@
 class DoxyNode
   include DoxyParser
   
-  attr_accessor :dir
-  attr_accessor :name
-  attr_accessor :node
-  attr_accessor :parent
-  attr_accessor :doc
-  attr_accessor :path
+  attr_reader :dir
+  attr_reader :name
+  attr_reader :node
+  attr_reader :parent
+  @doc
+  attr_reader :path
+  
+  def doc
+    if @doc==nil
+      parse
+    end
+    @doc
+  end
  
   def method_missing sym, *args
     raise "This object has not yet been associated to an xml node" unless @node
