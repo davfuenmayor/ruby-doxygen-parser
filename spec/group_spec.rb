@@ -24,7 +24,7 @@ describe "DoxyGroup" do
   end
   
   it "should create the right classes according to a specified filter" do       
-    @classes << @group.get_classes(@filter)
+    @classes << @group.classes(@filter)
     @classes.flatten!  
     @classes.should_not be_empty
     @classes.size.should == @filter.size        # Should return same name of elements as the filter...

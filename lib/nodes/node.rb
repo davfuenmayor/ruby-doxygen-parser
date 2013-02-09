@@ -9,7 +9,7 @@ class DoxyNode
   attr_accessor :path
  
   def method_missing sym, *args
-    raise "This object has not yet been associated to an xml node" unless @node      
+    raise "This object has not yet been associated to an xml node" unless @node
     if @node.respond_to? sym
        @node.send(sym,*args)
     else
@@ -55,6 +55,8 @@ class DoxyNode
     end
     self   
   end
+  
+  private
   
   def compute_attr
     if @node 

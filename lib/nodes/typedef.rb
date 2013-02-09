@@ -1,0 +1,3 @@
+class DoxyTypedef < DoxyMember
+   
+end

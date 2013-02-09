@@ -1,10 +1,11 @@
-require 'rubygems'
 require 'nokogiri'
 require 'fileutils'
 
-require 'parser'
+require_relative 'parser'
 require 'nodes/node'
 require 'nodes/nodeset'
+require 'nodes/compound'
+require 'nodes/member'
 require 'nodes/class'
 require 'nodes/enum'
 require 'nodes/file'

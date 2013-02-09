@@ -1,22 +1,12 @@
-class DoxyGroup < DoxyNode
-  
-    def get_classes filter=nil
-    lst=@doc.xpath("/doxygen/compounddef/innerclass")
-    filtered_lst=lst
-    if filter
-      filtered_lst=lst.select{|n|
-        node_text=escape_class_name n.child.content 
-        filter.include? node_text
-      }
-    end
-    filtered_lst.map{|c| DoxyClass.new(:parent => self, :node => c, :name => escape_class_name(c.child.content))}
+class DoxyGroup < DoxyCompound
+    
+  def classes filter=nil, access="public"
+    get_classes filter, access
   end
     
-  def compute_attr
-    if @node 
-       @path = %Q{#{@dir}/#{self.refid}.xml}
-    else
-       @path = %Q{#{@dir}/group__#{@name}.xml} 
-    end
+ private
+  
+  def compute_path
+     @path = %Q{#{@dir}/group__#{@name}.xml}   
   end
 end

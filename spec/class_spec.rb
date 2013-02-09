@@ -31,14 +31,14 @@ describe "DoxyClass" do
   end
   
   it "should create the correct include File" do
-    @file = @class.get_file
+    @file = @class.file
     # name and file path must be correct (Visual inspection)        
     puts "Include File Name:   " +@file.name
     puts "File Location:   " +@file.path          
   end 
   
   it "should create the right inner classes according to a specified filter" do       
-    @innerclasses << @class.get_classes(@innerclass_filter)
+    @innerclasses << @class.innerclasses(@innerclass_filter,"protected")
     @innerclasses.flatten!  
     @innerclasses.should_not be_empty
     @innerclasses.size.should == @innerclass_filter.size     # Should return same name of elements as the filter...
@@ -66,12 +66,10 @@ describe "DoxyClass" do
   end
   
   it "should create the right functions according to a specified filter" do       
-    @functions << @class.get_functions(@func_filter)
+    @functions << @class.methods(@func_filter)
     @functions.flatten!  
     @functions.should_not be_empty       
-  end
   
-  it "should create correctly the functions" do    
     @functions.each{|f|
         # The class of the Function Node must be correct
         f.class.should == DoxyFunction
@@ -89,8 +87,8 @@ describe "DoxyClass" do
   end
   
   it "should create the right variables according to a specified filter" do       
-    @variables << @class.get_variables(@var_filter[0],"private","static")
-    @variables << @class.get_variables(nil,"private")
+    @variables << @class.attributes(@var_filter[0],"private","static")
+    @variables << @class.attributes(nil,"private")
     @variables.flatten!  
     @variables.should_not be_empty
     @variables.size.should == @var_filter.size     # Should return same name of elements as the filter...

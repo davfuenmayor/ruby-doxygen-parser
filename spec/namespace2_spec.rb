@@ -14,7 +14,7 @@ describe "DoxyNamespace" do
   end
   
   it "should create the right functions according to a specified filter" do     
-    @functions << @namespace.get_functions(@func_filter)
+    @functions << @namespace.functions(@func_filter)
     @functions.flatten!
     @functions.should_not be_empty
     puts @functions.size
@@ -38,7 +38,7 @@ describe "DoxyNamespace" do
   end
   
   it "should create the right enums according to a specified filter" do 
-    @enums << @namespace.get_enums(@enum_filter)
+    @enums << @namespace.enums(@enum_filter)
     @enums.flatten!
     @enums.should_not be_empty  
     puts @enums.size  

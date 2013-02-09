@@ -24,7 +24,7 @@ describe "DoxyFile" do
   end
   
   it "should create the right classes according to a specified filter" do       
-    @innerclasses << @file.get_classes(@innerclass_filter)
+    @innerclasses << @file.classes(@innerclass_filter)
     @innerclasses.flatten!  
     @innerclasses.should_not be_empty
     @innerclasses.size.should == @innerclass_filter.size     # Should return same name of elements as the filter...

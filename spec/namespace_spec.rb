@@ -21,7 +21,7 @@ describe "DoxyNamespace" do
   
   
   it "should create the right classes according to a specified filter" do       
-    @classes << @namespace.get_classes(@filter)
+    @classes << @namespace.classes(@filter)
     @classes.flatten!  
     @classes.should_not be_empty
     @classes.size.should == @filter.size        # Should return same name of elements as the filter...
