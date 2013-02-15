@@ -8,6 +8,14 @@ class DoxyNode
   @doc
   attr_reader :path
   
+  def == another
+    self.name == another.name
+  end
+  
+  def eql? another
+    self.class == another.class && self.name == another.name
+  end
+  
   def doc
     if @doc==nil
       parse
