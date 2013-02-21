@@ -5,11 +5,15 @@ class DoxyNode
   attr_reader :name
   attr_reader :node
   attr_reader :parent
-  @doc
+  #@doc
   attr_reader :path
   
   def == another
     self.name == another.name
+  end
+  
+  def to_str
+    @name
   end
   
   def eql? another
@@ -24,7 +28,7 @@ class DoxyNode
   end
  
   def method_missing sym, *args
-    raise "This object has not yet been associated to an xml node" unless @node
+    raise DoxyException::no_node_assoc(@name, self.class.name) unless @node
     if @node.respond_to? sym
        @node.send(sym,*args)
     else
@@ -50,7 +54,7 @@ class DoxyNode
         @parent = hash[:parent]
         @dir ||= parent.dir # Only if @dir is nil
       else
-        raise "Node was defined but no parent was found"
+        raise DoxyException::no_parent_assoc(@name, self.class.name)
       end
       # Default name if a node is given
       @node= hash[:node]
@@ -60,7 +64,7 @@ class DoxyNode
   end
   
   def parse    
-    raise "There is no file associated to this node" unless File.exists? @path
+    raise DoxyException::no_file_assoc(@name, self.class.name, @path) unless File.exists? @path
     if File.extname(@path)==".xml"
       File.open(path){ |namespace|         
          @doc=Nokogiri::XML(namespace)        

@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'fileutils'
 
+require_relative 'exception'
 require_relative 'parser'
 require 'nodes/node'
 require 'nodes/nodeset'

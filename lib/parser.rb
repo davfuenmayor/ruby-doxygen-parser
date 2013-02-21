@@ -74,6 +74,7 @@ module DoxyParser
   
   def get_file
     n=doc.xpath("/doxygen/compounddef/includes")[0]
+    raise DoxyException::bad_doc(self.class.name, self.name) unless not n.nil? 
     DoxyFile.new(:dir => @dir, :name => escape_file_name(n.child.content))
   end
   
