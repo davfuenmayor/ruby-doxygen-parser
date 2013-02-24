@@ -38,19 +38,35 @@ module DoxyParser
   
   protected
    
-  def get_enums filter=nil, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"][@prot="#{access}"]})
+  def get_enums filter=nil, sectiondef="enum", access="public"
+      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="enum"][@prot="#{access}"]})
       do_filter(filter, lst, DoxyEnum) { |node|
         node.xpath("name")[0].child.content 
       }    
-    end
-    
+  end
+     
   def get_classes filter=nil, access="public"
     lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
+    lst = lst.select{|c| c["refid"].start_with?("class")}
     do_filter(filter, lst, DoxyClass) { |node|
       escape_class_name(node.child.content)
     }      
-  end    
+  end
+  
+  def get_namespaces filter=nil
+    lst=doc.xpath(%Q{/doxygen/compounddef/innernamespace})
+    do_filter(filter, lst, DoxyNamespace) { |node|
+      escape_class_name(node.child.content)
+    }      
+  end
+  
+  def get_structs filter=nil, access="public"
+    lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
+    lst = lst.select{|c| c["refid"].start_with?("struct")}
+    do_filter(filter, lst, DoxyStruct) { |node|
+      escape_class_name(node.child.content)
+    }      
+  end     
   
   def get_functions filter, sectiondef, access
     lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="function"][@prot="#{access}"]})

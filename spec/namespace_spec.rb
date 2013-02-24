@@ -7,7 +7,10 @@ describe "DoxyNamespace" do
   before(:all) do
     @namespace=DoxyNamespace.new(:name=> "Ogre",:dir=>File.expand_path("./xml"))
     @classes=[]
-    @filter=["Ogre::Root", "Ogre::ViewPoint", "Ogre::SceneManager"]
+    @innernamespaces=[]
+    @structs=[]
+    @filter=["Ogre::Root", "Ogre::RibbonTrail", "Ogre::SceneManager"]
+    @str_filter=["Ogre::isPodLike", "Ogre::ViewPoint", "Ogre::RenderablePass"]
   end
   
   it "should be created consistently from name and directory" do      
@@ -41,6 +44,54 @@ describe "DoxyNamespace" do
         
         # The classes must be included in the given filter
         @filter.should include c.name        
+    }    
+  end
+  it "should create the right structs" do       
+    @structs << @namespace.structs(@str_filter)
+    @structs.flatten!  
+    @structs.should_not be_empty
+    @structs.size.should == @str_filter.size        # Should return same name of elements as the filter...
+    @structs.uniq.should == @structs               # ... and no element should be repeated        
+  end
+  
+  it "should create correctly the structs" do    
+    @structs.each{|s|
+        # Class must be correct
+        s.class.should == DoxyStruct
+        
+        # Class should have a correct parent
+        s.parent.should == @namespace
+                  
+        # XML File path must be correct
+        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        
+        # name and .h file path must be correct (Visual inspection)        
+        puts "Struct Name:   " +s.name
+        puts "File Location:   " +s.path   
+    }    
+  end
+  
+  it "should create the innernamespaces" do       
+    @innernamespaces << @namespace.innernamespaces
+    @innernamespaces.flatten!  
+    @innernamespaces.should_not be_empty
+    @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated        
+  end
+  
+  it "should create correctly the inner namespaces" do    
+    @innernamespaces.each{|s|
+        # Class must be correct
+        s.class.should == DoxyNamespace
+        
+        # Class should have a correct parent
+        s.parent.should == @namespace
+                  
+        # XML File path must be correct
+        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        
+        # name and .h file path must be correct (Visual inspection)        
+        puts "Namespace Name:   " +s.name
+        puts "File Location:   " +s.path   
     }    
   end
 end

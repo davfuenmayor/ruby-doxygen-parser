@@ -30,7 +30,9 @@ describe "DoxyNamespace" do
                   
         # name and .h file path must be correct (Visual inspection)
         puts "Function Name:   " +f.name
-        puts "File Location:   " +f.path
+        puts "File Location:   " +f.location
+        puts "Function Definition:   " +f.definition
+        puts "Function Arguments:   " +f.args
         
         # The functions must be included in the given filter
         @func_filter.should include f.name       
@@ -40,9 +42,8 @@ describe "DoxyNamespace" do
   it "should create the right enums according to a specified filter" do 
     @enums << @namespace.enums(@enum_filter)
     @enums.flatten!
-    @enums.should_not be_empty  
-    puts @enums.size  
-      #@namespace.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/namespaceOgre.xml}    
+    @enums.should_not be_empty 
+    @enums.uniq.should == @enums               # ... and no element should be repeated     
   end
   
   it "should create correctly the enums" do    
@@ -55,7 +56,9 @@ describe "DoxyNamespace" do
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Enum Name:   " +f.name
-        puts "File Location:   " +f.path
+        puts "File Location:   " +f.location
+        puts "Enum Values:   " +f.values.join(", ")
+        puts "Enum  Definition:   " +f.definition
         
         # The enums must be included in the given filter
         @enum_filter.should include f.name                  

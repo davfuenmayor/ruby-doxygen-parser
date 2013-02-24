@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceexample" kind="namespace">
+    <compoundname>example</compoundname>
+    <innerclass refid="classexample_1_1Mula" prot="public">example::Mula</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/xml/ex/Mula.h" line="1"/>
+  </compounddef>
+</doxygen>

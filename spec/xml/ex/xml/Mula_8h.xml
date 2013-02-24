@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="Mula_8h" kind="file">
+    <compoundname>Mula.h</compoundname>
+    <innerclass refid="classexample_1_1Mula" prot="public">example::Mula</innerclass>
+    <innerclass refid="structexample_1_1Mula_1_1StructGato" prot="public">example::Mula::StructGato</innerclass>
+    <innerclass refid="structexample_1_1Mula_1_1StructLoro" prot="public">example::Mula::StructLoro</innerclass>
+    <innernamespace refid="namespaceexample">example</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceexample" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">example<sp/>{</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classexample_1_1Mula" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classexample_1_1Mula" kindref="compound">Mula</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structexample_1_1Mula_1_1StructGato" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structexample_1_1Mula_1_1StructGato" kindref="compound">StructGato</ref>{</highlight></codeline>
+<codeline lineno="9" refid="structexample_1_1Mula_1_1StructGato_1a8935e224e2c6a09cf8d5323f90453c6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructGato_1a8935e224e2c6a09cf8d5323f90453c6e" kindref="member">basename</ref>;</highlight></codeline>
+<codeline lineno="10" refid="structexample_1_1Mula_1_1StructGato_1a43ec2b79efbd1096f4152e829b249d75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructGato_1a43ec2b79efbd1096f4152e829b249d75" kindref="member">comida</ref>;</highlight></codeline>
+<codeline lineno="11" refid="structexample_1_1Mula_1_1StructGato_1af083917735839ac17916ea8329dcfe99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructGato_1af083917735839ac17916ea8329dcfe99" kindref="member">wt</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structexample_1_1Mula_1_1StructLoro" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structexample_1_1Mula_1_1StructLoro" kindref="compound">StructLoro</ref>{</highlight></codeline>
+<codeline lineno="15" refid="structexample_1_1Mula_1_1StructLoro_1ab7e89dfd912cde7e453fb10c26bc76a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructLoro_1ab7e89dfd912cde7e453fb10c26bc76a2" kindref="member">var1</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structexample_1_1Mula_1_1StructLoro_1a74cc95d2fd181b5325ed530c3d07cc62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructLoro_1a74cc95d2fd181b5325ed530c3d07cc62" kindref="member">var2</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structexample_1_1Mula_1_1StructLoro_1a653f4fd877541c23d068fd027d4e5745" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structexample_1_1Mula_1_1StructLoro_1a653f4fd877541c23d068fd027d4e5745" kindref="member">var3</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130" kindref="member">EnumPerro</ref>{</highlight></codeline>
+<codeline lineno="22" refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130a77eb0e9c2fa89e69039d1f40a3d40768" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130a77eb0e9c2fa89e69039d1f40a3d40768" kindref="member">CHAU</ref>,</highlight></codeline>
+<codeline lineno="23" refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130a2603eba42b0ba26bed1eddf0f85de2ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130a2603eba42b0ba26bed1eddf0f85de2ac" kindref="member">FEO</ref>,</highlight></codeline>
+<codeline lineno="24" refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130aedbdd2ea4622e488204f23df684e2b02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a1ecb4a726f0685b7e00e7c951f5a9130aedbdd2ea4622e488204f23df684e2b02" kindref="member">GUAU</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90" kindref="member">EnumLeon</ref>{</highlight></codeline>
+<codeline lineno="28" refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90abcacc8ca4f38ef32be39b23dc880dabc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90abcacc8ca4f38ef32be39b23dc880dabc" kindref="member">DAEMLICH</ref>,</highlight></codeline>
+<codeline lineno="29" refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90a974024c6be43d0c7b11c6cdce91e1542" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90a974024c6be43d0c7b11c6cdce91e1542" kindref="member">SAVE</ref>,</highlight></codeline>
+<codeline lineno="30" refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90a21c532ee1f82965784ad3d247937e36d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1aa5290ca7d6c469cc88301a6448dbcb90a21c532ee1f82965784ad3d247937e36d" kindref="member">OCURRIT</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7a" kindref="member">EnumCama</ref>{</highlight></codeline>
+<codeline lineno="34" refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa4e5581e33fdf422f11a36dcbbb48778d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa4e5581e33fdf422f11a36dcbbb48778d" kindref="member">ALEATORIA</ref>,</highlight></codeline>
+<codeline lineno="35" refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa06d50d6c8b4f8edc56c995ae3268433f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa06d50d6c8b4f8edc56c995ae3268433f" kindref="member">JAJ</ref>,</highlight></codeline>
+<codeline lineno="36" refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa58aed8100de88c78be234934759c734d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a27633813e565212474ca26bec1449e7aa58aed8100de88c78be234934759c734d" kindref="member">DOOF</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classexample_1_1Mula_1a739a4d0c906ecb39522126f793e97d77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1a739a4d0c906ecb39522126f793e97d77" kindref="member">Mula</ref>(){};</highlight></codeline>
+<codeline lineno="40" refid="classexample_1_1Mula_1aa71dfe4885eda4f1e9ac608a21684d67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classexample_1_1Mula_1aa71dfe4885eda4f1e9ac608a21684d67" kindref="member">Mula</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>xc){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Gato<sp/><ref refid="classexample_1_1Mula_1a5d97779a86a4a79855f6ed2782a12470" kindref="member">mulaFunc</ref>(Perro<sp/>xxc);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/xml/ex/Mula.h"/>
+  </compounddef>
+</doxygen>

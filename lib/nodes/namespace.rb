@@ -9,16 +9,20 @@ class DoxyNamespace < DoxyCompound
     get_classes filter, access
   end
   
+  def innernamespaces filter=nil
+    get_namespaces filter
+  end
+  
   def typedefs
     get_typedefs
   end
   
-  def structs
-    # TODO
+  def structs filter=nil, access="public"
+    get_structs filter, access
   end
   
   def enums filter=nil, access="public"
-    get_enums filter, access
+    get_enums filter, "enum", access
   end
     
   private

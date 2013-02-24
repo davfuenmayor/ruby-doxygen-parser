@@ -13,6 +13,7 @@ describe "DoxyClass" do
     @functions=[]
     @variables=[]
     @enums=[]
+    @structs=[]
     @innerclasses=[]
     @file=nil
   end
@@ -58,7 +59,7 @@ describe "DoxyClass" do
     }    
   end
   
-  it "should create the right functions according to a specified filter" do       
+  it "should create the right methods according to a specified filter" do       
     @functions << @class.methods#(@func_filter)
     @functions.flatten!  
     @functions.should_not be_empty       
@@ -84,6 +85,7 @@ describe "DoxyClass" do
     }     
   end
   
+    
   it "should create the right variables according to a specified filter" do       
     @variables << @class.attributes(@var_filter[0],"private","static")
     @variables << @class.attributes(nil,"private")

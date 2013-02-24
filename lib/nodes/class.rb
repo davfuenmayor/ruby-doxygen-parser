@@ -18,6 +18,15 @@ class DoxyClass < DoxyCompound
     get_classes filter, access
   end
   
+  def innerstructs filter=nil, access="public"
+    get_structs filter, access
+  end
+  
+  def innerenums filter=nil, access="public"
+    sectiondef=%Q{#{access}-type}
+    get_enums filter, sectiondef, access
+  end
+  
   def attributes filter=nil, access="public", static=nil
     get_variables filter, access, static
   end
