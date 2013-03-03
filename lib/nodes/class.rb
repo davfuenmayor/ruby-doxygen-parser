@@ -14,6 +14,16 @@ class DoxyClass < DoxyCompound
     get_functions filter, sectiondef, access
   end
   
+  def attributes filter=nil, access="public", static=nil
+    if static==nil
+      static="-"
+    else
+      static="-static-"
+    end
+    sectiondef=%Q{#{access}#{static}attrib}
+    get_variables filter, sectiondef, access    
+  end
+  
   def innerclasses filter=nil, access="public"
     get_classes filter, access
   end
@@ -25,11 +35,7 @@ class DoxyClass < DoxyCompound
   def innerenums filter=nil, access="public"
     sectiondef=%Q{#{access}-type}
     get_enums filter, sectiondef, access
-  end
-  
-  def attributes filter=nil, access="public", static=nil
-    get_variables filter, access, static
-  end
+  end 
   
   def file
     get_file

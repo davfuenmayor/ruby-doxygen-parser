@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="classMyNamespace_1_1MyClass_1_1InnerClass" kind="class"><name>MyNamespace::MyClass::InnerClass</name>
+    <member refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a9c6846b066ddb8cc5b1230872a14502b" kind="variable"><name>innerClassAttr</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1_1InnerClass_1abf865051ddc069657a0accc3e76ec749" kind="function"><name>innerClassMethod</name></member>
+  </compound>
+  <compound refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kind="struct"><name>MyNamespace::MyClass::InnerStruct</name>
+    <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" kind="variable"><name>a</name></member>
+    <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" kind="variable"><name>b</name></member>
+  </compound>
+  <compound refid="classMyNamespace_1_1MyClass" kind="class"><name>MyNamespace::MyClass</name>
+    <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" kind="enum"><name>InnerEnum</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" kind="enumvalue"><name>A</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" kind="enumvalue"><name>B</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" kind="enumvalue"><name>C</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a1f2669f2e92be63bcfb7a86634b674d4" kind="variable"><name>privateField1</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" kind="variable"><name>privateField2</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1aa8160a74a89439696289600f490c8019" kind="variable"><name>publicStaticField1</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a3582d2d1524206a3ef10625e94cc48ae" kind="variable"><name>publicStaticField2</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" kind="function"><name>MyClass</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1aa17e27abbe58a21ab279e89410041ac1" kind="function"><name>MyClass</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a0553b1822f922228cd6bd5352def2a97" kind="function"><name>virtualMethod</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a30c2428e1f63ad77e92d5acb700f6428" kind="function"><name>method</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1af3841b2872ff606b96e348b8a8ee5d2a" kind="function"><name>publicStaticMethod</name></member>
+  </compound>
+  <compound refid="structMyNamespace_1_1OuterStruct" kind="struct"><name>MyNamespace::OuterStruct</name>
+    <member refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" kind="variable"><name>aa</name></member>
+    <member refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" kind="variable"><name>bb</name></member>
+  </compound>
+  <compound refid="namespaceMyNamespace" kind="namespace"><name>MyNamespace</name>
+    <member refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kind="enum"><name>OuterEnum</name></member>
+    <member refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a5756c85cc2d287ede06fb0475a95f6da" kind="enumvalue"><name>AA</name></member>
+    <member refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a323375113cdbd3fef25faf12e02f6846" kind="enumvalue"><name>BB</name></member>
+    <member refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" kind="enumvalue"><name>CC</name></member>
+    <member refid="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" kind="variable"><name>globalVariable</name></member>
+    <member refid="namespaceMyNamespace_1ada81689a4999a5b2a26da47a9070a38d" kind="function"><name>function1</name></member>
+    <member refid="namespaceMyNamespace_1a9c7726fd612dcf666f584a7aed3efcfb" kind="function"><name>function2</name></member>
+    <member refid="namespaceMyNamespace_1a5fccd15fa2d7723cf887f63a048b5c6c" kind="function"><name>function3</name></member>
+  </compound>
+  <compound refid="test_8h" kind="file"><name>test.h</name>
+    <member refid="test_8h_1a1d27f86434b8ee860ff437f84df754a8" kind="function"><name>noNsFunction</name></member>
+  </compound>
+</doxygenindex>

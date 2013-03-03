@@ -5,6 +5,11 @@ class DoxyNamespace < DoxyCompound
     get_functions filter, sectiondef, access    
   end
   
+  def variables filter=nil, access="public"
+    sectiondef = "var"
+    get_variables filter, sectiondef, access    
+  end
+  
   def classes filter=nil, access="public"
     get_classes filter, access
   end

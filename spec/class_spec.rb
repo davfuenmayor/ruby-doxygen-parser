@@ -104,7 +104,7 @@ describe "DoxyClass" do
         v.parent.should == @class
                   
         # name and .h file path must be correct (Visual inspection)
-        puts "Variable Name:   " +v.name
+        puts "Attribute Name:   " +v.name
         puts "File Location:   " +v.path
         
         # The functions must be included in the given filter

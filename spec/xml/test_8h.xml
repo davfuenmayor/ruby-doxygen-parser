@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="test_8h" kind="file">
+    <compoundname>test.h</compoundname>
+    <innerclass refid="structMyNamespace_1_1OuterStruct" prot="public">MyNamespace::OuterStruct</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyClass" prot="public">MyNamespace::MyClass</innerclass>
+    <innerclass refid="structMyNamespace_1_1MyClass_1_1InnerStruct" prot="public">MyNamespace::MyClass::InnerStruct</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyClass_1_1InnerClass" prot="public">MyNamespace::MyClass::InnerClass</innerclass>
+    <innernamespace refid="namespaceMyNamespace">MyNamespace</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test_8h_1a1d27f86434b8ee860ff437f84df754a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double noNsFunction</definition>
+        <argsstring>(float &amp;)</argsstring>
+        <name>noNsFunction</name>
+        <param>
+          <type>float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="test_8h_1a1d27f86434b8ee860ff437f84df754a8" kindref="member">noNsFunction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceMyNamespace" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">MyNamespace<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kindref="member">OuterEnum</ref>{</highlight></codeline>
+<codeline lineno="6" refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a5756c85cc2d287ede06fb0475a95f6da" kindref="member">AA</ref>,<sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a323375113cdbd3fef25faf12e02f6846" kindref="member">BB</ref>,<sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" kindref="member">CC</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structMyNamespace_1_1OuterStruct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>{</highlight></codeline>
+<codeline lineno="10" refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kindref="member">OuterEnum</ref><sp/><ref refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" kindref="member">aa</ref>;</highlight></codeline>
+<codeline lineno="11" refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" kindref="member">bb</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref><sp/><ref refid="namespaceMyNamespace_1ada81689a4999a5b2a26da47a9070a38d" kindref="member">function1</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1a9c7726fd612dcf666f584a7aed3efcfb" kindref="member">function2</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/><ref refid="namespaceMyNamespace_1a5fccd15fa2d7723cf887f63a048b5c6c" kindref="member">function3</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" kindref="member">globalVariable</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classMyNamespace_1_1MyClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>privateField1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>privateField2;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classMyNamespace_1_1MyClass_1aa8160a74a89439696289600f490c8019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1aa8160a74a89439696289600f490c8019" kindref="member">publicStaticField1</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classMyNamespace_1_1MyClass_1a3582d2d1524206a3ef10625e94cc48ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1a3582d2d1524206a3ef10625e94cc48ae" kindref="member">publicStaticField2</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" kindref="member">InnerEnum</ref>{</highlight></codeline>
+<codeline lineno="36" refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" kindref="member">A</ref>,<sp/><ref refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" kindref="member">B</ref>,<sp/><ref refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" kindref="member">C</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structMyNamespace_1_1MyClass_1_1InnerStruct" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kindref="compound">InnerStruct</ref>{</highlight></codeline>
+<codeline lineno="40" refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref><sp/>*<ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classMyNamespace_1_1MyClass_1_1InnerClass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass" kindref="compound">InnerClass</ref>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a9c6846b066ddb8cc5b1230872a14502b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a9c6846b066ddb8cc5b1230872a14502b" kindref="member">innerClassAttr</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass_1abf865051ddc069657a0accc3e76ec749" kindref="member">innerClassMethod</ref>(UnknownType<sp/>ut);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" kindref="member">MyClass</ref>(){};</highlight></codeline>
+<codeline lineno="51" refid="classMyNamespace_1_1MyClass_1aa17e27abbe58a21ab279e89410041ac1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1aa17e27abbe58a21ab279e89410041ac1" kindref="member">MyClass</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>xc){};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1a0553b1822f922228cd6bd5352def2a97" kindref="member">virtualMethod</ref>(UnknownType<sp/>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UnknownType2<sp/><ref refid="classMyNamespace_1_1MyClass_1a30c2428e1f63ad77e92d5acb700f6428" kindref="member">method</ref>(InnerStruct<sp/>&amp;);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1af3841b2872ff606b96e348b8a8ee5d2a" kindref="member">publicStaticMethod</ref>(InnerClass<sp/>&amp;);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/workspace/RSwig/spec/headers/test.h"/>
+  </compounddef>
+</doxygen>

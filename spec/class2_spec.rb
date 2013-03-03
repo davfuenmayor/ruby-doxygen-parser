@@ -5,26 +5,19 @@ require 'ruby-doxygen-parser'
 describe "DoxyClass" do
 
   before(:all) do
-    @class=DoxyClass.new(:name=> "example::Mula",:dir=>File.expand_path("./xml"))
-    @enum_filter=nil    
-    @enums=[]
-    @structs=[]
+    @class=DoxyClass.new(:name=> "MyNamespace::MyClass",:dir=>File.expand_path("./xml"))   
+    @innerenums=[]
+    @innerstructs=[]
+    @innerclasses=[]
     @file=nil
   end
-  
-  it "should be created consistently from name and directory" do      
-      @class.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/classexample_1_1Mula.xml}    
-  end
-  
-  it "should create the right inner structs according to a specified filter" do       
-    @structs << @class.innerstructs
-    @structs.flatten!  
-    @structs.should_not be_empty
-    @structs.uniq.should == @structs               # ... and no element should be repeated       
-  end
-  
-  it "should create correctly the inner structs" do    
-    @structs.each{|s|
+    
+  it "should create correctly the inner structs" do
+    @innerstructs << @class.innerstructs
+    @innerstructs.flatten!  
+    @innerstructs.should_not be_empty
+    @innerstructs.uniq.should == @innerstructs               # ... and no element should be repeated   
+    @innerstructs.each{|s|
         # Class class must be correct
         s.class.should == DoxyStruct       
              
@@ -39,16 +32,13 @@ describe "DoxyClass" do
         puts "File Location:   " +s.path          
     }    
   end
-  
-  it "should create the right inner enums according to a specified filter" do       
-    @enums << @class.innerenums
-    @enums.flatten!  
-    @enums.should_not be_empty
-    @enums.uniq.should == @enums               # ... and no element should be repeated       
-  end
-  
-  it "should create correctly the inner enums" do    
-    @enums.each{|e|
+   
+  it "should create correctly the inner enums" do
+    @innerenums << @class.innerenums
+    @innerenums.flatten!  
+    @innerenums.should_not be_empty
+    @innerenums.uniq.should == @innerenums               # ... and no element should be repeated   
+    @innerenums.each{|e|
         # Class class must be correct
         e.class.should == DoxyEnum       
              
@@ -61,6 +51,32 @@ describe "DoxyClass" do
         puts "File Location:   " +e.location
         puts "Enum Values:   " +e.values.join(", ")
         puts "Enum  Definition:   " +e.definition         
+    }    
+  end
+  
+  it "should create correctly the inner classes" do
+    @innerclasses << @class.innerclasses
+    @innerclasses.flatten!  
+    @innerclasses.should_not be_empty
+    @innerclasses.uniq.should == @innerclasses               # ... and no element should be repeated          
+    @innerclasses.each{|c|
+        # Class class must be correct
+        c.class.should == DoxyClass        
+             
+        # Class should have a correct parent
+        c.parent.should == @class
+        
+        # XML File path must be correct
+        c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}
+        
+        # Inner Class XML should parse without problems
+        c.methods.should_not be_empty
+        c.attributes.should_not be_empty 
+                  
+        # name and file path must be correct (Visual inspection)        
+        puts "Inner Class Name:   " +c.name
+        puts "File Location:   " +c.path
+           
     }    
   end
   

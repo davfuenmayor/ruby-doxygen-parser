@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classMyNamespace_1_1MyClass" kind="class" prot="public">
+    <compoundname>MyNamespace::MyClass</compoundname>
+    <includes refid="test_8h" local="no">test.h</includes>
+    <innerclass refid="classMyNamespace_1_1MyClass_1_1InnerClass" prot="public">MyNamespace::MyClass::InnerClass</innerclass>
+    <innerclass refid="structMyNamespace_1_1MyClass_1_1InnerStruct" prot="public">MyNamespace::MyClass::InnerStruct</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" prot="public" static="no">
+        <name>InnerEnum</name>
+        <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" prot="public">
+          <name>A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" prot="public">
+          <name>B</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" prot="public">
+          <name>C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="35" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1a1f2669f2e92be63bcfb7a86634b674d4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyNamespace::MyClass::privateField1</definition>
+        <argsstring></argsstring>
+        <name>privateField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="27" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyNamespace::MyClass::privateField2</definition>
+        <argsstring></argsstring>
+        <name>privateField2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="28" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1aa8160a74a89439696289600f490c8019" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double MyNamespace::MyClass::publicStaticField1</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="32" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1a3582d2d1524206a3ef10625e94cc48ae" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double MyNamespace::MyClass::publicStaticField2</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="33" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyNamespace::MyClass::MyClass</definition>
+        <argsstring>()</argsstring>
+        <name>MyClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="50" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1aa17e27abbe58a21ab279e89410041ac1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyNamespace::MyClass::MyClass</definition>
+        <argsstring>(double *xc)</argsstring>
+        <name>MyClass</name>
+        <param>
+          <type>double *</type>
+          <declname>xc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="51" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a0553b1822f922228cd6bd5352def2a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double MyNamespace::MyClass::virtualMethod</definition>
+        <argsstring>(UnknownType *)</argsstring>
+        <name>virtualMethod</name>
+        <param>
+          <type>UnknownType *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a30c2428e1f63ad77e92d5acb700f6428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnknownType2</type>
+        <definition>UnknownType2 MyNamespace::MyClass::method</definition>
+        <argsstring>(InnerStruct &amp;)</argsstring>
+        <name>method</name>
+        <param>
+          <type><ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kindref="compound">InnerStruct</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1af3841b2872ff606b96e348b8a8ee5d2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static MyNamespace::MyClass::publicStaticMethod</definition>
+        <argsstring>(InnerClass &amp;)</argsstring>
+        <name>publicStaticMethod</name>
+        <param>
+          <type><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass" kindref="compound">InnerClass</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="23" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="23" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>A</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>B</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>C</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>InnerEnum</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a30c2428e1f63ad77e92d5acb700f6428" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>method</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>MyClass</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1aa17e27abbe58a21ab279e89410041ac1" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>MyClass</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a1f2669f2e92be63bcfb7a86634b674d4" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateField1</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateField2</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1aa8160a74a89439696289600f490c8019" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>publicStaticField1</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a3582d2d1524206a3ef10625e94cc48ae" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>publicStaticField2</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1af3841b2872ff606b96e348b8a8ee5d2a" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>publicStaticMethod</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a0553b1822f922228cd6bd5352def2a97" prot="public" virt="virtual"><scope>MyNamespace::MyClass</scope><name>virtualMethod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

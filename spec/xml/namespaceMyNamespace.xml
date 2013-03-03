@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceMyNamespace" kind="namespace">
+    <compoundname>MyNamespace</compoundname>
+    <innerclass refid="structMyNamespace_1_1OuterStruct" prot="public">MyNamespace::OuterStruct</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyClass" prot="public">MyNamespace::MyClass</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" prot="public" static="no">
+        <name>OuterEnum</name>
+        <enumvalue id="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a5756c85cc2d287ede06fb0475a95f6da" prot="public">
+          <name>AA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a323375113cdbd3fef25faf12e02f6846" prot="public">
+          <name>BB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" prot="public">
+          <name>CC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="5" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="5" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyNamespace::globalVariable</definition>
+        <argsstring></argsstring>
+        <name>globalVariable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="20" bodyfile="/home/david/workspace/RSwig/spec/headers/test.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceMyNamespace_1ada81689a4999a5b2a26da47a9070a38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref></type>
+        <definition>OuterStruct MyNamespace::function1</definition>
+        <argsstring>(float &amp;)</argsstring>
+        <name>function1</name>
+        <param>
+          <type>float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMyNamespace_1a9c7726fd612dcf666f584a7aed3efcfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyNamespace::function2</definition>
+        <argsstring>(float &amp;)</argsstring>
+        <name>function2</name>
+        <param>
+          <type>float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMyNamespace_1a5fccd15fa2d7723cf887f63a048b5c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* MyNamespace::function3</definition>
+        <argsstring>(float &amp;)</argsstring>
+        <name>function3</name>
+        <param>
+          <type>float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/RSwig/spec/headers/test.h" line="3"/>
+  </compounddef>
+</doxygen>
