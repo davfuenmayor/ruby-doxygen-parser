@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceMyNamespace_1_1MyInnerNamespace" kind="namespace">
+    <compoundname>MyNamespace::MyInnerNamespace</compoundname>
+    <innerclass refid="classMyNamespace_1_1MyInnerNamespace_1_1MyClass2" prot="public">MyNamespace::MyInnerNamespace::MyClass2</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceMyNamespace_1_1MyInnerNamespace_1a2bc6a987344d8ebfea46a09c9eb732e7" prot="public" static="no">
+        <name>OuterEnum2</name>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1a2bc6a987344d8ebfea46a09c9eb732e7ab69fc45179424dc10f1d8f2054108917" prot="public">
+          <name>A2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1a2bc6a987344d8ebfea46a09c9eb732e7ac1054da2a24639090f4807528370df3e" prot="public">
+          <name>B2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1a2bc6a987344d8ebfea46a09c9eb732e7afd346744938483c0630f2f4b946d93d3" prot="public">
+          <name>C2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="82" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="79"/>
+  </compounddef>
+</doxygen>

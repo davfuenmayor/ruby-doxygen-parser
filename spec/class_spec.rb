@@ -9,7 +9,7 @@ describe "DoxyClass" do
     @func_filter=["UserObjectBindings", "setUserAny", "getEmptyUserAny"]
     @var_filter=["msEmptyAny", "mAttributes"]
     @enum_filter=nil
-    @innerclass_filter=["Ogre::UserObjectBindings::Attributes"]
+    @innerclass_filter=["Attributes"]
     @functions=[]
     @variables=[]
     @enums=[]
@@ -52,15 +52,16 @@ describe "DoxyClass" do
                   
         # name and file path must be correct (Visual inspection)        
         puts "Inner Class Name:   " +c.name
+        puts "Inner Class Base Name:   " +c.basename
         puts "File Location:   " +c.path
         
         # The classes must be included in the given filter
-        @innerclass_filter.should include c.name        
+        @innerclass_filter.should include c.basename        
     }    
   end
   
   it "should create the right methods according to a specified filter" do       
-    @functions << @class.methods#(@func_filter)
+    @functions << @class.methods(@func_filter)
     @functions.flatten!  
     @functions.should_not be_empty       
   
@@ -73,6 +74,7 @@ describe "DoxyClass" do
                   
         # name and .h file path must be correct (Visual inspection) # TODO Automate this
         puts "Function Name:   " +f.name
+        puts "Function Base Name:   " +f.basename
         puts "Function Definition:   " +f.definition
         puts "Function Args   " +f.args
         puts "Constructor?   " +f.constructor?.to_s
@@ -105,10 +107,11 @@ describe "DoxyClass" do
                   
         # name and .h file path must be correct (Visual inspection)
         puts "Attribute Name:   " +v.name
+        puts "Attribute Base Name:   " +v.basename
         puts "File Location:   " +v.path
         
         # The functions must be included in the given filter
-        @var_filter.should include v.name       
+        @var_filter.should include v.basename       
     }     
   end
   

@@ -9,8 +9,9 @@ describe "DoxyNamespace" do
     @classes=[]
     @innernamespaces=[]
     @structs=[]
-    @filter=["Ogre::Root", "Ogre::RibbonTrail", "Ogre::SceneManager"]
-    @str_filter=["Ogre::isPodLike", "Ogre::ViewPoint", "Ogre::RenderablePass"]
+    @filter=["Root", "RibbonTrail", "SceneManager"]
+    @str_filter=["isPodLike", "ViewPoint", "RenderablePass"]
+    @inner_ns_filter=["OverlayElementCommands", "EmitterCommands"]
   end
   
   it "should be created consistently from name and directory" do      
@@ -43,7 +44,12 @@ describe "DoxyNamespace" do
         c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}
         
         # The classes must be included in the given filter
-        @filter.should include c.name        
+        @filter.should include c.basename   
+        
+        # name and .h file path must be correct (Visual inspection)        
+        puts "Class Name:   " +c.name
+        puts "Class Base Name:   " +c.basename
+        puts "File Location:   " +c.path      
     }    
   end
   it "should create the right structs" do       
@@ -67,12 +73,13 @@ describe "DoxyNamespace" do
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
+        puts "Struct Base Name:   " +s.basename
         puts "File Location:   " +s.path   
     }    
   end
   
   it "should create the innernamespaces" do       
-    @innernamespaces << @namespace.innernamespaces
+    @innernamespaces << @namespace.innernamespaces(@inner_ns_filter)
     @innernamespaces.flatten!  
     @innernamespaces.should_not be_empty
     @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated        
@@ -91,6 +98,7 @@ describe "DoxyNamespace" do
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Namespace Name:   " +s.name
+        puts "Namespace Base Name:   " +s.basename
         puts "File Location:   " +s.path   
     }    
   end

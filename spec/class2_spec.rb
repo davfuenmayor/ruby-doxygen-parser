@@ -29,6 +29,7 @@ describe "DoxyClass" do
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
+        puts "Struct Base Name:   " +s.basename
         puts "File Location:   " +s.path          
     }    
   end
@@ -48,6 +49,7 @@ describe "DoxyClass" do
                 
         # name and .h file path must be correct (Visual inspection)        
         puts "Enum Name:   " +e.name
+        puts "Enum Base Name:   " +e.basename
         puts "File Location:   " +e.location
         puts "Enum Values:   " +e.values.join(", ")
         puts "Enum  Definition:   " +e.definition         
@@ -75,6 +77,7 @@ describe "DoxyClass" do
                   
         # name and file path must be correct (Visual inspection)        
         puts "Inner Class Name:   " +c.name
+        puts "Inner Class Base Name:   " +c.basename
         puts "File Location:   " +c.path
            
     }    

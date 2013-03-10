@@ -3,8 +3,13 @@ class DoxyException
     def bad_doc name="", type=""
       %Q{#{type} #{name} does not have correctly generated documentation. Check if its definition in the corresponding include file (.h) has a Doxygen valid comment (e.g /**) or set EXTRACT_ALL to YES in the corresponding Doxyfile and generate the XML documentation again}
     end
+    
     def no_node_assoc name="", type=""
       %Q{This object: #{type} #{name} has not yet been associated to an xml node}
+    end
+    
+    def no_name_given type=""
+      %Q{No name given for node: #{type}. An xml node could not be found either}
     end
     
     def no_parent_assoc name="", type=""

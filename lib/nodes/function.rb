@@ -2,17 +2,13 @@ class DoxyFunction < DoxyMember
   
   attr_reader :params
   
-  def file
-    aux=%Q{#{@name}}.gsub(".","_8")
-    DoxyFile.new name, dir
-  end
   
   def constructor?
-    name==parent.name.gsub(/.*::/i,"")
+    @basename==parent.basename
   end
   
   def destructor?
-    name.start_with? %Q{~}
+    @basename.start_with? %Q{~}
   end
   
   def compute_attr

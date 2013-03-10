@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classMyClass" kind="class" prot="public">
+    <compoundname>MyClass</compoundname>
+    <includes refid="test_8h" local="no">test.h</includes>
+    <innerclass refid="classMyClass_1_1InnerClass" prot="public">MyClass::InnerClass</innerclass>
+    <innerclass refid="structMyClass_1_1InnerStruct" prot="public">MyClass::InnerStruct</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classMyClass_1a86528247b93dbba907f74c07a2e44f78" prot="public" static="no">
+        <name>InnerEnum</name>
+        <enumvalue id="classMyClass_1a86528247b93dbba907f74c07a2e44f78a0ceef3b909212f758c886ebd810fcc84" prot="public">
+          <name>A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyClass_1a86528247b93dbba907f74c07a2e44f78a3e603caedd4b28ae5a7f8114282b8e64" prot="public">
+          <name>B</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyClass_1a86528247b93dbba907f74c07a2e44f78aa71292137ce89ff6316c959083d611de" prot="public">
+          <name>C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="53" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyClass_1a69ea749440ff50cca3274efb212924e9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyClass::privateField1</definition>
+        <argsstring></argsstring>
+        <name>privateField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="45" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyClass_1af1a911b16983e94634220cd05f2b6c3d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyClass::privateField2</definition>
+        <argsstring></argsstring>
+        <name>privateField2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="46" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classMyClass_1a22e4124a30bb220b0dedf42edce1136d" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double MyClass::publicStaticField1</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="50" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyClass_1a923587f64bb8c5d59810c1cad7e048e2" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double MyClass::publicStaticField2</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="51" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyClass_1a8c56a953295afdced0c95908bf2663da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyClass::MyClass</definition>
+        <argsstring>()</argsstring>
+        <name>MyClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="68" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1a6606fb204da4913509cf234eea015604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyClass::~MyClass</definition>
+        <argsstring>()</argsstring>
+        <name>~MyClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="69" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1adc16416be599fa5482eee8b88664e52a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyClass::MyClass</definition>
+        <argsstring>(double *xc)</argsstring>
+        <name>MyClass</name>
+        <param>
+          <type>double *</type>
+          <declname>xc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="70" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1a27034302b24daa1d0ab6faaa95a2fa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double MyClass::virtualMethod</definition>
+        <argsstring>(UnknownType *)</argsstring>
+        <name>virtualMethod</name>
+        <param>
+          <type>UnknownType *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1afd372c9cf1b1dddabc4a9d99fa29f095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnknownType2</type>
+        <definition>UnknownType2 MyClass::method</definition>
+        <argsstring>(InnerStruct &amp;)</argsstring>
+        <name>method</name>
+        <param>
+          <type><ref refid="structMyClass_1_1InnerStruct" kindref="compound">InnerStruct</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyClass_1aa3c2723b0beb0b5b616e6f37c574e04a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static MyClass::publicStaticMethod</definition>
+        <argsstring>(InnerClass &amp;)</argsstring>
+        <name>publicStaticMethod</name>
+        <param>
+          <type><ref refid="classMyClass_1_1InnerClass" kindref="compound">InnerClass</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" line="41" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test.h" bodystart="41" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classMyClass_1a86528247b93dbba907f74c07a2e44f78a0ceef3b909212f758c886ebd810fcc84" prot="public" virt="non-virtual"><scope>MyClass</scope><name>A</name></member>
+      <member refid="classMyClass_1a86528247b93dbba907f74c07a2e44f78a3e603caedd4b28ae5a7f8114282b8e64" prot="public" virt="non-virtual"><scope>MyClass</scope><name>B</name></member>
+      <member refid="classMyClass_1a86528247b93dbba907f74c07a2e44f78aa71292137ce89ff6316c959083d611de" prot="public" virt="non-virtual"><scope>MyClass</scope><name>C</name></member>
+      <member refid="classMyClass_1a86528247b93dbba907f74c07a2e44f78" prot="public" virt="non-virtual"><scope>MyClass</scope><name>InnerEnum</name></member>
+      <member refid="classMyClass_1afd372c9cf1b1dddabc4a9d99fa29f095" prot="public" virt="non-virtual"><scope>MyClass</scope><name>method</name></member>
+      <member refid="classMyClass_1a8c56a953295afdced0c95908bf2663da" prot="public" virt="non-virtual"><scope>MyClass</scope><name>MyClass</name></member>
+      <member refid="classMyClass_1adc16416be599fa5482eee8b88664e52a" prot="public" virt="non-virtual"><scope>MyClass</scope><name>MyClass</name></member>
+      <member refid="classMyClass_1a69ea749440ff50cca3274efb212924e9" prot="private" virt="non-virtual"><scope>MyClass</scope><name>privateField1</name></member>
+      <member refid="classMyClass_1af1a911b16983e94634220cd05f2b6c3d" prot="private" virt="non-virtual"><scope>MyClass</scope><name>privateField2</name></member>
+      <member refid="classMyClass_1a22e4124a30bb220b0dedf42edce1136d" prot="public" virt="non-virtual"><scope>MyClass</scope><name>publicStaticField1</name></member>
+      <member refid="classMyClass_1a923587f64bb8c5d59810c1cad7e048e2" prot="public" virt="non-virtual"><scope>MyClass</scope><name>publicStaticField2</name></member>
+      <member refid="classMyClass_1aa3c2723b0beb0b5b616e6f37c574e04a" prot="public" virt="non-virtual"><scope>MyClass</scope><name>publicStaticMethod</name></member>
+      <member refid="classMyClass_1a27034302b24daa1d0ab6faaa95a2fa1a" prot="public" virt="virtual"><scope>MyClass</scope><name>virtualMethod</name></member>
+      <member refid="classMyClass_1a6606fb204da4913509cf234eea015604" prot="public" virt="non-virtual"><scope>MyClass</scope><name>~MyClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

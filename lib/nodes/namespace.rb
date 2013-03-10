@@ -33,6 +33,6 @@ class DoxyNamespace < DoxyCompound
   private
   
   def compute_path    
-       @path = %Q{#{@dir}/namespace#{@name}.xml}    
+       @path = %Q{#{@dir}/namespace#{@name.gsub("::","_1_1")}.xml}    
   end
 end

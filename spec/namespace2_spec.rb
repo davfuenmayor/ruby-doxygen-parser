@@ -11,6 +11,7 @@ describe "DoxyNamespace" do
     @functions=[]
     @variables=[]
     @structs=[]
+    @innernamespaces=[]
     @enums=[]
   end
   
@@ -31,12 +32,13 @@ describe "DoxyNamespace" do
                   
         # name and .h file path must be correct (Visual inspection)
         puts "Function Name:   " +f.name
+        puts "Function Base Name:   " +f.basename
         puts "File Location:   " +f.location
         puts "Function Definition:   " +f.definition
         puts "Function Arguments:   " +f.args
         
         # The functions must be included in the given filter
-        @func_filter.should include f.name       
+        @func_filter.should include f.basename       
     }    
   end
     
@@ -54,6 +56,7 @@ describe "DoxyNamespace" do
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Enum Name:   " +f.name
+        puts "Enum Base Name:   " +f.basename
         puts "File Location:   " +f.location
         puts "Enum Values:   " +f.values.join(", ")
         puts "Enum  Definition:   " +f.definition                        
@@ -77,6 +80,7 @@ describe "DoxyNamespace" do
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
+        puts "Struct Base Name:   " +s.basename
         puts "File Location:   " +s.path   
     } 
   end
@@ -95,8 +99,45 @@ describe "DoxyNamespace" do
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Variable Name:   " +f.name
+        puts "Variable Name:   " +f.basename
         puts "Variable Location:   " +f.location
         puts "Variable  Definition:   " +f.definition                        
+    }    
+  end
+  
+  it "should create correctly the inner namespaces" do
+    @innernamespaces << @namespace.innernamespaces
+    @innernamespaces.flatten!
+    @innernamespaces.should_not be_empty 
+    @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated    
+    @innernamespaces.each{|f|
+        # The class of the Enum Node must be correct
+        f.class.should == DoxyNamespace
+        
+        # Enums should have a correct parent
+        f.parent.should == @namespace
+                  
+        # name and .h file path must be correct (Visual inspection)        
+        puts "Namespace Name:   " +f.name
+        puts "Namespace Base Name:   " +f.basename
+        puts "File Location:   " +f.path  
+        puts "Namespace Classes  " 
+        
+        f.classes.each{|c|
+          # Class must be correct
+          c.class.should == DoxyClass
+          
+          # Class should have a correct parent
+          c.parent.should == f
+                    
+          # XML File path must be correct
+          c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}          
+          
+          # name and .h file path must be correct (Visual inspection)        
+          puts "\tClass Name:   " +c.name
+          puts "\tClass Base Name:   " +c.basename
+          puts "\tFile Location:   " +c.path      
+        }                             
     }    
   end
 end
