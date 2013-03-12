@@ -1,17 +1,17 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyFile" do
 
   before(:all) do
-    @file=DoxyFile.new(:name=> "OgreUserObjectBindings.h",:dir=>File.expand_path("./xml"))    
+    @file=DoxyFile.new(:name=> "OgreUserObjectBindings.h",:dir=>File.expand_path(__dir__+"/xml"))
     @innerclass_filter=["Ogre::UserObjectBindings"]    
     @innerclasses=[]    
   end
   
   it "should be created consistently from name and directory" do      
-      @file.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/OgreUserObjectBindings_8h.xml}    
+      @file.path.should == __dir__+%Q{/xml/OgreUserObjectBindings_8h.xml}
   end
    
   it "should parse flawlessly the corresponding XML file" do    

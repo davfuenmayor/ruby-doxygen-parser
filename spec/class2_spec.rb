@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyClass" do
 
   before(:all) do
-    @class=DoxyClass.new(:name=> "MyNamespace::MyClass",:dir=>File.expand_path("./xml"))   
+    @class=DoxyClass.new(:name=> "MyNamespace::MyClass",:dir=>File.expand_path(__dir__+"/xml"))
     @innerenums=[]
     @innerstructs=[]
     @innerclasses=[]
@@ -25,7 +25,7 @@ describe "DoxyClass" do
         s.parent.should == @class
                   
         # XML File path must be correct
-        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
@@ -69,7 +69,7 @@ describe "DoxyClass" do
         c.parent.should == @class
         
         # XML File path must be correct
-        c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}
+        c.path.should == __dir__+%Q{/xml/#{c.refid}.xml}
         
         # Inner Class XML should parse without problems
         c.methods.should_not be_empty

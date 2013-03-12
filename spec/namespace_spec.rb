@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyNamespace" do
 
   before(:all) do
-    @namespace=DoxyNamespace.new(:name=> "Ogre",:dir=>File.expand_path("./xml"))
+    @namespace=DoxyNamespace.new(:name=> "Ogre",:dir=>File.expand_path(__dir__+"/xml"))
     @classes=[]
     @innernamespaces=[]
     @structs=[]
@@ -15,7 +15,7 @@ describe "DoxyNamespace" do
   end
   
   it "should be created consistently from name and directory" do      
-      @namespace.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/namespaceOgre.xml}    
+      @namespace.path.should == __dir__+%Q{/xml/namespaceOgre.xml}
   end
   
   it "should parse flawlessly the corresponding XML file" do    
@@ -41,7 +41,7 @@ describe "DoxyNamespace" do
         c.parent.should == @namespace
                   
         # XML File path must be correct
-        c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}
+        c.path.should == __dir__+%Q{/xml/#{c.refid}.xml}
         
         # The classes must be included in the given filter
         @filter.should include c.basename   
@@ -69,7 +69,7 @@ describe "DoxyNamespace" do
         s.parent.should == @namespace
                   
         # XML File path must be correct
-        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
@@ -94,7 +94,7 @@ describe "DoxyNamespace" do
         s.parent.should == @namespace
                   
         # XML File path must be correct
-        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Namespace Name:   " +s.name

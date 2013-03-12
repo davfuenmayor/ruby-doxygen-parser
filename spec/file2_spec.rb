@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyFile" do
 
   before(:all) do
-    @file=DoxyFile.new(:name=> "test.h",:dir=>File.expand_path("./xml"))    
+    @file=DoxyFile.new(:name=> "test.h",:dir=>File.expand_path(__dir__+"/xml"))
     @classes=[]
     @structs=[]
     @enums=[]
@@ -15,7 +15,7 @@ describe "DoxyFile" do
   end
   
   it "should be created consistently from name and directory" do      
-      @file.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/test_8h.xml}    
+      @file.path.should == __dir__+%Q{/xml/test_8h.xml}
   end
    
   it "should parse flawlessly the corresponding XML file" do    

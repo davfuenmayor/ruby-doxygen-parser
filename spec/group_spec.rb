@@ -1,17 +1,17 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyGroup" do
 
   before(:all) do
-    @group=DoxyGroup.new(:name=> "Animation",:dir=>File.expand_path("./xml"))
+    @group=DoxyGroup.new(:name=> "Animation",:dir=>File.expand_path(__dir__+"/xml"))
     @classes=[]
     @filter=["Ogre::AnimableObject", "Ogre::Bone", "Ogre::SkeletonManager"]
   end
   
   it "should be created consistently from name and directory" do      
-      @group.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/group__Animation.xml}    
+      @group.path.should == __dir__+%Q{/xml/group__Animation.xml}
   end
    
   it "should parse flawlessly the corresponding XML file" do    

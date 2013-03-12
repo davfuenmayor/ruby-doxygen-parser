@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'rspec'
-require 'ruby-doxygen-parser'
+require 'doxyparser'
 
 describe "DoxyNamespace" do
 
   before(:all) do
-    @namespace=DoxyNamespace.new(:name=> "MyNamespace",:dir=>File.expand_path("./xml"))
+    @namespace=DoxyNamespace.new(:name=> "MyNamespace",:dir=>File.expand_path(__dir__+"/xml"))
     doc=@namespace.doc
     @func_filter=["function1", "function2"]
     @functions=[]
@@ -76,7 +76,7 @@ describe "DoxyNamespace" do
         s.parent.should == @namespace
                   
         # XML File path must be correct
-        s.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{s.refid}.xml}   
+        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
@@ -131,7 +131,7 @@ describe "DoxyNamespace" do
           c.parent.should == f
                     
           # XML File path must be correct
-          c.path.should == %Q{/home/david/workspace/ruby-doxygen-parser/spec/xml/#{c.refid}.xml}          
+          c.path.should == __dir__+%Q{/xml/#{c.refid}.xml}
           
           # name and .h file path must be correct (Visual inspection)        
           puts "\tClass Name:   " +c.name
