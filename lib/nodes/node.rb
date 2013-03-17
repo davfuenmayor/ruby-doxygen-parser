@@ -16,6 +16,10 @@ class DoxyNode
     @name
   end
 
+  def to_s
+    @name
+  end
+
   def eql? another
     self.class == another.class && self.name == another.name
   end

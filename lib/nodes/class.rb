@@ -32,10 +32,6 @@ class DoxyClass < DoxyCompound
   def innerenums filter=nil, access="public"
     sectiondef=%Q{#{access}-type}
     get_enums filter, sectiondef, access
-  end 
-  
-  def file
-    get_file
   end
   
   def typedefs

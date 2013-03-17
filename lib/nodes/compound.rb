@@ -1,5 +1,9 @@
 class DoxyCompound < DoxyNode
-  
+
+  def file
+    get_file
+  end
+
   private
         
   def compute_attr
@@ -9,6 +13,8 @@ class DoxyCompound < DoxyNode
        compute_path
     end
   end
+
+
   
   
 end

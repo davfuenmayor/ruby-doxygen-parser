@@ -5,7 +5,7 @@ class DoxyMember < DoxyNode
   attr_reader :args
   
   def file
-    DoxyFile.new(:name => @file.gsub(".","_8"), :dir => @dir)
+    DoxyFile.new(:name => @file, :dir => @dir)
   end
   
   def compute_attr

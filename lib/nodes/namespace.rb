@@ -29,6 +29,10 @@ class DoxyNamespace < DoxyCompound
   def enums filter=nil, access="public"
     get_enums filter, "enum", access
   end
+
+  def file
+    nil
+  end
     
   private
   

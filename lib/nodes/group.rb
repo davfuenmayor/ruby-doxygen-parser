@@ -19,4 +19,9 @@ class DoxyGroup < DoxyCompound
   def compute_path
      @path = %Q{#{@dir}/group__#{@name}.xml}   
   end
+
+  def file
+    nil
+  end
+
 end
