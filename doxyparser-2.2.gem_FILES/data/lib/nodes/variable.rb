@@ -1,3 +1,0 @@
-class DoxyVariable < DoxyMember
-   
-end
