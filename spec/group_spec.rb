@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyGroup" do
+describe "Doxyparser::Group" do
 
   before(:all) do
-    @group=DoxyGroup.new(:name=> "Animation",:dir=>File.expand_path(__dir__+"/xml"))
+    @group=Doxyparser::Group.new(:name=> "Animation",:dir=>File.expand_path(__dir__+"/xml"))
     @classes=[]
     @filter=["Ogre::AnimableObject", "Ogre::Bone", "Ogre::SkeletonManager"]
   end
@@ -20,7 +20,7 @@ describe "DoxyGroup" do
   end
   
   it "should create the right classes according to a specified filter" do       
-    @classes.push(*@group.classes(@filter))
+    @classes.push(*@group.classes('public', @filter))
     @classes.each{|c|
       puts c.name
     }
@@ -33,7 +33,7 @@ describe "DoxyGroup" do
   it "should create correctly the classes" do    
     @classes.each{|c|
         # Class must be correct
-        c.class.should == DoxyClass
+        c.class.should == Doxyparser::Class
         
         # Class should have a correct parent
         c.parent.should == nil

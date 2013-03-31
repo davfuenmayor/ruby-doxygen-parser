@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyNamespace" do
+describe "Doxyparser::Namespace" do
 
   before(:all) do
-    @namespace=DoxyNamespace.new(:name=> "MyNamespace",:dir=>File.expand_path(__dir__+"/xml"))
+    @namespace=Doxyparser::Namespace.new(:name=> "MyNamespace",:dir=>File.expand_path(__dir__+"/xml"))
     doc=@namespace.doc
     @func_filter=["function1", "function2"]
     @functions=[]
@@ -16,7 +16,7 @@ describe "DoxyNamespace" do
   end
   
   it "should create the right functions according to a specified filter" do     
-    @functions << @namespace.functions(@func_filter)
+    @functions << @namespace.functions('public',@func_filter)
     @functions.flatten!
     @functions.should_not be_empty
     puts "Total number of functions: " + @functions.size.to_s
@@ -25,7 +25,7 @@ describe "DoxyNamespace" do
   it "should create correctly the functions" do    
     @functions.each{|f|
         # The class of the Function Node must be correct
-        f.class.should == DoxyFunction
+        f.class.should == Doxyparser::Function
         
         # Functions should have a correct parent
         f.parent.should == @namespace
@@ -49,7 +49,7 @@ describe "DoxyNamespace" do
     @enums.uniq.should == @enums               # ... and no element should be repeated    
     @enums.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == DoxyEnum
+        f.class.should == Doxyparser::Enum
         
         # Enums should have a correct parent
         f.parent.should == @namespace
@@ -70,7 +70,7 @@ describe "DoxyNamespace" do
     @structs.uniq.should == @structs
     @structs.each{|s|
         # Class must be correct
-        s.class.should == DoxyStruct
+        s.class.should == Doxyparser::Struct
         
         # Class should have a correct parent
         s.parent.should == @namespace
@@ -92,7 +92,7 @@ describe "DoxyNamespace" do
     @variables.uniq.should == @variables               # ... and no element should be repeated    
     @variables.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == DoxyVariable
+        f.class.should == Doxyparser::Variable
         
         # Enums should have a correct parent
         f.parent.should == @namespace
@@ -112,7 +112,7 @@ describe "DoxyNamespace" do
     @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated    
     @innernamespaces.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == DoxyNamespace
+        f.class.should == Doxyparser::Namespace
         
         # Enums should have a correct parent
         f.parent.should == @namespace
@@ -125,7 +125,7 @@ describe "DoxyNamespace" do
         
         f.classes.each{|c|
           # Class must be correct
-          c.class.should == DoxyClass
+          c.class.should == Doxyparser::Class
           
           # Class should have a correct parent
           c.parent.should == f

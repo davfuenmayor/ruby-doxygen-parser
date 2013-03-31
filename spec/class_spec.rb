@@ -2,10 +2,11 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyClass" do
+describe "Doxyparser::Class" do
 
   before(:all) do
-    @class=DoxyClass.new(:name=> "Ogre::UserObjectBindings",:dir=>File.expand_path(__dir__+"/xml"))
+    @class=Doxyparser::parse_class("Ogre::UserObjectBindings",File.expand_path(__dir__+"/xml"))
+    f= @class.file
     @func_filter=["UserObjectBindings", "setUserAny", "getEmptyUserAny"]
     @var_filter=["msEmptyAny", "mAttributes"]
     @enum_filter=nil
@@ -35,7 +36,7 @@ describe "DoxyClass" do
   end 
   
   it "should create the right inner classes according to a specified filter" do       
-    @innerclasses << @class.innerclasses(@innerclass_filter,"protected")
+    @innerclasses << @class.innerclasses('protected', @innerclass_filter)
     @innerclasses.flatten!  
     @innerclasses.should_not be_empty
     @innerclasses.size.should == @innerclass_filter.size     # Should return same name of elements as the filter...
@@ -45,7 +46,7 @@ describe "DoxyClass" do
   it "should create correctly the inner classes" do    
     @innerclasses.each{|c|
         # Class class must be correct
-        c.class.should == DoxyClass        
+        c.class.should == Doxyparser::Class
              
         # Class should have a correct parent
         c.parent.should == @class
@@ -61,13 +62,13 @@ describe "DoxyClass" do
   end
   
   it "should create the right methods according to a specified filter" do       
-    @functions << @class.methods(@func_filter)
+    @functions << @class.methods('public', @func_filter)
     @functions.flatten!  
     @functions.should_not be_empty       
   
     @functions.each{|f|
         # The class of the Function Node must be correct
-        f.class.should == DoxyFunction
+        f.class.should == Doxyparser::Function
         
         # Functions should have a correct parent
         f.parent.should == @class
@@ -89,8 +90,8 @@ describe "DoxyClass" do
   
     
   it "should create the right variables according to a specified filter" do       
-    @variables << @class.attributes(@var_filter[0],"private","static")
-    @variables << @class.attributes(nil,"private")
+    @variables << @class.attributes("private","static", @var_filter[0])
+    @variables << @class.attributes("private")
     @variables.flatten!  
     @variables.should_not be_empty
     @variables.size.should == @var_filter.size     # Should return same name of elements as the filter...
@@ -100,7 +101,7 @@ describe "DoxyClass" do
   it "should create correctly the variables" do    
     @variables.each{|v|
         # The class of the Function Node must be correct
-        v.class.should == DoxyVariable
+        v.class.should == Doxyparser::Variable
         
         # Functions should have a correct parent
         v.parent.should == @class

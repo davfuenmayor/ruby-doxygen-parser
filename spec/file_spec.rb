@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyFile" do
+describe "Doxyparser::HFile" do
 
   before(:all) do
-    @file=DoxyFile.new(:name=> "OgreUserObjectBindings.h",:dir=>File.expand_path(__dir__+"/xml"))
+    @file=Doxyparser::HFile.new(:name=> "OgreUserObjectBindings.h",:dir=>File.expand_path(__dir__+"/xml"))
     @innerclass_filter=["Ogre::UserObjectBindings"]    
     @innerclasses=[]    
   end
@@ -20,7 +20,7 @@ describe "DoxyFile" do
   end
   
   it "should create the right classes according to a specified filter" do 
-    var=@file.classes(@innerclass_filter)
+    var=@file.classes('public',@innerclass_filter)
     @innerclasses.push(*var) 
     
     puts "Class Name:"+ @innerclasses.class.name 
@@ -34,7 +34,7 @@ describe "DoxyFile" do
   it "should create correctly the classes" do    
     @innerclasses.each{|c|
         # Class class must be correct
-        c.class.should == DoxyClass
+        c.class.should == Doxyparser::Class
         
         # Class should have a correct parent
         c.parent.should == nil

@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyNamespace" do
+describe "Doxyparser::Namespace" do
 
   before(:all) do
-    @namespace=DoxyNamespace.new(:name=> "Ogre",:dir=>File.expand_path(__dir__+"/xml"))
+    @namespace=Doxyparser::parse_namespace("Ogre", File.expand_path(__dir__+"/xml"))
     @classes=[]
     @innernamespaces=[]
     @structs=[]
@@ -25,7 +25,7 @@ describe "DoxyNamespace" do
   
   
   it "should create the right classes according to a specified filter" do       
-    @classes << @namespace.classes(@filter)
+    @classes << @namespace.classes('public', @filter)
     @classes.flatten!  
     @classes.should_not be_empty
     @classes.size.should == @filter.size        # Should return same name of elements as the filter...
@@ -35,7 +35,7 @@ describe "DoxyNamespace" do
   it "should create correctly the classes" do    
     @classes.each{|c|
         # Class must be correct
-        c.class.should == DoxyClass
+        c.class.should == Doxyparser::Class
         
         # Class should have a correct parent
         c.parent.should == @namespace
@@ -53,7 +53,7 @@ describe "DoxyNamespace" do
     }    
   end
   it "should create the right structs" do       
-    @structs << @namespace.structs(@str_filter)
+    @structs << @namespace.structs('public', @str_filter)
     @structs.flatten!  
     @structs.should_not be_empty
     @structs.size.should == @str_filter.size        # Should return same name of elements as the filter...
@@ -63,7 +63,7 @@ describe "DoxyNamespace" do
   it "should create correctly the structs" do    
     @structs.each{|s|
         # Class must be correct
-        s.class.should == DoxyStruct
+        s.class.should == Doxyparser::Struct
         
         # Class should have a correct parent
         s.parent.should == @namespace
@@ -88,7 +88,7 @@ describe "DoxyNamespace" do
   it "should create correctly the inner namespaces" do    
     @innernamespaces.each{|s|
         # Class must be correct
-        s.class.should == DoxyNamespace
+        s.class.should == Doxyparser::Namespace
         
         # Class should have a correct parent
         s.parent.should == @namespace

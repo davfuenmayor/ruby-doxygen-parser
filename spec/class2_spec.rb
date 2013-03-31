@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyClass" do
+describe "Doxyparser::Class" do
 
   before(:all) do
-    @class=DoxyClass.new(:name=> "MyNamespace::MyClass",:dir=>File.expand_path(__dir__+"/xml"))
+    @class=Doxyparser::Class.new(:name=> "MyNamespace::MyClass",:dir=>File.expand_path(__dir__+"/xml"))
     @innerenums=[]
     @innerstructs=[]
     @innerclasses=[]
@@ -19,7 +19,7 @@ describe "DoxyClass" do
     @innerstructs.uniq.should == @innerstructs               # ... and no element should be repeated   
     @innerstructs.each{|s|
         # Class class must be correct
-        s.class.should == DoxyStruct       
+        s.class.should == Doxyparser::Struct
              
         # Class should have a correct parent
         s.parent.should == @class
@@ -41,7 +41,7 @@ describe "DoxyClass" do
     @innerenums.uniq.should == @innerenums               # ... and no element should be repeated   
     @innerenums.each{|e|
         # Class class must be correct
-        e.class.should == DoxyEnum       
+        e.class.should == Doxyparser::Enum
              
         # Class should have a correct parent
         e.parent.should == @class
@@ -63,7 +63,7 @@ describe "DoxyClass" do
     @innerclasses.uniq.should == @innerclasses               # ... and no element should be repeated          
     @innerclasses.each{|c|
         # Class class must be correct
-        c.class.should == DoxyClass        
+        c.class.should == Doxyparser::Class
              
         # Class should have a correct parent
         c.parent.should == @class

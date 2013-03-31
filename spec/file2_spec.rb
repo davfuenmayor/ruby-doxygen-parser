@@ -2,10 +2,10 @@ require 'rubygems'
 require 'rspec'
 require 'doxyparser'
 
-describe "DoxyFile" do
+describe "Doxyparser::HFile" do
 
   before(:all) do
-    @file=DoxyFile.new(:name=> "test.h",:dir=>File.expand_path(__dir__+"/xml"))
+    @file=Doxyparser::HFile.new(:name=> "test.h",:dir=>File.expand_path(__dir__+"/xml"))
     @classes=[]
     @structs=[]
     @enums=[]
@@ -31,7 +31,7 @@ describe "DoxyFile" do
     
     @classes.each{|c|
         # Class class must be correct
-        c.class.should == DoxyClass        
+        c.class.should == Doxyparser::Class
         # Class should have a correct parent
         c.parent.should == nil
                   
@@ -50,7 +50,7 @@ describe "DoxyFile" do
     
     @structs.each{|c|
         # Class class must be correct
-        c.class.should == DoxyStruct        
+        c.class.should == Doxyparser::Struct
         # Class should have a correct parent
         c.parent.should == nil
                   
@@ -69,7 +69,7 @@ describe "DoxyFile" do
     
     @namespaces.each{|c|
         # Class class must be correct
-        c.class.should == DoxyNamespace        
+        c.class.should == Doxyparser::Namespace
         # Class should have a correct parent
         c.parent.should == nil
                   
