@@ -61,7 +61,7 @@ Namespaces:
 	functions=namespace.functions('public', ["function1","function2","etc.."])
 
 
-For Classes:
+Classes:
 ================
 
 
@@ -106,7 +106,7 @@ For Classes:
 	puts file.functions # > (List of functions defined in this header file)
 
 
-For Structs:
+Structs:
 ================
 
 	my_struct = class1.innerstructs[0]
