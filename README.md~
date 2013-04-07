@@ -87,7 +87,7 @@ Classes:
 
 	puts class1.prot # > "public"
 
-	#Gets a reference to the doxygen generated XML file with the description of the class
+- Gets a reference to the doxygen generated XML file with the description of the class
 	puts class1.path # >/path/to/doxygen/generated/xml-directory/classMyNamespace_1_1Class1.xml
 
 - Gets a class' header file:

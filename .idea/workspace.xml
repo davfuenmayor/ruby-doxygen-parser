@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daf722f8-70fb-4cc3-8d6e-50259d60e39e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/nodes/hfile.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/util.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doxyparser-2.3.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/nodes/file.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/nodes/nodeset.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/parser.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MIT_LICENSE" afterPath="$PROJECT_DIR$/MIT_LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/class.rb" afterPath="$PROJECT_DIR$/lib/nodes/class.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/class2_spec.rb" afterPath="$PROJECT_DIR$/spec/class2_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/class_spec.rb" afterPath="$PROJECT_DIR$/spec/class_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/compound.rb" afterPath="$PROJECT_DIR$/lib/nodes/compound.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doxyparser.gemspec" afterPath="$PROJECT_DIR$/doxyparser.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/doxyparser.rb" afterPath="$PROJECT_DIR$/lib/doxyparser.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/enum.rb" afterPath="$PROJECT_DIR$/lib/nodes/enum.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/exception.rb" afterPath="$PROJECT_DIR$/lib/exception.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/file2_spec.rb" afterPath="$PROJECT_DIR$/spec/file2_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/file_spec.rb" afterPath="$PROJECT_DIR$/spec/file_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/function.rb" afterPath="$PROJECT_DIR$/lib/nodes/function.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/group.rb" afterPath="$PROJECT_DIR$/lib/nodes/group.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/group_spec.rb" afterPath="$PROJECT_DIR$/spec/group_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/member.rb" afterPath="$PROJECT_DIR$/lib/nodes/member.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/namespace.rb" afterPath="$PROJECT_DIR$/lib/nodes/namespace.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/namespace2_spec.rb" afterPath="$PROJECT_DIR$/spec/namespace2_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/namespace_spec.rb" afterPath="$PROJECT_DIR$/spec/namespace_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/node.rb" afterPath="$PROJECT_DIR$/lib/nodes/node.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/struct.rb" afterPath="$PROJECT_DIR$/lib/nodes/struct.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/typedef.rb" afterPath="$PROJECT_DIR$/lib/nodes/typedef.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/variable.rb" afterPath="$PROJECT_DIR$/lib/nodes/variable.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="daf722f8-70fb-4cc3-8d6e-50259d60e39e" name="Default" comment="" />
     <ignored path="ruby-doxygen-parser.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364766476173" ignored="false" />
@@ -170,7 +139,7 @@
       <file leaf-file-name="struct.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/nodes/struct.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="170" selection-end="170" vertical-scroll-proportion="0.2810903">
+            <state line="13" column="39" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3321976">
               <folding />
             </state>
           </provider>
@@ -816,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/nodes/struct.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="170" selection-end="170" vertical-scroll-proportion="0.2810903">
+        <state line="13" column="39" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3321976">
           <folding />
         </state>
       </provider>

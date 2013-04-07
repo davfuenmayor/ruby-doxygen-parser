@@ -17,30 +17,44 @@ Use Examples:
 - Parses a whole node (namespace, class, struct, header-file or doxygen-group) from Doxygen generated XML files:
 
 	xmldir= "my/path/to/doxygen/xml"
+
 	clazz = Doxyparser::parse_class("MyNamespace::MyClass", xmldir)
+
     	group = Doxyparser::parse_group("Animation", xmldir)
+
 	namespace = Doxyparser::parse_namespace("MyNamespace", xmldir)
+
 	struct = Doxyparser::parse_struct("MyNamespace::MyClass::InnerStruct", xmldir)
+
 	hfile = Doxyparser::parse_header_file("test.h", xmldir)
 
 
 - Gets a reference back to the doxygen generated XML file used to create this node
 
 	puts namespace.path # >/path/to/doxygen/generated/xml-directory/namespaceMyNamespace.xml
+
 	puts clazz.path # >/path/to/doxygen/generated/xml-directory/classMyNamespace_1_1MyClass.xml
+
 	...and similarly for other nodes
+
 
 - Gets other properties
 
 	puts struct.name # > MyNamespace::MyClass::InnerStruct
+
 	puts struct.basename # > InnerStruct
+
 	puts struct.file # > test.h
+
 	...and similarly for other nodes
+
 	
 - It is also possible to get children node objects (namespace, class, etc)
 	
 	my_methods = clazz.methods('protected')
+
 	my_class_enums = namespace.classes[0].innerenums
+
 	other_file_classes = clazz.file.classes 
 
 
@@ -50,11 +64,17 @@ Namespaces:
 - Returns all (direct) namespace members:
 
 	my_global_functions = namespace.functions # Note that the related XML file is now lazily parsed and not at object creation
+
 	my_global_variables = namespace.variables
+
 	my_classes = namespace.classes
+
 	my_inner_namespaces = namespace.innernamespaces
+
 	my_structs = namespace.structs	
+
 	my_enums = namespace.enums
+
 
 - All of the above can also make optional use of filters and access modifiers (public by default)
 
@@ -64,18 +84,23 @@ Namespaces:
 Classes:
 ================
 
-
 - Returns all (direct) class members:
 
 	my_methods = clazz.methods
+
 	my_attributes = clazz.attributes
+
 	my_inner_classes = clazz.innerclasses
+
 	my_inner_structs = clazz.innerstructs
+
 	my_inner_enums = clazz.innerenums
+
 
 - All of the above can also make optional use of filters and access modifiers (public by default)
 
 	methods=clazz.methods('protected',["method1","method2","etc.."])
+
 
 - Getting class properties:
 
@@ -88,7 +113,9 @@ Classes:
 	puts class1.prot # > "public"
 
 - Gets a reference to the doxygen generated XML file with the description of the class
+
 	puts class1.path # >/path/to/doxygen/generated/xml-directory/classMyNamespace_1_1Class1.xml
+
 
 - Gets a class' header file:
 
@@ -109,10 +136,17 @@ Classes:
 Structs:
 ================
 
+- Obtaining Structs:
+
+	my_struct = Doxyparser::parse_struct("MyNamespace::MyClass::InnerStruct", xmldir)
+
 	my_struct = class1.innerstructs[0]
+
 	my_struct.members # > (List of struct members)
 
+
 - Getting struct properties is similar to getting class' properties
+
 
 - Gets a struct header file:
 
