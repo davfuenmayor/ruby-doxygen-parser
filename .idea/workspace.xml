@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daf722f8-70fb-4cc3-8d6e-50259d60e39e" name="Default" comment="" />
+    <list default="true" id="daf722f8-70fb-4cc3-8d6e-50259d60e39e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doxyparser-0.9.gem" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/class.rb" afterPath="$PROJECT_DIR$/lib/nodes/class.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doxyparser.gemspec" afterPath="$PROJECT_DIR$/doxyparser.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/doxyparser.rb" afterPath="$PROJECT_DIR$/lib/doxyparser.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/nodes/struct.rb" afterPath="$PROJECT_DIR$/lib/nodes/struct.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ruby-doxygen-parser.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364766476173" ignored="false" />
+    <file path="/Dummy.txt" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630840005" ignored="false" />
     <file path="$PROJECT_DIR$/../RSwig/spec/main_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363443566573" ignored="false" />
     <file path="/main_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363443565884" ignored="false" />
     <file path="$PROJECT_DIR$/../RSwig/Gemfile" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363446554838" ignored="false" />
@@ -22,11 +29,11 @@
     <file path="/exception.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364746352739" ignored="false" />
     <file path="/namespace.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364750519655" ignored="false" />
     <file path="/group.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743084023" ignored="false" />
-    <file path="$PROJECT_DIR$/../RSwig/lib/api/namespace.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363537960895" ignored="false" />
+    <file path="$PROJECT_DIR$/../RSwig/lib/api/namespace.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365633570276" ignored="false" />
     <file path="$PROJECT_DIR$/../RSwig/lib/utilities.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363541592272" ignored="false" />
     <file path="/utilities.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363541512419" ignored="false" />
-    <file path="$PROJECT_DIR$/../RSwig/lib/api/file.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363544188500" ignored="false" />
-    <file path="/file.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364746901573" ignored="false" />
+    <file path="$PROJECT_DIR$/../RSwig/lib/api/file.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365633762499" ignored="false" />
+    <file path="/file.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365633204616" ignored="false" />
     <file path="$PROJECT_DIR$/../RSwig/lib/swig_utils.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363543430564" ignored="false" />
     <file path="/swig_utils.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363543393811" ignored="false" />
     <file path="$PROJECT_DIR$/../RSwig/lib/csv_parser.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363542828911" ignored="false" />
@@ -37,17 +44,17 @@
     <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-2.3/lib/nodes/class.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363545690282" ignored="false" />
     <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-2.3/lib/nodes/node.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363545690282" ignored="false" />
     <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-2.3/lib/parser.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1363545690282" ignored="false" />
-    <file path="/class.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364765956154" ignored="false" />
+    <file path="/class.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365633549222" ignored="false" />
     <file path="/compound.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743069481" ignored="false" />
     <file path="/enum.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743072870" ignored="false" />
     <file path="/function.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364749766219" ignored="false" />
     <file path="/member.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364749660424" ignored="false" />
-    <file path="/struct.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743103785" ignored="false" />
+    <file path="/struct.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365629762741" ignored="false" />
     <file path="/typedef.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743107468" ignored="false" />
     <file path="/namespace_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364765714634" ignored="false" />
     <file path="/parser.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364748493403" ignored="false" />
     <file path="/temp.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364749739159" ignored="false" />
-    <file path="/doxyparser.gemspec" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364743386059" ignored="false" />
+    <file path="/doxyparser.gemspec" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365629981181" ignored="false" />
     <file path="/doxyparser.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364755935695" ignored="false" />
     <file path="/a.dummy" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364749954491" ignored="false" />
     <file path="/util.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364751298548" ignored="false" />
@@ -57,6 +64,12 @@
     <file path="/class_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364765858715" ignored="false" />
     <file path="/doxyparser_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364762816573" ignored="false" />
     <file path="/namespace2_spec.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1364765746975" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-0.9.1/lib/util.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630717882" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-0.9.1/lib/nodes/node.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630717882" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-0.9.1/lib/nodes/hfile.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630717883" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-0.9.1/lib/nodes/member.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630717883" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-2.0.0-p0@global/gems/doxyparser-0.9.1/lib/nodes/namespace.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365630717883" ignored="false" />
+    <file path="$PROJECT_DIR$/../RSwig/lib/api/class.rb" changelist="daf722f8-70fb-4cc3-8d6e-50259d60e39e" time="1365633550074" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,42 +86,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="class2_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/class2_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="27" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/file_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="29" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file2_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/file2_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="20" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="namespace.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/nodes/namespace.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="function.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/nodes/function.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,10 +113,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struct.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="struct.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/nodes/struct.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="39" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3321976">
+            <state line="13" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doxyparser.gemspec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doxyparser.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/nodes/class.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doxyparser.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/doxyparser.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="50" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hfile.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/nodes/hfile.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="43" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.94548553">
               <folding />
             </state>
           </provider>
@@ -181,22 +194,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/nodes/function.rb" />
         <option value="$PROJECT_DIR$/lib/util.rb" />
-        <option value="$PROJECT_DIR$/lib/doxyparser.rb" />
         <option value="$PROJECT_DIR$/spec/doxyparser_spec.rb" />
         <option value="$PROJECT_DIR$/lib/nodes/group.rb" />
         <option value="$PROJECT_DIR$/lib/nodes/hfile.rb" />
-        <option value="$PROJECT_DIR$/lib/nodes/struct.rb" />
         <option value="$PROJECT_DIR$/lib/nodes/variable.rb" />
         <option value="$PROJECT_DIR$/lib/nodes/node.rb" />
         <option value="$PROJECT_DIR$/lib/nodes/namespace.rb" />
         <option value="$PROJECT_DIR$/spec/namespace_spec.rb" />
         <option value="$PROJECT_DIR$/spec/namespace2_spec.rb" />
         <option value="$PROJECT_DIR$/spec/group_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/nodes/class.rb" />
         <option value="$PROJECT_DIR$/spec/class_spec.rb" />
         <option value="$PROJECT_DIR$/spec/file_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/nodes/struct.rb" />
+        <option value="$PROJECT_DIR$/lib/nodes/class.rb" />
+        <option value="$PROJECT_DIR$/doxyparser.gemspec" />
+        <option value="$PROJECT_DIR$/lib/doxyparser.rb" />
       </list>
     </option>
   </component>
@@ -231,7 +244,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,13 +310,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RSwig" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RSwig" />
   </component>
   <component name="RunManager" selected="RSpec.doxyparser_spec">
     <configuration default="false" name="class_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
@@ -605,7 +618,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6713396" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2819149" sideWeight="0.634584" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29787233" sideWeight="0.634584" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3964111" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -678,67 +691,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/nodes/hfile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="20" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/namespace_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="42" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/nodes/group.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/group_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/nodes/class.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/class_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="46" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/class2_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="27" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="73" column="27" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/file_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="29" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/file2_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="20" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="76" column="20" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/nodes/namespace.rb">
@@ -785,7 +750,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/nodes/struct.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3321976">
+        <state line="13" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/class.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="6" selection-start="2264" selection-end="2264" vertical-scroll-proportion="0.025553662">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doxyparser.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/struct.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="841" selection-end="841" vertical-scroll-proportion="0.3321976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/nodes/class.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/doxyparser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="50" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/nodes/hfile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="43" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.94548553">
           <folding />
         </state>
       </provider>
