@@ -5,6 +5,7 @@ module Doxyparser
     attr_reader :location
     attr_reader :definition
     attr_reader :args
+    attr_reader :type
 
     def file
       HFile.new(:name => @file, :dir => @dir)
@@ -29,6 +30,12 @@ module Doxyparser
           @args = ""
         else
           @args = temp[0].child.content
+        end
+        temp = self.xpath("type")
+        if temp == nil || temp.empty? || temp[0].child==nil
+          @type = ""
+        else
+          @type = temp[0].child.content
         end
       else
         raise "No XML node was associated to this enum"
