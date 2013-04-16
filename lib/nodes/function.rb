@@ -13,20 +13,33 @@ module Doxyparser
     end
 
     def getter_for
-      ret = nil
       if @args == '()'
-        ret = @basename.start_with?(/get/i) ? m.name.gsub(/get[_]?(\w)/i){|match| $1.downcase} : nil
-        ret ||= @basename.start_with?(/is/i) ? m.name.gsub(/is[_]?(\w)/i){|match| $1.downcase} : nil
+        if @basename.start_with?('get') || @basename.start_with?('Get')
+          return @basename.gsub(/get[_]?(\w)/i){|match| $1.downcase} 
+        else 
+          return nil
+        end
+        if @basename.start_with?('is') || @basename.start_with?('Is')
+          return @basename.gsub(/is[_]?(\w)/i){|match| $1.downcase} 
+        else 
+          return nil
+        end
+      else
+        return nil
       end
-      ret
     end
 
     def setter_for
       ret = nil
       if @type == 'void'
-        ret = @basename.start_with?(/set/i) ? m.name.gsub(/set[_]?(\w)/i){|match| $1.downcase} : nil
+        if @basename.start_with?('set') || @basename.start_with?('Set')
+          return @basename.gsub(/set[_]?(\w)/i){|match| $1.downcase}
+        else 
+          return nil
+        end
+      else
+        return nil
       end
-      ret
     end
 
     private
