@@ -1,6 +1,18 @@
 module Doxyparser
 
   class HFile < Compound
+    
+    def includes local=true
+      local = local ? 'yes' : 'no' 
+      lst=doc.xpath(%Q{/doxygen/compounddef/includes[@local="#{local}"]})
+      lst.map { |f| escape_file_name f['refid'] }
+    end
+    
+    def included_by local=true
+      local = local ? 'yes' : 'no' 
+      lst=doc.xpath(%Q{/doxygen/compounddef/includedby[@local="#{local}"]})
+      lst.map { |f| escape_file_name f['refid'] }
+    end
 
     def classes access="public", filter=nil
       lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})

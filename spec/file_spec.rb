@@ -17,6 +17,8 @@ describe "Doxyparser::HFile" do
   it "should parse flawlessly the corresponding XML file" do    
     doc=@file.doc
     doc.class.should == Nokogiri::XML::Document
+    puts 'Includes: \n' + @file.includes.join(', ')
+    puts 'Included by: \n' + @file.included_by.join(', ')
   end
   
   it "should create the right classes according to a specified filter" do 
