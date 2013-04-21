@@ -25,10 +25,10 @@ describe "Doxyparser::Namespace" do
   it "should create correctly the functions" do    
     @functions.each{|f|
         # The class of the Function Node must be correct
-        f.class.should == Doxyparser::Function
+        f.class.should eql Doxyparser::Function
         
         # Functions should have a correct parent
-        f.parent.should == @namespace
+        f.parent.should eql @namespace
                   
         # name and .h file path must be correct (Visual inspection)
         puts "Function Name:   " +f.name
@@ -46,13 +46,13 @@ describe "Doxyparser::Namespace" do
     @enums << @namespace.enums
     @enums.flatten!
     @enums.should_not be_empty 
-    @enums.uniq.should == @enums               # ... and no element should be repeated    
+    @enums.uniq.should eql @enums               # ... and no element should be repeated    
     @enums.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == Doxyparser::Enum
+        f.class.should eql Doxyparser::Enum
         
         # Enums should have a correct parent
-        f.parent.should == @namespace
+        f.parent.should eql @namespace
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Enum Name:   " +f.name
@@ -67,16 +67,16 @@ describe "Doxyparser::Namespace" do
     @structs << @namespace.structs
     @structs.flatten!  
     @structs.should_not be_empty    
-    @structs.uniq.should == @structs
+    @structs.uniq.should eql @structs
     @structs.each{|s|
         # Class must be correct
-        s.class.should == Doxyparser::Struct
+        s.class.should eql Doxyparser::Struct
         
         # Class should have a correct parent
-        s.parent.should == @namespace
+        s.parent.should eql @namespace
                   
         # XML File path must be correct
-        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
+        s.path.should eql __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
@@ -89,13 +89,13 @@ describe "Doxyparser::Namespace" do
     @variables << @namespace.variables
     @variables.flatten!
     @variables.should_not be_empty 
-    @variables.uniq.should == @variables               # ... and no element should be repeated    
+    @variables.uniq.should eql @variables               # ... and no element should be repeated    
     @variables.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == Doxyparser::Variable
+        f.class.should eql Doxyparser::Variable
         
         # Enums should have a correct parent
-        f.parent.should == @namespace
+        f.parent.should eql @namespace
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Variable Name:   " +f.name
@@ -109,13 +109,13 @@ describe "Doxyparser::Namespace" do
     @innernamespaces << @namespace.innernamespaces
     @innernamespaces.flatten!
     @innernamespaces.should_not be_empty 
-    @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated    
+    @innernamespaces.uniq.should eql @innernamespaces               # ... and no element should be repeated    
     @innernamespaces.each{|f|
         # The class of the Enum Node must be correct
-        f.class.should == Doxyparser::Namespace
+        f.class.should eql Doxyparser::Namespace
         
         # Enums should have a correct parent
-        f.parent.should == @namespace
+        f.parent.should eql @namespace
                   
         # name and .h file path must be correct (Visual inspection)        
         puts "Namespace Name:   " +f.name
@@ -125,13 +125,13 @@ describe "Doxyparser::Namespace" do
         
         f.classes.each{|c|
           # Class must be correct
-          c.class.should == Doxyparser::Class
+          c.class.should eql Doxyparser::Class
           
           # Class should have a correct parent
-          c.parent.should == f
+          c.parent.should eql f
                     
           # XML File path must be correct
-          c.path.should == __dir__+%Q{/xml/#{c.refid}.xml}
+          c.path.should eql __dir__+%Q{/xml/#{c.refid}.xml}
           
           # name and .h file path must be correct (Visual inspection)        
           puts "\tClass Name:   " +c.name

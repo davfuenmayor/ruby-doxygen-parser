@@ -15,12 +15,12 @@ describe "Doxyparser::Namespace" do
   end
   
   it "should be created consistently from name and directory" do      
-      @namespace.path.should == __dir__+%Q{/xml/namespaceOgre.xml}
+      @namespace.path.should eql __dir__+%Q{/xml/namespaceOgre.xml}
   end
   
   it "should parse flawlessly the corresponding XML file" do    
     doc=@namespace.doc
-    doc.class.should == Nokogiri::XML::Document    
+    doc.class.should eql Nokogiri::XML::Document    
   end
   
   
@@ -28,20 +28,20 @@ describe "Doxyparser::Namespace" do
     @classes << @namespace.classes('public', @filter)
     @classes.flatten!  
     @classes.should_not be_empty
-    @classes.size.should == @filter.size        # Should return same name of elements as the filter...
-    @classes.uniq.should == @classes               # ... and no element should be repeated        
+    @classes.size.should eql @filter.size        # Should return same name of elements as the filter...
+    @classes.uniq.should eql @classes               # ... and no element should be repeated        
   end
   
   it "should create correctly the classes" do    
     @classes.each{|c|
         # Class must be correct
-        c.class.should == Doxyparser::Class
+        c.class.should eql Doxyparser::Class
         
         # Class should have a correct parent
-        c.parent.should == @namespace
+        c.parent.should eql @namespace
                   
         # XML File path must be correct
-        c.path.should == __dir__+%Q{/xml/#{c.refid}.xml}
+        c.path.should eql __dir__+%Q{/xml/#{c.refid}.xml}
         
         # The classes must be included in the given filter
         @filter.should include c.basename   
@@ -56,20 +56,20 @@ describe "Doxyparser::Namespace" do
     @structs << @namespace.structs('public', @str_filter)
     @structs.flatten!  
     @structs.should_not be_empty
-    @structs.size.should == @str_filter.size        # Should return same name of elements as the filter...
-    @structs.uniq.should == @structs               # ... and no element should be repeated        
+    @structs.size.should eql @str_filter.size        # Should return same name of elements as the filter...
+    @structs.uniq.should eql @structs               # ... and no element should be repeated        
   end
   
   it "should create correctly the structs" do    
     @structs.each{|s|
         # Class must be correct
-        s.class.should == Doxyparser::Struct
+        s.class.should eql Doxyparser::Struct
         
         # Class should have a correct parent
-        s.parent.should == @namespace
+        s.parent.should eql @namespace
                   
         # XML File path must be correct
-        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
+        s.path.should eql __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Struct Name:   " +s.name
@@ -82,19 +82,19 @@ describe "Doxyparser::Namespace" do
     @innernamespaces << @namespace.innernamespaces(@inner_ns_filter)
     @innernamespaces.flatten!  
     @innernamespaces.should_not be_empty
-    @innernamespaces.uniq.should == @innernamespaces               # ... and no element should be repeated        
+    @innernamespaces.uniq.should eql @innernamespaces               # ... and no element should be repeated        
   end
   
   it "should create correctly the inner namespaces" do    
     @innernamespaces.each{|s|
         # Class must be correct
-        s.class.should == Doxyparser::Namespace
+        s.class.should eql Doxyparser::Namespace
         
         # Class should have a correct parent
-        s.parent.should == @namespace
+        s.parent.should eql @namespace
                   
         # XML File path must be correct
-        s.path.should == __dir__+%Q{/xml/#{s.refid}.xml}
+        s.path.should eql __dir__+%Q{/xml/#{s.refid}.xml}
         
         # name and .h file path must be correct (Visual inspection)        
         puts "Namespace Name:   " +s.name

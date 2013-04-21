@@ -15,25 +15,25 @@ describe "Doxyparser::HFile" do
   end
   
   it "should be created consistently from name and directory" do      
-      @file.path.should == __dir__+%Q{/xml/test_8h.xml}
+      @file.path.should eql __dir__+%Q{/xml/test_8h.xml}
   end
    
   it "should parse flawlessly the corresponding XML file" do    
     doc=@file.doc
-    doc.class.should == Nokogiri::XML::Document
+    doc.class.should eql Nokogiri::XML::Document
   end
   
   it "should create correctly the classes" do 
     var=@file.classes
     @classes.push(*var)           
     @classes.should_not be_empty
-    @classes.uniq.should == @classes               # ... and no element should be repeated
+    @classes.uniq.should eql @classes               # ... and no element should be repeated
     
     @classes.each{|c|
         # Class class must be correct
-        c.class.should == Doxyparser::Class
+        c.class.should eql Doxyparser::Class
         # Class should have a correct parent
-        c.parent.should == nil
+        c.parent.should eql nil
                   
         # name and file path must be correct (Visual inspection)        
         puts "Class Name:   " +c.name
@@ -46,13 +46,13 @@ describe "Doxyparser::HFile" do
     var=@file.structs
     @structs.push(*var)           
     @structs.should_not be_empty
-    @structs.uniq.should == @structs               # ... and no element should be repeated
+    @structs.uniq.should eql @structs               # ... and no element should be repeated
     
     @structs.each{|c|
         # Class class must be correct
-        c.class.should == Doxyparser::Struct
+        c.class.should eql Doxyparser::Struct
         # Class should have a correct parent
-        c.parent.should == nil
+        c.parent.should eql nil
                   
         # name and file path must be correct (Visual inspection)        
         puts "Struct Name:   " +c.name
@@ -65,13 +65,13 @@ describe "Doxyparser::HFile" do
     var=@file.namespaces
     @namespaces.push(*var)           
     @namespaces.should_not be_empty
-    @namespaces.uniq.should == @namespaces               # ... and no element should be repeated
+    @namespaces.uniq.should eql @namespaces               # ... and no element should be repeated
     
     @namespaces.each{|c|
         # Class class must be correct
-        c.class.should == Doxyparser::Namespace
+        c.class.should eql Doxyparser::Namespace
         # Class should have a correct parent
-        c.parent.should == nil
+        c.parent.should eql nil
                   
         # name and file path must be correct (Visual inspection)        
         puts "Namepace Name:   " +c.name

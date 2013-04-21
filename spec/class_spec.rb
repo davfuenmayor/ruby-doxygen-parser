@@ -79,8 +79,12 @@ describe "Doxyparser::Class" do
         puts "Function Definition:   " +f.definition
         puts "Function Args   " +f.args
         puts "Constructor?   " +f.constructor?.to_s
-        puts "Destructor?   " +f.destructor?.to_s  
-        puts "Function Params:   " +f.params.join(",")
+        puts "Destructor?   " +f.destructor?.to_s
+        puts "Function Params:" 
+        f.params.each { |param|
+           puts param.type + ' ' + param.decl_name
+        } 
+        
         puts "File Location:   " +f.path
         
         # The functions must be included in the given filter

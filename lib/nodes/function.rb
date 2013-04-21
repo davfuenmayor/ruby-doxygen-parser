@@ -52,9 +52,13 @@ module Doxyparser
       return
       end
       all_params.each { |param|
-        temp = ""
-        param.xpath("type//text()").each { |n| temp << n.content }
-        @params << temp
+        decl_name= param.xpath("declname")
+        if decl_name == nil || decl_name.empty? || decl_name[0].child==nil
+           decl_name = ""
+         else
+           decl_name = decl_name[0]
+        end
+        @params << Param.new(find_type(param),decl_name)  
       }
     end
   end

@@ -31,15 +31,18 @@ module Doxyparser
         else
           @args = temp[0].child.content
         end
-        temp = self.xpath("type")
-        if temp == nil || temp.empty? || temp[0].child==nil
-          @type = ""
-        else
-          @type = temp[0].child.content
-        end
+        @type = find_type @node
       else
         raise "No XML node was associated to this enum"
       end
+    end
+
+    def find_type n
+      type = nil
+      temp = n.xpath("type")
+      return "" if temp.nil? || temp.empty? || temp[0].child==nil
+      temp_ref = temp[0].xpath("ref")
+      type = temp[0].content
     end
   end
 end

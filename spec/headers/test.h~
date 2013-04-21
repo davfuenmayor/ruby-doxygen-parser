@@ -69,7 +69,7 @@ class MyClass {
 	    ~MyClass(){};
 	    MyClass(double * xc){};
 
-	    virtual double virtualMethod(UnknownType *, int& ut, InnerStruct * is);
+	    virtual double virtualMethod(UnknownType *, int& ut, InnerStruct *is);
 
 	    UnknownType2 method(InnerStruct &);
 

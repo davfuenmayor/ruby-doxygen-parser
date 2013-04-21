@@ -11,12 +11,12 @@ describe "Doxyparser::HFile" do
   end
   
   it "should be created consistently from name and directory" do      
-      @file.path.should == __dir__+%Q{/xml/OgreUserObjectBindings_8h.xml}
+      @file.path.should eql __dir__+%Q{/xml/OgreUserObjectBindings_8h.xml}
   end
    
   it "should parse flawlessly the corresponding XML file" do    
     doc=@file.doc
-    doc.class.should == Nokogiri::XML::Document
+    doc.class.should eql Nokogiri::XML::Document
     puts 'Includes: \n' + @file.includes.join(', ')
     puts 'Included by: \n' + @file.included_by.join(', ')
   end
@@ -29,17 +29,17 @@ describe "Doxyparser::HFile" do
     puts "InnerClasses to String:"+ @innerclasses.to_s   
      
     @innerclasses.should_not be_empty
-    @innerclasses.size.should == @innerclass_filter.size     # Should return same name of elements as the filter...
-    @innerclasses.uniq.should == @innerclasses               # ... and no element should be repeated  
+    @innerclasses.size.should eql @innerclass_filter.size     # Should return same name of elements as the filter...
+    @innerclasses.uniq.should eql @innerclasses               # ... and no element should be repeated  
   end
   
   it "should create correctly the classes" do    
     @innerclasses.each{|c|
         # Class class must be correct
-        c.class.should == Doxyparser::Class
+        c.class.should eql Doxyparser::Class
         
         # Class should have a correct parent
-        c.parent.should == nil
+        c.parent.should eql nil
                   
         # name and file path must be correct (Visual inspection)        
         puts "Inner Class Name:   " +c.name
