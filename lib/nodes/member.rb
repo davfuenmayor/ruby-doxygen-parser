@@ -6,6 +6,8 @@ module Doxyparser
     attr_reader :definition
     attr_reader :args
     attr_reader :type
+    attr_reader :static
+    
 
     def file
       HFile.new(:name => @file, :dir => @dir)
@@ -16,6 +18,9 @@ module Doxyparser
     def compute_attr
       if @node
         @path=@dir
+        if @node['static']
+          @static = (@node['static'] == 'yes') ? 'static' : nil
+        end
         aux= self.xpath("location")[0]
         @file=File.basename(aux["file"])
         @location=%Q{#{aux["file"]}:#{aux["line"]}}
@@ -33,7 +38,7 @@ module Doxyparser
         end
         @type = find_type @node
       else
-        raise "No XML node was associated to this enum"
+        raise "No XML node was associated to this member"
       end
     end
 

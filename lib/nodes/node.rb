@@ -16,7 +16,7 @@ module Doxyparser
     end
 
     def eql? another
-      self.class == another.class && self.name == another.name
+      self.name == another.name
     end
 
     def to_str

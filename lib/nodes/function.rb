@@ -15,31 +15,22 @@ module Doxyparser
     def getter_for
       if @params.empty? || (@params.size == 1 && @params[0].type =~ /\s*void\s*/)
         if @basename.start_with?('get') || @basename.start_with?('Get')
-          return @basename.gsub(/get[_]?(\w)/i){|match| $1.downcase}
-        else
-          return nil
+          return @basename.gsub(/get[_]?(\w)/i){|match| $1.downcase}        
         end
         if @basename.start_with?('is') || @basename.start_with?('Is')
           return @basename.gsub(/is[_]?(\w)/i){|match| $1.downcase}
-        else
-          return nil
         end
-      else
-        return nil
-      end
+      end           
+      return nil
     end
 
     def setter_for
-      ret = nil
       if @type == 'void'
         if @basename.start_with?('set') || @basename.start_with?('Set')
-          return @basename.gsub(/set[_]?(\w)/i){|match| $1.downcase}
-        else
-          return nil
-        end
-      else
-        return nil
+          return @basename.gsub(/set[_]?(\w)/i){|match| $1.downcase}        
+        end      
       end
+      return nil
     end
 
     private
