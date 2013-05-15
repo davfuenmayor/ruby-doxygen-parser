@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classMyNamespace_1_1TemplateClass" kind="class" prot="public">
+    <compoundname>MyNamespace::TemplateClass</compoundname>
+    <includes refid="test1_8h" local="no">test1.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>entero</declname>
+        <defname>entero</defname>
+        <defval>5</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" prot="protected" static="no">
+        <type>std::list&lt; TYPE &gt;::value_type</type>
+        <definition>typedef std::list&lt;TYPE&gt;::value_type MyNamespace::TemplateClass&lt; TYPE, entero &gt;::ItemList</definition>
+        <argsstring></argsstring>
+        <name>ItemList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="83" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" prot="protected" static="no" mutable="no">
+        <type><ref refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" kindref="member">ItemList</ref></type>
+        <definition>ItemList MyNamespace::TemplateClass&lt; TYPE, entero &gt;::mItems</definition>
+        <argsstring></argsstring>
+        <name>mItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="84" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyNamespace::TemplateClass&lt; TYPE, entero &gt;::TemplateClass</definition>
+        <argsstring>()</argsstring>
+        <name>TemplateClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="87" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual MyNamespace::TemplateClass&lt; TYPE, entero &gt;::~TemplateClass</definition>
+        <argsstring>()</argsstring>
+        <name>~TemplateClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="88" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::pair&lt; bool, TYPE &gt;</type>
+        <definition>virtual std::pair&lt;bool, TYPE&gt; MyNamespace::TemplateClass&lt; TYPE, entero &gt;::removeItem</definition>
+        <argsstring>()</argsstring>
+        <name>removeItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="89" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="81" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="81" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>ItemList</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>mItems</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>removeItem</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" prot="public" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>TemplateClass</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>~TemplateClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

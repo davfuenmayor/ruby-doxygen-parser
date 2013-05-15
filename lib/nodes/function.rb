@@ -1,8 +1,24 @@
 module Doxyparser
 
   class Function < Member
+  	
+  	def == another
+  			 super
+      self.args == another.args
+    end
 
-    attr_reader :params
+    def eql? another
+    	 super
+      self.args == another.args
+    end
+
+    def to_str
+    	 super + @args
+    end
+
+    def to_s
+    		super + @args
+    end
 
     def constructor?
       @basename==parent.basename
@@ -31,26 +47,6 @@ module Doxyparser
         end      
       end
       return nil
-    end
-
-    private
-
-    def compute_attr
-      super
-      @params=[]
-      all_params= self.xpath("param")
-      if all_params == nil || all_params.empty? || all_params[0].child==nil
-      return
-      end
-      all_params.each { |param|
-        decl_name= param.xpath("declname")
-        if decl_name == nil || decl_name.empty? || decl_name[0].child==nil
-          decl_name = ""
-        else
-        decl_name = decl_name[0]
-        end
-        @params << Param.new(find_type(param),decl_name)
-      }
     end
   end
 end

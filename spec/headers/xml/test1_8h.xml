@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="test1_8h" kind="file">
+    <compoundname>test1.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">list</includes>
+    <includes local="no">map</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="test3_8h" local="yes">test3.h</includes>
+    <includedby refid="test3_8h" local="yes">test3.h</includedby>
+    <includedby refid="test2_8h" local="yes">test2.h</includedby>
+    <includedby refid="test4_8h" local="yes">test4.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>list</label>
+      </node>
+      <node id="1">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>test3.h</label>
+        <link refid="test3_8h"/>
+        <childnode refid="0" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="0">
+        <label>test1.h</label>
+        <link refid="test1.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>test2.h</label>
+        <link refid="test2_8h"/>
+      </node>
+      <node id="8">
+        <label>test3.h</label>
+        <link refid="test3_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>test4.h</label>
+        <link refid="test4_8h"/>
+      </node>
+      <node id="7">
+        <label>test1.h</label>
+        <link refid="test1.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnoNsStruct" prot="public">noNsStruct</innerclass>
+    <innerclass refid="classnoNsClass" prot="public">noNsClass</innerclass>
+    <innerclass refid="structMyNamespace_1_1OuterStruct" prot="public">MyNamespace::OuterStruct</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" prot="public">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</innerclass>
+    <innerclass refid="classMyNamespace_1_1TemplateClass" prot="public">MyNamespace::TemplateClass</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyClass" prot="public">MyNamespace::MyClass</innerclass>
+    <innerclass refid="structMyNamespace_1_1MyClass_1_1InnerStruct" prot="public">MyNamespace::MyClass::InnerStruct</innerclass>
+    <innerclass refid="classMyNamespace_1_1MyClass_1_1InnerClass" prot="public">MyNamespace::MyClass::InnerClass</innerclass>
+    <innernamespace refid="namespaceMyNamespace">MyNamespace</innernamespace>
+    <innernamespace refid="namespaceMyNamespace_1_1MyInnerNamespace">MyNamespace::MyInnerNamespace</innernamespace>
+    <innernamespace refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace">MyNamespace::MyInnerNamespace::MyMostInnerNamespace</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" prot="public" static="no">
+        <name>noNsEnum</name>
+        <enumvalue id="test1_8h_1ada63d817711fcba667c8b01c2aa232aea382ee855180652976e01061da0a7e5d8" prot="public">
+          <name>WW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="test1_8h_1ada63d817711fcba667c8b01c2aa232aea872a756ecc227f3c58ba33fb2693c93c" prot="public">
+          <name>XX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="test1_8h_1ada63d817711fcba667c8b01c2aa232aea02a5bc00d09cfef430fcdba8521b369f" prot="public">
+          <name>ZZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="17" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="test1_8h_1a2c917a95890db72b69173e1692a3c726" prot="public" static="no">
+        <type>double *</type>
+        <definition>typedef double* noNsTypedef</definition>
+        <argsstring></argsstring>
+        <name>noNsTypedef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="15" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test1_8h_1a817b89b4957f80e2c5426c08a67d99c0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double noNsVariable</definition>
+        <argsstring></argsstring>
+        <name>noNsVariable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="13" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test1_8h_1a6f5fae35ae7828c1cfc1d966b03c3b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double noNsFunction</definition>
+        <argsstring>(float &amp;f)</argsstring>
+        <name>noNsFunction</name>
+        <param>
+          <type>float &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test3_8h" kindref="compound">test3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="test1_8h_1a6f5fae35ae7828c1cfc1d966b03c3b9a" kindref="member">noNsFunction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="test1_8h_1a817b89b4957f80e2c5426c08a67d99c0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="test1_8h_1a817b89b4957f80e2c5426c08a67d99c0" kindref="member">noNsVariable</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="test1_8h_1a2c917a95890db72b69173e1692a3c726" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="test1_8h_1a2c917a95890db72b69173e1692a3c726" kindref="member">noNsTypedef</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" kindref="member">noNsEnum</ref>{</highlight></codeline>
+<codeline lineno="18" refid="test1_8h_1ada63d817711fcba667c8b01c2aa232aea02a5bc00d09cfef430fcdba8521b369f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test1_8h_1ada63d817711fcba667c8b01c2aa232aea382ee855180652976e01061da0a7e5d8" kindref="member">WW</ref>,<sp/><ref refid="test1_8h_1ada63d817711fcba667c8b01c2aa232aea872a756ecc227f3c58ba33fb2693c93c" kindref="member">XX</ref>,<sp/><ref refid="test1_8h_1ada63d817711fcba667c8b01c2aa232aea02a5bc00d09cfef430fcdba8521b369f" kindref="member">ZZ</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structnoNsStruct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnoNsStruct" kindref="compound">noNsStruct</ref>{</highlight></codeline>
+<codeline lineno="22" refid="structnoNsStruct_1af162f31553a3c1906cc1e562b045af67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" kindref="member">noNsEnum</ref><sp/><ref refid="structnoNsStruct_1af162f31553a3c1906cc1e562b045af67" kindref="member">zz</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structnoNsStruct_1a2510136cac46aaca808d3486d9492686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structnoNsStruct_1a2510136cac46aaca808d3486d9492686" kindref="member">yy</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classnoNsClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnoNsClass" kindref="compound">noNsClass</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classnoNsClass_1a16dc8e60fe9da31538dfe75d383921f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnoNsClass_1a16dc8e60fe9da31538dfe75d383921f6" kindref="member">publicStaticField1</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classnoNsClass_1a2bfbf28085c32933ec04c7064e39d4fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnoNsClass_1a2bfbf28085c32933ec04c7064e39d4fd" kindref="member">noNsClass</ref>(){};</highlight></codeline>
+<codeline lineno="30" refid="classnoNsClass_1ac71efcff7af58149202533b338e0b29c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnoNsClass_1ac71efcff7af58149202533b338e0b29c" kindref="member">~noNsClass</ref>(){};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespaceMyNamespace" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">MyNamespace<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kindref="member">OuterEnum</ref>{</highlight></codeline>
+<codeline lineno="41" refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a5756c85cc2d287ede06fb0475a95f6da" kindref="member">AA</ref>,<sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488a323375113cdbd3fef25faf12e02f6846" kindref="member">BB</ref>,<sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488ab531e2eccf703531c1ab5cc92b2901da" kindref="member">CC</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefad1148b380ccdbd6d4329b23c5da520c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefae5089681a996c6d0a0f2fbd00921b66d" kindref="member">value1</ref>,<sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefa90a57cec3e13eda21d5e3d003a7368db" kindref="member">value2</ref>,<sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefad1148b380ccdbd6d4329b23c5da520c9" kindref="member">value3</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structMyNamespace_1_1OuterStruct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>{</highlight></codeline>
+<codeline lineno="49" refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kindref="member">OuterEnum</ref><sp/><ref refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" kindref="member">aa</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" kindref="member">bb</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="namespaceMyNamespace_1_1MyInnerNamespace" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">MyInnerNamespace<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/><ref refid="namespaceMyNamespace_1ada81689a4999a5b2a26da47a9070a38d" kindref="member">function1</ref>(<ref refid="classnoNsClass" kindref="compound">noNsClass</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">MyMostInnerNamespace<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kindref="compound">MyClass</ref>(<ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>&amp;){};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7c" kindref="member">MyEnum</ref>{</highlight></codeline>
+<codeline lineno="64" refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca33188583e2e5671b99936f01071e79c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca3fd157ace3a41238be06ec1e1da7d5e7" kindref="member">A2</ref>,<sp/><ref refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca1f4934db950cdc076ee6434046dec457" kindref="member">B2</ref>,<sp/><ref refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca33188583e2e5671b99936f01071e79c8" kindref="member">C2</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespaceMyNamespace_1a9eb8a60c2ffcd0a074af24af9e6f5367" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kindref="compound">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</ref><sp/><ref refid="namespaceMyNamespace_1a9eb8a60c2ffcd0a074af24af9e6f5367" kindref="member">MyMostInnerClass</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref><sp/><ref refid="namespaceMyNamespace_1ada81689a4999a5b2a26da47a9070a38d" kindref="member">function1</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="namespaceMyNamespace_1aa893ce95b9c6dda8b40a51d6fd44bb2f" kindref="member">function2</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/><ref refid="namespaceMyNamespace_1a5fccd15fa2d7723cf887f63a048b5c6c" kindref="member">function3</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceMyNamespace_1af32b19177fbb65ca224fb3c96602ef19" kindref="member">globalVariable</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TYPE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>entero=5&gt;</highlight></codeline>
+<codeline lineno="81" refid="classMyNamespace_1_1TemplateClass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1TemplateClass" kindref="compound">TemplateClass</ref><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83" refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::list&lt;TYPE&gt;::value_type<sp/><ref refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" kindref="member">ItemList</ref>;</highlight></codeline>
+<codeline lineno="84" refid="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" kindref="member">ItemList</ref><sp/><ref refid="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" kindref="member">mItems</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87" refid="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" kindref="member">TemplateClass</ref>()<sp/>{}<sp/></highlight></codeline>
+<codeline lineno="88" refid="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" kindref="member">~TemplateClass</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="89" refid="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;bool,<sp/>TYPE&gt;<sp/><ref refid="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" kindref="member">removeItem</ref>(){}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classMyNamespace_1_1MyClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1TemplateClass" kindref="compound">TemplateClass</ref>&lt;OuterStruct<sp/>*&gt;<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>*<sp/>privateField1;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>privateField2;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>*<sp/>privateMethod1();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>privateMethod2(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>privateStaticMethod();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;MyMostInnerClass&gt;<sp/>vectorMyClass;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" kindref="member">protectedField1</ref>;</highlight></codeline>
+<codeline lineno="107" refid="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" kindref="member">protectedField2</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>*<sp/>protectedMethod1();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>protectedMethod2(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112" refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass" kindref="compound">InnerClass</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;unsigned<sp/>short,<sp/>std::vector&lt;<sp/>int*<sp/>&gt;<sp/>&gt;<sp/><ref refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" kindref="member">MapShortVectorInt</ref>;</highlight></codeline>
+<codeline lineno="117" refid="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;MapShortVectorInt&gt;<sp/><ref refid="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" kindref="member">VectorMapShortVectorInt</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="classMyNamespace_1_1MyClass_1ab941c40f4b9f3c0683e5896774bbdef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>*<sp/><ref refid="classMyNamespace_1_1MyClass_1ab941c40f4b9f3c0683e5896774bbdef2" kindref="member">publicStaticField1</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>publicStaticMethod(<ref refid="classMyNamespace_1_1MyClass_1_1InnerClass" kindref="compound">InnerClass</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124" refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074ca2164660f49d0c30ff1418d7c3c125931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefae5089681a996c6d0a0f2fbd00921b66d" kindref="member">value1</ref>,<sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefa90a57cec3e13eda21d5e3d003a7368db" kindref="member">value2</ref>,<sp/><ref refid="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbefad1148b380ccdbd6d4329b23c5da520c9" kindref="member">value3</ref></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" kindref="member">InnerEnum</ref>{</highlight></codeline>
+<codeline lineno="128" refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A,<sp/>B,<sp/>C</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structMyNamespace_1_1MyClass_1_1InnerStruct" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kindref="compound">InnerStruct</ref>{</highlight></codeline>
+<codeline lineno="132" refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref><sp/>*<ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="133" refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classMyNamespace_1_1MyClass_1_1InnerClass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass" kindref="compound">InnerClass</ref>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="138" refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a1b4e0bd26066cfd2c91fbeafaecfb579" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>*<sp/><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a1b4e0bd26066cfd2c91fbeafaecfb579" kindref="member">innerClassAttr</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>innerClassMethod(UnknownType<sp/>ut);</highlight></codeline>
+<codeline lineno="140" refid="classMyNamespace_1_1MyClass_1_1InnerClass_1aaa439412ad79bb7b8ea1d86e707fa12f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass_1aaa439412ad79bb7b8ea1d86e707fa12f" kindref="member">InnerClass</ref>(){};</highlight></codeline>
+<codeline lineno="141" refid="classMyNamespace_1_1MyClass_1_1InnerClass_1aeac18792c46d328b3665da34f80bac5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1_1InnerClass_1aeac18792c46d328b3665da34f80bac5e" kindref="member">~InnerClass</ref>(){};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1a2e8f5e2ec891898a4796c3a00bfde55c" kindref="member">MyClass</ref>(){};</highlight></codeline>
+<codeline lineno="145" refid="classMyNamespace_1_1MyClass_1a16f635616daa6858e69565111d047d6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1a16f635616daa6858e69565111d047d6e" kindref="member">MyClass</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>xc){};</highlight></codeline>
+<codeline lineno="146" refid="classMyNamespace_1_1MyClass_1aba29d70658602849637a9776e32fa24f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass_1aba29d70658602849637a9776e32fa24f" kindref="member">~MyClass</ref>(){};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>virtualMethod(UnknownType<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ut,<sp/><ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kindref="compound">MyNamespace::MyClass::InnerStruct</ref><sp/>*<sp/>is);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kindref="compound">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</ref><sp/>method(InnerStruct<sp/>&amp;);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBoolProp();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>*<sp/>getProp();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProp(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>getStaticProp();<sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStaticProp(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>obj);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>operator-<sp/>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>operator<sp/>*<sp/>(<sp/>std::list&lt;void<sp/>*&gt;<sp/>myList,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>&amp;<sp/>rkVector<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>InnerStruct**<sp/>MyNamespace::friendMethod(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="classMyNamespace_1_1MyClass_1a4be8a3cb53d1e61f52751307ce7f9ff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h"/>
+  </compounddef>
+</doxygen>

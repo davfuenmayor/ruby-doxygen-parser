@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classDummyClass3" kind="class" prot="public">
+    <compoundname>DummyClass3</compoundname>
+    <includes refid="test4_8h" local="no">test4.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test4.h" line="5" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test4.h" bodystart="5" bodyend="5"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

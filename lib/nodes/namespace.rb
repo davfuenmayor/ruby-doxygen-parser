@@ -2,35 +2,59 @@ module Doxyparser
 
   class Namespace < Compound
 
-    def functions access="public", filter=nil
-      sectiondef = "func"
-      get_functions filter, sectiondef, access
+    def functions filter=nil
+      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="func"]/memberdef[@kind="function"]})
+      do_filter(filter, lst, Doxyparser::Function) { |node|
+         node.xpath("name")[0].child.content.strip
+      }
+    end
+    
+    def enums filter=nil
+      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"]})
+      do_filter(filter, lst, Doxyparser::Enum) { |node|
+      	aux = node.xpath("name")[0].child.content
+      	if aux.include? '@'
+      		aux = '_Enum' +  (@number_unnamed == 0 ? '' : @number_unnamed.to_s)
+      		@number_unnamed +=1
+      	end
+         aux.strip
+      }
     end
 
-    def variables access="public", filter=nil
-      sectiondef = "var"
-      get_variables filter, sectiondef, access
+    def variables filter=nil
+      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="var"]/memberdef[@kind="variable"]})
+      do_filter(filter, lst, Doxyparser::Variable) { |node|
+        node.xpath("name")[0].child.content.strip
+      }
     end
-
-    def classes access="public", filter=nil
-      get_classes filter, access
+    
+    def typedefs filter=nil
+    	lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="typedef"]/memberdef[@kind="typedef"]})
+      do_filter(filter, lst, Doxyparser::Typedef) { |node| del_spaces node.xpath("name")[0].child.content }
     end
-
+    
     def innernamespaces filter=nil
-      get_namespaces filter
+      lst=doc.xpath(%Q{/doxygen/compounddef/innernamespace})
+      do_filter(filter, lst, Doxyparser::Namespace) { |node|
+        del_spaces del_prefix(node.child.content)
+      }
+    end
+    
+    def structs filter=nil
+      lst=doc.xpath(%Q{/doxygen/compounddef/innerclass})
+      lst = lst.select { |c| c["refid"].start_with?("struct") }
+      do_filter(filter, lst, Doxyparser::Struct) { |node|
+        del_spaces del_prefix(node.child.content)
+      }
     end
 
-    def typedefs
-      get_typedefs
-    end
-
-    def structs access="public", filter=nil
-      get_structs filter, access
-    end
-
-    def enums access="public", filter=nil
-      get_enums filter, "enum", access
-    end
+    def classes filter=nil
+    	 lst=doc.xpath(%Q{/doxygen/compounddef/innerclass})
+      lst = lst.select { |c| c["refid"].start_with?("class") }
+      do_filter(filter, lst, Doxyparser::Class) { |node|
+        del_spaces del_prefix(node.child.content)
+      }
+    end   
 
     def file
       nil
@@ -40,7 +64,7 @@ module Doxyparser
 
     def compute_path
       aux = escape_class_name(@name)
-      @path = %Q{#{@dir}/namespace#{aux}.xml}
+      @xml_path = %Q{#{@dir}/namespace#{aux}.xml}
     end
   end
 end

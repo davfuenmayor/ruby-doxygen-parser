@@ -41,73 +41,18 @@ module Doxyparser
       return count
     end
 
-    protected
-
-    def get_classes filter=nil, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
-      lst = lst.select { |c| c["refid"].start_with?("class") }
-      do_filter(filter, lst, Doxyparser::Class) { |node|
-        del_spaces del_prefix(node.child.content)
-      }
-    end
-
-    def get_enums filter, sectiondef, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="enum"][@prot="#{access}"]})
-      do_filter(filter, lst, Doxyparser::Enum) { |node|
-        del_spaces node.xpath("name")[0].child.content
-      }
-    end
-
-    def get_structs filter=nil, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
-      lst = lst.select { |c| c["refid"].start_with?("struct") }
-      do_filter(filter, lst, Doxyparser::Struct) { |node|
-        del_spaces del_prefix(node.child.content)
-      }
-    end
-
-    def get_namespaces filter=nil
-      lst=doc.xpath(%Q{/doxygen/compounddef/innernamespace})
-      do_filter(filter, lst, Doxyparser::Namespace) { |node|
-        del_spaces del_prefix(node.child.content)
-      }
-    end
-
-    def get_functions filter, sectiondef, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="function"][@prot="#{access}"]})
-      do_filter(filter, lst, Doxyparser::Function) { |node|
-        del_spaces node.xpath("name")[0].child.content
-      }
-    end
-
-    def get_variables filter, sectiondef, access="public"
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="variable"][@prot="#{access}"]})
-      do_filter(filter, lst, Doxyparser::Variable) { |node|
-        del_spaces node.xpath("name")[0].child.content
-      }
-    end
-
-    def get_file
-      n=doc.xpath("/doxygen/compounddef/includes")[0]
-      raise Doxyparser::Exception::bad_doc(self.class.name, self.name) unless not n.nil?
-      HFile.new(:dir => @dir, :name => n.child.content)
-    end
-
-    def get_typedefs filter
-    end
-
-    private
-
     def do_filter filter, lst, clazz
-      filtered_lst=lst
       if filter
-        filtered_lst=lst.select { |n|
-          node_text = yield n
-          filter.include? node_text # TODO: Implement filters with classes, to allow for more refined filtering of methods by signature
+		  filtered_lst = []
+        filter.each { |val|
+        			found = lst.select { |node|  val == yield(node) }
+         	 raise "The object: #{val} #{clazz} could not be found while parsing" if found.nil? || found.empty?
+         	 filtered_lst.push(*found) 
         }
+      else
+        	filtered_lst=lst
       end
-      filtered_lst.map { |c| clazz.new(:parent => self, :node => c, :name => yield(c)) }
+      filtered_lst.map { |node| clazz.new(parent: self, node: node, name: yield(node)) }
     end
-
   end
 end
