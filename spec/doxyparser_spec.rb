@@ -16,7 +16,7 @@ describe "Doxyparser" do
     clazz.name.should_not be_empty
     namespace.name.should_not be_empty
     struct.name.should_not be_empty
-    hfile.name.should be_empty
+    hfile.name.should_not be_empty
     hfile.basename.should_not be_empty
 
   end

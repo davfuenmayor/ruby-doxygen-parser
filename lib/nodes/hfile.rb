@@ -4,7 +4,6 @@ module Doxyparser
   	
   	def compute_attr
   		super
-  		@name = ''
   	end
     
     def list_included

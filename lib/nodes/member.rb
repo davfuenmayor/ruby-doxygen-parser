@@ -10,7 +10,7 @@ module Doxyparser
 		attr_reader :params
 
 		def file
-			HFile.new(:name => @file, :dir => @dir)
+			HFile.new(:name => @filename, :dir => @dir)
 		end
 
 		private
@@ -22,7 +22,7 @@ module Doxyparser
 				@static = (@node['static'] == 'yes') ? 'static' : nil
 			end
 			aux= self.xpath("location")[0]
-			@file=File.basename(aux["file"])
+			@filename=File.basename(aux["file"])
 			@location="#{aux["file"]}:#{aux["line"]}"
 			temp=self.xpath("definition")
 			if temp == nil || temp.empty? || temp[0].child==nil

@@ -84,7 +84,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 <span class="preprocessor"></span>
 <a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="test1_8h.html">test1.h</a>&quot;</span>
 <a name="l00004"></a>00004 
-<a name="l00005"></a><a class="code" href="classDummyClass1.html">00005</a> <span class="keyword">class </span><a class="code" href="classDummyClass1.html">DummyClass1</a>{};
+<a name="l00005"></a>00005 <span class="keyword">using namespace </span>MyNamespace;
+<a name="l00006"></a><a class="code" href="classAccessorsClass.html">00006</a> <span class="keyword">class </span><a class="code" href="classAccessorsClass.html">AccessorsClass</a> {
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009         <a class="code" href="classAccessorsClass.html">AccessorsClass</a>(){};
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011                 <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> <span class="keyword">const</span>&amp; get_Prop2();
+<a name="l00012"></a>00012                 <span class="keywordtype">void</span> set_Prop2(<a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> <span class="keyword">const</span>&amp; obj);
+<a name="l00013"></a>00013                 
+<a name="l00014"></a>00014                 <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> * GetProp3();
+<a name="l00015"></a>00015                 <span class="keywordtype">void</span> SetProp3(<span class="keyword">const</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> *obj) <span class="keyword">const</span>;
+<a name="l00016"></a>00016                 
+<a name="l00017"></a>00017                 <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a>* getNotAProp(<span class="keywordtype">int</span> y);
+<a name="l00018"></a>00018                 <span class="keywordtype">bool</span> setNotAProp(<a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> *obj);
+<a name="l00019"></a>00019                 <span class="keywordtype">void</span> setAlsoNotAProp(<a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> *obj, <span class="keywordtype">bool</span> d);
+<a name="l00020"></a>00020                 
+<a name="l00021"></a>00021                 <span class="keywordtype">bool</span> isBoolProp();
+<a name="l00022"></a>00022                 
+<a name="l00023"></a>00023                 <span class="keywordtype">int</span> isNotAProp();
+<a name="l00024"></a>00024                 <span class="keywordtype">bool</span> isAlsoNotAProp(<span class="keywordtype">bool</span> d);
+<a name="l00025"></a>00025             
+<a name="l00026"></a>00026             <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a>* getProp();
+<a name="l00027"></a>00027                 <span class="keywordtype">void</span> setProp(<a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> *obj);
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029                 <span class="keyword">static</span> <span class="keywordtype">double</span>* getStaticProp(); 
+<a name="l00030"></a>00030                 <span class="keyword">static</span> <span class="keywordtype">void</span> setStaticProp(<span class="keywordtype">double</span>* obj);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 };
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -103,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2013 23:32:06 for Nogre by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 17 2013 23:18:23 for Nogre by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

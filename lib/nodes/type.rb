@@ -1,12 +1,13 @@
 module Doxyparser
 
   class Type < Node
-
-    attr_reader :name
-    
     
     def is_template?
-      name =~ /<\S+>/
+      @name =~ /<\S+>/
+    end
+    
+    def compute_attr
+    	@name = @basename
     end
     
     def template_types

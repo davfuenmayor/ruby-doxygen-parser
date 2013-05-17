@@ -46,8 +46,8 @@ describe "Doxyparser::Class" do
 			}
 			params[0].declname.should eql 'TYPE'
 			params[1].declname.should eql 'entero'
-			params[0].type.name.should eql 'MyNamespace::TemplateClass::typename'
-			params[1].type.name.should eql 'MyNamespace::TemplateClass::int'
+			params[0].type.name.should eql 'typename'
+			params[1].type.name.should eql 'int'
 			params[0].type.basename.should eql 'typename'
 			params[1].type.basename.should eql 'int'
 		end
@@ -75,7 +75,7 @@ describe "Doxyparser::Class" do
 		end
 
 		it "should correctly create methods " do			
-			expected_methods=['MyClass', 'virtualMethod', 'method', 'isBoolProp', 'getProp', 'setProp', 'operator-', '~MyClass']
+			expected_methods=['MyClass', 'virtualMethod', 'method', 'operator-', '~MyClass']
 			methods = @class.methods
 			compare_members methods, expected_methods
 		end

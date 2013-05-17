@@ -226,26 +226,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00144"></a><a class="code" href="classMyNamespace_1_1MyClass.html#a2e8f5e2ec891898a4796c3a00bfde55c">00144</a>             <a class="code" href="classMyNamespace_1_1MyClass.html#a2e8f5e2ec891898a4796c3a00bfde55c">MyClass</a>(){};
 <a name="l00145"></a><a class="code" href="classMyNamespace_1_1MyClass.html#a16f635616daa6858e69565111d047d6e">00145</a>             <a class="code" href="classMyNamespace_1_1MyClass.html#a16f635616daa6858e69565111d047d6e">MyClass</a>(<span class="keywordtype">char</span> * xc){};
 <a name="l00146"></a><a class="code" href="classMyNamespace_1_1MyClass.html#aba29d70658602849637a9776e32fa24f">00146</a>             <a class="code" href="classMyNamespace_1_1MyClass.html#aba29d70658602849637a9776e32fa24f">~MyClass</a>(){};
-<a name="l00147"></a>00147 
-<a name="l00148"></a>00148             <span class="keyword">virtual</span> <span class="keywordtype">double</span> virtualMethod(UnknownType *, <span class="keywordtype">int</span>&amp; ut, <a class="code" href="structMyNamespace_1_1MyClass_1_1InnerStruct.html">MyNamespace::MyClass::InnerStruct</a> * is);
-<a name="l00149"></a>00149             <a class="code" href="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass.html">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</a> method(InnerStruct &amp;);
-<a name="l00150"></a>00150             
-<a name="l00151"></a>00151             <span class="keywordtype">bool</span> isBoolProp();
-<a name="l00152"></a>00152             
-<a name="l00153"></a>00153             <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a>* getProp();
-<a name="l00154"></a>00154                 <span class="keywordtype">void</span> setProp(<a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> *obj);
-<a name="l00155"></a>00155 
-<a name="l00156"></a>00156                 <span class="keyword">static</span> <span class="keywordtype">double</span>* getStaticProp(); 
-<a name="l00157"></a>00157                 <span class="keyword">static</span> <span class="keywordtype">void</span> setStaticProp(<span class="keywordtype">double</span>* obj);
-<a name="l00158"></a>00158             
-<a name="l00159"></a>00159             <span class="keyword">inline</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> operator- ();
-<a name="l00160"></a>00160             
-<a name="l00161"></a>00161             <span class="keyword">friend</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> operator * ( std::list&lt;void *&gt; myList, <span class="keyword">const</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a>&amp; rkVector );
-<a name="l00162"></a>00162             <span class="keyword">friend</span> InnerStruct** MyNamespace::friendMethod(<span class="keywordtype">int</span> &amp;);          
-<a name="l00163"></a><a class="code" href="classMyNamespace_1_1MyClass.html#a4be8a3cb53d1e61f52751307ce7f9ff6">00163</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="structMyNamespace_1_1OuterStruct.html">OuterStruct</a>;
-<a name="l00164"></a>00164 
-<a name="l00165"></a>00165         };      
-<a name="l00166"></a>00166 }
+<a name="l00147"></a>00147             
+<a name="l00148"></a>00148             <span class="keyword">static</span> <span class="keywordtype">double</span>* getStaticProp();     
+<a name="l00149"></a>00149                 <span class="keyword">static</span> <span class="keywordtype">void</span> setStaticProp(<span class="keywordtype">double</span>* obj);
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151             <span class="keyword">virtual</span> <span class="keywordtype">double</span> virtualMethod(UnknownType *, <span class="keywordtype">int</span>&amp; ut, <a class="code" href="structMyNamespace_1_1MyClass_1_1InnerStruct.html">MyNamespace::MyClass::InnerStruct</a> * is);
+<a name="l00152"></a>00152             <a class="code" href="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass.html">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</a> method(InnerStruct &amp;);
+<a name="l00153"></a>00153             
+<a name="l00154"></a>00154             <span class="keyword">inline</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> operator- ();
+<a name="l00155"></a>00155             
+<a name="l00156"></a>00156             <span class="keyword">friend</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a> operator * ( std::list&lt;void *&gt; myList, <span class="keyword">const</span> <a class="code" href="classMyNamespace_1_1MyClass.html">MyClass</a>&amp; rkVector );
+<a name="l00157"></a>00157             <span class="keyword">friend</span> InnerStruct** MyNamespace::friendMethod(<span class="keywordtype">int</span> &amp;);          
+<a name="l00158"></a><a class="code" href="classMyNamespace_1_1MyClass.html#a4be8a3cb53d1e61f52751307ce7f9ff6">00158</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="structMyNamespace_1_1OuterStruct.html">OuterStruct</a>;
+<a name="l00159"></a>00159 
+<a name="l00160"></a>00160         };      
+<a name="l00161"></a>00161 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -264,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2013 23:32:06 for Nogre by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 17 2013 23:18:23 for Nogre by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

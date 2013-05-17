@@ -144,17 +144,12 @@ class MyClass : public TemplateClass<OuterStruct *> {
 	    MyClass(){};
 	    MyClass(char * xc){};
 	    ~MyClass(){};
+	    
+	    static double* getStaticProp();	
+		static void setStaticProp(double* obj);
 
 	    virtual double virtualMethod(UnknownType *, int& ut, MyNamespace::MyClass::InnerStruct * is);
 	    MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass method(InnerStruct &);
-	    
-	    bool isBoolProp();
-	    
-	    MyClass* getProp();
-		void setProp(MyClass *obj);
-
-		static double* getStaticProp();	
-		static void setStaticProp(double* obj);
 	    
 	    inline MyClass operator- ();
 	    

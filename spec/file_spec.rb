@@ -11,7 +11,7 @@ describe "Doxyparser::HFile" do
 	end
 	
 	it "should be created correctly" do
-			@file.name.should eql ''
+			@file.name.should eql 'test1.h'
 			@file.basename.should eql 'test1.h'
 			@file.xml_path.should eql xml_dir+'/test1_8h.xml'
 	end
@@ -74,28 +74,28 @@ describe "Doxyparser::HFile" do
 	it "should create functions" do
 		functions = @file.functions
 		functions.size.should eql 1
-		functions[0].name.should eql '::noNsFunction'
+		functions[0].name.should eql 'test1.h::noNsFunction'
 		functions[0].basename.should eql 'noNsFunction'
 	end
 	
 	it "should create variables" do
 		variables = @file.variables
 		variables.size.should eql 1
-		variables[0].name.should eql '::noNsVariable'
+		variables[0].name.should eql 'test1.h::noNsVariable'
 		variables[0].basename.should eql 'noNsVariable'
 	end
 	
 	it "should create enums" do
 		enums = @file.enums
 		enums.size.should eql 1
-		enums[0].name.should eql '::noNsEnum'
+		enums[0].name.should eql 'test1.h::noNsEnum'
 		enums[0].basename.should eql 'noNsEnum'
 	end
 	
 	it "should create typedefs" do
 		typedefs = @file.typedefs
 		typedefs.size.should eql 1
-		typedefs[0].name.should eql '::noNsTypedef'
+		typedefs[0].name.should eql 'test1.h::noNsTypedef'
 		typedefs[0].basename.should eql 'noNsTypedef'
 	end
 end

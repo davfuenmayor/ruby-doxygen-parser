@@ -1,6 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
-  <compound refid="classDummyClass1" kind="class"><name>DummyClass1</name>
+  <compound refid="classAccessorsClass" kind="class"><name>AccessorsClass</name>
+    <member refid="classAccessorsClass_1ab84ec5343f0f2dfafc5ce3d27aa7c168" kind="function"><name>AccessorsClass</name></member>
+    <member refid="classAccessorsClass_1a35b6d96ba804d3342c2ebd7849bef41f" kind="function"><name>get_Prop2</name></member>
+    <member refid="classAccessorsClass_1a630adcb913d0c134047b489720ad1975" kind="function"><name>set_Prop2</name></member>
+    <member refid="classAccessorsClass_1a0b20f790c6668d372cc6596c75349cba" kind="function"><name>GetProp3</name></member>
+    <member refid="classAccessorsClass_1a27cab6aae1f45071185f2999c74a6ba6" kind="function"><name>SetProp3</name></member>
+    <member refid="classAccessorsClass_1ace1625c372be9c7ce8fae607350a70fa" kind="function"><name>getNotAProp</name></member>
+    <member refid="classAccessorsClass_1a719d03c40d664d59785e64947cef9aee" kind="function"><name>setNotAProp</name></member>
+    <member refid="classAccessorsClass_1ab97b134f05b258f8f298c18ef4b59898" kind="function"><name>setAlsoNotAProp</name></member>
+    <member refid="classAccessorsClass_1a8d2bb1806dc77253956f6a1bd6e7ecaa" kind="function"><name>isBoolProp</name></member>
+    <member refid="classAccessorsClass_1a3f20ae6b79e7ecd800d96370e95e8b17" kind="function"><name>isNotAProp</name></member>
+    <member refid="classAccessorsClass_1a3c8e9898c16d3353a53300379f8f4c73" kind="function"><name>isAlsoNotAProp</name></member>
+    <member refid="classAccessorsClass_1a7d3b1bde7c4036a48cc464afbd183627" kind="function"><name>getProp</name></member>
+    <member refid="classAccessorsClass_1a3b1b0c44b1fa7a1bac9d55b076b08ef1" kind="function"><name>setProp</name></member>
+    <member refid="classAccessorsClass_1ac087671c9de137e5f36205de4619ded9" kind="function"><name>getStaticProp</name></member>
+    <member refid="classAccessorsClass_1a0e723f32e68f4faf6620e81b26adfee4" kind="function"><name>setStaticProp</name></member>
   </compound>
   <compound refid="classDummyClass2" kind="class"><name>DummyClass2</name>
   </compound>
@@ -52,9 +67,6 @@
     <member refid="classMyNamespace_1_1MyClass_1aba29d70658602849637a9776e32fa24f" kind="function"><name>~MyClass</name></member>
     <member refid="classMyNamespace_1_1MyClass_1a4fbfe0abdd13613096ba9f0748b62598" kind="function"><name>virtualMethod</name></member>
     <member refid="classMyNamespace_1_1MyClass_1a99b96af1e3c20893816446b91585cd79" kind="function"><name>method</name></member>
-    <member refid="classMyNamespace_1_1MyClass_1a45393a28971d82926920222bc99f653d" kind="function"><name>isBoolProp</name></member>
-    <member refid="classMyNamespace_1_1MyClass_1ac08aba2dee846069fe7c7651a16ea85c" kind="function"><name>getProp</name></member>
-    <member refid="classMyNamespace_1_1MyClass_1a410a4ab011364b42a5950134f7e073a3" kind="function"><name>setProp</name></member>
     <member refid="classMyNamespace_1_1MyClass_1abebda1ab5c4a746fcb1eadd099d339c7" kind="function"><name>operator-</name></member>
   </compound>
   <compound refid="classnoNsClass" kind="class"><name>noNsClass</name>
