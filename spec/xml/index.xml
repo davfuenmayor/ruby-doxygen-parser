@@ -45,7 +45,7 @@
     <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" kind="enumvalue"><name>C</name></member>
     <member refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" kind="typedef"><name>MapShortVectorInt</name></member>
     <member refid="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" kind="typedef"><name>VectorMapShortVectorInt</name></member>
-    <member refid="classMyNamespace_1_1MyClass_1ad4f921f57b8425babbbbca28a23b1cbe" kind="typedef"><name>vectorMyClass</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a7a10e2edbe0eb41c3682dcac80f32518" kind="typedef"><name>privateTypedef</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ad8bab0b9175cdac892041293777e0fce" kind="variable"><name>privateField1</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" kind="variable"><name>privateField2</name></member>
     <member refid="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" kind="variable"><name>protectedField1</name></member>
@@ -83,11 +83,11 @@
     <member refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" kind="variable"><name>bb</name></member>
   </compound>
   <compound refid="classMyNamespace_1_1TemplateClass" kind="class"><name>MyNamespace::TemplateClass</name>
-    <member refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" kind="typedef"><name>ItemList</name></member>
-    <member refid="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" kind="variable"><name>mItems</name></member>
-    <member refid="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" kind="function"><name>TemplateClass</name></member>
-    <member refid="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" kind="function"><name>~TemplateClass</name></member>
-    <member refid="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" kind="function"><name>removeItem</name></member>
+    <member refid="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" kind="typedef"><name>ItemList</name></member>
+    <member refid="classMyNamespace_1_1TemplateClass_1aebddafe8904d8429d8d4e86a181e43f8" kind="variable"><name>mItems</name></member>
+    <member refid="classMyNamespace_1_1TemplateClass_1a1302d95e5baee85f4041083aabd4fc17" kind="function"><name>TemplateClass</name></member>
+    <member refid="classMyNamespace_1_1TemplateClass_1a4f4613f7704aa9952cc38be47be43cee" kind="function"><name>~TemplateClass</name></member>
+    <member refid="classMyNamespace_1_1TemplateClass_1ad82ea4de37b418ed339c1e72d332286f" kind="function"><name>removeItem</name></member>
   </compound>
   <compound refid="namespaceMyNamespace" kind="namespace"><name>MyNamespace</name>
     <member refid="namespaceMyNamespace_1abd106cf975acf9db685c0c0180aff488" kind="enum"><name>OuterEnum</name></member>

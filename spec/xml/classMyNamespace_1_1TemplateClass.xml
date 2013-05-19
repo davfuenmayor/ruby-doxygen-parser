@@ -10,6 +10,11 @@
         <defname>TYPE</defname>
       </param>
       <param>
+        <type>class</type>
+        <declname>TYPE2</declname>
+        <defname>TYPE2</defname>
+      </param>
+      <param>
         <type>int</type>
         <declname>entero</declname>
         <defname>entero</defname>
@@ -17,9 +22,9 @@
       </param>
     </templateparamlist>
       <sectiondef kind="protected-type">
-      <memberdef kind="typedef" id="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" prot="protected" static="no">
+      <memberdef kind="typedef" id="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" prot="protected" static="no">
         <type>std::list&lt; TYPE &gt;::value_type</type>
-        <definition>typedef std::list&lt;TYPE&gt;::value_type MyNamespace::TemplateClass&lt; TYPE, entero &gt;::ItemList</definition>
+        <definition>typedef std::list&lt;TYPE&gt;::value_type MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;::ItemList</definition>
         <argsstring></argsstring>
         <name>ItemList</name>
         <briefdescription>
@@ -32,9 +37,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" prot="protected" static="no" mutable="no">
-        <type><ref refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" kindref="member">ItemList</ref></type>
-        <definition>ItemList MyNamespace::TemplateClass&lt; TYPE, entero &gt;::mItems</definition>
+      <memberdef kind="variable" id="classMyNamespace_1_1TemplateClass_1aebddafe8904d8429d8d4e86a181e43f8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" kindref="member">ItemList</ref></type>
+        <definition>ItemList MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;::mItems</definition>
         <argsstring></argsstring>
         <name>mItems</name>
         <briefdescription>
@@ -47,9 +52,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1a1302d95e5baee85f4041083aabd4fc17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
-        <definition>MyNamespace::TemplateClass&lt; TYPE, entero &gt;::TemplateClass</definition>
+        <definition>MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;::TemplateClass</definition>
         <argsstring>()</argsstring>
         <name>TemplateClass</name>
         <briefdescription>
@@ -60,9 +65,9 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="87" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="87" bodyend="87"/>
       </memberdef>
-      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1a4f4613f7704aa9952cc38be47be43cee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
-        <definition>virtual MyNamespace::TemplateClass&lt; TYPE, entero &gt;::~TemplateClass</definition>
+        <definition>virtual MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;::~TemplateClass</definition>
         <argsstring>()</argsstring>
         <name>~TemplateClass</name>
         <briefdescription>
@@ -73,9 +78,9 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="88" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="88" bodyend="88"/>
       </memberdef>
-      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classMyNamespace_1_1TemplateClass_1ad82ea4de37b418ed339c1e72d332286f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::pair&lt; bool, TYPE &gt;</type>
-        <definition>virtual std::pair&lt;bool, TYPE&gt; MyNamespace::TemplateClass&lt; TYPE, entero &gt;::removeItem</definition>
+        <definition>virtual std::pair&lt;bool, TYPE&gt; MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;::removeItem</definition>
         <argsstring>()</argsstring>
         <name>removeItem</name>
         <briefdescription>
@@ -93,11 +98,11 @@
     </detaileddescription>
     <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="81" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="81" bodyend="90"/>
     <listofallmembers>
-      <member refid="classMyNamespace_1_1TemplateClass_1a202d1173d2745728d17a0e4817c66dae" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>ItemList</name></member>
-      <member refid="classMyNamespace_1_1TemplateClass_1a54597ba725d08e32ac59dd0edf5ae7ed" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>mItems</name></member>
-      <member refid="classMyNamespace_1_1TemplateClass_1a6bad7dce1d0e93a67ef9af38a6c6620c" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>removeItem</name></member>
-      <member refid="classMyNamespace_1_1TemplateClass_1abef60e2ea729075a1a94624ca960a91e" prot="public" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>TemplateClass</name></member>
-      <member refid="classMyNamespace_1_1TemplateClass_1acdc32f22f279538759c5b475e7251b6a" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>~TemplateClass</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>ItemList</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1aebddafe8904d8429d8d4e86a181e43f8" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>mItems</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1ad82ea4de37b418ed339c1e72d332286f" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>removeItem</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1a1302d95e5baee85f4041083aabd4fc17" prot="public" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>TemplateClass</name></member>
+      <member refid="classMyNamespace_1_1TemplateClass_1a4f4613f7704aa9952cc38be47be43cee" prot="public" virt="virtual"><scope>MyNamespace::TemplateClass</scope><name>~TemplateClass</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

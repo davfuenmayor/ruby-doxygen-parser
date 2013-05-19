@@ -39,17 +39,21 @@ describe "Doxyparser::Class" do
 		it "should correctly create template classes" do
 			template_class = Doxyparser::parse_class('MyNamespace::TemplateClass', xml_dir)
 			params = template_class.template_params
-			params.size.should eql 2
+			params.size.should eql 3
 			params.each {|param|
 				param.class.should eql Doxyparser::Param				
 				param.type.class.should eql Doxyparser::Type
 			}
 			params[0].declname.should eql 'TYPE'
-			params[1].declname.should eql 'entero'
+			params[1].declname.should eql 'TYPE2'
+			params[2].declname.should eql 'entero'
+			params[2].value.should eql '5'
 			params[0].type.name.should eql 'typename'
-			params[1].type.name.should eql 'int'
+			params[1].type.name.should eql 'class'
+			params[2].type.name.should eql 'int'
 			params[0].type.basename.should eql 'typename'
-			params[1].type.basename.should eql 'int'
+			params[1].type.basename.should eql 'class'
+			params[2].type.basename.should eql 'int'
 		end
 	end
 
@@ -129,7 +133,7 @@ describe "Doxyparser::Class" do
 		end
 		
 		it "should correctly create private typedefs " do			
-			expected_typedefs=['vectorMyClass']
+			expected_typedefs=['privateTypedef']
 			typedefs = @class.typedefs :private
 			compare_members typedefs, expected_typedefs, Doxyparser::Typedef
 		end

@@ -77,7 +77,7 @@ int * function3(float &);
 
 int globalVariable;
 
-template <typename TYPE, int entero=5>
+template <typename TYPE, class TYPE2, int entero=5>
 	class TemplateClass	{
 	protected:
 		typedef typename std::list<TYPE>::value_type ItemList;
@@ -90,7 +90,7 @@ template <typename TYPE, int entero=5>
 	};
 
 
-class MyClass : public TemplateClass<OuterStruct *> {
+class MyClass : public TemplateClass<OuterStruct *, ::noNsClass> {
 
 	private:
 
@@ -99,7 +99,7 @@ class MyClass : public TemplateClass<OuterStruct *> {
 		MyClass* privateMethod1();
 		void privateMethod2(MyClass *obj);
 		static void* privateStaticMethod();
-		typedef std::vector<MyMostInnerClass> vectorMyClass;
+		typedef std::map <MyMostInnerClass,TemplateClass< OuterStruct, ::noNsClass, 8> > privateTypedef;
 		
 	protected:
 
