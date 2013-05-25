@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="132" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="132" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="133" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="133" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="133" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="134" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -48,7 +48,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="131" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="131" bodyend="134"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="132" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="132" bodyend="135"/>
     <listofallmembers>
       <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass::InnerStruct</scope><name>a</name></member>
       <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass::InnerStruct</scope><name>b</name></member>

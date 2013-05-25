@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceSubDirClass" kind="namespace">
+    <compoundname>SubDirClass</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceSubDirClass_1a77dbb41e02d741a0697746870a3c2333" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double SubDirClass::publicStaticField1</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test1.h" line="9" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test1.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceSubDirClass_1adeef2ecffc1083082a8ec1dedcaaf1ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SubDirClass::SubDirClass</definition>
+        <argsstring>()</argsstring>
+        <name>SubDirClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test1.h" line="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test1.h" line="5"/>
+  </compounddef>
+</doxygen>

@@ -19,7 +19,6 @@ describe "Doxyparser::Method" do
 			method.location.should match /test2.h:\d+$/			
 			method.file.basename.should eql 'test2.h'
 			method.params.should be_empty
-			method.xml_path.should eql @class.xml_path
 			method.static.should be_nil
 			method.definition.should eql 'bool AccessorsClass::isBoolProp'
 		end

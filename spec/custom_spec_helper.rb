@@ -16,7 +16,6 @@ def compare_members members, expected_members, clazz = Doxyparser::Function
 		m.class.should eql clazz
 		m.name.should be_start_with("#{@class.name}::")
 		m.parent.should eql @class
-		m.xml_path.should eql @class.xml_path
 		m.location.should match %r{#{home_dir}/spec/headers/test1.h:\d+}
 	}
 end

@@ -10,12 +10,10 @@ describe "Doxyparser::Namespace" do
 
 		before(:all) do
 			@namespace=Doxyparser::parse_namespace("Ogre", xml_dir)
-			@doc=@namespace.doc
 		end
 
 		it "should be created consistently from name and directory" do
 			namespace_data = {name: "Ogre", basename:  "Ogre", node: nil, parent: nil, path: xml_dir+'/namespaceOgre.xml'}
-			@doc.class.should eql Nokogiri::XML::Document
 			@namespace.class.should eql Doxyparser::Namespace
 			@namespace.name.should eql namespace_data[:name]
 			@namespace.basename.should eql namespace_data[:basename]

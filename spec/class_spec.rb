@@ -48,12 +48,19 @@ describe "Doxyparser::Class" do
 			params[1].declname.should eql 'TYPE2'
 			params[2].declname.should eql 'entero'
 			params[2].value.should eql '5'
-			params[0].type.name.should eql 'typename'
-			params[1].type.name.should eql 'class'
-			params[2].type.name.should eql 'int'
 			params[0].type.basename.should eql 'typename'
 			params[1].type.basename.should eql 'class'
 			params[2].type.basename.should eql 'int'
+			params[0].type.basename.should eql 'typename'
+			params[1].type.basename.should eql 'class'
+			params[2].type.basename.should eql 'int'
+		end
+		
+		it "should correctly create classes in subdirectories" do
+			clazz=Doxyparser::parse_class("MyNamespace::SubDirClass", xml_dir)
+			file = clazz.file
+			file.name.should eql 'subdir/test1.h'
+			file.basename.should eql 'test1.h'
 		end
 	end
 
@@ -61,6 +68,12 @@ describe "Doxyparser::Class" do
 
 		before(:all) do
 			@class=Doxyparser::parse_class("MyNamespace::MyClass", xml_dir)
+		end
+		
+		it "should correctly create file " do			
+			file = @class.file
+			file.name.should eql 'test1.h'
+			file.basename.should eql 'test1.h'
 		end
 
 		it "should correctly create inner classes and structs" do

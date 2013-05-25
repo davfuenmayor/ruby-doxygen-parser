@@ -18,13 +18,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="55"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="56"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="53"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="54"/>
   </compounddef>
 </doxygen>

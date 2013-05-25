@@ -18,14 +18,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="60" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="60" bodyend="60"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="61" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="61" bodyend="61"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="59" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="59" bodyend="61"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="60" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="60" bodyend="62"/>
     <listofallmembers>
       <member refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass_1a16d62f527a0cd763acea10424c3d0d3e" prot="private" virt="non-virtual"><scope>MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</scope><name>MyClass</name></member>
     </listofallmembers>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="49" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="49" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="50" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="50" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="50" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="51" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="48" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="48" bodyend="51"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="49" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="49" bodyend="52"/>
     <listofallmembers>
       <member refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" prot="public" virt="non-virtual"><scope>MyNamespace::OuterStruct</scope><name>aa</name></member>
       <member refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" prot="public" virt="non-virtual"><scope>MyNamespace::OuterStruct</scope><name>bb</name></member>

@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="123" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="123" bodyend="125"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="124" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="124" bodyend="126"/>
       </memberdef>
       <memberdef kind="enum" id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3" prot="public" static="no">
         <name>InnerEnum</name>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="127" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="127" bodyend="129"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="128" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="128" bodyend="130"/>
       </memberdef>
       <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" prot="public" static="no">
         <type>std::map&lt; unsigned short, std::vector&lt; int * &gt; &gt;</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="116" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="112" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="117" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" kindref="member">MapShortVectorInt</ref> &gt;</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="117" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="117" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="118" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="102" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="102" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="103" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="97" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="98" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -136,13 +136,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="98" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="98" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="99" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" prot="protected" static="no" mutable="no">
-        <type>float</type>
-        <definition>float MyNamespace::MyClass::protectedField1</definition>
+      <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1a0864cba054cdba30f56f6505f40e411f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classMyNamespace_1_1SubDirClass" kindref="compound">SubDirClass</ref> *</type>
+        <definition>SubDirClass* MyNamespace::MyClass::protectedField1</definition>
         <argsstring></argsstring>
         <name>protectedField1</name>
         <briefdescription>
@@ -151,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="106" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="106" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="107" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" prot="protected" static="no" mutable="no">
         <type>float</type>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="107" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="107" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="108" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="120" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="120" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="121" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -194,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="158" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="158" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="159" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classMyNamespace_1_1MyClass_1a371dd9b7a87a75964a968295b922639f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend <ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref></type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="156"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="157"/>
       </memberdef>
       <memberdef kind="friend" id="classMyNamespace_1_1MyClass_1a4dbaba662774f3a90767fb03466971aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend <ref refid="structMyNamespace_1_1MyClass_1_1InnerStruct" kindref="compound">InnerStruct</ref> **</type>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="157"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="158"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="99"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="100"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a23b3edc330a0cafa6404c843d2c0844e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="100"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="101"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="101"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="102"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="108"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="109"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1ae0abe3f4b5b90b7681c7acdd56d13a90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="109"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="110"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="121"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="122"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a64a433ef5be84a4465b8394a2190d741" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double *</type>
@@ -341,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="148"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="149"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a653bffb57f4cbb41e019b6f2322d8a8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -358,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="149"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="150"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -373,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="144" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="144" bodyend="144"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="145" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="145" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a16f635616daa6858e69565111d047d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -390,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="145" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="145" bodyend="145"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="146" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="146" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1aba29d70658602849637a9776e32fa24f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -403,7 +403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="146" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="146" bodyend="146"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="147" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="147" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a4fbfe0abdd13613096ba9f0748b62598" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
@@ -427,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="151"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="152"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1a99b96af1e3c20893816446b91585cd79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kindref="compound">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</ref></type>
@@ -443,7 +443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="152"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="153"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1abebda1ab5c4a746fcb1eadd099d339c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref></type>
@@ -456,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="154"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="155"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -464,37 +464,45 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="14">
+      <node id="12">
         <label>MyNamespace::MyClass</label>
         <link refid="classMyNamespace_1_1MyClass"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="13">
         <label>MyNamespace::TemplateClass&lt; OuterStruct *,::noNsClass &gt;</label>
         <link refid="classMyNamespace_1_1TemplateClass"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="16">
+      <node id="14">
         <label>MyNamespace::MyClass</label>
         <link refid="classMyNamespace_1_1MyClass"/>
-        <childnode refid="17" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="16" relation="usage">
+          <edgelabel>protectedField1</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>privateField1</edgelabel>
           <edgelabel>publicStaticField1</edgelabel>
         </childnode>
       </node>
-      <node id="18">
+      <node id="17">
         <label>MyNamespace::OuterStruct</label>
         <link refid="structMyNamespace_1_1OuterStruct"/>
       </node>
-      <node id="17">
+      <node id="15">
         <label>MyNamespace::TemplateClass&lt; OuterStruct *,::noNsClass &gt;</label>
         <link refid="classMyNamespace_1_1TemplateClass"/>
       </node>
+      <node id="16">
+        <label>MyNamespace::SubDirClass</label>
+        <link refid="classMyNamespace_1_1SubDirClass"/>
+      </node>
     </collaborationgraph>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="93" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="93" bodyend="160"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="94" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="94" bodyend="161"/>
     <listofallmembers>
       <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>A</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>B</name></member>
@@ -517,7 +525,7 @@
       <member refid="classMyNamespace_1_1MyClass_1a23b3edc330a0cafa6404c843d2c0844e" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateMethod2</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a7cf6fabd84e7b3631037033791806680" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateStaticMethod</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a7a10e2edbe0eb41c3682dcac80f32518" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateTypedef</name></member>
-      <member refid="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedField1</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a0864cba054cdba30f56f6505f40e411f" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedField1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedField2</name></member>
       <member refid="classMyNamespace_1_1MyClass_1afbd646359852ada2ebef4bdec9d02168" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedMethod1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1ae0abe3f4b5b90b7681c7acdd56d13a90" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedMethod2</name></member>

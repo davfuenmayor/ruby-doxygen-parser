@@ -7,6 +7,7 @@
 #include <iostream>
 #include <list>
 #include "test3.h"
+#include "subdir/test1.h"
 
 double noNsFunction(float& f);
 
@@ -103,7 +104,7 @@ class MyClass : public TemplateClass<OuterStruct *, ::noNsClass> {
 		
 	protected:
 
-		float protectedField1;
+		SubDirClass * protectedField1;
 		float protectedField2;
 		MyClass* protectedMethod1();
 		void protectedMethod2(MyClass *obj);	

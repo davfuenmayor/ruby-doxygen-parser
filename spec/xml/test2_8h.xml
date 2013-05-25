@@ -4,47 +4,53 @@
     <compoundname>test2.h</compoundname>
     <includes refid="test1_8h" local="yes">test1.h</includes>
     <incdepgraph>
-      <node id="15">
+      <node id="34">
         <label>list</label>
       </node>
-      <node id="11">
-        <label>test2.h</label>
+      <node id="30">
+        <label>/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h</label>
         <link refid="test2.h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="32">
         <label>stdlib.h</label>
       </node>
-      <node id="18">
+      <node id="37">
         <label>test3.h</label>
         <link refid="test3_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="35">
         <label>map</label>
       </node>
-      <node id="14">
+      <node id="38">
+        <label>subdir/test1.h</label>
+        <link refid="subdir_2test1_8h"/>
+      </node>
+      <node id="33">
         <label>vector</label>
       </node>
-      <node id="17">
+      <node id="36">
         <label>iostream</label>
       </node>
-      <node id="12">
+      <node id="31">
         <label>test1.h</label>
         <link refid="test1_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -53,40 +59,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test1_8h" kindref="compound">test1.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">MyNamespace;</highlight></codeline>
-<codeline lineno="6" refid="classAccessorsClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAccessorsClass" kindref="compound">AccessorsClass</ref><sp/>{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAccessorsClass" kindref="compound">AccessorsClass</ref>(){};</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>get_Prop2();</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_Prop2(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>obj);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*<sp/>GetProp3();</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetProp3(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>*<sp/>getNotAProp(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setNotAProp(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAlsoNotAProp(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBoolProp();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isNotAProp();</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAlsoNotAProp(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref>*<sp/>getProp();</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProp(<ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref><sp/>*obj);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>getStaticProp();<sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStaticProp(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>obj);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
-    </programlisting>
     <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h"/>
   </compounddef>
 </doxygen>

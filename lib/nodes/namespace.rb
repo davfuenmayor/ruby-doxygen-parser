@@ -11,13 +11,9 @@ module Doxyparser
     
     def enums filter=nil
       lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"]})
+      filter.map!{ |exp| exp =~ /^_Enum/ ? /@\d*/ : exp} unless filter.nil?
       do_filter(filter, lst, Doxyparser::Enum) { |node|
-      	aux = node.xpath("name")[0].child.content
-      	if aux.include? '@'
-      		aux = '_Enum' +  (@number_unnamed == 0 ? '' : @number_unnamed.to_s)
-      		@number_unnamed +=1
-      	end
-         aux.strip
+      	node.xpath("name")[0].child.content.strip
       }
     end
 

@@ -31,9 +31,6 @@
     <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a3ea445c2fbb1cbd825340fd0befe228f" kind="variable"><name>a</name></member>
     <member refid="structMyNamespace_1_1MyClass_1_1InnerStruct_1a38af23bab050b7a1f086532725695f2f" kind="variable"><name>b</name></member>
   </compound>
-  <compound refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kind="class"><name>MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</name>
-    <member refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass_1a16d62f527a0cd763acea10424c3d0d3e" kind="function"><name>MyClass</name></member>
-  </compound>
   <compound refid="classMyNamespace_1_1MyClass" kind="class"><name>MyNamespace::MyClass</name>
     <member refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074c" kind="enum"><name>@1</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074caa1199e52717413fc8f0d2f62c3965bb6" kind="enumvalue"><name>value1</name></member>
@@ -48,7 +45,7 @@
     <member refid="classMyNamespace_1_1MyClass_1a7a10e2edbe0eb41c3682dcac80f32518" kind="typedef"><name>privateTypedef</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ad8bab0b9175cdac892041293777e0fce" kind="variable"><name>privateField1</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ad7f5103c2dd53c77d7171bc080d2a184" kind="variable"><name>privateField2</name></member>
-    <member refid="classMyNamespace_1_1MyClass_1aabae5d9f31460445434e4f4c1194c2b4" kind="variable"><name>protectedField1</name></member>
+    <member refid="classMyNamespace_1_1MyClass_1a0864cba054cdba30f56f6505f40e411f" kind="variable"><name>protectedField1</name></member>
     <member refid="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" kind="variable"><name>protectedField2</name></member>
     <member refid="classMyNamespace_1_1MyClass_1ab941c40f4b9f3c0683e5896774bbdef2" kind="variable"><name>publicStaticField1</name></member>
     <member refid="classMyNamespace_1_1MyClass_1a4be8a3cb53d1e61f52751307ce7f9ff6" kind="friend"><name>OuterStruct</name></member>
@@ -69,6 +66,9 @@
     <member refid="classMyNamespace_1_1MyClass_1a99b96af1e3c20893816446b91585cd79" kind="function"><name>method</name></member>
     <member refid="classMyNamespace_1_1MyClass_1abebda1ab5c4a746fcb1eadd099d339c7" kind="function"><name>operator-</name></member>
   </compound>
+  <compound refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" kind="class"><name>MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</name>
+    <member refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass_1a16d62f527a0cd763acea10424c3d0d3e" kind="function"><name>MyClass</name></member>
+  </compound>
   <compound refid="classnoNsClass" kind="class"><name>noNsClass</name>
     <member refid="classnoNsClass_1a16dc8e60fe9da31538dfe75d383921f6" kind="variable"><name>publicStaticField1</name></member>
     <member refid="classnoNsClass_1a2bfbf28085c32933ec04c7064e39d4fd" kind="function"><name>noNsClass</name></member>
@@ -81,6 +81,13 @@
   <compound refid="structMyNamespace_1_1OuterStruct" kind="struct"><name>MyNamespace::OuterStruct</name>
     <member refid="structMyNamespace_1_1OuterStruct_1a9a1a19f45b2fdcf9a578e9dc59e73647" kind="variable"><name>aa</name></member>
     <member refid="structMyNamespace_1_1OuterStruct_1a7bd543d5081a9b3e24fbe201bfbbc6de" kind="variable"><name>bb</name></member>
+  </compound>
+  <compound refid="classMyNamespace_1_1SubDirClass" kind="class"><name>MyNamespace::SubDirClass</name>
+    <member refid="classMyNamespace_1_1SubDirClass_1a9e3c93829123768010a4515d31f9dc4f" kind="variable"><name>publicStaticField1</name></member>
+    <member refid="classMyNamespace_1_1SubDirClass_1a3fc44670eb8a387ad503139595419d38" kind="function"><name>SubDirClass</name></member>
+  </compound>
+  <compound refid="classMyNamespace_1_1SubDirDummyClass" kind="class"><name>MyNamespace::SubDirDummyClass</name>
+    <member refid="classMyNamespace_1_1SubDirDummyClass_1aca56689e8ebc46b96e65f9e5147a9f2b" kind="function"><name>SubDirDummyClass</name></member>
   </compound>
   <compound refid="classMyNamespace_1_1TemplateClass" kind="class"><name>MyNamespace::TemplateClass</name>
     <member refid="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" kind="typedef"><name>ItemList</name></member>
@@ -115,6 +122,8 @@
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
+  <compound refid="subdir_2test1_8h" kind="file"><name>test1.h</name>
+  </compound>
   <compound refid="test1_8h" kind="file"><name>test1.h</name>
     <member refid="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" kind="enum"><name>noNsEnum</name></member>
     <member refid="test1_8h_1ada63d817711fcba667c8b01c2aa232aea382ee855180652976e01061da0a7e5d8" kind="enumvalue"><name>WW</name></member>
@@ -124,10 +133,16 @@
     <member refid="test1_8h_1a817b89b4957f80e2c5426c08a67d99c0" kind="variable"><name>noNsVariable</name></member>
     <member refid="test1_8h_1a6f5fae35ae7828c1cfc1d966b03c3b9a" kind="function"><name>noNsFunction</name></member>
   </compound>
+  <compound refid="subdir_2test2_8h" kind="file"><name>test2.h</name>
+  </compound>
   <compound refid="test2_8h" kind="file"><name>test2.h</name>
   </compound>
   <compound refid="test3_8h" kind="file"><name>test3.h</name>
   </compound>
   <compound refid="test4_8h" kind="file"><name>test4.h</name>
+  </compound>
+  <compound refid="dir_97b4180d769d0219c651318eede60d30" kind="dir"><name>/home/david/workspace/ruby-doxygen-parser/spec/headers/</name>
+  </compound>
+  <compound refid="dir_c056a72e63f1330c6deca8c8de901b10" kind="dir"><name>/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/</name>
   </compound>
 </doxygenindex>

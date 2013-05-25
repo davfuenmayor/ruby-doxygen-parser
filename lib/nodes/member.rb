@@ -15,7 +15,8 @@ module Doxyparser
 
 		private
 
-		def compute_attr
+		def init_attributes
+			super
 			raise "No XML node was associated to this member" if @node.nil?
 			@xml_path=parent.xml_path
 			if @node['static']
@@ -41,16 +42,20 @@ module Doxyparser
 			@params=[]
 			all_params= self.xpath("param")
 			return if all_params == nil || all_params.empty? || all_params[0].child==nil
-			
+
 			all_params.each { |param|
-				@params << Doxyparser::Param.new(node: param, parent: self, name: 'param')
+				@params << Doxyparser::Param.new(node: param, parent: self, name: 'param''param')
 			}
+		end
+
+		def find_name
+			@parent.name + '::' + @node.xpath("name")[0].child.content
 		end
 
 		def find_type n
 			type = n.xpath("type")
-			return "" if type.nil? || type.empty? || type[0].child==nil			
-			Type.new node: type[0], parent: self, name: type[0].content
+			return "" if type.nil? || type.empty? || type[0].child==nil
+			Type.new node: type[0], dir: @dir
 		end
 	end
 end

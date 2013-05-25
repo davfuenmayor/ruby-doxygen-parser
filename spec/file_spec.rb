@@ -7,7 +7,14 @@ require_relative 'custom_spec_helper'
 describe "Doxyparser::HFile" do
 
 	before(:all) do
-		@file = Doxyparser::parse_header_file('test1.h', xml_dir)
+		@file = Doxyparser::parse_file('test1.h', xml_dir)
+	end
+	
+	it "should correctly create files in subdirectories" do
+		subdir_file = Doxyparser::parse_file('subdir/test1.h', xml_dir)
+		subdir_file.name.should eql 'subdir/test1.h'
+		subdir_file.basename.should eql 'test1.h'
+		subdir_file.xml_path.should eql xml_dir+'/subdir_2test1_8h.xml'
 	end
 	
 	it "should be created correctly" do
@@ -17,17 +24,17 @@ describe "Doxyparser::HFile" do
 	end
 
 	it "should correctly generate includes and included_by listing" do
-		expected_included= ['stdlib.h', 'vector', 'list', 'map', 'iostream', 'test3.h']
-		expected_including= ['test3.h', 'test2.h', 'test4.h']
-		@file.list_included.should eql expected_included
-		@file.list_including.should eql ['test3.h', 'test2.h', 'test4.h']
+		expected_included= ['stdlib.h', 'vector', 'list', 'map', 'iostream', 'test3.h', 'subdir/test1.h'].sort
+		expected_including= ['test3.h', 'test2.h', 'test4.h', 'subdir/test2.h'].sort
+		@file.list_included.sort.should eql expected_included
+		@file.list_including.sort.should eql expected_including
 	end
 
 	it "should correctly generate includes and included_by files" do
-		expected_included= ['test3.h']
-		expected_including= ['test3.h', 'test2.h', 'test4.h']
-		@file.files_included.map{|f| f.basename}.should eql expected_included
-		@file.files_including.map{|f| f.basename}.should eql expected_including
+		expected_included= ['test3.h', 'subdir/test1.h'].sort
+		expected_including= ['test3.h', 'test2.h', 'test4.h', 'subdir/test2.h'].sort
+		@file.files_included.map{|f| f.name}.sort.should eql expected_included
+		@file.files_including.map{|f| f.name}.sort.should eql expected_including
 	end
 
 	it "should create the right classes and structs" do

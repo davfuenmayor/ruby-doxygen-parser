@@ -27,7 +27,7 @@ describe "Doxyparser::Type" do
 		type = typedef.type
 		type.name.should eql 'std::map< MyMostInnerClass, TemplateClass< OuterStruct,::noNsClass, 8 > >'
 		type.should be_template
-		type.nested_local_types.map{|t| t.basename}.should eql ['MyMostInnerClass', 'TemplateClass', 'OuterStruct', 'noNsClass']
+		type.nested_local_types.map{|t| t.name}.should eql ['MyMostInnerClass', 'TemplateClass', 'OuterStruct', 'noNsClass']
 		type.nested_typenames.should eql ['std::map', 'MyMostInnerClass' , 'TemplateClass', 'OuterStruct', '::noNsClass']
 	end
 

@@ -33,13 +33,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="63" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="63" bodyend="65"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="64" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="64" bodyend="66"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="57"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="58"/>
   </compounddef>
 </doxygen>

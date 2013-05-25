@@ -2,6 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="namespaceMyNamespace" kind="namespace">
     <compoundname>MyNamespace</compoundname>
+    <innerclass refid="classMyNamespace_1_1SubDirClass" prot="public">MyNamespace::SubDirClass</innerclass>
+    <innerclass refid="classMyNamespace_1_1SubDirDummyClass" prot="public">MyNamespace::SubDirDummyClass</innerclass>
     <innerclass refid="structMyNamespace_1_1OuterStruct" prot="public">MyNamespace::OuterStruct</innerclass>
     <innerclass refid="classMyNamespace_1_1TemplateClass" prot="public">MyNamespace::TemplateClass</innerclass>
     <innerclass refid="classMyNamespace_1_1MyClass" prot="public">MyNamespace::MyClass</innerclass>
@@ -36,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="40" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="40" bodyend="42"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="41" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="enum" id="namespaceMyNamespace_1a252b8e2ba5b04422f69ceeb24ccebbef" prot="public" static="no">
         <name>@0</name>
@@ -67,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="44" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="44" bodyend="46"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="45" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="45" bodyend="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -82,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="70" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="70" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="71" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -97,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="78" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="78" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="79" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -115,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="72"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMyNamespace_1aa893ce95b9c6dda8b40a51d6fd44bb2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -131,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="74"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="75"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMyNamespace_1a5fccd15fa2d7723cf887f63a048b5c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
@@ -147,13 +149,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="76"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="77"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="35"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test1.h" line="3"/>
   </compounddef>
 </doxygen>

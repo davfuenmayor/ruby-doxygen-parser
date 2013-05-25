@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="138" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="138" bodyend="-1"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="139" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="139"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="140"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1_1InnerClass_1aaa439412ad79bb7b8ea1d86e707fa12f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="140" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="140" bodyend="140"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="141" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classMyNamespace_1_1MyClass_1_1InnerClass_1aeac18792c46d328b3665da34f80bac5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="141" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="141" bodyend="141"/>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="142" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="142" bodyend="142"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -80,7 +80,7 @@
         <link refid="structMyNamespace_1_1OuterStruct"/>
       </node>
     </collaborationgraph>
-    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="136" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="136" bodyend="142"/>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="137" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="137" bodyend="143"/>
     <listofallmembers>
       <member refid="classMyNamespace_1_1MyClass_1_1InnerClass_1aaa439412ad79bb7b8ea1d86e707fa12f" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass::InnerClass</scope><name>InnerClass</name></member>
       <member refid="classMyNamespace_1_1MyClass_1_1InnerClass_1a1b4e0bd26066cfd2c91fbeafaecfb579" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass::InnerClass</scope><name>innerClassAttr</name></member>
