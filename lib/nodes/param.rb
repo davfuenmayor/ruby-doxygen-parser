@@ -20,10 +20,8 @@ module Doxyparser
 
 			declname_temp = @node.xpath("declname")
 			return if declname_temp.nil? || declname_temp.empty?
-			@declname = declname_temp[0].content
-			
-			@name += @declname
-			
+			@declname = declname_temp[0].content			
+			@name += @declname			
 			@basename = @declname
 
 			value_temp = @node.xpath("defval")
