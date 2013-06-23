@@ -44,21 +44,31 @@ module Doxyparser
       Doxyparser::HFile.new :name => basename, :dir => xml_dir
     end
     
-    def gen_xml_docs src_dir, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil
+    def gen_xml_docs source_dirs, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil
     	
     	if include_dirs.nil? || include_dirs.empty?
     		inc_dirs = ''
     	else
-    		inc_dirs = include_dirs.join(', ')
+    		if include_dirs.is_a? Array
+    			inc_dirs = include_dirs.join(' ')
+    		else
+    			inc_dirs = include_dirs
+    		end
     	end
-    	recursive = recursive ? 'YES' : 'NO'
+    	if source_dirs.is_a? Array
+    		proj_name = File.basename(source_dirs[0])
+    		src_dirs = source_dirs.join(' ')
+    	else
+    		proj_name = File.basename(source_dirs)
+    		src_dirs = source_dirs
+    	end
     	
+    	recursive = recursive ? 'YES' : 'NO'    	
     	home_dir = Doxyparser::Util.home_dir
     	gen_html = generate_html ? 'YES' : 'NO'
-    	proj_name = File.basename src_dir
       doxyfile =  "# Doxyfile 1.7.6.1\n\n"
       doxyfile << "# Project related configuration options\n\n"
-      doxyfile << %Q{PROJECT_NAME\t\t= "#{proj_name}"\nINPUT\t\t\t\t= #{src_dir}\nGENERATE_HTML\t\t= #{gen_html}\n}
+      doxyfile << %Q{PROJECT_NAME\t\t= "#{proj_name}"\nINPUT\t\t\t\t= #{src_dirs}\nGENERATE_HTML\t\t= #{gen_html}\n}
       doxyfile << %Q{RECURSIVE\t\t\t= #{recursive}\nINCLUDE_PATH\t\t= #{inc_dirs}\n\n}
       doxyfile << "# Default doxygen configuration options\n\n"
       doxyfile << Doxyparser::Util.read_file(home_dir+'/resources/Doxyfile')

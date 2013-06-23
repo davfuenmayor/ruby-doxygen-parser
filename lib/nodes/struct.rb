@@ -64,6 +64,16 @@ module Doxyparser
         del_prefix(node.child.content)
       }
     end
+    
+    def parent_types(access = :public, filter = nil)
+    	if access == :all
+    		return parent_types(:public, filter) + parent_types(:protected, filter) + parent_types(:private, filter) 
+    	end
+      types = doc.xpath(%Q{/doxygen/compounddef/basecompoundref[@prot="#{access}"]})
+      types.map { |t|
+      	Doxyparser::Type.new(name: t.child.content, dir: @dir)
+      }
+    end
 
     def innerstructs(access = :public, filter = nil)
     	if access == :all

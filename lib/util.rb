@@ -11,7 +11,7 @@ module Doxyparser
     end
 
     def del_prefix(n)
-      n.gsub(%r{.*[:/]}, "")
+      n.gsub(%r{^[^<]*[:/]}, "")
     end
 
     def escape_file_name(filename)

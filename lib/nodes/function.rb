@@ -21,7 +21,7 @@ module Doxyparser
     end
 
     def constructor?
-      @basename==parent.basename
+      @basename == parent.basename
     end
 
     def destructor?

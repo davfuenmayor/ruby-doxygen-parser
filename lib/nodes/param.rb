@@ -15,7 +15,7 @@ module Doxyparser
 		def init_attributes
 			type_temp = @node.xpath("type")
 			return if type_temp.nil? || type_temp.empty?
-			@type = Type.new node: type_temp[0], parent: @parent
+			@type = Type.new(node: type_temp[0], parent: @parent)
 			@name = @type.name			
 
 			declname_temp = @node.xpath("declname")

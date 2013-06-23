@@ -10,7 +10,7 @@ module Doxyparser
     attr_reader :params
 
     def file
-      HFile.new(:name => @filename, :dir => @dir)
+      Doxyparser::HFile.new(:name => @filename, :dir => @dir)
     end
 
     private
@@ -58,8 +58,8 @@ module Doxyparser
 
     def find_type(n)
       type = n.xpath("type")
-      return Type.new(name: '', dir: @dir) if type.nil? || type.empty? || type[0].child == nil
-      Type.new(node: type[0], dir: @dir)
+      return Doxyparser::Type.new(name: '', dir: @dir) if type.nil? || type.empty? || type[0].child == nil
+      Doxyparser::Type.new(node: type[0], dir: @dir)
     end
   end
 end
