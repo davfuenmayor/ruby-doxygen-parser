@@ -17,11 +17,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="9" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" bodystart="9" bodyend="9"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a35b6d96ba804d3342c2ebd7849bef41f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1a963e073552534251c5ac8f6605850bae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> const &amp;</type>
-        <definition>MyClass const&amp; AccessorsClass::get_Prop2</definition>
+        <definition>MyClass const&amp; AccessorsClass::get_Prop2get_</definition>
         <argsstring>()</argsstring>
-        <name>get_Prop2</name>
+        <name>get_Prop2get_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -30,11 +30,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="11"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a630adcb913d0c134047b489720ad1975" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1ad03eac05ebba11991bb46256ef084a02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void AccessorsClass::set_Prop2</definition>
+        <definition>void AccessorsClass::set_Prop2set_2</definition>
         <argsstring>(MyClass const &amp;obj)</argsstring>
-        <name>set_Prop2</name>
+        <name>set_Prop2set_2</name>
         <param>
           <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> const &amp;</type>
           <declname>obj</declname>
@@ -47,11 +47,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="12"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a0b20f790c6668d372cc6596c75349cba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1abdf8ff534b9efae63690b1f59aa54703" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> *</type>
-        <definition>MyClass* AccessorsClass::GetProp3</definition>
+        <definition>MyClass* AccessorsClass::Get3DProp3</definition>
         <argsstring>()</argsstring>
-        <name>GetProp3</name>
+        <name>Get3DProp3</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -60,11 +60,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="14"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a27cab6aae1f45071185f2999c74a6ba6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1a89813e0bae2b65afd7974627901f5d35" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void AccessorsClass::SetProp3</definition>
+        <definition>void AccessorsClass::Set3DProp3</definition>
         <argsstring>(const MyClass *obj) const </argsstring>
-        <name>SetProp3</name>
+        <name>Set3DProp3</name>
         <param>
           <type>const <ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> *</type>
           <declname>obj</declname>
@@ -132,11 +132,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="19"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a8d2bb1806dc77253956f6a1bd6e7ecaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1a871db71c4bc41a7f337f1aef4e34fa60" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool AccessorsClass::isBoolProp</definition>
+        <definition>bool AccessorsClass::isBoolPropis</definition>
         <argsstring>()</argsstring>
-        <name>isBoolProp</name>
+        <name>isBoolPropis</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -175,11 +175,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="24"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a7d3b1bde7c4036a48cc464afbd183627" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1a2b0c209dc85b21cc3cdb7edda1e1a905" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> *</type>
-        <definition>MyClass* AccessorsClass::getProp</definition>
+        <definition>MyClass* AccessorsClass::getPropget</definition>
         <argsstring>()</argsstring>
-        <name>getProp</name>
+        <name>getPropget</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -188,11 +188,11 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="26"/>
       </memberdef>
-      <memberdef kind="function" id="classAccessorsClass_1a3b1b0c44b1fa7a1bac9d55b076b08ef1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classAccessorsClass_1a0e58ec7ae93fad706c012fb71216cf7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void AccessorsClass::setProp</definition>
+        <definition>void AccessorsClass::setPropset</definition>
         <argsstring>(MyClass *obj)</argsstring>
-        <name>setProp</name>
+        <name>setPropset</name>
         <param>
           <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> *</type>
           <declname>obj</declname>
@@ -245,19 +245,19 @@
     <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" line="6" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test2.h" bodystart="6" bodyend="32"/>
     <listofallmembers>
       <member refid="classAccessorsClass_1ab84ec5343f0f2dfafc5ce3d27aa7c168" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>AccessorsClass</name></member>
-      <member refid="classAccessorsClass_1a35b6d96ba804d3342c2ebd7849bef41f" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>get_Prop2</name></member>
+      <member refid="classAccessorsClass_1abdf8ff534b9efae63690b1f59aa54703" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>Get3DProp3</name></member>
+      <member refid="classAccessorsClass_1a963e073552534251c5ac8f6605850bae" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>get_Prop2get_</name></member>
       <member refid="classAccessorsClass_1ace1625c372be9c7ce8fae607350a70fa" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>getNotAProp</name></member>
-      <member refid="classAccessorsClass_1a7d3b1bde7c4036a48cc464afbd183627" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>getProp</name></member>
-      <member refid="classAccessorsClass_1a0b20f790c6668d372cc6596c75349cba" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>GetProp3</name></member>
+      <member refid="classAccessorsClass_1a2b0c209dc85b21cc3cdb7edda1e1a905" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>getPropget</name></member>
       <member refid="classAccessorsClass_1ac087671c9de137e5f36205de4619ded9" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>getStaticProp</name></member>
       <member refid="classAccessorsClass_1a3c8e9898c16d3353a53300379f8f4c73" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>isAlsoNotAProp</name></member>
-      <member refid="classAccessorsClass_1a8d2bb1806dc77253956f6a1bd6e7ecaa" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>isBoolProp</name></member>
+      <member refid="classAccessorsClass_1a871db71c4bc41a7f337f1aef4e34fa60" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>isBoolPropis</name></member>
       <member refid="classAccessorsClass_1a3f20ae6b79e7ecd800d96370e95e8b17" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>isNotAProp</name></member>
-      <member refid="classAccessorsClass_1a630adcb913d0c134047b489720ad1975" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>set_Prop2</name></member>
+      <member refid="classAccessorsClass_1a89813e0bae2b65afd7974627901f5d35" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>Set3DProp3</name></member>
+      <member refid="classAccessorsClass_1ad03eac05ebba11991bb46256ef084a02" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>set_Prop2set_2</name></member>
       <member refid="classAccessorsClass_1ab97b134f05b258f8f298c18ef4b59898" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>setAlsoNotAProp</name></member>
       <member refid="classAccessorsClass_1a719d03c40d664d59785e64947cef9aee" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>setNotAProp</name></member>
-      <member refid="classAccessorsClass_1a3b1b0c44b1fa7a1bac9d55b076b08ef1" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>setProp</name></member>
-      <member refid="classAccessorsClass_1a27cab6aae1f45071185f2999c74a6ba6" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>SetProp3</name></member>
+      <member refid="classAccessorsClass_1a0e58ec7ae93fad706c012fb71216cf7d" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>setPropset</name></member>
       <member refid="classAccessorsClass_1a0e723f32e68f4faf6620e81b26adfee4" prot="private" virt="non-virtual"><scope>AccessorsClass</scope><name>setStaticProp</name></member>
     </listofallmembers>
   </compounddef>

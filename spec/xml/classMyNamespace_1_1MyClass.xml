@@ -82,9 +82,9 @@
         </inbodydescription>
         <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="117" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="113" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" prot="public" static="no">
-        <type>std::vector&lt; <ref refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" kindref="member">MapShortVectorInt</ref> &gt;</type>
-        <definition>typedef std::vector&lt;MapShortVectorInt&gt; MyNamespace::MyClass::VectorMapShortVectorInt</definition>
+      <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a507362091c37c1c57ff66638844b39fa" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classMyNamespace_1_1MyClass_1a7ae4a0dc9f593de7d61be5b71f7ad037" kindref="member">MapShortVectorInt</ref> &amp; &gt;</type>
+        <definition>typedef std::vector&lt;MapShortVectorInt&amp;&gt; MyNamespace::MyClass::VectorMapShortVectorInt</definition>
         <argsstring></argsstring>
         <name>VectorMapShortVectorInt</name>
         <briefdescription>
@@ -97,9 +97,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a7a10e2edbe0eb41c3682dcac80f32518" prot="private" static="no">
-        <type>std::map&lt; <ref refid="namespaceMyNamespace_1a9eb8a60c2ffcd0a074af24af9e6f5367" kindref="member">MyMostInnerClass</ref>, <ref refid="classMyNamespace_1_1TemplateClass" kindref="compound">TemplateClass</ref>&lt; <ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref>,::<ref refid="classnoNsClass" kindref="compound">noNsClass</ref>, 8 &gt; &gt;</type>
-        <definition>typedef std::map&lt;MyMostInnerClass,TemplateClass&lt; OuterStruct, ::noNsClass, 8&gt; &gt; MyNamespace::MyClass::privateTypedef</definition>
+      <memberdef kind="typedef" id="classMyNamespace_1_1MyClass_1a379753738bf9c6a41e4b7d442642fa4b" prot="private" static="no">
+        <type>std::map&lt; <ref refid="namespaceMyNamespace_1a9eb8a60c2ffcd0a074af24af9e6f5367" kindref="member">MyMostInnerClass</ref> *, <ref refid="classMyNamespace_1_1TemplateClass" kindref="compound">TemplateClass</ref>&lt; const <ref refid="structMyNamespace_1_1OuterStruct" kindref="compound">OuterStruct</ref> &amp;,::<ref refid="classnoNsClass" kindref="compound">noNsClass</ref>, 8 &gt; &gt;</type>
+        <definition>typedef std::map&lt;MyMostInnerClass *,TemplateClass&lt; const OuterStruct&amp;, ::noNsClass, 8&gt; &gt; MyNamespace::MyClass::privateTypedef</definition>
         <argsstring></argsstring>
         <name>privateTypedef</name>
         <briefdescription>
@@ -282,11 +282,15 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1afbd646359852ada2ebef4bdec9d02168" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classMyNamespace_1_1MyClass_1aac07fba8997fcfa159b0df160873fe62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMyNamespace_1_1MyClass" kindref="compound">MyClass</ref> *</type>
         <definition>MyClass* MyNamespace::MyClass::protectedMethod1</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(privateTypedef const *const gato)</argsstring>
         <name>protectedMethod1</name>
+        <param>
+          <type><ref refid="classMyNamespace_1_1MyClass_1a379753738bf9c6a41e4b7d442642fa4b" kindref="member">privateTypedef</ref> const *const</type>
+          <declname>gato</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -464,40 +468,49 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="12">
+      <node id="464">
         <label>MyNamespace::MyClass</label>
         <link refid="classMyNamespace_1_1MyClass"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="465" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="465">
         <label>MyNamespace::TemplateClass&lt; OuterStruct *,::noNsClass &gt;</label>
         <link refid="classMyNamespace_1_1TemplateClass"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14">
+      <node id="466">
         <label>MyNamespace::MyClass</label>
         <link refid="classMyNamespace_1_1MyClass"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="470" relation="usage">
           <edgelabel>protectedField1</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="469" relation="usage">
           <edgelabel>privateField1</edgelabel>
           <edgelabel>publicStaticField1</edgelabel>
         </childnode>
       </node>
-      <node id="17">
+      <node id="469">
         <label>MyNamespace::OuterStruct</label>
         <link refid="structMyNamespace_1_1OuterStruct"/>
       </node>
-      <node id="15">
+      <node id="468">
+        <label>std::list&lt; OuterStruct * &gt;</label>
+        <childnode refid="469" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="467">
         <label>MyNamespace::TemplateClass&lt; OuterStruct *,::noNsClass &gt;</label>
         <link refid="classMyNamespace_1_1TemplateClass"/>
+        <childnode refid="468" relation="usage">
+          <edgelabel>mItems</edgelabel>
+        </childnode>
       </node>
-      <node id="16">
+      <node id="470">
         <label>MyNamespace::SubDirClass</label>
         <link refid="classMyNamespace_1_1SubDirClass"/>
       </node>
@@ -524,10 +537,10 @@
       <member refid="classMyNamespace_1_1MyClass_1a9916654830a8a0d99a340627f87daf2b" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateMethod1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a23b3edc330a0cafa6404c843d2c0844e" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateMethod2</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a7cf6fabd84e7b3631037033791806680" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateStaticMethod</name></member>
-      <member refid="classMyNamespace_1_1MyClass_1a7a10e2edbe0eb41c3682dcac80f32518" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateTypedef</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a379753738bf9c6a41e4b7d442642fa4b" prot="private" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>privateTypedef</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a0864cba054cdba30f56f6505f40e411f" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedField1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1aa1a853988da697226908869eb82d07bf" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedField2</name></member>
-      <member refid="classMyNamespace_1_1MyClass_1afbd646359852ada2ebef4bdec9d02168" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedMethod1</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1aac07fba8997fcfa159b0df160873fe62" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedMethod1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1ae0abe3f4b5b90b7681c7acdd56d13a90" prot="protected" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>protectedMethod2</name></member>
       <member refid="classMyNamespace_1_1MyClass_1ab941c40f4b9f3c0683e5896774bbdef2" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>publicStaticField1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a570657b1b72420b893dcbe91a2be076d" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>publicStaticMethod</name></member>
@@ -537,7 +550,7 @@
       <member refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074caa1199e52717413fc8f0d2f62c3965bb6" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>value1</name></member>
       <member refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074ca441b86bd0e32abb65e4ed499aabdec1b" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>value2</name></member>
       <member refid="classMyNamespace_1_1MyClass_1ae973a2c02b7b004328af6735d045074ca2164660f49d0c30ff1418d7c3c125931" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>value3</name></member>
-      <member refid="classMyNamespace_1_1MyClass_1a583bc876cdbc04d0bab6d39ff28ac6d3" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>VectorMapShortVectorInt</name></member>
+      <member refid="classMyNamespace_1_1MyClass_1a507362091c37c1c57ff66638844b39fa" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>VectorMapShortVectorInt</name></member>
       <member refid="classMyNamespace_1_1MyClass_1a4fbfe0abdd13613096ba9f0748b62598" prot="public" virt="virtual"><scope>MyNamespace::MyClass</scope><name>virtualMethod</name></member>
       <member refid="classMyNamespace_1_1MyClass_1aba29d70658602849637a9776e32fa24f" prot="public" virt="non-virtual"><scope>MyNamespace::MyClass</scope><name>~MyClass</name></member>
       <member refid="classMyNamespace_1_1TemplateClass_1a4f4613f7704aa9952cc38be47be43cee" prot="public" virt="virtual"><scope>MyNamespace::MyClass</scope><name>~TemplateClass</name></member>

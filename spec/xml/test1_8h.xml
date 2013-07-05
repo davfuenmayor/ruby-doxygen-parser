@@ -101,7 +101,6 @@
     <innernamespace refid="namespaceMyNamespace">MyNamespace</innernamespace>
     <innernamespace refid="namespaceMyNamespace_1_1MyInnerNamespace">MyNamespace::MyInnerNamespace</innernamespace>
     <innernamespace refid="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace">MyNamespace::MyInnerNamespace::MyMostInnerNamespace</innernamespace>
-    <innernamespace refid="namespacestd">std</innernamespace>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="test1_8h_1ada63d817711fcba667c8b01c2aa232ae" prot="public" static="no">
         <name>noNsEnum</name>

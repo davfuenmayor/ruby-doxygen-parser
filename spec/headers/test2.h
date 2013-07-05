@@ -8,23 +8,23 @@ class AccessorsClass {
 
 	AccessorsClass(){};
 
-		MyClass const& get_Prop2();
-		void set_Prop2(MyClass const& obj);
+		MyClass const& get_Prop2get_();
+		void set_Prop2set_2(MyClass const& obj);
 		
-		MyClass * GetProp3();
-		void SetProp3(const MyClass *obj) const;
+		MyClass * Get3DProp3();
+		void Set3DProp3(const MyClass *obj) const;
 		
 		MyClass* getNotAProp(int y);
 		bool setNotAProp(MyClass *obj);
 		void setAlsoNotAProp(MyClass *obj, bool d);
 		
-		bool isBoolProp();
+		bool isBoolPropis();
 		
 		int isNotAProp();
 		bool isAlsoNotAProp(bool d);
 	    
-	    MyClass* getProp();
-		void setProp(MyClass *obj);
+	    MyClass* getPropget();
+		void setPropset(MyClass *obj);
 
 		static double* getStaticProp();	
 		static void setStaticProp(double* obj);

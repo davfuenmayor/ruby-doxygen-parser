@@ -18,14 +18,14 @@ describe "Doxyparser::Type" do
 		
 		typedef = @class.typedefs(:public, ['VectorMapShortVectorInt'])[0]
 		type = typedef.type
-		type.name.should eql 'std::vector< MapShortVectorInt >'
+		type.name.should eql 'std::vector< MapShortVectorInt & >'
 		type.should be_template
 	end
 	
 	it "should create consistently complex types" do
 		typedef = @class.typedefs(:private, ['privateTypedef'])[0]
 		type = typedef.type
-		type.name.should eql 'std::map< MyMostInnerClass, TemplateClass< OuterStruct,::noNsClass, 8 > >'
+		type.name.should eql 'std::map< MyMostInnerClass *, TemplateClass< const OuterStruct &,::noNsClass, 8 > >'
 		type.should be_template
 		type.nested_local_types.map{|t| t.name}.should eql ['MyMostInnerClass', 'TemplateClass', 'OuterStruct', 'noNsClass']
 		type.nested_typenames.should eql ['std::map', 'MyMostInnerClass' , 'TemplateClass', 'OuterStruct', '::noNsClass']

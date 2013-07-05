@@ -100,13 +100,13 @@ class MyClass : public TemplateClass<OuterStruct *, ::noNsClass> {
 		MyClass* privateMethod1();
 		void privateMethod2(MyClass *obj);
 		static void* privateStaticMethod();
-		typedef std::map <MyMostInnerClass,TemplateClass< OuterStruct, ::noNsClass, 8> > privateTypedef;
+		typedef std::map <MyMostInnerClass *,TemplateClass< const OuterStruct&, ::noNsClass, 8> > privateTypedef;
 		
 	protected:
 
 		SubDirClass * protectedField1;
 		float protectedField2;
-		MyClass* protectedMethod1();
+		MyClass* protectedMethod1(privateTypedef const * const gato);
 		void protectedMethod2(MyClass *obj);	
 
 	public:
@@ -115,7 +115,7 @@ class MyClass : public TemplateClass<OuterStruct *, ::noNsClass> {
 		
 	
 		typedef std::map<unsigned short, std::vector< int* > > MapShortVectorInt;
-		typedef std::vector<MapShortVectorInt> VectorMapShortVectorInt;
+		typedef std::vector<MapShortVectorInt&> VectorMapShortVectorInt;
 		
 	
 	    static OuterStruct* publicStaticField1;

@@ -64,7 +64,15 @@ module Doxyparser
     private
 
     def find_name
-      escape_file_name(self.refid)
+    	if @node['refid'].nil?
+    		@node.child.content
+    	else
+      	escape_file_name(self.refid)
+    	end
+    end
+    
+    def del_prefix_for(str)
+      del_prefix_file(str)
     end
 
     def compute_path

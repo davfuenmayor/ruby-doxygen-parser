@@ -53,11 +53,15 @@ module Doxyparser
     end
 
     def init_attributes
-      @basename ||= del_prefix(@name)
+      @basename ||= del_prefix_for(@name)
     end
 
     def find_name
       # For Inheritance
+    end
+    
+    def del_prefix_for(str)
+      del_prefix_class(str)
     end
 
   end

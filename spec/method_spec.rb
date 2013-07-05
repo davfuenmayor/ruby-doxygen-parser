@@ -11,7 +11,7 @@ describe "Doxyparser::Method" do
 		end
 
 		it "should create consistently methods" do
-			method = @class.methods(:private, nil, ['isBoolProp'])
+			method = @class.methods(:private, nil, ['isBoolPropis'])
 			method.size.should eql 1
 			method = method[0]
 			method.type.name.should eql 'bool'
@@ -20,39 +20,39 @@ describe "Doxyparser::Method" do
 			method.file.basename.should eql 'test2.h'
 			method.params.should be_empty
 			method.static.should be_nil
-			method.definition.should eql 'bool AccessorsClass::isBoolProp'
+			method.definition.should eql 'bool AccessorsClass::isBoolPropis'
 		end
 		
 		it "should create standard getters and setters" do
-			getter = @class.methods(:private, nil, ['getProp'])[0]
-			getter.getter_for.should eql 'prop'
+			getter = @class.methods(:private, nil, ['getPropget'])[0]
+			getter.getter_for.should eql 'propget'
 			getter.setter_for.should be_nil
-			setter = @class.methods(:private, nil, ['setProp'])[0]
-			setter.setter_for.should eql 'prop'
+			setter = @class.methods(:private, nil, ['setPropset'])[0]
+			setter.setter_for.should eql 'propset'
 			setter.getter_for.should be_nil
 			setter.static.should be_nil
 			
-			getter = @class.methods(:private, nil, ['isBoolProp'])[0]
-			getter.getter_for.should eql 'boolProp'
+			getter = @class.methods(:private, nil, ['isBoolPropis'])[0]
+			getter.getter_for.should eql 'boolPropis'
 			getter.setter_for.should be_nil
 		end
 		
 		it "should create non standard getters and setters" do
-			getter = @class.methods(:private, nil, ['get_Prop2'])[0]
-			getter.getter_for.should eql 'prop2'
+			getter = @class.methods(:private, nil, ['get_Prop2get_'])[0]
+			getter.getter_for.should eql 'prop2get_'
 			getter.setter_for.should be_nil
-			setter = @class.methods(:private, nil, ['set_Prop2'])[0]
-			setter.setter_for.should eql 'prop2'
+			setter = @class.methods(:private, nil, ['set_Prop2set_2'])[0]
+			setter.setter_for.should eql 'prop2set_2'
 			setter.getter_for.should be_nil
 			setter.static.should be_nil
 		end
 		
 		it "should create standard Uppercase getters and setters" do
-			getter = @class.methods(:private, nil, ['GetProp3'])[0]
-			getter.getter_for.should eql 'prop3'
+			getter = @class.methods(:private, nil, ['Get3DProp3'])[0]
+			getter.getter_for.should eql '_3DProp3'
 			getter.setter_for.should be_nil
-			setter = @class.methods(:private, nil, ['SetProp3'])[0]
-			setter.setter_for.should eql 'prop3'
+			setter = @class.methods(:private, nil, ['Set3DProp3'])[0]
+			setter.setter_for.should eql '_3DProp3'
 			setter.getter_for.should be_nil
 			setter.static.should be_nil
 		end

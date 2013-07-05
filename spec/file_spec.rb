@@ -64,7 +64,7 @@ describe "Doxyparser::HFile" do
 	end
 	
 	it "should create the right namespaces" do
-		expected_namespaces=['MyNamespace', "MyNamespace::MyInnerNamespace", "MyNamespace::MyInnerNamespace::MyMostInnerNamespace", "std"]
+		expected_namespaces=['MyNamespace', "MyNamespace::MyInnerNamespace", "MyNamespace::MyInnerNamespace::MyMostInnerNamespace"]
 		file_namespaces = @file.namespaces
 		file_namespaces.size.should eql expected_namespaces.size
 

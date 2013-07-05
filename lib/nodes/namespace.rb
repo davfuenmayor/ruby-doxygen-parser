@@ -34,7 +34,7 @@ module Doxyparser
     def innernamespaces(filter=nil)
       lst = doc.xpath(%Q{/doxygen/compounddef/innernamespace})
       do_filter(filter, lst, Doxyparser::Namespace) { |node|
-        del_spaces del_prefix(node.child.content)
+        del_spaces del_prefix_class(node.child.content)
       }
     end
 
@@ -42,7 +42,7 @@ module Doxyparser
       lst = doc.xpath(%Q{/doxygen/compounddef/innerclass})
       lst = lst.select { |c| c["refid"].start_with?("struct") }
       do_filter(filter, lst, Doxyparser::Struct) { |node|
-        del_spaces del_prefix(node.child.content)
+        del_spaces del_prefix_class(node.child.content)
       }
     end
 
@@ -50,7 +50,7 @@ module Doxyparser
       lst = doc.xpath(%Q{/doxygen/compounddef/innerclass})
       lst = lst.select { |c| c["refid"].start_with?("class") }
       do_filter(filter, lst, Doxyparser::Class) { |node|
-        del_spaces del_prefix(node.child.content)
+        del_spaces del_prefix_class(node.child.content)
       }
     end
 

@@ -96,6 +96,18 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="588">
+        <label>MyNamespace::TemplateClass&lt; TYPE, TYPE2, entero &gt;</label>
+        <link refid="classMyNamespace_1_1TemplateClass"/>
+        <childnode refid="589" relation="usage">
+          <edgelabel>mItems</edgelabel>
+        </childnode>
+      </node>
+      <node id="589">
+        <label>std::list&lt; TYPE &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="82" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="82" bodyend="91"/>
     <listofallmembers>
       <member refid="classMyNamespace_1_1TemplateClass_1ad18ca3ad2b6e3b74521e41a765b64826" prot="protected" virt="non-virtual"><scope>MyNamespace::TemplateClass</scope><name>ItemList</name></member>

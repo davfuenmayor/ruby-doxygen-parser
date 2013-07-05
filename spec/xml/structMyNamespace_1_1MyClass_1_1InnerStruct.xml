@@ -36,14 +36,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="11">
+      <node id="333">
         <label>MyNamespace::OuterStruct</label>
         <link refid="structMyNamespace_1_1OuterStruct"/>
       </node>
-      <node id="10">
+      <node id="332">
         <label>MyNamespace::MyClass::InnerStruct</label>
         <link refid="structMyNamespace_1_1MyClass_1_1InnerStruct"/>
-        <childnode refid="11" relation="usage">
+        <childnode refid="333" relation="usage">
           <edgelabel>a</edgelabel>
         </childnode>
       </node>

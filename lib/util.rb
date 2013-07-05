@@ -10,8 +10,13 @@ module Doxyparser
       n.gsub(/\s+/, "")
     end
 
-    def del_prefix(n)
-      n.gsub(%r{^[^<]*[:/]}, "")
+    def del_prefix_class(n)
+	     n.gsub(%r{^[^<]*[:]}, "")
+    end
+    
+    def del_prefix_file(n)
+	     n.gsub(%r{/$}, "")
+	     n.gsub(%r{.*[/]}, "")
     end
 
     def escape_file_name(filename)

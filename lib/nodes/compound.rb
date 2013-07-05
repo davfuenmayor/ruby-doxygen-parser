@@ -13,7 +13,7 @@ module Doxyparser
     def init_attributes
       super
       @unnamed = 0
-      if @node
+      if @node && !@node['refid'].nil?
         @xml_path = "#{@dir}/#{self.refid}.xml"
       else
         compute_path
