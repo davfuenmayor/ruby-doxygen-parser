@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace" kind="namespace">
+    <compoundname>MyNamespace::MyInnerNamespace::MyMostInnerNamespace</compoundname>
+    <innerclass refid="classMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1_1MyClass" prot="public">MyNamespace::MyInnerNamespace::MyMostInnerNamespace::MyClass</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7c" prot="public" static="no">
+        <name>MyEnum</name>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca3fd157ace3a41238be06ec1e1da7d5e7" prot="public">
+          <name>A2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca1f4934db950cdc076ee6434046dec457" prot="public">
+          <name>B2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceMyNamespace_1_1MyInnerNamespace_1_1MyMostInnerNamespace_1a95bece1447b429c0e3dcb818486c1d7ca33188583e2e5671b99936f01071e79c8" prot="public">
+          <name>C2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="64" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="58"/>
+  </compounddef>
+</doxygen>

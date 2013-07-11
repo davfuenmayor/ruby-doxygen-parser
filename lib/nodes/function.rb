@@ -28,8 +28,10 @@ module Doxyparser
       @basename.start_with? %Q{~}
     end
 
-    def getter_for
-      if @params.empty? || (@params.size == 1 && @params[0].type.name =~ /\s*void\s*/)
+    def getter_for    	
+    	return nil if @type.name == 'void'
+    	
+      if @params.empty? || (@params.size == 1 && @params[0].type.name.strip == 'void')
         if @basename.start_with?('get') || @basename.start_with?('Get')
           ret = @basename.gsub(/^get[_]?(\w)/i) { |match| $1.downcase }
           ret.prepend('_') if ret =~ %r{^\d}
@@ -47,7 +49,7 @@ module Doxyparser
     end
 
     def setter_for
-      if (@type.name == 'void') && (@params.size == 1)
+      if (@type.name == 'void') && (@params.size == 1 && @params[0].type.name.strip != 'void')
         if @basename.start_with?('set') || @basename.start_with?('Set')
           ret = @basename.gsub(/^set[_]?(\w)/i) { |match| $1.downcase }
           ret.prepend('_') if ret =~ %r{^\d}

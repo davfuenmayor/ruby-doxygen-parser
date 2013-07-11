@@ -45,6 +45,10 @@ describe "Doxyparser::Method" do
 			setter.setter_for.should eql 'prop2set_2'
 			setter.getter_for.should be_nil
 			setter.static.should be_nil
+			
+			getter = @class.methods(:private, nil, ['getIndeedAProp'])[0]
+			getter.getter_for.should eql 'indeedAProp'
+			getter.setter_for.should be_nil
 		end
 		
 		it "should create standard Uppercase getters and setters" do
@@ -64,6 +68,18 @@ describe "Doxyparser::Method" do
 			setter = @class.methods(:private, nil, ['setNotAProp'])[0]
 			setter.setter_for.should be_nil
 			setter.getter_for.should be_nil
+			
+		end
+		
+		it "should ignore malformed getters and setters Pt. 3" do
+			
+			getter = @class.methods(:private, nil, ['getAgainNotAProp'])[0]
+			getter.getter_for.should be_nil
+			getter.setter_for.should be_nil
+			setter = @class.methods(:private, nil, ['setAgainNotAProp'])[0]
+			setter.setter_for.should be_nil
+			setter.getter_for.should be_nil
+			
 		end
 		
 		it "should ignore malformed getters and setters Pt. 2" do

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classMyNamespace_1_1SubDirDummyClass" kind="class" prot="public">
+    <compoundname>MyNamespace::SubDirDummyClass</compoundname>
+    <includes refid="subdir_2test2_8h" local="no">test2.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyNamespace_1_1SubDirDummyClass_1aca56689e8ebc46b96e65f9e5147a9f2b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyNamespace::SubDirDummyClass::SubDirDummyClass</definition>
+        <argsstring>()</argsstring>
+        <name>SubDirDummyClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test2.h" line="8" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test2.h" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test2.h" line="6" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/test2.h" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classMyNamespace_1_1SubDirDummyClass_1aca56689e8ebc46b96e65f9e5147a9f2b" prot="private" virt="non-virtual"><scope>MyNamespace::SubDirDummyClass</scope><name>SubDirDummyClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

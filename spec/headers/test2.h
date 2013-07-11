@@ -18,6 +18,11 @@ class AccessorsClass {
 		bool setNotAProp(MyClass *obj);
 		void setAlsoNotAProp(MyClass *obj, bool d);
 		
+		void setAgainNotAProp(void);
+		void getAgainNotAProp(void);
+		
+		int getIndeedAProp(void);
+		
 		bool isBoolPropis();
 		
 		int isNotAProp();

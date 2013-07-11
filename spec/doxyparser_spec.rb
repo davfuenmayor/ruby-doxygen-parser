@@ -13,7 +13,7 @@ describe "Doxyparser" do
 		hfile=Doxyparser::parse_file("test.h", xml_dir)
 		output = Doxyparser::gen_xml_docs(home_dir + '/spec/headers', home_dir + '/spec/test_gen', true, ['usr/local/include', 'usr/gato'])
 		output.should_not be_empty
-		FileUtils.rm_r(home_dir + '/spec/test_gen')
+		#FileUtils.rm_r(home_dir + '/spec/test_gen')
 		clazz.name.should_not be_empty
 		namespace.name.should_not be_empty
 		struct.name.should_not be_empty
