@@ -1,0 +1,2 @@
+- Methods is an infortunate method name. Change to get_methods to avoid clashes with Ruby
+- Write documentation

@@ -126,7 +126,7 @@ class MyClass : public TemplateClass<OuterStruct *, ::noNsClass> {
 		};
 
 	    enum InnerEnum{
-	    	    	A, B, C
+	    	    	A = 23 , B = A + 1 , C = A + B
 	    };
 
 		struct InnerStruct{

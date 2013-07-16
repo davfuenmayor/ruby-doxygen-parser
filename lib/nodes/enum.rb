@@ -2,10 +2,18 @@ module Doxyparser
 
   class Enum < Member
 
-    def values
-      ret=[]
-      xpath("enumvalue/name").each { |v| ret << v.child.content }
-      ret
+    attr_reader :values
+
+    private
+
+    def init_attributes
+      super
+      @values= []
+      all_values = self.xpath("enumvalue")
+      return if all_values.nil? || all_values.empty?
+      all_values.each { |enumvalue|
+        @values << Doxyparser::EnumValue.new(node: enumvalue, parent: self)
+      }
     end
 
     private
@@ -13,7 +21,13 @@ module Doxyparser
     def find_name
       super.gsub(/@\d*/) {
         num = parent.new_unnamed
-        '_Enum' +  (num == 1 ? '' : num.to_s)
+        prefix = (parent.class == Doxyparser::Namespace) ? 'ns_' : ''
+        if (parent.class == Doxyparser::HFile)
+        	enum_name = 'file_' + escape_file_name(parent.basename.gsub(/\.\w+$/, '')) 
+        else
+        	enum_name = parent.basename
+        end
+        "#{prefix}#{enum_name}_Enum" +  (num == 1 ? '' : num.to_s)
       }
     end
   end

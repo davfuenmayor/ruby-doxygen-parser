@@ -42,6 +42,7 @@
         <name>InnerEnum</name>
         <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3a912bf61b6736f2acd1b6051c07016b46" prot="public">
           <name>A</name>
+          <initializer> 23</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -49,6 +50,7 @@
         </enumvalue>
         <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3ac5ecd2f60369c48b66dcab9710911040" prot="public">
           <name>B</name>
+          <initializer> A + 1</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -56,6 +58,7 @@
         </enumvalue>
         <enumvalue id="classMyNamespace_1_1MyClass_1a21c5d3bcfde620b45eba78f09492ada3acbe26a9b2b8b971437e7a669652f9c1d" prot="public">
           <name>C</name>
+          <initializer> A + B</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>

@@ -134,7 +134,7 @@ describe "Doxyparser::Class" do
 		end
 		
 		it "should correctly create public enums " do			
-			expected_enums=['_Enum', 'InnerEnum']
+			expected_enums=["MyClass_Enum", 'InnerEnum']
 			enums = @class.innerenums
 			compare_members enums, expected_enums, Doxyparser::Enum
 		end

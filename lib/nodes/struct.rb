@@ -21,8 +21,12 @@ module Doxyparser
         Doxyparser::Param.new(parent: self, node: param)
       }
     end
-
+    
     def methods(access = :public, static = nil, filter = nil)
+    	get_methods(access, static, filter)
+    end
+
+    def get_methods(access = :public, static = nil, filter = nil)
     	if access == :all
     		return methods(:public, static, filter) + methods(:protected, static, filter) + methods(:private, static, filter)
     	end
@@ -92,7 +96,7 @@ module Doxyparser
     	end
       sectiondef = %Q{#{access}-type}
       lst = doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="enum"][@prot="#{access}"]})
-      filter.map!{ |exp| exp =~ /^_Enum/ ? /@\d*/ : exp} unless filter.nil?
+      filter.map!{ |exp| exp =~ /^#{@basename}_Enum/ ? /@\d*/ : exp} unless filter.nil?
       do_filter(filter, lst, Doxyparser::Enum) { |node|
         node.xpath("name")[0].child.content
       }
