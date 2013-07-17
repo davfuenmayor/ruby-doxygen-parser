@@ -4,10 +4,6 @@ module Doxyparser
 
     attr_reader :xml_path
 
-    def new_unnamed
-      @unnamed += 1
-    end
-
     private
 
     def init_attributes

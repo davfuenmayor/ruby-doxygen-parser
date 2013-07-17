@@ -20,14 +20,13 @@ module Doxyparser
 
     def find_name
       super.gsub(/@\d*/) {
-        num = parent.new_unnamed
         prefix = (parent.class == Doxyparser::Namespace) ? 'ns_' : ''
         if (parent.class == Doxyparser::HFile)
         	enum_name = 'file_' + escape_file_name(parent.basename.gsub(/\.\w+$/, '')) 
         else
         	enum_name = parent.basename
         end
-        "#{prefix}#{enum_name}_Enum" +  (num == 1 ? '' : num.to_s)
+        "#{prefix}#{enum_name}_Enum"
       }
     end
   end
