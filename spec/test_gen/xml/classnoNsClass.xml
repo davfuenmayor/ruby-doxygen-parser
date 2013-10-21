@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classnoNsClass" kind="class" prot="public">
+    <compoundname>noNsClass</compoundname>
+    <includes refid="test1_8h" local="no">test1.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classnoNsClass_1a16dc8e60fe9da31538dfe75d383921f6" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double noNsClass::publicStaticField1</definition>
+        <argsstring></argsstring>
+        <name>publicStaticField1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="29" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnoNsClass_1a2bfbf28085c32933ec04c7064e39d4fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>noNsClass::noNsClass</definition>
+        <argsstring>()</argsstring>
+        <name>noNsClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="30" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnoNsClass_1ac71efcff7af58149202533b338e0b29c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>noNsClass::~noNsClass</definition>
+        <argsstring>()</argsstring>
+        <name>~noNsClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="31" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" line="27" bodyfile="/home/david/workspace/ruby-doxygen-parser/spec/headers/test1.h" bodystart="27" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classnoNsClass_1a2bfbf28085c32933ec04c7064e39d4fd" prot="public" virt="non-virtual"><scope>noNsClass</scope><name>noNsClass</name></member>
+      <member refid="classnoNsClass_1a16dc8e60fe9da31538dfe75d383921f6" prot="public" virt="non-virtual"><scope>noNsClass</scope><name>publicStaticField1</name></member>
+      <member refid="classnoNsClass_1ac71efcff7af58149202533b338e0b29c" prot="public" virt="non-virtual"><scope>noNsClass</scope><name>~noNsClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

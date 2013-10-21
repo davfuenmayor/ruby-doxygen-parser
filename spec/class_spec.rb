@@ -77,8 +77,8 @@ describe "Doxyparser::Class" do
 		end
 
 		it "should correctly create inner classes and structs" do
-			innerstruct = @class.innerstructs
-			innerclass = @class.innerclasses
+			innerstruct = @class.only_innerstructs
+			innerclass = @class.only_innerclasses
 			innerstruct.size.should eql 1
 			innerclass.size.should eql 1
 			innerstruct= innerstruct[0]
@@ -135,7 +135,7 @@ describe "Doxyparser::Class" do
 		
 		it "should correctly create public enums " do			
 			expected_enums=["MyClass_Enum", 'InnerEnum']
-			enums = @class.innerenums
+			enums = @class.enums
 			compare_members enums, expected_enums, Doxyparser::Enum
 		end
 		

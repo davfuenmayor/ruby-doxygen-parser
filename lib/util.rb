@@ -9,8 +9,24 @@ module Doxyparser
     def del_spaces(n)
       n.gsub(/\s+/, "")
     end
-
-    def del_prefix_class(n)
+    
+    def escape_all(typename)
+    	return del_prefix_class(escape_template(escape_const_ref_ptr(typename)))
+    end
+    
+    def escape_template(typename)
+      typename.gsub(/<.+$/,'').strip
+    end
+    
+    def escape_const_ref_ptr(typename)
+      typename.gsub(/^ *const /,'').gsub(/ +(const)* *[&*]* *(const)* *$/,'').strip
+    end
+    
+    def self.escape_const_ref_ptr(typename)
+      typename.gsub(/^ *const /,'').gsub(/ +(const)* *[&*]* *(const)* *$/,'').strip
+    end
+    
+    def del_prefix_class(n) # Previuously escaped for const
 	     n.gsub(%r{^[^<]*[:]}, "")
     end
     

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_c056a72e63f1330c6deca8c8de901b10" kind="dir">
+    <compoundname>/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/</compoundname>
+    <innerfile refid="subdir_2test1_8h">test1.h</innerfile>
+    <innerfile refid="subdir_2test2_8h">test2.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/workspace/ruby-doxygen-parser/spec/headers/subdir/"/>
+  </compounddef>
+</doxygen>

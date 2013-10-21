@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |s|
   s.name        = 'doxyparser'
-  s.version     = '1.4.1'
+  s.version     = '1.4.4'
   s.platform    = Gem::Platform::RUBY
-  s.date        = '2013-07-18'
+  s.date        = '2013-10-21'
   s.summary     = "Library for parsing C++ header files"  
   s.authors     = ["David Fuenmayor"]
   s.email       = ["davfuenmayor@gmail.com"]

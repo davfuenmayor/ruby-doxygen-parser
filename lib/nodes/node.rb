@@ -8,7 +8,7 @@ module Doxyparser
     attr_reader :basename
     attr_reader :node
     attr_reader :doc
-    attr_reader :parent
+    attr_accessor :parent
 
     def == another
       self.name == another.name
@@ -40,6 +40,10 @@ module Doxyparser
       raise "No name given for node: #{self.class.name}" unless @name
       raise "No xml directory given for node: #{self.class.name}" unless @dir
       init_attributes
+    end
+    
+    def escaped_name
+    	name
     end
 
     private

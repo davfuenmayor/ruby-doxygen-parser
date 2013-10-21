@@ -1,21 +1,31 @@
 module Doxyparser
 
   class Struct < Compound
+  	
+  	attr_reader :file
+  	attr_reader :friends
+  	attr_reader :template_params
+  	
+  	def init_attributes
+  		super
+  		@file = init_file
+  		@friends = init_friends
+  		@template_params = init_template_params
+  	end
 
-    def file
-      n=doc.xpath("/doxygen/compounddef/includes")[0]
-      raise "#{self.name} #{self.class.name} does not have correctly generated documentation. Use 'EXTRACT_ALL' Doxygen flag" unless n
-      HFile.new(dir: @dir, node: n)
+    def init_file
+      n = doc.xpath("/doxygen/compounddef/includes")[0]
+      return n ? HFile.new(dir: @dir, node: n) : nil 
     end
 
-    def friends
+    def init_friends
       lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="friend"]/memberdef[@kind="friend"]})
       lst.map { |node|
         Doxyparser::Friend.new(parent: self, node: node)
       }
     end
 
-    def template_params
+    def init_template_params
       params=doc.xpath(%Q{/doxygen/compounddef/templateparamlist/param})
       params.map { |param|
         Doxyparser::Param.new(parent: self, node: param)
@@ -57,14 +67,32 @@ module Doxyparser
         node.xpath("name")[0].child.content
       }
     end
-
+    
     def innerclasses(access = :public, filter = nil)
+    	if access == :all
+    		return innerclasses(:public, filter) + innerclasses(:protected, filter) + innerclasses(:private, filter) 
+    	end
+    	return only_innerclasses(access, filter) + only_innerstructs(access, filter)
+    end
+
+    def only_innerclasses(access = :public, filter = nil)
     	if access == :all
     		return innerclasses(:public, filter) + innerclasses(:protected, filter) + innerclasses(:private, filter) 
     	end
       lst = doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
       lst = lst.select { |c| c["refid"].start_with?("class") }
       do_filter(filter, lst, Doxyparser::Class) { |node|
+        del_prefix(node.child.content)
+      }
+    end
+
+    def only_innerstructs(access = :public, filter = nil)
+    	if access == :all
+    		return innerstructs(:public, filter) + innerstructs(:protected, filter) + innerstructs(:private, filter) 
+    	end
+      lst = doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
+      lst = lst.select { |c| c["refid"].start_with?("struct") }
+      do_filter(filter, lst, Doxyparser::Struct) { |node|
         del_prefix(node.child.content)
       }
     end
@@ -79,20 +107,9 @@ module Doxyparser
       }
     end
 
-    def innerstructs(access = :public, filter = nil)
+    def enums(access = :public, filter = nil)
     	if access == :all
-    		return innerstructs(:public, filter) + innerstructs(:protected, filter) + innerstructs(:private, filter) 
-    	end
-      lst = doc.xpath(%Q{/doxygen/compounddef/innerclass[@prot="#{access}"]})
-      lst = lst.select { |c| c["refid"].start_with?("struct") }
-      do_filter(filter, lst, Doxyparser::Struct) { |node|
-        del_prefix(node.child.content)
-      }
-    end
-
-    def innerenums(access = :public, filter = nil)
-    	if access == :all
-    		return innerenums(:public, filter) + innerenums(:protected, filter) + innerenums(:private, filter) 
+    		return enums(:public, filter) + enums(:protected, filter) + enums(:private, filter) 
     	end
       sectiondef = %Q{#{access}-type}
       lst = doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="#{sectiondef}"]/memberdef[@kind="enum"][@prot="#{access}"]})
