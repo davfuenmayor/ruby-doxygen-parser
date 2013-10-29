@@ -24,6 +24,10 @@ module Doxyparser
         Doxyparser::Friend.new(parent: self, node: node)
       }
     end
+    
+    def abstract?
+    	get_methods(:all).any? { |m| m.virt == 'pure-virtual'}
+    end
 
     def init_template_params
       params=doc.xpath(%Q{/doxygen/compounddef/templateparamlist/param})
