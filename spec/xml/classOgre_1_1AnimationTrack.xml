@@ -1,0 +1,747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOgre_1_1AnimationTrack" kind="class" prot="public">
+    <compoundname>Ogre::AnimationTrack</compoundname>
+    <basecompoundref refid="classOgre_1_1AllocatedObject" prot="public" virt="non-virtual">Ogre::AllocatedObject&lt; AnimationAllocPolicy &gt;</basecompoundref>
+    <derivedcompoundref refid="classOgre_1_1NodeAnimationTrack" prot="public" virt="non-virtual">Ogre::NodeAnimationTrack</derivedcompoundref>
+    <derivedcompoundref refid="classOgre_1_1NumericAnimationTrack" prot="public" virt="non-virtual">Ogre::NumericAnimationTrack</derivedcompoundref>
+    <derivedcompoundref refid="classOgre_1_1VertexAnimationTrack" prot="public" virt="non-virtual">Ogre::VertexAnimationTrack</derivedcompoundref>
+    <includes refid="OgreAnimationTrack_8h" local="no">OgreAnimationTrack.h</includes>
+    <innerclass refid="classOgre_1_1AnimationTrack_1_1Listener" prot="public">Ogre::AnimationTrack::Listener</innerclass>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classOgre_1_1AnimationTrack_1affbdca5aaf89d6d611d8da2dc6143f1a" prot="protected" static="no">
+        <type><ref refid="structOgre_1_1vector" kindref="compound">vector</ref>&lt; <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> * &gt;::type</type>
+        <definition>typedef vector&lt;KeyFrame*&gt;::type Ogre::AnimationTrack::KeyFrameList</definition>
+        <argsstring></argsstring>
+        <name>KeyFrameList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="242" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOgre_1_1AnimationTrack_1a2faf6bb4a4d61446bc25795f8f7d957c" prot="protected" static="no">
+        <type><ref refid="structOgre_1_1vector" kindref="compound">vector</ref>&lt; <ref refid="namespaceOgre_1af851e71354d841df7138f9877c6f5931" kindref="member">ushort</ref> &gt;::type</type>
+        <definition>typedef vector&lt;ushort&gt;::type Ogre::AnimationTrack::KeyFrameIndexMap</definition>
+        <argsstring></argsstring>
+        <name>KeyFrameIndexMap</name>
+        <briefdescription>
+<para>Map used to translate global keyframe time lower bound index to local lower bound index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="249" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOgre_1_1AnimationTrack_1a8a9bee08f6fa537fc0bcfcee2423775c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1AnimationTrack_1affbdca5aaf89d6d611d8da2dc6143f1a" kindref="member">KeyFrameList</ref></type>
+        <definition>KeyFrameList Ogre::AnimationTrack::mKeyFrames</definition>
+        <argsstring></argsstring>
+        <name>mKeyFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="243" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimationTrack_1aea479089005d263e195cde7e4faca665" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> *</type>
+        <definition>Animation* Ogre::AnimationTrack::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="244" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimationTrack_1a5fb5dc3c01452aa4d542981485d15080" prot="protected" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short Ogre::AnimationTrack::mHandle</definition>
+        <argsstring></argsstring>
+        <name>mHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="245" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimationTrack_1ab1a098b88d428931e3d45393410bc68c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1AnimationTrack_1_1Listener" kindref="compound">Listener</ref> *</type>
+        <definition>Listener* Ogre::AnimationTrack::mListener</definition>
+        <argsstring></argsstring>
+        <name>mListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="246" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgre_1_1AnimationTrack_1a2c053bac1d2eedc782eb24b79dc79a21" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1AnimationTrack_1a2faf6bb4a4d61446bc25795f8f7d957c" kindref="member">KeyFrameIndexMap</ref></type>
+        <definition>KeyFrameIndexMap Ogre::AnimationTrack::mKeyFrameIndexMap</definition>
+        <argsstring></argsstring>
+        <name>mKeyFrameIndexMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="250" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a0209b4a0d1461af76fdfcbf31b0537f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogre::AnimationTrack::AnimationTrack</definition>
+        <argsstring>(Animation *parent, unsigned short handle)</argsstring>
+        <name>AnimationTrack</name>
+        <param>
+          <type><ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a28fb904ec7b101ad71fae5c6930b0d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Ogre::AnimationTrack::~AnimationTrack</definition>
+        <argsstring>()</argsstring>
+        <name>~AnimationTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a32de796f12f6afee4c93e12625535577" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Ogre::AnimationTrack::getHandle</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getHandle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the handle associated with this track. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="145" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1ae0c1160b89c7f2be74ae2962239bd732" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned short</type>
+        <definition>virtual unsigned short Ogre::AnimationTrack::getNumKeyFrames</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumKeyFrames</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of keyframes in this animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1af27f57a984619052cca4726cdfd26f3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> *</type>
+        <definition>virtual KeyFrame* Ogre::AnimationTrack::getKeyFrame</definition>
+        <argsstring>(unsigned short index) const </argsstring>
+        <name>getKeyFrame</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> at the specified index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a55533ed5218c6d423e9443afa2580f5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref></type>
+        <definition>virtual Real Ogre::AnimationTrack::getKeyFramesAtTime</definition>
+        <argsstring>(const TimeIndex &amp;timeIndex, KeyFrame **keyFrame1, KeyFrame **keyFrame2, unsigned short *firstKeyIndex=0) const </argsstring>
+        <name>getKeyFramesAtTime</name>
+        <param>
+          <type>const <ref refid="classOgre_1_1TimeIndex" kindref="compound">TimeIndex</ref> &amp;</type>
+          <declname>timeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> **</type>
+          <declname>keyFrame1</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> **</type>
+          <declname>keyFrame2</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>firstKeyIndex</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the 2 <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> objects which are active at the time given, and the blend value between them. <simplesect kind="remark"><para>At any point in time in an animation, there are either 1 or 2 keyframes which are &apos;active&apos;, 1 if the time index is exactly on a keyframe, 2 at all other times i.e. the keyframe before and the keyframe after. </para></simplesect>
+<simplesect kind="par"><title></title><para>This method returns those keyframes given a time index, and also returns a parametric value indicating the value of &apos;t&apos; representing where the time index falls between them. E.g. if it returns 0, the time index is exactly on keyFrame1, if it returns 0.5 it is half way between keyFrame1 and keyFrame2 etc. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keyFrame1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> pointer which will receive the pointer to the keyframe just before or at this time index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keyFrame2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> pointer which will receive the pointer to the keyframe just after this time index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>firstKeyIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an unsigned short which, if supplied, will receive the index of the &apos;from&apos; keyframe in case the caller needs it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Parametric value indicating how far along the gap between the 2 keyframes the timeIndex value is, e.g. 0.0 for exactly at 1, 0.25 for a quarter etc. By definition the range of this value is: 0.0 &lt;= returnValue &lt; 1.0 . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a4517a1b16d6cb601754d98841bb4d7d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> *</type>
+        <definition>virtual KeyFrame* Ogre::AnimationTrack::createKeyFrame</definition>
+        <argsstring>(Real timePos)</argsstring>
+        <name>createKeyFrame</name>
+        <param>
+          <type><ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref></type>
+          <declname>timePos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> and adds it to this animation at the given time index. <simplesect kind="remark"><para>It is better to create KeyFrames in time order. Creating them out of order can result in expensive reordering processing. Note that a <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> at time index 0.0 is always created for you, so you don&apos;t need to create this one, just access it using getKeyFrame(0); </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time from which this <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> will apply. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a3e1ccd99179d804992a5224fe811c2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::removeKeyFrame</definition>
+        <argsstring>(unsigned short index)</argsstring>
+        <name>removeKeyFrame</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> by it&apos;s index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1ac8f7b83d742998ed46c8cdb10e404df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::removeAllKeyFrames</definition>
+        <argsstring>(void)</argsstring>
+        <name>removeAllKeyFrames</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all the KeyFrames from this track. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a48a8e96d4cb65f050dfed427f4442aa4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::getInterpolatedKeyFrame</definition>
+        <argsstring>(const TimeIndex &amp;timeIndex, KeyFrame *kf) const =0</argsstring>
+        <name>getInterpolatedKeyFrame</name>
+        <reimplementedby refid="classOgre_1_1NumericAnimationTrack_1aaa8109fd7c326e9d4c98c0187896e6da">getInterpolatedKeyFrame</reimplementedby>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1a2eddbf3e31adce0c1cde9db3d710c131">getInterpolatedKeyFrame</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1a971c33f7d8d93cbf93dc0ec51fb5d71d">getInterpolatedKeyFrame</reimplementedby>
+        <param>
+          <type>const <ref refid="classOgre_1_1TimeIndex" kindref="compound">TimeIndex</ref> &amp;</type>
+          <declname>timeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> *</type>
+          <declname>kf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> object which contains the interpolated transforms at the time index specified. <simplesect kind="remark"><para>The <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> objects held by this class are transformation snapshots at discrete points in time. Normally however, you want to interpolate between these keyframes to produce smooth movement, and this method allows you to do this easily. In animation terminology this is called &apos;tweening&apos;. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time (in relation to the whole animation sequence) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Keyframe object to store results </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1aa32b2807aee58478f96e75bfa44141cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::apply</definition>
+        <argsstring>(const TimeIndex &amp;timeIndex, Real weight=1.0, Real scale=1.0f)=0</argsstring>
+        <name>apply</name>
+        <reimplementedby refid="classOgre_1_1NumericAnimationTrack_1aadd219663715ff7f2f74b7255ebcbae4">apply</reimplementedby>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1a6260acaf8a310d45a175030e5b2f41d7">apply</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1a142ab858538a9984b4cf2b5267fcda45">apply</reimplementedby>
+        <param>
+          <type>const <ref refid="classOgre_1_1TimeIndex" kindref="compound">TimeIndex</ref> &amp;</type>
+          <declname>timeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref></type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref></type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies an animation track to the designated target. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time position in the animation to apply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The influence to give to this track, 1.0 for full influence, less to blend with other animations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale to apply to translations and scalings, useful for adapting an animation to a different size target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a715b6d025247c4857a5deba9376ae48c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::_keyFrameDataChanged</definition>
+        <argsstring>(void) const </argsstring>
+        <name>_keyFrameDataChanged</name>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1ac63ec3b7f27897f2223aca60f4c90422">_keyFrameDataChanged</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method used to tell the track that keyframe data has been changed, which may cause it to rebuild some internal data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="215" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a3a07b2082c15608cc24be21e2b6bb822" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Ogre::AnimationTrack::hasNonZeroKeyFrames</definition>
+        <argsstring>(void) const </argsstring>
+        <name>hasNonZeroKeyFrames</name>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1a33dfa5ceaf4d6636da3a46038068aa11">hasNonZeroKeyFrames</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1afa0e80d8dd451a65d89f7f9365a929e5">hasNonZeroKeyFrames</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to determine if this track has any KeyFrames which are doing anything useful - can be used to determine if this track can be optimised out. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="221" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1ad96281be1b189c69a1dbd2283d583503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::optimise</definition>
+        <argsstring>(void)</argsstring>
+        <name>optimise</name>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1abab18a48c2cf56ef09d5049fa8289ad2">optimise</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1a366c0dfa30d9b59d685ff1f7622b5ba7">optimise</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optimise the current track by removing any duplicate keyframes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="224" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="224" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a9e950713ebb7b1c51fdd90ec8378c2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::_collectKeyFrameTimes</definition>
+        <argsstring>(vector&lt; Real &gt;::type &amp;keyFrameTimes)</argsstring>
+        <name>_collectKeyFrameTimes</name>
+        <param>
+          <type><ref refid="structOgre_1_1vector" kindref="compound">vector</ref>&lt; <ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref> &gt;::type &amp;</type>
+          <declname>keyFrameTimes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method to collect keyframe times, in unique, ordered format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1af25294adccef1ab3c5d456aee2c5cb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::_buildKeyFrameIndexMap</definition>
+        <argsstring>(const vector&lt; Real &gt;::type &amp;keyFrameTimes)</argsstring>
+        <name>_buildKeyFrameIndexMap</name>
+        <param>
+          <type>const <ref refid="structOgre_1_1vector" kindref="compound">vector</ref>&lt; <ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref> &gt;::type &amp;</type>
+          <declname>keyFrameTimes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method to build keyframe time index map to translate global lower bound index to local lower bound index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1aed855e8117300af01d646ff49b020916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::_applyBaseKeyFrame</definition>
+        <argsstring>(const KeyFrame *base)</argsstring>
+        <name>_applyBaseKeyFrame</name>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1acdfc6729a95edae3da832c713648046d">_applyBaseKeyFrame</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1a6a2e377adc0c21f46907ac73553c2024">_applyBaseKeyFrame</reimplementedby>
+        <param>
+          <type>const <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> *</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method to re-base the keyframes relative to a given keyframe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="234" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1afe26aa738aca34c07407b6566b5d9eeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::setListener</definition>
+        <argsstring>(Listener *l)</argsstring>
+        <name>setListener</name>
+        <param>
+          <type><ref refid="classOgre_1_1AnimationTrack_1_1Listener" kindref="compound">Listener</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a listener for this track. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="237" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a2e5269293886cae1d0bc7e0255b239fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> *</type>
+        <definition>Animation* Ogre::AnimationTrack::getParent</definition>
+        <argsstring>() const </argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the parent <ref refid="classOgre_1_1Animation" kindref="compound">Animation</ref> object for this track. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="240" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="240" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1aa344f22d2582a0adacea56bf7b6dcd7d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> *</type>
+        <definition>virtual KeyFrame* Ogre::AnimationTrack::createKeyFrameImpl</definition>
+        <argsstring>(Real time)=0</argsstring>
+        <name>createKeyFrameImpl</name>
+        <reimplementedby refid="classOgre_1_1NumericAnimationTrack_1a68c6edea0b9363bb381669d246879141">createKeyFrameImpl</reimplementedby>
+        <reimplementedby refid="classOgre_1_1NodeAnimationTrack_1ae924dabecde99745c3aa9a24729e8902">createKeyFrameImpl</reimplementedby>
+        <reimplementedby refid="classOgre_1_1VertexAnimationTrack_1acb49f4f94c1198ba4fe955337796615d">createKeyFrameImpl</reimplementedby>
+        <param>
+          <type><ref refid="namespaceOgre_1aa3a7b6dfb905e6572d62f0dfa3d4274d" kindref="member">Real</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Create a keyframe implementation - must be overridden. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgre_1_1AnimationTrack_1a4e61fb2e00abd26a854d122452cb21a0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ogre::AnimationTrack::populateClone</definition>
+        <argsstring>(AnimationTrack *clone) const </argsstring>
+        <name>populateClone</name>
+        <param>
+          <type><ref refid="classOgre_1_1AnimationTrack" kindref="compound">AnimationTrack</ref> *</type>
+          <declname>clone</declname>
+        </param>
+        <briefdescription>
+<para>Internal method for clone implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="256"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A &apos;track&apos; in an animation sequence, i.e. a sequence of keyframes which affect a certain type of animable object. <simplesect kind="remark"><para>This class is intended as a base for more complete classes which will actually animate specific types of object, e.g. a bone in a skeleton to affect skeletal animation. An animation will likely include multiple tracks each of which can be made up of many <ref refid="classOgre_1_1KeyFrame" kindref="compound">KeyFrame</ref> instances. Note that the use of tracks allows each animable object to have it&apos;s own number of keyframes, i.e. you do not have to have the maximum number of keyframes for all animable objects just to cope with the most animated one. </para><simplesectsep/><para>Since the most common animable object is a <ref refid="classOgre_1_1Node" kindref="compound">Node</ref>, there are options in this class for associating the track with a <ref refid="classOgre_1_1Node" kindref="compound">Node</ref> which will receive keyframe updates automatically when the &apos;apply&apos; method is called. </para><simplesectsep/><para>By default rotation is done using shortest-path algorithm. It is possible to change this behaviour using setUseShortestRotationPath() method. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="503">
+        <label>Ogre::NodeAnimationTrack</label>
+        <link refid="classOgre_1_1NodeAnimationTrack"/>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>Ogre::VertexAnimationTrack</label>
+        <link refid="classOgre_1_1VertexAnimationTrack"/>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>Ogre::NumericAnimationTrack</label>
+        <link refid="classOgre_1_1NumericAnimationTrack"/>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>Ogre::AnimationTrack</label>
+        <link refid="classOgre_1_1AnimationTrack"/>
+        <childnode refid="502" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>AnimationAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="510">
+        <label>Ogre::AnimationTrack::Listener</label>
+        <link refid="classOgre_1_1AnimationTrack_1_1Listener"/>
+      </node>
+      <node id="518">
+        <label>Ogre::AnimationContainer</label>
+        <link refid="classOgre_1_1AnimationContainer"/>
+      </node>
+      <node id="511">
+        <label>Ogre::Animation</label>
+        <link refid="classOgre_1_1Animation"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+        <childnode refid="512" relation="usage">
+          <edgelabel>mNodeTrackList</edgelabel>
+        </childnode>
+        <childnode refid="513" relation="usage">
+          <edgelabel>mKeyFrameTimes</edgelabel>
+        </childnode>
+        <childnode refid="514" relation="usage">
+          <edgelabel>mVertexTrackList</edgelabel>
+        </childnode>
+        <childnode refid="515" relation="usage">
+          <edgelabel>mNumericTrackList</edgelabel>
+        </childnode>
+        <childnode refid="516" relation="usage">
+          <edgelabel>mName</edgelabel>
+          <edgelabel>mBaseKeyFrameAnimationName</edgelabel>
+        </childnode>
+        <childnode refid="518" relation="usage">
+          <edgelabel>mContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>Ogre::map&lt; unsigned short, NumericAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="517">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="513">
+        <label>Ogre::vector&lt; Real &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="508">
+        <label>Ogre::vector&lt; KeyFrame * &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="512">
+        <label>Ogre::map&lt; unsigned short, NodeAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="514">
+        <label>Ogre::map&lt; unsigned short, VertexAnimationTrack * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="506">
+        <label>Ogre::AnimationTrack</label>
+        <link refid="classOgre_1_1AnimationTrack"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+        <childnode refid="508" relation="usage">
+          <edgelabel>mKeyFrames</edgelabel>
+        </childnode>
+        <childnode refid="509" relation="usage">
+          <edgelabel>mKeyFrameIndexMap</edgelabel>
+        </childnode>
+        <childnode refid="510" relation="usage">
+          <edgelabel>mListener</edgelabel>
+        </childnode>
+        <childnode refid="511" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="507">
+        <label>AnimationAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="509">
+        <label>Ogre::vector&lt; ushort &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="516">
+        <label>std::string</label>
+        <childnode refid="517" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" line="122" bodyfile="/home/david/workspace/Mogre/include/OgreAnimationTrack.h" bodystart="121" bodyend="260"/>
+    <listofallmembers>
+      <member refid="classOgre_1_1AnimationTrack_1aed855e8117300af01d646ff49b020916" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>_applyBaseKeyFrame</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1af25294adccef1ab3c5d456aee2c5cb29" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>_buildKeyFrameIndexMap</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a9e950713ebb7b1c51fdd90ec8378c2cc" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>_collectKeyFrameTimes</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a715b6d025247c4857a5deba9376ae48c" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>_keyFrameDataChanged</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a366445eb206e55a2199267b8b9089ebb" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>AllocatedObject</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a0209b4a0d1461af76fdfcbf31b0537f2" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>AnimationTrack</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1aa32b2807aee58478f96e75bfa44141cc" prot="public" virt="pure-virtual"><scope>Ogre::AnimationTrack</scope><name>apply</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a4517a1b16d6cb601754d98841bb4d7d6" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>createKeyFrame</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1aa344f22d2582a0adacea56bf7b6dcd7d" prot="protected" virt="pure-virtual"><scope>Ogre::AnimationTrack</scope><name>createKeyFrameImpl</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a32de796f12f6afee4c93e12625535577" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>getHandle</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a48a8e96d4cb65f050dfed427f4442aa4" prot="public" virt="pure-virtual"><scope>Ogre::AnimationTrack</scope><name>getInterpolatedKeyFrame</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1af27f57a984619052cca4726cdfd26f3c" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>getKeyFrame</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a55533ed5218c6d423e9443afa2580f5a" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>getKeyFramesAtTime</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1ae0c1160b89c7f2be74ae2962239bd732" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>getNumKeyFrames</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a2e5269293886cae1d0bc7e0255b239fd" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>getParent</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a3a07b2082c15608cc24be21e2b6bb822" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>hasNonZeroKeyFrames</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a2faf6bb4a4d61446bc25795f8f7d957c" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>KeyFrameIndexMap</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1affbdca5aaf89d6d611d8da2dc6143f1a" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>KeyFrameList</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a5fb5dc3c01452aa4d542981485d15080" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>mHandle</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a2c053bac1d2eedc782eb24b79dc79a21" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>mKeyFrameIndexMap</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a8a9bee08f6fa537fc0bcfcee2423775c" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>mKeyFrames</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1ab1a098b88d428931e3d45393410bc68c" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>mListener</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1aea479089005d263e195cde7e4faca665" prot="protected" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>mParent</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a8357fe4fb4849772b94baa4bf47c7ded" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a1c727e879a260c37b00ce5505fe8e144" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1acb46d4b0a597156d9ba5abc39d127792" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator delete</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a93e6a86dde5483c053ca0f2a85bbfd6c" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a595ea4c05da8aa987d3800e65d23355d" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator delete[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a421b197ca3a38da17e2eb1531a645fa2" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ac4bdf968b7b9af8a5239a27da73d5711" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1ab78a921e54419be677839cdf15d1f0b8" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator new</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a4be37baef81876985aa1071ad5acc6dd" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1afa2943846ba6a2b5824a12857139cf5e" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>operator new[]</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1ad96281be1b189c69a1dbd2283d583503" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>optimise</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a4e61fb2e00abd26a854d122452cb21a0" prot="protected" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>populateClone</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1ac8f7b83d742998ed46c8cdb10e404df6" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>removeAllKeyFrames</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a3e1ccd99179d804992a5224fe811c2dd" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>removeKeyFrame</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1afe26aa738aca34c07407b6566b5d9eeb" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>setListener</name></member>
+      <member refid="classOgre_1_1AllocatedObject_1a499773d35ca98b2df7c2699fc8c1bea2" prot="public" virt="non-virtual"><scope>Ogre::AnimationTrack</scope><name>~AllocatedObject</name></member>
+      <member refid="classOgre_1_1AnimationTrack_1a28fb904ec7b101ad71fae5c6930b0d34" prot="public" virt="virtual"><scope>Ogre::AnimationTrack</scope><name>~AnimationTrack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structOgre_1_1ViewPoint" kind="struct" prot="public">
+    <compoundname>Ogre::ViewPoint</compoundname>
+    <includes refid="OgreSceneManager_8h" local="no">OgreSceneManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOgre_1_1ViewPoint_1a3c5ae8fe5c3adce148bfebd3ed9b8e56" prot="public" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Ogre::ViewPoint::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreSceneManager.h" line="69" bodyfile="/home/david/workspace/Mogre/include/OgreSceneManager.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOgre_1_1ViewPoint_1a6a25f94ff18e79c7bf0e275f60494d89" prot="public" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Ogre::ViewPoint::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreSceneManager.h" line="70" bodyfile="/home/david/workspace/Mogre/include/OgreSceneManager.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for holding a position &amp; orientation pair. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="37139">
+        <label>Ogre::ViewPoint</label>
+        <link refid="structOgre_1_1ViewPoint"/>
+        <childnode refid="37140" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="37141" relation="usage">
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+      </node>
+      <node id="37140">
+        <label>Ogre::Vector3</label>
+        <link refid="classOgre_1_1Vector3"/>
+        <childnode refid="37140" relation="usage">
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>UNIT_SCALE</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="37141">
+        <label>Ogre::Quaternion</label>
+        <link refid="classOgre_1_1Quaternion"/>
+        <childnode refid="37141" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/workspace/Mogre/include/OgreSceneManager.h" line="68" bodyfile="/home/david/workspace/Mogre/include/OgreSceneManager.h" bodystart="67" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structOgre_1_1ViewPoint_1a6a25f94ff18e79c7bf0e275f60494d89" prot="public" virt="non-virtual"><scope>Ogre::ViewPoint</scope><name>orientation</name></member>
+      <member refid="structOgre_1_1ViewPoint_1a3c5ae8fe5c3adce148bfebd3ed9b8e56" prot="public" virt="non-virtual"><scope>Ogre::ViewPoint</scope><name>position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

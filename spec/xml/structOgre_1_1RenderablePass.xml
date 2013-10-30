@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structOgre_1_1RenderablePass" kind="struct" prot="public">
+    <compoundname>Ogre::RenderablePass</compoundname>
+    <includes refid="OgreRenderQueueSortingGrouping_8h" local="no">OgreRenderQueueSortingGrouping.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOgre_1_1RenderablePass_1a88788b24efb00ee4d9cf8c4b75cf06ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Renderable" kindref="compound">Renderable</ref> *</type>
+        <definition>Renderable* Ogre::RenderablePass::renderable</definition>
+        <argsstring></argsstring>
+        <name>renderable</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="classOgre_1_1Renderable" kindref="compound">Renderable</ref> details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" line="54" bodyfile="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="structOgre_1_1QueuedRenderableCollection_1_1DepthSortDescendingLess_1ae7f6866b54ba54e39ad26d5b706771aa" compoundref="OgreRenderQueueSortingGrouping_8h" startline="166" endline="190">Ogre::QueuedRenderableCollection::DepthSortDescendingLess::operator()</referencedby>
+        <referencedby refid="structOgre_1_1QueuedRenderableCollection_1_1RadixSortFunctorDistance_1adc57cb46c570fb3e0dd3d1b6089dd6cf" compoundref="OgreRenderQueueSortingGrouping_8h" startline="223" endline="228">Ogre::QueuedRenderableCollection::RadixSortFunctorDistance::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structOgre_1_1RenderablePass_1aec7289b1a870e7c39d83b5d422792990" prot="public" static="no" mutable="no">
+        <type><ref refid="classOgre_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Ogre::RenderablePass::pass</definition>
+        <argsstring></argsstring>
+        <name>pass</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="classOgre_1_1Pass" kindref="compound">Pass</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" line="56" bodyfile="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="structOgre_1_1QueuedRenderableCollection_1_1DepthSortDescendingLess_1ae7f6866b54ba54e39ad26d5b706771aa" compoundref="OgreRenderQueueSortingGrouping_8h" startline="166" endline="190">Ogre::QueuedRenderableCollection::DepthSortDescendingLess::operator()</referencedby>
+        <referencedby refid="structOgre_1_1QueuedRenderableCollection_1_1RadixSortFunctorPass_1ab22672c70231fc47358363b432009b12" compoundref="OgreRenderQueueSortingGrouping_8h" startline="204" endline="207">Ogre::QueuedRenderableCollection::RadixSortFunctorPass::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structOgre_1_1RenderablePass_1aced02c6752335dbd5bd4ff1681c35882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ogre::RenderablePass::RenderablePass</definition>
+        <argsstring>(Renderable *rend, Pass *p)</argsstring>
+        <name>RenderablePass</name>
+        <param>
+          <type><ref refid="classOgre_1_1Renderable" kindref="compound">Renderable</ref> *</type>
+          <declname>rend</declname>
+        </param>
+        <param>
+          <type><ref refid="classOgre_1_1Pass" kindref="compound">Pass</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" line="58" bodyfile="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Struct associating a single <ref refid="classOgre_1_1Pass" kindref="compound">Pass</ref> with a single <ref refid="classOgre_1_1Renderable" kindref="compound">Renderable</ref>. This is used to for objects sorted by depth and thus not grouped by pass. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="28666">
+        <label>Ogre::UserObjectBindings::Attributes</label>
+        <link refid="classOgre_1_1UserObjectBindings_1_1Attributes"/>
+        <childnode refid="28665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28626" relation="usage">
+          <edgelabel>mUserObjectsMap</edgelabel>
+        </childnode>
+        <childnode refid="28613" relation="usage">
+          <edgelabel>mKeylessAny</edgelabel>
+        </childnode>
+      </node>
+      <node id="28598">
+        <label>Ogre::ColourValue</label>
+        <link refid="classOgre_1_1ColourValue"/>
+        <childnode refid="28598" relation="usage">
+          <edgelabel>White</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Red</edgelabel>
+          <edgelabel>Green</edgelabel>
+        </childnode>
+      </node>
+      <node id="28615">
+        <label>Ogre::vector&lt; GpuSharedParametersUsage &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28608">
+        <label>Ogre::map&lt; String, GpuConstantDefinition &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28627">
+        <label>K</label>
+      </node>
+      <node id="28628">
+        <label>T</label>
+      </node>
+      <node id="28646">
+        <label>Ogre::GpuProgram::CmdMorph</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdMorph"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28664">
+        <label>Ogre::UserObjectBindings</label>
+        <link refid="classOgre_1_1UserObjectBindings"/>
+        <childnode refid="28665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28613" relation="usage">
+          <edgelabel>msEmptyAny</edgelabel>
+        </childnode>
+        <childnode refid="28666" relation="usage">
+          <edgelabel>mAttributes</edgelabel>
+        </childnode>
+      </node>
+      <node id="28656">
+        <label>Ogre::LodStrategy</label>
+        <link refid="classOgre_1_1LodStrategy"/>
+        <childnode refid="28657" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+      </node>
+      <node id="28612">
+        <label>Ogre::vector&lt; AutoConstantEntry &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28640">
+        <label>Ogre::AtomicScalar&lt; LoadingState &gt;</label>
+        <link refid="classOgre_1_1AtomicScalar"/>
+      </node>
+      <node id="28617">
+        <label>Ogre::vector&lt; float &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28633">
+        <label>Ogre::ResourceManager</label>
+        <link refid="classOgre_1_1ResourceManager"/>
+        <childnode refid="28634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28635" relation="usage">
+          <edgelabel>mResourcesByHandle</edgelabel>
+        </childnode>
+        <childnode refid="28636" relation="usage">
+          <edgelabel>mMemoryUsage</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mResourceType</edgelabel>
+        </childnode>
+        <childnode refid="28637" relation="usage">
+          <edgelabel>mResourcePoolMap</edgelabel>
+        </childnode>
+        <childnode refid="28638" relation="usage">
+          <edgelabel>mScriptPatterns</edgelabel>
+        </childnode>
+      </node>
+      <node id="28645">
+        <label>Ogre::GpuProgram::CmdPose</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdPose"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28630">
+        <label>Ogre::map&lt; String, ParamCommand * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28652">
+        <label>TechniqueAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28622">
+        <label>Ogre::SharedPtr&lt; GpuProgram &gt;</label>
+        <link refid="classOgre_1_1SharedPtr"/>
+        <childnode refid="28623" relation="usage">
+          <edgelabel>pRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="28614">
+        <label>Ogre::Any::placeholder</label>
+        <link refid="classOgre_1_1Any_1_1placeholder"/>
+      </node>
+      <node id="28605">
+        <label>GpuParamsAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28594">
+        <label>Ogre::RenderablePass</label>
+        <link refid="structOgre_1_1RenderablePass"/>
+        <childnode refid="28595" relation="usage">
+          <edgelabel>pass</edgelabel>
+        </childnode>
+        <childnode refid="28669" relation="usage">
+          <edgelabel>renderable</edgelabel>
+        </childnode>
+      </node>
+      <node id="28658">
+        <label>Ogre::map&lt; unsigned short, LodTechniques * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28644">
+        <label>Ogre::GpuProgram::CmdAdjacency</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdAdjacency"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28632">
+        <label>ResourceAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28604">
+        <label>Ogre::GpuProgramParameters</label>
+        <link refid="classOgre_1_1GpuProgramParameters"/>
+        <childnode refid="28605" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28606" relation="usage">
+          <edgelabel>mNamedConstants</edgelabel>
+        </childnode>
+        <childnode refid="28609" relation="usage">
+          <edgelabel>mIntLogicalToPhysical</edgelabel>
+          <edgelabel>mFloatLogicalToPhysical</edgelabel>
+        </childnode>
+        <childnode refid="28612" relation="usage">
+          <edgelabel>mAutoConstants</edgelabel>
+        </childnode>
+        <childnode refid="28613" relation="usage">
+          <edgelabel>mRenderSystemData</edgelabel>
+        </childnode>
+        <childnode refid="28615" relation="usage">
+          <edgelabel>mSharedParamSets</edgelabel>
+        </childnode>
+        <childnode refid="28616" relation="usage">
+          <edgelabel>mIntConstants</edgelabel>
+        </childnode>
+        <childnode refid="28617" relation="usage">
+          <edgelabel>mFloatConstants</edgelabel>
+        </childnode>
+        <childnode refid="28618" relation="usage">
+          <edgelabel>AutoConstantDictionary</edgelabel>
+        </childnode>
+      </node>
+      <node id="28651">
+        <label>Ogre::Technique</label>
+        <link refid="classOgre_1_1Technique"/>
+        <childnode refid="28652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28653" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="28659" relation="usage">
+          <edgelabel>mIlluminationPasses</edgelabel>
+        </childnode>
+        <childnode refid="28660" relation="usage">
+          <edgelabel>mShadowReceiverMaterial</edgelabel>
+          <edgelabel>mShadowCasterMaterial</edgelabel>
+        </childnode>
+        <childnode refid="28662" relation="usage">
+          <edgelabel>mGPUVendorRules</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mName</edgelabel>
+          <edgelabel>mShadowReceiverMaterialName</edgelabel>
+          <edgelabel>mShadowCasterMaterialName</edgelabel>
+        </childnode>
+        <childnode refid="28663" relation="usage">
+          <edgelabel>mGPUDeviceNameRules</edgelabel>
+        </childnode>
+        <childnode refid="28664" relation="usage">
+          <edgelabel>mUserObjectBindings</edgelabel>
+        </childnode>
+        <childnode refid="28667" relation="usage">
+          <edgelabel>mPasses</edgelabel>
+        </childnode>
+      </node>
+      <node id="28626">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="28627" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="28628" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="28597">
+        <label>Ogre::Pass::HashFunc</label>
+        <link refid="structOgre_1_1Pass_1_1HashFunc"/>
+      </node>
+      <node id="28647">
+        <label>Ogre::GpuProgram::CmdType</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdType"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28613">
+        <label>Ogre::Any</label>
+        <link refid="classOgre_1_1Any"/>
+        <childnode refid="28614" relation="usage">
+          <edgelabel>mContent</edgelabel>
+        </childnode>
+      </node>
+      <node id="28635">
+        <label>Ogre::map&lt; ResourceHandle, ResourcePtr &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28618">
+        <label>Ogre::GpuProgramParameters::AutoConstantDefinition</label>
+        <link refid="structOgre_1_1GpuProgramParameters_1_1AutoConstantDefinition"/>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="28660">
+        <label>Ogre::MaterialPtr</label>
+        <link refid="classOgre_1_1MaterialPtr"/>
+        <childnode refid="28661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28662">
+        <label>Ogre::vector&lt; GPUVendorRule &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28600">
+        <label>Ogre::vector&lt; unsigned short &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28636">
+        <label>Ogre::AtomicScalar&lt; size_t &gt;</label>
+        <link refid="classOgre_1_1AtomicScalar"/>
+      </node>
+      <node id="28671">
+        <label>Ogre::Renderable::RenderSystemData</label>
+        <link refid="classOgre_1_1Renderable_1_1RenderSystemData"/>
+      </node>
+      <node id="28638">
+        <label>Ogre::vector&lt; String &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28670">
+        <label>Ogre::map&lt; size_t, Vector4 &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28620">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="28624">
+        <label>Ogre::Resource</label>
+        <link refid="classOgre_1_1Resource"/>
+        <childnode refid="28625" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28633" relation="usage">
+          <edgelabel>mCreator</edgelabel>
+        </childnode>
+        <childnode refid="28639" relation="usage">
+          <edgelabel>mLoader</edgelabel>
+        </childnode>
+        <childnode refid="28640" relation="usage">
+          <edgelabel>mLoadingState</edgelabel>
+        </childnode>
+        <childnode refid="28641" relation="usage">
+          <edgelabel>mListenerList</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mName</edgelabel>
+          <edgelabel>mGroup</edgelabel>
+          <edgelabel>mOrigin</edgelabel>
+        </childnode>
+      </node>
+      <node id="28606">
+        <label>Ogre::SharedPtr&lt; GpuNamedConstants &gt;</label>
+        <link refid="classOgre_1_1SharedPtr"/>
+        <childnode refid="28607" relation="usage">
+          <edgelabel>pRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="28657">
+        <label>LodAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28599">
+        <label>Ogre::vector&lt; TextureUnitState * &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28654">
+        <label>Ogre::vector&lt; Real &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28603">
+        <label>Ogre::SharedPtr&lt; GpuProgramParameters &gt;</label>
+        <link refid="classOgre_1_1SharedPtr"/>
+        <childnode refid="28604" relation="usage">
+          <edgelabel>pRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="28661">
+        <label>Ogre::SharedPtr&lt; Material &gt;</label>
+        <link refid="classOgre_1_1SharedPtr"/>
+        <childnode refid="28653" relation="usage">
+          <edgelabel>pRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="28637">
+        <label>Ogre::map&lt; String, ResourcePool * &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28607">
+        <label>Ogre::GpuNamedConstants</label>
+        <link refid="structOgre_1_1GpuNamedConstants"/>
+        <childnode refid="28605" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28608" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="28649">
+        <label>Ogre::GpuProgram::CmdSyntax</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdSyntax"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28609">
+        <label>Ogre::SharedPtr&lt; GpuLogicalBufferStruct &gt;</label>
+        <link refid="classOgre_1_1SharedPtr"/>
+        <childnode refid="28610" relation="usage">
+          <edgelabel>pRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="28655">
+        <label>Ogre::vector&lt; Technique * &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28639">
+        <label>Ogre::ManualResourceLoader</label>
+        <link refid="classOgre_1_1ManualResourceLoader"/>
+      </node>
+      <node id="28629">
+        <label>Ogre::ParamDictionary</label>
+        <link refid="classOgre_1_1ParamDictionary"/>
+        <childnode refid="28630" relation="usage">
+          <edgelabel>mParamCommands</edgelabel>
+        </childnode>
+        <childnode refid="28631" relation="usage">
+          <edgelabel>mParamDefs</edgelabel>
+        </childnode>
+      </node>
+      <node id="28641">
+        <label>Ogre::set&lt; Listener * &gt;</label>
+        <link refid="structOgre_1_1set"/>
+      </node>
+      <node id="28595">
+        <label>Ogre::Pass</label>
+        <link refid="classOgre_1_1Pass"/>
+        <childnode refid="28596" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28597" relation="usage">
+          <edgelabel>msHashFunc</edgelabel>
+        </childnode>
+        <childnode refid="28598" relation="usage">
+          <edgelabel>mDiffuse</edgelabel>
+          <edgelabel>mFogColour</edgelabel>
+          <edgelabel>mEmissive</edgelabel>
+          <edgelabel>mSpecular</edgelabel>
+          <edgelabel>mAmbient</edgelabel>
+        </childnode>
+        <childnode refid="28599" relation="usage">
+          <edgelabel>mTextureUnitStates</edgelabel>
+        </childnode>
+        <childnode refid="28600" relation="usage">
+          <edgelabel>mShadowContentTypeLookup</edgelabel>
+        </childnode>
+        <childnode refid="28601" relation="usage">
+          <edgelabel>mFragmentProgramUsage</edgelabel>
+          <edgelabel>mGeometryProgramUsage</edgelabel>
+          <edgelabel>mShadowCasterVertexProgramUsage</edgelabel>
+          <edgelabel>mShadowReceiverVertexProgramUsage</edgelabel>
+          <edgelabel>mShadowReceiverFragmentProgramUsage</edgelabel>
+          <edgelabel>mShadowCasterFragmentProgramUsage</edgelabel>
+          <edgelabel>mVertexProgramUsage</edgelabel>
+        </childnode>
+        <childnode refid="28651" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="28668" relation="usage">
+          <edgelabel>msDirtyHashList</edgelabel>
+          <edgelabel>msPassGraveyard</edgelabel>
+        </childnode>
+        <childnode refid="28664" relation="usage">
+          <edgelabel>mUserObjectBindings</edgelabel>
+        </childnode>
+      </node>
+      <node id="28668">
+        <label>std::set&lt; K &gt;</label>
+        <childnode refid="28627" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="28665">
+        <label>GeneralAllocatedObject</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28650">
+        <label>Ogre::GpuProgram::CmdSkeletal</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdSkeletal"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28653">
+        <label>Ogre::Material</label>
+        <link refid="classOgre_1_1Material"/>
+        <childnode refid="28624" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28654" relation="usage">
+          <edgelabel>mUserLodValues</edgelabel>
+          <edgelabel>mLodValues</edgelabel>
+        </childnode>
+        <childnode refid="28655" relation="usage">
+          <edgelabel>mTechniques</edgelabel>
+          <edgelabel>mSupportedTechniques</edgelabel>
+        </childnode>
+        <childnode refid="28656" relation="usage">
+          <edgelabel>mLodStrategy</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mUnsupportedReasons</edgelabel>
+        </childnode>
+        <childnode refid="28658" relation="usage">
+          <edgelabel>mBestTechniquesBySchemeList</edgelabel>
+        </childnode>
+      </node>
+      <node id="28648">
+        <label>Ogre::GpuProgram::CmdVTF</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdVTF"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28611">
+        <label>Ogre::map&lt; size_t, GpuLogicalIndexUse &gt;</label>
+        <link refid="structOgre_1_1map"/>
+      </node>
+      <node id="28596">
+        <label>PassAlloc</label>
+        <link refid="classOgre_1_1AllocatedObject"/>
+      </node>
+      <node id="28631">
+        <label>Ogre::vector&lt; ParameterDef &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28610">
+        <label>Ogre::GpuLogicalBufferStruct</label>
+        <link refid="structOgre_1_1GpuLogicalBufferStruct"/>
+        <childnode refid="28605" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28611" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="28623">
+        <label>Ogre::GpuProgram</label>
+        <link refid="classOgre_1_1GpuProgram"/>
+        <childnode refid="28624" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28606" relation="usage">
+          <edgelabel>mConstantDefs</edgelabel>
+        </childnode>
+        <childnode refid="28609" relation="usage">
+          <edgelabel>mIntLogicalToPhysical</edgelabel>
+          <edgelabel>mFloatLogicalToPhysical</edgelabel>
+        </childnode>
+        <childnode refid="28642" relation="usage">
+          <edgelabel>msManNamedConstsFileCmd</edgelabel>
+        </childnode>
+        <childnode refid="28644" relation="usage">
+          <edgelabel>msAdjacencyCmd</edgelabel>
+        </childnode>
+        <childnode refid="28645" relation="usage">
+          <edgelabel>msPoseCmd</edgelabel>
+        </childnode>
+        <childnode refid="28603" relation="usage">
+          <edgelabel>mDefaultParams</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mSyntaxCode</edgelabel>
+          <edgelabel>mSource</edgelabel>
+          <edgelabel>mFilename</edgelabel>
+          <edgelabel>mManualNamedConstantsFile</edgelabel>
+        </childnode>
+        <childnode refid="28646" relation="usage">
+          <edgelabel>msMorphCmd</edgelabel>
+        </childnode>
+        <childnode refid="28647" relation="usage">
+          <edgelabel>msTypeCmd</edgelabel>
+        </childnode>
+        <childnode refid="28648" relation="usage">
+          <edgelabel>msVTFCmd</edgelabel>
+        </childnode>
+        <childnode refid="28649" relation="usage">
+          <edgelabel>msSyntaxCmd</edgelabel>
+        </childnode>
+        <childnode refid="28650" relation="usage">
+          <edgelabel>msSkeletalCmd</edgelabel>
+        </childnode>
+      </node>
+      <node id="28643">
+        <label>Ogre::ParamCommand</label>
+        <link refid="classOgre_1_1ParamCommand"/>
+      </node>
+      <node id="28642">
+        <label>Ogre::GpuProgram::CmdManualNamedConstsFile</label>
+        <link refid="classOgre_1_1GpuProgram_1_1CmdManualNamedConstsFile"/>
+        <childnode refid="28643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28659">
+        <label>Ogre::vector&lt; IlluminationPass * &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28621">
+        <label>Ogre::GpuProgramPtr</label>
+        <link refid="classOgre_1_1GpuProgramPtr"/>
+        <childnode refid="28622" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28669">
+        <label>Ogre::Renderable</label>
+        <link refid="classOgre_1_1Renderable"/>
+        <childnode refid="28670" relation="usage">
+          <edgelabel>mCustomParameters</edgelabel>
+        </childnode>
+        <childnode refid="28671" relation="usage">
+          <edgelabel>mRenderSystemData</edgelabel>
+        </childnode>
+        <childnode refid="28664" relation="usage">
+          <edgelabel>mUserObjectBindings</edgelabel>
+        </childnode>
+      </node>
+      <node id="28616">
+        <label>Ogre::vector&lt; int &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28601">
+        <label>Ogre::GpuProgramUsage</label>
+        <link refid="classOgre_1_1GpuProgramUsage"/>
+        <childnode refid="28602" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28596" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28603" relation="usage">
+          <edgelabel>mParameters</edgelabel>
+        </childnode>
+        <childnode refid="28595" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="28621" relation="usage">
+          <edgelabel>mProgram</edgelabel>
+        </childnode>
+      </node>
+      <node id="28602">
+        <label>Ogre::Resource::Listener</label>
+        <link refid="classOgre_1_1Resource_1_1Listener"/>
+      </node>
+      <node id="28634">
+        <label>Ogre::ScriptLoader</label>
+        <link refid="classOgre_1_1ScriptLoader"/>
+      </node>
+      <node id="28667">
+        <label>Ogre::vector&lt; Pass * &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28625">
+        <label>Ogre::StringInterface</label>
+        <link refid="classOgre_1_1StringInterface"/>
+        <childnode refid="28626" relation="usage">
+          <edgelabel>msDictionary</edgelabel>
+        </childnode>
+        <childnode refid="28629" relation="usage">
+          <edgelabel>mParamDict</edgelabel>
+        </childnode>
+        <childnode refid="28619" relation="usage">
+          <edgelabel>mParamDictName</edgelabel>
+        </childnode>
+      </node>
+      <node id="28663">
+        <label>Ogre::vector&lt; GPUDeviceNameRule &gt;</label>
+        <link refid="structOgre_1_1vector"/>
+      </node>
+      <node id="28619">
+        <label>std::string</label>
+        <childnode refid="28620" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" line="52" bodyfile="/home/david/workspace/Mogre/include/OgreRenderQueueSortingGrouping.h" bodystart="51" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structOgre_1_1RenderablePass_1aec7289b1a870e7c39d83b5d422792990" prot="public" virt="non-virtual"><scope>Ogre::RenderablePass</scope><name>pass</name></member>
+      <member refid="structOgre_1_1RenderablePass_1a88788b24efb00ee4d9cf8c4b75cf06ee" prot="public" virt="non-virtual"><scope>Ogre::RenderablePass</scope><name>renderable</name></member>
+      <member refid="structOgre_1_1RenderablePass_1aced02c6752335dbd5bd4ff1681c35882" prot="public" virt="non-virtual"><scope>Ogre::RenderablePass</scope><name>RenderablePass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

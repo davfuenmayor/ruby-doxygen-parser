@@ -3,62 +3,47 @@ module Doxyparser
   class HFile < Compound
 
     def list_included
-      lst=doc.xpath(%Q{/doxygen/compounddef/includes})
-      lst.map { |f| f.child.content }
+      @list_included ||= doc.xpath(%Q{/doxygen/compounddef/includes}).map { |f| f.child.content }
     end
 
     def list_including
-      lst=doc.xpath(%Q{/doxygen/compounddef/includedby})
-      lst.map { |f| f[:refid].nil? ? f.child.content : escape_file_name(f[:refid]) }
+      @list_including ||= doc.xpath(%Q{/doxygen/compounddef/includedby}).map { |f| f[:refid].nil? ? f.child.content : escape_file_name(f[:refid]) }
     end
 
     def files_included
-      lst=doc.xpath(%Q{/doxygen/compounddef/includes[@local="yes"]})
-      lst.map { |f| 
-      	Doxyparser::HFile.new(dir: @dir, node: f) 
-      }
+      @files_included ||= doc.xpath(%Q{/doxygen/compounddef/includes[@local="yes"]}).map { |f| 	Doxyparser::HFile.new(dir: @dir, node: f) }
     end
 
     def files_including
-      lst=doc.xpath(%Q{/doxygen/compounddef/includedby[@local="yes"]})
-      lst.map { |f| Doxyparser::HFile.new(dir: @dir, node: f) }
+      @files_including ||= doc.xpath(%Q{/doxygen/compounddef/includedby[@local="yes"]}).map { |f| Doxyparser::HFile.new(dir: @dir, node: f) }
     end
 
     def structs
-      lst=doc.xpath(%Q{/doxygen/compounddef/innerclass})
-      lst = lst.select { |c| c["refid"].start_with?("struct") }
-      lst.map { |node| Doxyparser::Struct.new(dir: @dir, node: node) }
+      @structs ||= doc.xpath(%Q{/doxygen/compounddef/innerclass}).select { |c| c["refid"].start_with?("struct") }.map { |node| Doxyparser::Struct.new(dir: @dir, node: node) }
     end
 
     def classes
-      lst=doc.xpath(%Q{/doxygen/compounddef/innerclass})
-      lst = lst.select { |c| c["refid"].start_with?("class") }
-      lst.map { |node| Doxyparser::Class.new(dir: @dir, node: node) }
+      @classes ||= doc.xpath(%Q{/doxygen/compounddef/innerclass}).select { |c| c["refid"].start_with?("class") }.map { |node| Doxyparser::Class.new(dir: @dir, node: node) }
     end
 
     def namespaces
-      lst=doc.xpath(%Q{/doxygen/compounddef/innernamespace})
-      lst.map { |node| Doxyparser::Namespace.new(dir: @dir, node: node) }
+      @namespaces ||= doc.xpath(%Q{/doxygen/compounddef/innernamespace}).map { |node| Doxyparser::Namespace.new(dir: @dir, node: node) }
     end
 
     def functions
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="func"]/memberdef[@kind="function"]})
-      lst.map { |node| Doxyparser::Function.new(parent: self, node: node) }
+      @functions ||= doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="func"]/memberdef[@kind="function"]}).map { |node| Doxyparser::Function.new(parent: self, node: node) }
     end
 
     def variables
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="var"]/memberdef[@kind="variable"]})
-      lst.map { |node| Doxyparser::Variable.new(parent: self, node: node) }
+      @variables ||= doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="var"]/memberdef[@kind="variable"]}).map { |node| Doxyparser::Variable.new(parent: self, node: node) }
     end
 
     def enums
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"]})
-      lst.map { |node| Doxyparser::Enum.new(parent: self, node: node) }
+      @enums ||= doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="enum"]/memberdef[@kind="enum"]}).map { |node| Doxyparser::Enum.new(parent: self, node: node) }
     end
 
     def typedefs
-      lst=doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="typedef"]/memberdef[@kind="typedef"]})
-      lst.map { |node| Doxyparser::Typedef.new(parent: self, node: node) }
+      @typedefs ||= doc.xpath(%Q{/doxygen/compounddef/sectiondef[@kind="typedef"]/memberdef[@kind="typedef"]}).map { |node| Doxyparser::Typedef.new(parent: self, node: node) }
     end
 
     private

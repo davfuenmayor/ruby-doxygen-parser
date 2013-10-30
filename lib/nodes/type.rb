@@ -12,7 +12,7 @@ module Doxyparser
     end
 
     def nested_typenames
-      Type.nested_typenames(@basename)
+      Type.nested_typenames(@escaped_name)
     end
 
     def self.nested_typenames(typename)
@@ -25,7 +25,7 @@ module Doxyparser
     end
 
     def template?
-      Type.template?(@basename)
+      Type.template?(@escaped_name)
     end
 
     def self.template?(typename)
