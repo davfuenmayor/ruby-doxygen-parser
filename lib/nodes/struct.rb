@@ -26,7 +26,7 @@ module Doxyparser
     end
     
     def abstract?
-    	@is_abstract ||= get_methods(:all).any? { |m| m.virt == 'pure-virtual'}
+    	@is_abstract ||= methods(:all).any? { |m| m.virt == 'pure-virtual'}
     end
 
     def init_template_params
