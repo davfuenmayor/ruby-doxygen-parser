@@ -28,6 +28,32 @@ module Doxyparser
     def abstract?
     	@is_abstract ||= methods(:all).any? { |m| m.virt == 'pure-virtual'}
     end
+    
+    def constructors(access = :public)
+    	return case access
+    	when :public
+      	@public_constructors ||= methods(:public, nil, [@basename])
+    	when :protected
+      	@protected_constructors ||= methods(:protected, nil, [@basename])
+    	when :private
+      	@private_constructors ||= methods(:private, nil, [@basename])
+    	when :all
+    		constructors(:public) + constructors(:protected) + constructors(:private)
+   		end
+    end
+    
+    def destructors(access = :public)
+    	return case access
+    	when :public
+      	@public_destructors ||= methods(:public, nil, [/^~/])
+    	when :protected
+      	@protected_destructors ||= methods(:protected, nil, [/^~/])
+    	when :private
+      	@private_destructors ||= methods(:private, nil, [/^~/])
+    	when :all
+    		destructors(:public) + destructors(:protected) + destructors(:private)
+   		end
+    end
 
     def init_template_params
       params=doc.xpath(%Q{/doxygen/compounddef/templateparamlist/param})

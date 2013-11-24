@@ -97,6 +97,28 @@ describe "Doxyparser::Class" do
 			compare_members methods, expected_methods
 		end
 		
+		it "should correctly create destructors" do			
+			@class.destructors(:protected).should be_empty
+			expected_methods=['~MyClass']
+			methods = @class.destructors(:all)
+			methods.size.should eql 1
+			compare_members methods, expected_methods
+			methods = @class.destructors(:public)
+			methods.size.should eql 1
+			compare_members methods, expected_methods
+		end
+		
+		it "should correctly create constructors" do
+			@class.constructors(:protected).should be_empty		
+			expected_methods=['MyClass']
+			methods = @class.constructors(:all)
+			methods.size.should eql 2
+			compare_members methods, expected_methods
+			methods = @class.constructors(:public)
+			methods.size.should eql 2
+			compare_members methods, expected_methods
+		end
+		
 		it "should correctly create static methods " do			
 			expected_methods=['publicStaticMethod', 'getStaticProp', 'setStaticProp']
 			methods = @class.methods(:public, :static)

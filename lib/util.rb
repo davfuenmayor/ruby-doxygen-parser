@@ -70,8 +70,10 @@ module Doxyparser
         filtered_lst = []
         filter.each { |val|
           found = lst.select { |node| match(val, yield(node)) }
-          raise "The object: #{val} #{clazz} could not be found while parsing" if found.nil? || found.empty?
-          filtered_lst.push(*found)
+          unless found.nil? || found.empty?
+	          filtered_lst.push(*found)
+          end
+         	#puts "The object: #{val} #{clazz} could not be found while parsing" # TODO Log this?
         }
       else
       filtered_lst=lst
