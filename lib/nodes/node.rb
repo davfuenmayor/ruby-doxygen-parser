@@ -35,6 +35,9 @@ module Doxyparser
         @node = hash[:node]
         @parent = hash[:parent]
         @name = find_name
+        if @name =~ /PxVec3.h/
+        	@name = find_name
+        end
         @dir ||= @parent.dir unless @parent.nil?
       end
       raise "No name given for node: #{self.class.name}" unless @name
