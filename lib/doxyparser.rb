@@ -17,7 +17,6 @@ require_relative 'nodes/enum_value'
 require_relative 'nodes/enum'
 require_relative 'nodes/hfile'
 require_relative 'nodes/function'
-require_relative 'nodes/group'
 require_relative 'nodes/namespace'
 require_relative 'nodes/variable'
 
@@ -25,27 +24,47 @@ require_relative 'nodes/variable'
 module Doxyparser
 
   class << self
+  	
+  	# Retrieves metadata for a given Namespace
+    # @param basename [String] Name of the namespace to parse (for instance: NamespaceA::NamespaceB)
+    # @param xml_dir [String] Path to the directory with the generated intermediate XML representation
+    # @return [Namespace] A tree of objects representing the namespace and its members (classes, structs, enums, etc)
     def parse_namespace basename, xml_dir
       Doxyparser::Namespace.new :name => basename, :dir => xml_dir
     end
 
-    def parse_group basename, xml_dir
-      Doxyparser::Group.new :name => basename, :dir => xml_dir
-    end
-
+		# Retrieves metadata for a given Class
+    # @param basename [String] Name of the class to parse (for instance: MyNamespace::MyClass)
+    # @param xml_dir [String] Path to the directory with the generated intermediate XML representation
+    # @return [Class] A tree of objects representing the class and its members (attributes, methods, innerclasses, etc) 
     def parse_class basename, xml_dir
       Doxyparser::Class.new :name => basename, :dir => xml_dir
     end
 
-    def parse_struct basename, xml_dir
+		# Retrieves metadata for a given Struct
+    # @param basename [String] Name of the struct to parse (for instance: MyNamespace::MyStruct)
+    # @param xml_dir [String] Path to the directory with the generated intermediate XML representation
+    # @return [Struct] A tree of objects representing the struct and its members (attributes, methods, enums, etc) 
+    def parse_struct(basename, xml_dir)
       Doxyparser::Struct.new :name => basename, :dir => xml_dir
     end
-
-    def parse_file basename, xml_dir
+    
+		# Retrieves metadata for a given header file
+    # @param basename [String] Name of the header file to parse (for instance: myheader.h)
+    # @param xml_dir [String] Path to the directory with the generated intermediate XML representation
+    # @return [HFile] A tree of objects representing the header file and its contents (classes, functions, enums, etc)
+    def parse_file(basename, xml_dir)
       Doxyparser::HFile.new :name => basename, :dir => xml_dir
     end
     
-    def gen_xml_docs source_dirs, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil, stl_support = 1
+    # Generates intermediate XML representation for a group of header files
+    # @param source_dirs [Array<String>, String] Input source directory (or directories)
+    # @param xml_dir [String] Output Directory for the generated XML documents
+    # @param recursive if present (and not nil) sets the RECURSIVE FLAG in Doxygen. Subdirectories will also be searched 
+    # @param include_dirs [Array<String>, String] Adds given directories to Doxygen's INCLUDE_PATH (Doxyfile variable)
+    # @param generate_html if present (and not nil) HTML documentation will also be generated 
+    # @param stl_support if present (and not nil) sets the BUILTIN_STL_SUPPORT flag in Doxygen. Special support for STL Libraries
+    def gen_xml_docs(source_dirs, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil, stl_support = 1)
     	
     	if include_dirs.nil? || include_dirs.empty?
     		inc_dirs = ''

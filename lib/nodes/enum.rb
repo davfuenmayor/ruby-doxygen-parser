@@ -1,7 +1,9 @@
 module Doxyparser
 
+	# A C/C++ Enumeration
   class Enum < Member
 
+		# [Array<EnumValue>] List of values
     attr_reader :values
 
     private
@@ -15,8 +17,6 @@ module Doxyparser
         @values << Doxyparser::EnumValue.new(node: enumvalue, parent: self)
       }
     end
-
-    private
 
     def find_name
       super.gsub(/@\d*/) {

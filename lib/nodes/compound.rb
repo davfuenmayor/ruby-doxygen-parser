@@ -1,5 +1,6 @@
 module Doxyparser
 
+	# Representation of a 'high level' {Node} which is represented in its own XML file such as namespaces, classes, etc
   class Compound < Node
 
     attr_reader :xml_path

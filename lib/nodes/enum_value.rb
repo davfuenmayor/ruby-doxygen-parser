@@ -1,8 +1,11 @@
 module Doxyparser
 
+	# Every one of the members of an {Enum} 
   class EnumValue < Node
   	
 		attr_reader :initializer
+		
+		private
 		
 		def find_name
 			@parent.name + '::' + @node.xpath("name")[0].child.content

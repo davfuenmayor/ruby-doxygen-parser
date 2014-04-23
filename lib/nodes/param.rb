@@ -1,9 +1,13 @@
 module Doxyparser
 
+	# Each of the input parameters of a {Function}
 	class Param < Node
 
+		# Type of parameter
 		attr_reader :type
+		# Declared name of parameter
 		attr_reader :declname
+		# Default value of parameter
 		attr_reader :value
 		
 		private

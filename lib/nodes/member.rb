@@ -9,6 +9,7 @@ module Doxyparser
     attr_reader :static
     attr_reader :params
 
+		# @return [HFile] header file where the declaration of this member was done
     def file
       Doxyparser::HFile.new(:name => @filename, :dir => @dir)
     end

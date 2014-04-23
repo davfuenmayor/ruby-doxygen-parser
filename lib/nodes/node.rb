@@ -1,8 +1,10 @@
 module Doxyparser
 
+	# A Node can be any member of the tree-like structure of a C/C++ header file.
+	# 	examples are namespaces, classes, methods, params, etc  
   class Node
     include Doxyparser::Util
-
+    
     attr_reader :dir
     attr_reader :name
     attr_reader :basename
@@ -31,7 +33,6 @@ module Doxyparser
       @dir = hash[:dir]
       @name = hash[:name]
       if hash[:node] # If a reference to an xml declaration (node) is given
-        # then...
         @node = hash[:node]
         @parent = hash[:parent]
         @name = find_name
@@ -53,9 +54,9 @@ module Doxyparser
 
     def method_missing(sym, *args)
       if @node.respond_to?(sym)
-      @node.send(sym, *args)
+      	@node.send(sym, *args)
       else
-      @node[sym.to_s] || super
+      	@node[sym.to_s] || super
       end
     end
 

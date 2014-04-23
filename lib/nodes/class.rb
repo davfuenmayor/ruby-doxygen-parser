@@ -1,5 +1,6 @@
 module Doxyparser
 
+	# Just like an {Struct} but with different naming conventions 
   class Class < Struct
 
     private

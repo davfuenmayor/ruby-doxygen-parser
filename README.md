@@ -24,6 +24,12 @@ and run `bundle install` from your shell.
 
 In order to use Doxyparser you need to first install Doxygen (www.doxygen.org) in your computer and Nokogiri (http://nokogiri.org)
 
+It is highly encouraged to consult the YARD documentation in the ./doc subdirectory. In addition to this you can:
+
+
+Learn by example:
+-------------------
+
 Generating intermediate XML representation
 ------------------------------------------
 
@@ -77,6 +83,7 @@ Querying Members
 Namespaces
 -----------
 
+```ruby
 namespace_classes = namespace.classes 		# List of Doxyparser::Class
 namespace_structs = namespace.structs 		# List of Doxyparser::Struct
 inner_namespaces = namespace.innernamespaces 	# List of Doxyparser::Namespace
@@ -84,6 +91,7 @@ namepace_enums = namespace.enums 				# List of Doxyparser::Enum
 namespace_variables = namespace.variables 		# List of Doxyparser::Variable
 namespace_functions = namespace.functions 		# List of Doxyparser::Function
 namespace_typedefs = namespace.typedefs 		# List of Doxyparser::Typedef
+```
 
 ...and:
 

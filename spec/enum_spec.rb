@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'rspec'
-require 'doxyparser'
+require_relative '../lib/doxyparser'
 
 require_relative 'custom_spec_helper'
 
