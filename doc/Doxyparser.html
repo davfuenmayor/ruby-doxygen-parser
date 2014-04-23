@@ -1,0 +1,867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Doxyparser
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!Doxyparser.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (D)</a> &raquo;
+    
+    
+    <span class="title">Doxyparser</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: Doxyparser
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/util.rb<span class="defines">,<br />
+  lib/nodes/node.rb,<br /> lib/nodes/enum.rb,<br /> lib/nodes/type.rb,<br /> lib/doxyparser.rb,<br /> lib/nodes/hfile.rb,<br /> lib/nodes/class.rb,<br /> lib/nodes/param.rb,<br /> lib/nodes/friend.rb,<br /> lib/nodes/member.rb,<br /> lib/nodes/struct.rb,<br /> lib/nodes/typedef.rb,<br /> lib/nodes/variable.rb,<br /> lib/nodes/compound.rb,<br /> lib/nodes/function.rb,<br /> lib/nodes/namespace.rb,<br /> lib/nodes/enum_value.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Doxyparser/Util.html" title="Doxyparser::Util (module)">Util</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Doxyparser/Class.html" title="Doxyparser::Class (class)">Class</a></span>, <span class='object_link'><a href="Doxyparser/Compound.html" title="Doxyparser::Compound (class)">Compound</a></span>, <span class='object_link'><a href="Doxyparser/Enum.html" title="Doxyparser::Enum (class)">Enum</a></span>, <span class='object_link'><a href="Doxyparser/EnumValue.html" title="Doxyparser::EnumValue (class)">EnumValue</a></span>, <span class='object_link'><a href="Doxyparser/Friend.html" title="Doxyparser::Friend (class)">Friend</a></span>, <span class='object_link'><a href="Doxyparser/Function.html" title="Doxyparser::Function (class)">Function</a></span>, <span class='object_link'><a href="Doxyparser/HFile.html" title="Doxyparser::HFile (class)">HFile</a></span>, <span class='object_link'><a href="Doxyparser/Member.html" title="Doxyparser::Member (class)">Member</a></span>, <span class='object_link'><a href="Doxyparser/Namespace.html" title="Doxyparser::Namespace (class)">Namespace</a></span>, <span class='object_link'><a href="Doxyparser/Node.html" title="Doxyparser::Node (class)">Node</a></span>, <span class='object_link'><a href="Doxyparser/Param.html" title="Doxyparser::Param (class)">Param</a></span>, <span class='object_link'><a href="Doxyparser/Struct.html" title="Doxyparser::Struct (class)">Struct</a></span>, <span class='object_link'><a href="Doxyparser/Type.html" title="Doxyparser::Type (class)">Type</a></span>, <span class='object_link'><a href="Doxyparser/Typedef.html" title="Doxyparser::Typedef (class)">Typedef</a></span>, <span class='object_link'><a href="Doxyparser/Variable.html" title="Doxyparser::Variable (class)">Variable</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#gen_xml_docs-class_method" title="gen_xml_docs (class method)">+ (Object) <strong>gen_xml_docs</strong>(source_dirs, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil, stl_support = 1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generates intermediate XML representation for a group of header files.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_class-class_method" title="parse_class (class method)">+ (Class) <strong>parse_class</strong>(basename, xml_dir) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A tree of objects representing the class and its members (attributes,
+methods, innerclasses, etc).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_file-class_method" title="parse_file (class method)">+ (HFile) <strong>parse_file</strong>(basename, xml_dir) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A tree of objects representing the header file and its contents (classes,
+functions, enums, etc).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_namespace-class_method" title="parse_namespace (class method)">+ (Namespace) <strong>parse_namespace</strong>(basename, xml_dir) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A tree of objects representing the namespace and its members (classes,
+structs, enums, etc).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_struct-class_method" title="parse_struct (class method)">+ (Struct) <strong>parse_struct</strong>(basename, xml_dir) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A tree of objects representing the struct and its members (attributes,
+methods, enums, etc).</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="gen_xml_docs-class_method">
+  
+    + (<tt>Object</tt>) <strong>gen_xml_docs</strong>(source_dirs, xml_dir, recursive = nil, include_dirs = nil, generate_html = nil, stl_support = 1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generates intermediate XML representation for a group of header files</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>source_dirs</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Input source directory (or directories)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>xml_dir</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Output Directory for the generated XML documents</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>recursive</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if present (and not nil) sets the RECURSIVE FLAG in Doxygen. Subdirectories
+will also be searched</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>include_dirs</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>, <tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Adds given directories to Doxygen&#39;s INCLUDE_PATH (Doxyfile variable)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>generate_html</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if present (and not nil) HTML documentation will also be generated</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>stl_support</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>1</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if present (and not nil) sets the BUILTIN_STL_SUPPORT flag in Doxygen.
+Special support for STL Libraries</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/doxyparser.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_gen_xml_docs'>gen_xml_docs</span><span class='lparen'>(</span><span class='id identifier rubyid_source_dirs'>source_dirs</span><span class='comma'>,</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='comma'>,</span> <span class='id identifier rubyid_recursive'>recursive</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_generate_html'>generate_html</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stl_support'>stl_support</span> <span class='op'>=</span> <span class='int'>1</span><span class='rparen'>)</span>
+	
+	<span class='kw'>if</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+		<span class='id identifier rubyid_inc_dirs'>inc_dirs</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+	<span class='kw'>else</span>
+		<span class='kw'>if</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Array</span>
+			<span class='id identifier rubyid_inc_dirs'>inc_dirs</span> <span class='op'>=</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+		<span class='kw'>else</span>
+			<span class='id identifier rubyid_inc_dirs'>inc_dirs</span> <span class='op'>=</span> <span class='id identifier rubyid_include_dirs'>include_dirs</span>
+		<span class='kw'>end</span>
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_source_dirs'>source_dirs</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Array</span>
+		<span class='id identifier rubyid_proj_name'>proj_name</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='id identifier rubyid_source_dirs'>source_dirs</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+		<span class='id identifier rubyid_src_dirs'>src_dirs</span> <span class='op'>=</span> <span class='id identifier rubyid_source_dirs'>source_dirs</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_proj_name'>proj_name</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='id identifier rubyid_source_dirs'>source_dirs</span><span class='rparen'>)</span>
+		<span class='id identifier rubyid_src_dirs'>src_dirs</span> <span class='op'>=</span> <span class='id identifier rubyid_source_dirs'>source_dirs</span>
+	<span class='kw'>end</span>
+	
+	<span class='id identifier rubyid_recursive'>recursive</span> <span class='op'>=</span> <span class='id identifier rubyid_recursive'>recursive</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>YES</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NO</span><span class='tstring_end'>&#39;</span></span>    	
+	<span class='id identifier rubyid_home_dir'>home_dir</span> <span class='op'>=</span> <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_home_dir'>home_dir</span>
+	<span class='id identifier rubyid_gen_html'>gen_html</span> <span class='op'>=</span> <span class='id identifier rubyid_generate_html'>generate_html</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>YES</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NO</span><span class='tstring_end'>&#39;</span></span>
+	<span class='id identifier rubyid_stl_support'>stl_support</span> <span class='op'>=</span> <span class='id identifier rubyid_stl_support'>stl_support</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>YES</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NO</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>=</span>  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'># Doxyfile 1.7.6.1\n\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'># Project related configuration options\n\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%Q{</span><span class='tstring_content'>PROJECT_NAME\t\t= &quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_proj_name'>proj_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&quot;\nINPUT\t\t\t\t= </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_src_dirs'>src_dirs</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nGENERATE_HTML\t\t= </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_gen_html'>gen_html</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>}</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%Q{</span><span class='tstring_content'>RECURSIVE\t\t\t= </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_recursive'>recursive</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nINCLUDE_PATH\t\t= </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_inc_dirs'>inc_dirs</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nBUILTIN_STL_SUPPORT\t= </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_stl_support'>stl_support</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>}</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'># Default doxygen configuration options\n\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_doxyfile'>doxyfile</span> <span class='op'>&lt;&lt;</span> <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_read_file'>read_file</span><span class='lparen'>(</span><span class='id identifier rubyid_home_dir'>home_dir</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/resources/Doxyfile</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_doxyfile_path'>doxyfile_path</span> <span class='op'>=</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='op'>+</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/Doxyfile</span><span class='tstring_end'>&#39;</span></span>
+  <span class='const'>FileUtils</span><span class='period'>.</span><span class='id identifier rubyid_mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='rparen'>)</span>
+  <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_write_file'>write_file</span><span class='lparen'>(</span><span class='id identifier rubyid_doxyfile_path'>doxyfile_path</span><span class='comma'>,</span> <span class='id identifier rubyid_doxyfile'>doxyfile</span><span class='rparen'>)</span>      
+  <span class='const'>Dir</span><span class='period'>.</span><span class='id identifier rubyid_chdir'>chdir</span><span class='lparen'>(</span><span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_command'>command</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>%Q{</span><span class='tstring_content'>doxygen &lt; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_doxyfile_path'>doxyfile_path</span><span class='embexpr_end'>}</span><span class='tstring_end'>}</span></span>
+  <span class='id identifier rubyid_output'>output</span> <span class='op'>=</span> <span class='const'>IO</span><span class='period'>.</span><span class='id identifier rubyid_popen'>popen</span><span class='lparen'>(</span><span class='id identifier rubyid_command'>command</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_output'>output</span><span class='period'>.</span><span class='id identifier rubyid_readlines'>readlines</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_class-class_method">
+  
+    + (<tt><span class='object_link'><a href="Doxyparser/Class.html" title="Doxyparser::Class (class)">Class</a></span></tt>) <strong>parse_class</strong>(basename, xml_dir) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns A tree of objects representing the class and its members
+(attributes, methods, innerclasses, etc)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>basename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Name of the class to parse (for instance: MyNamespace::MyClass)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>xml_dir</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Path to the directory with the generated intermediate XML representation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Doxyparser/Class.html" title="Doxyparser::Class (class)">Class</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A tree of objects representing the class and its members (attributes,
+methods, innerclasses, etc)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/doxyparser.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_class'>parse_class</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+  <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Class</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='symbol'>:dir</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_file-class_method">
+  
+    + (<tt><span class='object_link'><a href="Doxyparser/HFile.html" title="Doxyparser::HFile (class)">HFile</a></span></tt>) <strong>parse_file</strong>(basename, xml_dir) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns A tree of objects representing the header file and its contents
+(classes, functions, enums, etc)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>basename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Name of the header file to parse (for instance: myheader.h)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>xml_dir</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Path to the directory with the generated intermediate XML representation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Doxyparser/HFile.html" title="Doxyparser::HFile (class)">HFile</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A tree of objects representing the header file and its contents (classes,
+functions, enums, etc)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/doxyparser.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_file'>parse_file</span><span class='lparen'>(</span><span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='rparen'>)</span>
+  <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>HFile</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='symbol'>:dir</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_namespace-class_method">
+  
+    + (<tt><span class='object_link'><a href="Doxyparser/Namespace.html" title="Doxyparser::Namespace (class)">Namespace</a></span></tt>) <strong>parse_namespace</strong>(basename, xml_dir) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns A tree of objects representing the namespace and its members
+(classes, structs, enums, etc)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>basename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Name of the namespace to parse (for instance: NamespaceA::NamespaceB)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>xml_dir</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Path to the directory with the generated intermediate XML representation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Doxyparser/Namespace.html" title="Doxyparser::Namespace (class)">Namespace</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A tree of objects representing the namespace and its members (classes,
+structs, enums, etc)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/doxyparser.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_namespace'>parse_namespace</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+  <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Namespace</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='symbol'>:dir</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_struct-class_method">
+  
+    + (<tt><span class='object_link'><a href="Doxyparser/Struct.html" title="Doxyparser::Struct (class)">Struct</a></span></tt>) <strong>parse_struct</strong>(basename, xml_dir) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns A tree of objects representing the struct and its members
+(attributes, methods, enums, etc)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>basename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Name of the struct to parse (for instance: MyNamespace::MyStruct)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>xml_dir</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Path to the directory with the generated intermediate XML representation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Doxyparser/Struct.html" title="Doxyparser::Struct (class)">Struct</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A tree of objects representing the struct and its members (attributes,
+methods, enums, etc)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/doxyparser.rb', line 48</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_struct'>parse_struct</span><span class='lparen'>(</span><span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span><span class='rparen'>)</span>
+  <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_basename'>basename</span><span class='comma'>,</span> <span class='symbol'>:dir</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_xml_dir'>xml_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Wed Apr 23 21:52:49 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

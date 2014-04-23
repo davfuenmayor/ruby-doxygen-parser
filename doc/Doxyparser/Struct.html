@@ -1,0 +1,1624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Doxyparser::Struct
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!Doxyparser/Struct.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Doxyparser.html" title="Doxyparser (module)">Doxyparser</a></span></span>
+     &raquo; 
+    <span class="title">Struct</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Doxyparser::Struct
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Compound.html" title="Doxyparser::Compound (class)">Compound</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Node.html" title="Doxyparser::Node (class)">Node</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Compound.html" title="Doxyparser::Compound (class)">Compound</a></span></li>
+          
+            <li class="next">Doxyparser::Struct</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/nodes/struct.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A plain old OOP Class</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Class.html" title="Doxyparser::Class (class)">Class</a></span></p>
+</div>
+
+
+
+
+
+
+  <h2>Instance Attribute Summary</h2>
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Compound.html" title="Doxyparser::Compound (class)">Compound</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Compound.html#xml_path-instance_method" title="Doxyparser::Compound#xml_path (method)">#xml_path</a></span></p>
+
+  
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Node.html" title="Doxyparser::Node (class)">Node</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Node.html#basename-instance_method" title="Doxyparser::Node#basename (method)">#basename</a></span>, <span class='object_link'><a href="Node.html#dir-instance_method" title="Doxyparser::Node#dir (method)">#dir</a></span>, <span class='object_link'><a href="Node.html#doc-instance_method" title="Doxyparser::Node#doc (method)">#doc</a></span>, <span class='object_link'><a href="Node.html#name-instance_method" title="Doxyparser::Node#name (method)">#name</a></span>, <span class='object_link'><a href="Node.html#node-instance_method" title="Doxyparser::Node#node (method)">#node</a></span>, <span class='object_link'><a href="Node.html#parent-instance_method" title="Doxyparser::Node#parent (method)">#parent</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abstract%3F-instance_method" title="#abstract? (instance method)">- (bool) <strong>abstract?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>True if any of its methods is &#39;pure virtual&#39;.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#attributes-instance_method" title="#attributes (instance method)">- (Array&lt;Variable&gt;) <strong>attributes</strong>(access = :public, static = nil, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared attributes.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#constructors-instance_method" title="#constructors (instance method)">- (Array&lt;Function&gt;) <strong>constructors</strong>(access = :public) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared constructors.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#destructors-instance_method" title="#destructors (instance method)">- (Array&lt;Function&gt;) <strong>destructors</strong>(access = :public) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared destructors.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enums-instance_method" title="#enums (instance method)">- (Array&lt;Enum&gt;) <strong>enums</strong>(access = :public, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared enums.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#innerclasses-instance_method" title="#innerclasses (instance method)">- (Array&lt;Struct&gt;) <strong>innerclasses</strong>(access = :public, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared inner-classes and inner-structs.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#methods-instance_method" title="#methods (instance method)">- (Array&lt;Function&gt;) <strong>methods</strong>(access = :public, static = nil, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared methods.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#only_innerclasses-instance_method" title="#only_innerclasses (instance method)">- (Array&lt;Struct&gt;) <strong>only_innerclasses</strong>(access = :public, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared inner-classes (inner-structs are excluded).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#only_innerstructs-instance_method" title="#only_innerstructs (instance method)">- (Array&lt;Struct&gt;) <strong>only_innerstructs</strong>(access = :public, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared inner-structs (inner-classes are excluded).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parent_types-instance_method" title="#parent_types (instance method)">- (Array&lt;Type&gt;) <strong>parent_types</strong>(access = :public) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared super-types for this struct/class.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#typedefs-instance_method" title="#typedefs (instance method)">- (Array&lt;Typedef&gt;) <strong>typedefs</strong>(access = :public, filter = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Declared typedefs.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Node.html" title="Doxyparser::Node (class)">Node</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Node.html#%3D%3D-instance_method" title="Doxyparser::Node#== (method)">#==</a></span>, <span class='object_link'><a href="Node.html#eql%3F-instance_method" title="Doxyparser::Node#eql? (method)">#eql?</a></span>, <span class='object_link'><a href="Node.html#escaped_name-instance_method" title="Doxyparser::Node#escaped_name (method)">#escaped_name</a></span>, <span class='object_link'><a href="Node.html#initialize-instance_method" title="Doxyparser::Node#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="Node.html#to_s-instance_method" title="Doxyparser::Node#to_s (method)">#to_s</a></span>, <span class='object_link'><a href="Node.html#to_str-instance_method" title="Doxyparser::Node#to_str (method)">#to_str</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Util.html" title="Doxyparser::Util (module)">Util</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Util.html#del_prefix_class-instance_method" title="Doxyparser::Util#del_prefix_class (method)">#del_prefix_class</a></span>, <span class='object_link'><a href="Util.html#del_prefix_file-instance_method" title="Doxyparser::Util#del_prefix_file (method)">#del_prefix_file</a></span>, <span class='object_link'><a href="Util.html#del_spaces-instance_method" title="Doxyparser::Util#del_spaces (method)">#del_spaces</a></span>, <span class='object_link'><a href="Util.html#do_filter-instance_method" title="Doxyparser::Util#do_filter (method)">#do_filter</a></span>, <span class='object_link'><a href="Util.html#escape_all-instance_method" title="Doxyparser::Util#escape_all (method)">#escape_all</a></span>, <span class='object_link'><a href="Util.html#escape_class_name-instance_method" title="Doxyparser::Util#escape_class_name (method)">#escape_class_name</a></span>, <span class='object_link'><a href="Util.html#escape_const_ref_ptr-instance_method" title="Doxyparser::Util#escape_const_ref_ptr (method)">#escape_const_ref_ptr</a></span>, <span class='object_link'><a href="Util.html#escape_const_ref_ptr-class_method" title="Doxyparser::Util.escape_const_ref_ptr (method)">escape_const_ref_ptr</a></span>, <span class='object_link'><a href="Util.html#escape_file_name-instance_method" title="Doxyparser::Util#escape_file_name (method)">#escape_file_name</a></span>, <span class='object_link'><a href="Util.html#escape_template-instance_method" title="Doxyparser::Util#escape_template (method)">#escape_template</a></span>, <span class='object_link'><a href="Util.html#home_dir-class_method" title="Doxyparser::Util.home_dir (method)">home_dir</a></span>, <span class='object_link'><a href="Util.html#match-instance_method" title="Doxyparser::Util#match (method)">#match</a></span>, <span class='object_link'><a href="Util.html#read_file-class_method" title="Doxyparser::Util.read_file (method)">read_file</a></span>, <span class='object_link'><a href="Util.html#write_file-class_method" title="Doxyparser::Util.write_file (method)">write_file</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="Node.html#initialize-instance_method" title="Doxyparser::Node#initialize (method)">Doxyparser::Node</a></span></p>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'>Doxyparser::Node</span>
+    
+  </p>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="abstract?-instance_method">
+  
+    - (<tt>bool</tt>) <strong>abstract?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if any of its methods is &#39;pure virtual&#39;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if any of its methods is &#39;pure virtual&#39;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_abstract?'>abstract?</span>
+	<span class='ivar'>@is_abstract</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:all</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span> <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_virt'>virt</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pure-virtual</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="attributes-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Variable.html" title="Doxyparser::Variable (class)">Variable</a></span>&gt;</tt>) <strong>attributes</strong>(access = :public, static = nil, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared attributes</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>static</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If nil are static members excluded. If not nil only static members are
+returned</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Variable.html" title="Doxyparser::Variable (class)">Variable</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared attributes</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> 
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='comment'># Caches public attributes
+</span>	 	<span class='kw'>if</span> <span class='id identifier rubyid_static'>static</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+			<span class='ivar'>@public_attributes</span> <span class='op'>||=</span> <span class='id identifier rubyid__attributes'>_attributes</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+			<span class='kw'>return</span> <span class='ivar'>@public_attributes</span>
+		<span class='kw'>end</span>
+	<span class='ivar'>@public_static_attributes</span> <span class='op'>||=</span> <span class='id identifier rubyid__attributes'>_attributes</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@public_static_attributes</span>
+	<span class='kw'>end</span>
+ <span class='id identifier rubyid__attributes'>_attributes</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="constructors-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>) <strong>constructors</strong>(access = :public) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared constructors</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared constructors</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_constructors'>constructors</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='rparen'>)</span>
+	<span class='kw'>return</span> <span class='kw'>case</span> <span class='id identifier rubyid_access'>access</span>
+	<span class='kw'>when</span> <span class='symbol'>:public</span>
+  	<span class='ivar'>@public_constructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@basename</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:protected</span>
+  	<span class='ivar'>@protected_constructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@basename</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:private</span>
+  	<span class='ivar'>@private_constructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@basename</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:all</span>
+		<span class='id identifier rubyid_constructors'>constructors</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_constructors'>constructors</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_constructors'>constructors</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="destructors-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>) <strong>destructors</strong>(access = :public) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared destructors</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared destructors</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_destructors'>destructors</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='rparen'>)</span>
+	<span class='kw'>return</span> <span class='kw'>case</span> <span class='id identifier rubyid_access'>access</span>
+	<span class='kw'>when</span> <span class='symbol'>:public</span>
+  	<span class='ivar'>@public_destructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^~</span><span class='regexp_end'>/</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:protected</span>
+  	<span class='ivar'>@protected_destructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^~</span><span class='regexp_end'>/</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:private</span>
+  	<span class='ivar'>@private_destructors</span> <span class='op'>||=</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^~</span><span class='regexp_end'>/</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>when</span> <span class='symbol'>:all</span>
+		<span class='id identifier rubyid_destructors'>destructors</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_destructors'>destructors</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_destructors'>destructors</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="enums-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Enum.html" title="Doxyparser::Enum (class)">Enum</a></span>&gt;</tt>) <strong>enums</strong>(access = :public, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared enums</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Enum.html" title="Doxyparser::Enum (class)">Enum</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared enums</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_enums'>enums</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@public_enums</span> <span class='op'>||=</span> <span class='id identifier rubyid__enums'>_enums</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@public_enums</span> 
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@all_enums</span> <span class='op'>||=</span> <span class='id identifier rubyid_enums'>enums</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_enums'>enums</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_enums'>enums</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@all_enums</span>  
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid__enums'>_enums</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="innerclasses-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>) <strong>innerclasses</strong>(access = :public, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared inner-classes and inner-structs</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared inner-classes and inner-structs</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>if</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+ 	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+			<span class='ivar'>@all_innerclasses</span> <span class='op'>||=</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+			<span class='kw'>return</span> <span class='ivar'>@all_innerclasses</span>	
+		<span class='kw'>end</span>
+ 	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span>
+ 		<span class='ivar'>@public_innerclasses</span> <span class='op'>||=</span> <span class='id identifier rubyid_only_innerclasses'>only_innerclasses</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_only_innerstructs'>only_innerstructs</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span>
+			<span class='kw'>return</span> <span class='ivar'>@public_innerclasses</span>
+		<span class='kw'>end</span>
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+	<span class='id identifier rubyid_only_innerclasses'>only_innerclasses</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_only_innerstructs'>only_innerstructs</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="methods-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>) <strong>methods</strong>(access = :public, static = nil, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared methods</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>static</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If nil are static members excluded. If not nil only static members are
+returned</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Function.html" title="Doxyparser::Function (class)">Function</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared methods</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 45</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_methods'>methods</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='comment'># Caches public methods
+</span>	 	<span class='kw'>if</span> <span class='id identifier rubyid_static'>static</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+			<span class='ivar'>@public_methods</span> <span class='op'>||=</span> <span class='id identifier rubyid__methods'>_methods</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+			<span class='kw'>return</span> <span class='ivar'>@public_methods</span>
+		<span class='kw'>end</span>
+		<span class='ivar'>@public_static_methods</span> <span class='op'>||=</span> <span class='id identifier rubyid__methods'>_methods</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@public_static_methods</span>
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid__methods'>_methods</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_static'>static</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="only_innerclasses-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>) <strong>only_innerclasses</strong>(access = :public, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared inner-classes (inner-structs are excluded)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared inner-classes (inner-structs are excluded)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 102</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_only_innerclasses'>only_innerclasses</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerclasses'>innerclasses</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> 
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid_lst'>lst</span> <span class='op'>=</span> <span class='id identifier rubyid_doc'>doc</span><span class='period'>.</span><span class='id identifier rubyid_xpath'>xpath</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>%Q{</span><span class='tstring_content'>/doxygen/compounddef/innerclass[@prot=&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access'>access</span><span class='embexpr_end'>}</span><span class='tstring_content'>&quot;]</span><span class='tstring_end'>}</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_lst'>lst</span> <span class='op'>=</span> <span class='id identifier rubyid_lst'>lst</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='id identifier rubyid_c'>c</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>refid</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_start_with?'>start_with?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>class</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_do_filter'>do_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_filter'>filter</span><span class='comma'>,</span> <span class='id identifier rubyid_lst'>lst</span><span class='comma'>,</span> <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Class</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_node'>node</span><span class='op'>|</span>
+    <span class='id identifier rubyid_del_prefix'>del_prefix</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_child'>child</span><span class='period'>.</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="only_innerstructs-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>) <strong>only_innerstructs</strong>(access = :public, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared inner-structs (inner-classes are excluded)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Doxyparser::Struct (class)">Struct</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared inner-structs (inner-classes are excluded)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 116</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_only_innerstructs'>only_innerstructs</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_innerstructs'>innerstructs</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerstructs'>innerstructs</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_innerstructs'>innerstructs</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span> 
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid_lst'>lst</span> <span class='op'>=</span> <span class='id identifier rubyid_doc'>doc</span><span class='period'>.</span><span class='id identifier rubyid_xpath'>xpath</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>%Q{</span><span class='tstring_content'>/doxygen/compounddef/innerclass[@prot=&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access'>access</span><span class='embexpr_end'>}</span><span class='tstring_content'>&quot;]</span><span class='tstring_end'>}</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_lst'>lst</span> <span class='op'>=</span> <span class='id identifier rubyid_lst'>lst</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='id identifier rubyid_c'>c</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>refid</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_start_with?'>start_with?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>struct</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_do_filter'>do_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_filter'>filter</span><span class='comma'>,</span> <span class='id identifier rubyid_lst'>lst</span><span class='comma'>,</span> <span class='const'>Doxyparser</span><span class='op'>::</span><span class='const'>Struct</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_node'>node</span><span class='op'>|</span>
+    <span class='id identifier rubyid_del_prefix'>del_prefix</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_child'>child</span><span class='period'>.</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parent_types-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Type.html" title="Doxyparser::Type (class)">Type</a></span>&gt;</tt>) <strong>parent_types</strong>(access = :public) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared super-types for this struct/class</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:public</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>access modifier (:public, :protected, :private, :all)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Type.html" title="Doxyparser::Type (class)">Type</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared super-types for this struct/class</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 129</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parent_types'>parent_types</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span>
+		<span class='ivar'>@public_parent_types</span> <span class='op'>||=</span> <span class='id identifier rubyid__parent_types'>_parent_types</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@public_parent_types</span>
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span>
+			<span class='ivar'>@all_parent_types</span> <span class='op'>||=</span> <span class='id identifier rubyid_parent_types'>parent_types</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_parent_types'>parent_types</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_parent_types'>parent_types</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+			<span class='kw'>return</span> <span class='ivar'>@all_parent_types</span>	
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid__parent_types'>_parent_types</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="typedefs-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Typedef.html" title="Doxyparser::Typedef (class)">Typedef</a></span>&gt;</tt>) <strong>typedefs</strong>(access = :public, filter = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns declared typedefs</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filter</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of Regex. Members whose name does not match any of the regexes will be
+excluded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Typedef.html" title="Doxyparser::Typedef (class)">Typedef</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>declared typedefs</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nodes/struct.rb', line 159</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_typedefs'>typedefs</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span> <span class='op'>=</span> <span class='symbol'>:public</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:public</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@public_typedefs</span> <span class='op'>||=</span> <span class='id identifier rubyid__typedefs'>_typedefs</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@public_typedefs</span> 
+	<span class='kw'>end</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_access'>access</span> <span class='op'>==</span> <span class='symbol'>:all</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_filter'>filter</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@all_typedefs</span> <span class='op'>||=</span> <span class='id identifier rubyid_typedefs'>typedefs</span><span class='lparen'>(</span><span class='symbol'>:public</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_typedefs'>typedefs</span><span class='lparen'>(</span><span class='symbol'>:protected</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_typedefs'>typedefs</span><span class='lparen'>(</span><span class='symbol'>:private</span><span class='rparen'>)</span>
+		<span class='kw'>return</span> <span class='ivar'>@all_typedefs</span> 
+	<span class='kw'>end</span>
+  <span class='id identifier rubyid__typedefs'>_typedefs</span><span class='lparen'>(</span><span class='id identifier rubyid_access'>access</span><span class='comma'>,</span> <span class='id identifier rubyid_filter'>filter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Wed Apr 23 21:52:51 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>
