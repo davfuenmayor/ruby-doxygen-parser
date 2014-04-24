@@ -95,6 +95,11 @@ in such cases, the lean alternative.</p>
 href="www.doxygen.org">www.doxygen.org</a>) in your computer and Nokogiri
 (<a href="http://nokogiri.org">nokogiri.org</a>)</p>
 
+<p>It is highly encouraged to consult the YARD documentation in the ./doc
+subdirectory. In addition to this you can:</p>
+
+<h2 id="label-Learn+by+example%3A">Learn by example:</h2>
+
 <h2 id="label-Generating+intermediate+XML+representation">Generating intermediate XML representation</h2>
 
 <p>Generate Doxygen documentation for a set of header files:</p>
@@ -148,14 +153,13 @@ the given directory. Now we can parse them:</p>
 
 <h2 id="label-Namespaces">Namespaces</h2>
 
-<p>namespace_classes = namespace.classes # List of Doxyparser::Class
-namespace_structs = namespace.structs # List of Doxyparser::Struct
-inner_namespaces = namespace.innernamespaces # List of
-Doxyparser::Namespace namepace_enums = namespace.enums # List of
-Doxyparser::Enum namespace_variables = namespace.variables # List of
-Doxyparser::Variable namespace_functions = namespace.functions # List of
-Doxyparser::Function namespace_typedefs = namespace.typedefs # List of
-Doxyparser::Typedef</p>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_namespace_classes'>namespace_classes</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_classes'>classes</span> 		<span class='comment'># List of Doxyparser::Class
+</span><span class='id identifier rubyid_namespace_structs'>namespace_structs</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_structs'>structs</span> 		<span class='comment'># List of Doxyparser::Struct
+</span><span class='id identifier rubyid_inner_namespaces'>inner_namespaces</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_innernamespaces'>innernamespaces</span> 	<span class='comment'># List of Doxyparser::Namespace
+</span><span class='id identifier rubyid_namepace_enums'>namepace_enums</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_enums'>enums</span> 				<span class='comment'># List of Doxyparser::Enum
+</span><span class='id identifier rubyid_namespace_variables'>namespace_variables</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_variables'>variables</span> 		<span class='comment'># List of Doxyparser::Variable
+</span><span class='id identifier rubyid_namespace_functions'>namespace_functions</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_functions'>functions</span> 		<span class='comment'># List of Doxyparser::Function
+</span><span class='id identifier rubyid_namespace_typedefs'>namespace_typedefs</span> <span class='op'>=</span> <span class='id identifier rubyid_namespace'>namespace</span><span class='period'>.</span><span class='id identifier rubyid_typedefs'>typedefs</span> 		<span class='comment'># List of Doxyparser::Typedef</span></code></pre>
 
 <p>…and:</p>
 
@@ -302,7 +306,7 @@ query a subset of class/struct members.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Wed Apr 23 21:52:49 2014 by
+  Generated on Thu Apr 24 22:58:11 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.1.0).
 </div>

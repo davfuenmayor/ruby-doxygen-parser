@@ -8,7 +8,7 @@ module Doxyparser
   	attr_reader :escaped_name
 
 		# If this {Type} has type parameters (aka. template params) finds nested {Type}s 
-		#    for other {Classes} or {Structs} parsed by Doxyparser.
+		#    for other {Class}es or {Struct}s parsed by Doxyparser.
 		#  	The 'main' type is always included, so for templates two or more types will be returned. 
 		# Example: for MyNamespace::map<std::string, MyClass> the result is: [MyNamespace::map, MyNamespace::MyClass]  
 		# @return [Array<Type>] Nested types

@@ -168,12 +168,12 @@ module Doxyparser
       _typedefs(access, filter)
     end
 
-    private
     
    	attr_reader :file
   	attr_reader :friends
   	attr_reader :template_params
 
+    private
     
     def _methods(access = :public, static = nil, filter = nil)
     	if static.nil?
